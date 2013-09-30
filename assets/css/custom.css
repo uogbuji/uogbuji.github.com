@@ -2,7 +2,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 25em;
-  margin: 3em;
 }
 
 .slide a {
@@ -29,7 +28,11 @@ cite {
 
 
 .navbar-inverse {
+  /* Used http://www.colorschemer.com/online.html starting with color from 04533c, CO plate color, & getting a palette */
+  /* For picking the CO plate color: DigitalColor Meter. /Applications/Utilities/DigitalColor Meter.app */
   background-color: #04533c;
-  border-color: #a91b0c;
+  border-color: #8D072D;
 }
+
+p {margin-top: 2em;}
 
