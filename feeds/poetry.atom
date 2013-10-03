@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en" xml:base="http://uche.ogbuji.net">
+  <id>http://uche.ogbuji.net/feeds/poems.atom</id> 
+  <title>Uche Ogbuji's poems</title>
+  <link rel="self" href="http://uche.ogbuji.net/feeds/poems.atom" />
+  <link rel="alternate" type="text/html" href="http://uche.ogbuji.net/lit/" />
+  <updated>2013-10-01T12:30:01Z</updated>
+  <rights>Copyright 2000-2013 Uche Ogbuji</rights>
+
+  <!-- New entries go here -->
+  <!-- Don't forget to set the updated element above when you add a new entry -->
+  
+  <!--
+    See also:
+        http://tc.eserver.org/tc.lasso?c1=searchable&-op=cn&cat=ogbuji (http://en.wikipedia.org/wiki/EServer.org)
+  -->
+
+<!--
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id></id>
+    <title></title>
+    <updated>2013-10-01</updated>
+    <link href=""/>
+    <source>
+      <id></id>
+      <title></title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>
+        </pre>
+      </div>
+    </summary>
+  </entry>
+-->
+
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://versewisconsin.org/Issue110/audio.html</id>
+    <title>At Wounded Knee</title>
+    <subtitle>Poem text in Verse Wisconsin #110 print; link is to audio only</subtitle>
+    <updated>2012-01-02</updated>
+    <link href="http://versewisconsin.org/Issue110/audio.html"/>
+    <source>
+      <id>http://versewisconsin.org</id>
+      <title>Verse Wisconsin</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>The bumblebee at wounded knee
+Decants his nectar lazily
+Yellow lines dance into black
+And when we dream we hear the crack
+And when we dream we see the flash
+We shake from cold, we smell the ash
+        </pre>
+      </div>
+    </summary>
+  </entry>
+
+  <!-- Older -->
+
+
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.unsplendid.com/4-1/4-1_ogbuji_manna_frames.htm</id>
+    <title>Manna and the maxim gun</title>
+    <updated>2012-01-02</updated>
+    <link href="http://www.unsplendid.com/4-1/4-1_ogbuji_manna_frames.htm"/>
+    <source>
+      <id>http://www.unsplendid.com/4-1/4-1_ogbuji_manna_frames.htm</id>
+      <title>Unsplendid</title>
+    </source>
+    <category term="@choice"/>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Herod paid for peace in blood,
+Quite careful it was not his own.
+The red cap chiefs stack up their wealth,
+Shards of what once was bred in bone.
+
+Church tales of wandering accursed&#8212;
+It's forty years full fifty times;
+Malaria did scurvy work
+Until quinine did work of limes.
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/</id>
+    <title>Endo</title>
+    <subtitle>(scroll down to 5th poem)</subtitle>
+    <updated>2012-01-03</updated>
+    <link href="http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/</id>
+      <title>Mountain Gazette</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Head upside home fried
+Champagne powder, I lip-smack
+Fatback...
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.stringpoet.com/2011/12/translation-uche-ogbuji/</id>
+    <title>Love ascended between us &amp; Folly between us</title>
+    <subtitle>Two poems: A translation and a looser adaptation of &#8220;El Amor Ascendía Entre Nosotros,&#8221; by Miguel Hernandez</subtitle>
+    <updated>2011-12-28</updated>
+    <link href="http://www.stringpoet.com/2011/12/translation-uche-ogbuji/"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://www.stringpoet.com/2011/12/translation-uche-ogbuji/</id>
+      <title>String Poet</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Desire flooded limbs restrained,
+Overwhelmed our grasping senses,
+Left us vulnerable to stroke,
+And dumb to use the orb as dish
+To serve each tasty other.
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://ithacalit.com/uche-ogbuji.html</id>
+    <title>Devil's Backbone &amp; Word Wounds in Time</title>
+    <subtitle>Two poems</subtitle>
+    <updated>2011-09-22</updated>
+    <link href="http://ithacalit.com/uche-ogbuji.html"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://ithacalit.com/uche-ogbuji.html</id>
+      <title>IthacaLit</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>A moment that started with the friendly
+Wave of every day evolved into
+Tsunami of the sidewalk as you fled.
+Space exploded so fast your neighbors left
+Their hellos, goodbyes, their sorries, thank yous,
+Water cooler yarns and lame jokes behind;
+Buried with each the scraps the other said,
+Lost between comma and exclamation.
+What brush hand daubed those seconds in dread?
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.the-flea.com/Issue19/SupervillaininTraining.html</id>
+    <title>Supervillain in Training</title>
+    <updated>2011-09-19</updated>
+    <link href="http://www.the-flea.com/Issue19/SupervillaininTraining.html"/>
+    <source>
+      <id>http://www.the-flea.com/Issue19/SupervillaininTraining.html</id>
+      <title>The Flea</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Your smile loops to a cursive ell&#8212;
+We've all learned its complexity&#8212;
+Your lush hair springs up from the scene,
+Great mushroom cloud of ecstasy.
+
+An uprock cyclone sweeps the room
+With Style Wars on the parlor screen;
+We dodge the rainbow shot of toys
+Propelled by legs in floor routine.
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.redfez.net/poetry/1392</id>
+    <title>Rhapsody On Q A</title>
+    <updated>2011-08-01</updated>
+    <link href="http://www.redfez.net/poetry/1392"/>
+    <source>
+      <id>http://www.redfez.net/poetry/1392</id>
+      <title>Red Fez (unframed link)</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Light on temples, Nepal to Sri Lanka,
+You glide, traveling soul, earth-bound fixed foot,
+Each step mounting from base camp Casablanca,
+
+From past-life luxury of Hatshepsut
+To present serene, composed asana;
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://lucidrhythms.com/2011-2/Ogbuji_Uche.htm</id>
+    <title>What Belief</title>
+    <updated>2011-08-05</updated>
+    <link href="http://lucidrhythms.com/2011-2/Ogbuji_Uche.htm"/>
+    <source>
+      <id>http://lucidrhythms.com/2011-2/Ogbuji_Uche.htm</id>
+      <title>Lucid Rhythms</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>I've stroked it while it gently weeps,
+Caressed each trembling string,
+Cranked up to weapons grade at times
+I undertake to sing.
+
+And yet I disappoint, I rip,
+I charm a wicked scar;
+Hot venom as the scorpion bows
+To cantor de Ronsard.
+
+If poetry and song provide
+The island with a reef,
+What heroes championing what gods
+Are left to my belief?
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://soundzine.net/index.php?option=com_content&amp;view=article&amp;id=287%3Auche-ogbuji&amp;catid=34%3Apoetry&amp;Itemid=53</id>
+    <title>Fortune of Chi</title>
+    <updated>2011-08-01</updated>
+    <link href="http://soundzine.net/index.php?option=com_content&amp;view=article&amp;id=287%3Auche-ogbuji&amp;catid=34%3Apoetry&amp;Itemid=53"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://soundzine.net/index.php?option=com_content&amp;view=article&amp;id=287%3Auche-ogbuji&amp;catid=34%3Apoetry&amp;Itemid=53</id>
+      <title>Soundzine</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Some randomized permutation of genes
+Spelled these very left and right brain cortices&#8212;
+Spotlight nerves on sheer possibility;
+Some Mendel melody conjured these eyes,
+These muscles, grafted these veins under this skin;
+I am too many pin-point faults to be
+By design yet I crown my own life's fitness:
+I am perfected fortune of my chi.
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.the-flea.com/Issue16/VillonaudoftheBarfleaBard.html</id>
+    <title>Villonaud of the Barflea Bard</title>
+    <updated>2011-05-22</updated>
+    <link href="http://www.the-flea.com/Issue16/VillonaudoftheBarfleaBard.html"/>
+    <source>
+      <id>http://www.the-flea.com/Issue16/VillonaudoftheBarfleaBard.html</id>
+      <title>The Flea (unframed link)</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Maenads are snarling their decree:  
+&#8220;So who d'you think you are,&#8221; they howl  
+&#8220;To seal your bonnet from the bee?&#8221;
+Those bouncers at the Muses' hill  
+Take down attendance in their hall&#8212;
+You're conscript to the gathering  
+To rouse the skaldic clan again  
+With clinking roar of brannigan.  
+Yield bruckle skin to miching flea.  
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.thenervousbreakdown.com/uogbuji/2011/04/if-all/</id>
+    <title>If All</title>
+    <updated>2011-04-21</updated>
+    <link href="http://www.thenervousbreakdown.com/uogbuji/2011/04/if-all/"/>
+    <source>
+      <id>http://www.thenervousbreakdown.com/uogbuji/2011/04/if-all/</id>
+      <title>If All</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>If all our vision's shallow
+And all our cares a sieve
+If market gains short all our brains
+How shall our children live?
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.versewisconsin.org/wiprotests/apr8-apr30.html</id>
+    <title>The Madison Front</title>
+    <subtitle>Scroll down to 3rd poem</subtitle>
+    <updated>2011-04-16</updated>
+    <link href="http://www.versewisconsin.org/wiprotests/apr8-apr30.html"/>
+    <source>
+      <id>http://www.versewisconsin.org/wiprotests/apr8-apr30.html</id>
+      <title>Verse Wisconsin</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>A mansion for each family
+By standards understood worldwide,
+An LCD TV, three cars
+And surplus matched to kingly pride.
+
+The problem lies as yet untouched:
+Demand for clean water and airâ€”
+No bill to slap a UPC
+On molecules found everywhere.
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.coriummagazine.com/?page_id=602</id>
+    <title>Demoiselle</title>
+    <updated>2010-06-01</updated>
+    <link href="http://www.coriummagazine.com/?page_id=602"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://www.coriummagazine.com/?page_id=602</id>
+      <title>Corium Magazine</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Every bush has its berry
+With soft fingers and a long tongue,
+Slow, wide open like a Sunday afternoon.
+But she doesn't fool me,
+Alcohol all on her breath
+Like a ghost in the window
+Of an abandoned house.
+Her hips don't tell my hands like yours.
+You're a soul flame.
+</pre>
+      </div>
+    </summary>
+  </entry>
+  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://www.thenervousbreakdown.com/uogbuji/2010/03/growing-up-misfit/</id>
+    <title>Growing Up Misfit</title>
+    <updated>2010-03-29</updated>
+    <link href="http://www.thenervousbreakdown.com/uogbuji/2010/03/growing-up-misfit/"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://www.thenervousbreakdown.com/uogbuji/2010/03/growing-up-misfit/</id>
+      <title>The Nervous Breakdown</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>When your eyes learn to look beyond state,
+          to peers beyond infinity,
+Okigbo, Villon, Pound, Plath, sometimes
+          you forget that misfit can grow to vanity.
+I've come to grow into readiness for company,
+          the scent and crinkled space of shared humanity.
+
+Collage is completion from gestalt-spackled gaps,
+          pieces that never fit, that itch.
+These rub away their corners into the circle
+          of the whole.  They don't match,
+They mate; their seed elaborates the daisy chain,
+          fit and unfit bait and switch.</pre>
+      </div>
+    </summary>
+  </entry>
+</feed>

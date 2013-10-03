@@ -19,7 +19,7 @@ I'm Uche Ogbuji an [Igbo](http://igbopeople.blogspot.com/2009/03/uche-ogbuji.htm
     </tr>
 </table>
 
-## Computer engineer, entrepreneur and technology educator
+## Computer engineer, entrepreneur and technology educator</h2>
 
 <table>
     <tr>

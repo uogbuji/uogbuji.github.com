@@ -16,7 +16,7 @@ Some of the poems in this book have already been published elsewhere, so enjoy t
 
 <!---->
   <div class="slide-right">
-    <div class="slide">
+    <section>
       <a href="http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/">
       <h2>Endo (from "Mountain Tanka")</h2>
       <p class="source"><cite>Mountain Gazette,</cite> January 2012</p>
@@ -24,8 +24,8 @@ Some of the poems in this book have already been published elsewhere, so enjoy t
 Champagne powder&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <h2>Fever Pitch Tent</h2>
       <p class="source"><cite>ELF: Eclectic Literary Forum,</cite> 1996</p>
       <p class="stanza">The howling wind nearly carried us<br>
@@ -34,8 +34,8 @@ With twigs caught in its bustle and fuss,<br>
 Whisked though sere mangrove,&hellip;
 <!--…-->
       </p>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <h2>Mountain Summer</h2>
       <p class="source"><cite>ELF: Eclectic Literary Forum,</cite> 1996</p>
       <p class="stanza">The woman and child in bathing suits<br>
@@ -45,8 +45,8 @@ Turning about, they leap on the saucer and fly<br>
 Merrily down pitted slopes into raptures,<br>
 Finding their break against banking snow&hellip;
       </p>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="http://www.coloradopoetscenter.org/poets/ogbuji_uche/july4.html">
       <h2>July 4th at Arapahoe Basin</h2>
       <p class="source"><cite>Colorado Poet's Center,</cite> 2012</p>
@@ -56,8 +56,8 @@ Sky with their gnomic, craggy brown.<br>
 I look out from this million year old crown.&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="http://www.stringpoet.com/2013/05/5-uche-ogbuji/">
       <h2>Colorado&hellip;Du Grand Soleil&hellip;Du Vent,</h2>
       <p class="source"><cite>String Poet,</cite> May 2013</p>
@@ -67,8 +67,8 @@ The wind has plains to sweep and streams to ford<br>
 And hills to shape into outrageous forms.&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="http://www.coloradopoetscenter.org/poets/ogbuji_uche/cabeceo.html">
       <h2>El Cabeceo de Niwot</h2>
       <p class="source"><cite>Colorado Poet's Center,</cite> 2012</p>
@@ -78,8 +78,8 @@ All limbs in strophe and antistrophe:<br>
 Firm as pine roots, supple as tulips.&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="http://qarrtsiluni.com/2013/05/28/autumn-equinox-creature-song/">
       <h2>Autumn Equinox Creature Song</h2>
       <p class="source"><cite>Qarrtsiluni,</cite> June 2013</p>
@@ -90,8 +90,8 @@ And garnish the crumbs we strew;<br>
 Away rats: &ldquo;Shoo!&rdquo;&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="http://www.levelerpoetry.com/catamount-levelheaded/">
       <h2>Catamount</h2>
       <p class="source"><cite>Leveler,</cite> June 2013</p>
@@ -105,8 +105,8 @@ Where diamond mountain life buzzes against<br>
 Gold flecks exposed as elder snows melt.&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="Above Left Hand Canyon">
       <h2>Above Left Hand Canyon</h2>
       <p class="source"><cite>IthacaLit,</cite> March 2013</p>
@@ -118,8 +118,8 @@ The kite-eye perspective, the skied sense<br>
 From green to pale green, from blue to pale blue,&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="http://www.redfez.net/poetry/1714">
       <h2>Rag Tags</h2>
       <p class="source"><cite>Red Fez Magazine,</cite> October 2012</p>
@@ -129,8 +129,8 @@ All sated at belly<br>
 And gleaming at trim.&hellip;
       </p>
       </a>
-    </div>
-    <div class="slide">
+    </section>
+    <section>
       <a href="http://www.thenervousbreakdown.com/uogbuji/2012/06/transit-of-venus-boulder-2012/">
       <h2>Transit of Venus, Fiske Planetarium, Boulder Colorado</h2>
       <p class="source"><cite>The Nervous breakdown,</cite> June, 2012</p>
@@ -140,7 +140,7 @@ Blowing to whip wind to mist-shifting brisk.<br>
 Science and history are the idle chatter here:&hellip;
       </p>
       </a>
-    </div>
+    </section>
   </div>
 
 <!-- 

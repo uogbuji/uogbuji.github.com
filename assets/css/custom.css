@@ -1,15 +1,15 @@
 .slide-right {
   margin-left: auto;
   margin-right: auto;
-  width: 25em;
+  width: 30em;
 }
 
-.slide a {
+section a, section a:hover {
   text-decoration: none;
   color: #333;
 }
 
-.slide a:after {
+section a:after {
   /* http://coding.smashingmagazine.com/2011/07/13/learning-to-use-the-before-and-after-pseudo-elements-in-css/ */
   content: "(Click for full poem)";
   display: block;
@@ -21,7 +21,7 @@ cite {
   font-style: italic;
 }
 
-.slide .source {
+section .source {
   font-size: x-small;
   padding-left: 5em;
 }
@@ -34,5 +34,6 @@ cite {
   border-color: #8D072D;
 }
 
-p {margin-top: 2em;}
-
+p {
+  margin-top: 2em;
+}

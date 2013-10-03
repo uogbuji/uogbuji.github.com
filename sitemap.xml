@@ -6,7 +6,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://uche.ogbuji.net/</loc>
-  <lastmod>2013-09-29</lastmod>
+  <lastmod>2013-10-02</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -32,6 +32,11 @@
  <url>
   <loc>http://uche.ogbuji.net/listings/</loc>
   <lastmod>2013-09-29</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/lit/</loc>
+  <lastmod>2013-10-02</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
