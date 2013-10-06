@@ -13,21 +13,44 @@ I'm a poet, essayist and editor. Though my degree is in electrical and computer 
 <!---->
   <div class="slide-right">
   <section>
+    <a href="http://eternalhauntedsummer.com/issues/winter-solstice-2012/mysteries-of-harvest-vi/">
+      <h2>Mysteries of Harvest VI</h2>
+      <p class="source">
+        <cite>Eternal Haunted Summer,</cite> December, 2012</p>
+        <p>Kore, quick rising, quick falling, is the sun<br/>Through Libra, Scorpio, Sagittarius — signs<br/>Some call inferior-shy-of-infernal, south<br/>Towards solstice, outside Classical insight.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://theofipress.webs.com/ogbujiuche.htm">
+      <h2>Papa Peugeot</h2>
+      <p class="source">
+        <cite>The Ofi Press Magazine,</cite> October, 2012</p>
+        <p>When Britain left us those fine railways<br/>We thought of course "how utterly commie!"<br/>Give me sole sunroof, first person berth all balmy,<br/>I'll take those potholes and the go-slow.<br/>You dey look my moto, oga roadblock police?<br/>This one betta, gon, no be your papa Peugeot.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://scree.co/?page_id=323">
+      <h2>Mango flesh &amp; Mysteries of Harvest II</h2>
+      <h3>Two poems in Scree, pages 55 &amp; 59</h3>
+      <p class="source">
+        <cite>Scree,</cite> April, 2012</p>
+        <p>I'd also forgotten—what crackling recall!—<br/>The many shades of mango flesh,<br/>The many textures of mango flesh,<br/>The tumescences of varied fruit,<br/>Sacred arrays upon seasonal trays,<br/>Indiscreet colors ablush, all orange,<br/>Formulae told at the tongue, all sweet.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
     <a href="http://www.unsplendid.com/4-1/4-1_ogbuji_manna_frames.htm">
       <h2>Manna and the maxim gun</h2>
       <p class="source">
         <cite>Unsplendid,</cite> January, 2012</p>
-      <pre>Herod paid for peace in blood,
-Quite careful it was not his own.
-The red cap chiefs stack up their wealth,
-Shards of what once was bred in bone.
-
-Church tales of wandering accursed—
-It's forty years full fifty times;
-Malaria did scurvy work
-Until quinine did work of limes.
-</pre>
-    </a>
+        <p>Herod paid for peace in blood,<br/>Quite careful it was not his own.<br/>The red cap chiefs stack up their wealth,<br/>Shards of what once was bred in bone.<br/>
+      </p>
+      <p>Church tales of wandering accursed—<br/>It's forty years full fifty times;<br/>Malaria did scurvy work<br/>Until quinine did work of limes.<br/>
+        <br/>
+      </p>
+      </a>
   </section>
   <section>
     <a href="http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/">
@@ -35,11 +58,10 @@ Until quinine did work of limes.
       <h3>(scroll down to 5th poem)</h3>
       <p class="source">
         <cite>Mountain Gazette,</cite> January, 2012</p>
-      <pre>Head upside home fried
-Champagne powder, I lip-smack
-Fatback...
-</pre>
-    </a>
+        <p>Head upside home fried<br/>Champagne powder, I lip-smack<br/>Fatback...<br/>
+        <br/>
+      </p>
+      </a>
   </section>
   <section>
     <a href="http://www.stringpoet.com/2011/12/translation-uche-ogbuji/">
@@ -47,13 +69,10 @@ Fatback...
       <h3>Two poems: A translation and a looser adaptation of “El Amor Ascendía Entre Nosotros,” by Miguel Hernandez</h3>
       <p class="source">
         <cite>String Poet,</cite> December, 2011</p>
-      <pre>Desire flooded limbs restrained,
-Overwhelmed our grasping senses,
-Left us vulnerable to stroke,
-And dumb to use the orb as dish
-To serve each tasty other.
-</pre>
-    </a>
+        <p>Desire flooded limbs restrained,<br/>Overwhelmed our grasping senses,<br/>Left us vulnerable to stroke,<br/>And dumb to use the orb as dish<br/>To serve each tasty other.<br/>
+        <br/>
+      </p>
+      </a>
   </section>
   <section>
     <a href="http://ithacalit.com/uche-ogbuji.html">
@@ -61,70 +80,41 @@ To serve each tasty other.
       <h3>Two poems</h3>
       <p class="source">
         <cite>IthacaLit,</cite> September, 2011</p>
-      <pre>A moment that started with the friendly
-Wave of every day evolved into
-Tsunami of the sidewalk as you fled.
-Space exploded so fast your neighbors left
-Their hellos, goodbyes, their sorries, thank yous,
-Water cooler yarns and lame jokes behind;
-Buried with each the scraps the other said,
-Lost between comma and exclamation.
-What brush hand daubed those seconds in dread?
-</pre>
-    </a>
+        <p>A moment that started with the friendly<br/>Wave of every day evolved into<br/>Tsunami of the sidewalk as you fled.<br/>Space exploded so fast your neighbors left<br/>Their hellos, goodbyes, their sorries, thank yous,<br/>Water cooler yarns and lame jokes behind;<br/>Buried with each the scraps the other said,<br/>Lost between comma and exclamation.<br/>What brush hand daubed those seconds in dread?<br/>
+        <br/>
+      </p>
+      </a>
   </section>
   <section>
     <a href="http://soundzine.net/index.php?option=com_content&amp;view=article&amp;id=287%3Auche-ogbuji&amp;catid=34%3Apoetry&amp;Itemid=53">
       <h2>Fortune of Chi</h2>
       <p class="source">
         <cite>Soundzine,</cite> August, 2011</p>
-      <pre>Some randomized permutation of genes
-Spelled these very left and right brain cortices—
-Spotlight nerves on sheer possibility;
-Some Mendel melody conjured these eyes,
-These muscles, grafted these veins under this skin;
-I am too many pin-point faults to be
-By design yet I crown my own life's fitness:
-I am perfected fortune of my chi.
-</pre>
-    </a>
+        <p>Some randomized permutation of genes<br/>Spelled these very left and right brain cortices—<br/>Spotlight nerves on sheer possibility;<br/>Some Mendel melody conjured these eyes,<br/>These muscles, grafted these veins under this skin;<br/>I am too many pin-point faults to be<br/>By design yet I crown my own life's fitness:<br/>I am perfected fortune of my chi.<br/>
+        <br/>
+      </p>
+      </a>
   </section>
   <section>
     <a href="http://www.coriummagazine.com/?page_id=602">
       <h2>Demoiselle</h2>
       <p class="source">
         <cite>Corium Magazine,</cite> June, 2010</p>
-      <pre>Every bush has its berry
-With soft fingers and a long tongue,
-Slow, wide open like a Sunday afternoon.
-But she doesn't fool me,
-Alcohol all on her breath
-Like a ghost in the window
-Of an abandoned house.
-Her hips don't tell my hands like yours.
-You're a soul flame.
-</pre>
-    </a>
+        <p>Every bush has its berry<br/>With soft fingers and a long tongue,<br/>Slow, wide open like a Sunday afternoon.<br/>But she doesn't fool me,<br/>Alcohol all on her breath<br/>Like a ghost in the window<br/>Of an abandoned house.<br/>Her hips don't tell my hands like yours.<br/>You're a soul flame.<br/>
+        <br/>
+      </p>
+      </a>
   </section>
   <section>
     <a href="http://www.thenervousbreakdown.com/uogbuji/2010/03/growing-up-misfit/">
       <h2>Growing Up Misfit</h2>
       <p class="source">
         <cite>The Nervous Breakdown,</cite> March, 2010</p>
-      <pre>When your eyes learn to look beyond state,
-          to peers beyond infinity,
-Okigbo, Villon, Pound, Plath, sometimes
-          you forget that misfit can grow to vanity.
-I've come to grow into readiness for company,
-          the scent and crinkled space of shared humanity.
-
-Collage is completion from gestalt-spackled gaps,
-          pieces that never fit, that itch.
-These rub away their corners into the circle
-          of the whole.  They don't match,
-They mate; their seed elaborates the daisy chain,
-          fit and unfit bait and switch.</pre>
-    </a>
+        <p>When your eyes learn to look beyond state,<br/>          to peers beyond infinity,<br/>Okigbo, Villon, Pound, Plath, sometimes<br/>          you forget that misfit can grow to vanity.<br/>I've come to grow into readiness for company,<br/>          the scent and crinkled space of shared humanity.<br/>
+      </p>
+      <p>Collage is completion from gestalt-spackled gaps,<br/>          pieces that never fit, that itch.<br/>These rub away their corners into the circle<br/>          of the whole.  They don't match,<br/>They mate; their seed elaborates the daisy chain,<br/>          fit and unfit bait and switch.<br/>
+      </p>
+      </a>
   </section>
 </div>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en" xml:base="http://uche.ogbuji.net">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="http://uche.ogbuji.net">
   <id>http://uche.ogbuji.net/feeds/poems.atom</id> 
   <title>Uche Ogbuji's poems</title>
   <link rel="self" href="http://uche.ogbuji.net/feeds/poems.atom" />
@@ -16,7 +16,7 @@
   -->
 
 <!--
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id></id>
     <title></title>
     <updated>2013-10-01</updated>
@@ -24,6 +24,7 @@
     <source>
       <id></id>
       <title></title>
+      <link href=""/>
     </source>
     <author>
       <name>Uche Ogbuji</name>
@@ -39,7 +40,410 @@
   </entry>
 -->
 
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+
+  <entry>
+    <id>http://lavrev.net/muse/ogbuji.html</id>
+    <title>Obscured Sunshine</title>
+    <updated>2012-12-03</updated>
+    <link href="http://lavrev.net/muse/ogbuji.html"/>
+    <source>
+      <id>http://lavrev.net</id>
+      <title>Lavender Review</title>
+      <link href="http://lavrev.net"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>O darkling core, O brilliant fringe,
+As since these days of missing you
+Have brought me sunset less its tinge
+Of fire, a darkened vault above
+Without its twinklers; creeping through
+My mind a hush, recalling love.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://eternalhauntedsummer.com/issues/winter-solstice-2012/ala-entertains/</id>
+    <title>Ala Entertains</title>
+    <updated>2012-12-20</updated>
+    <link href="http://eternalhauntedsummer.com/issues/winter-solstice-2012/ala-entertains/"/>
+    <source>
+      <id>http://eternalhauntedsummer.com</id>
+      <title>Eternal Haunted Summer</title>
+      <link href="http://eternalhauntedsummer.com"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Demeter twirls a barley stalk and laughs with Ala
+Next to her, between whose knees rest Kore's head.
+Even in this time whose custom grants Ala's fingers
+Rest from blackening soil for her toiling votaries
+She works a hostess courtesy in virgin tuber oil
+Into cornrows she has wrought of Kore's hair.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://eternalhauntedsummer.com/issues/winter-solstice-2012/mysteries-of-harvest-vi/</id>
+    <title>Mysteries of Harvest VI</title>
+    <updated>2012-12-20</updated>
+    <link href="http://eternalhauntedsummer.com/issues/winter-solstice-2012/mysteries-of-harvest-vi/"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://eternalhauntedsummer.com</id>
+      <title>Eternal Haunted Summer</title>
+      <link href="http://eternalhauntedsummer.com"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Kore, quick rising, quick falling, is the sun
+Through Libra, Scorpio, Sagittarius — signs
+Some call inferior-shy-of-infernal, south
+Towards solstice, outside Classical insight.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://theofipress.webs.com/sdarsenghorlopold.htm</id>
+    <title>Femme Noire</title>
+    <updated>2013-01-01</updated>
+    <link href="http://theofipress.webs.com/sdarsenghorlopold.htm"/>
+    <source>
+      <id>http://theofipress.webs.com/</id>
+      <title>The Ofi Press Magazine</title>
+      <link href="http://theofipress.webs.com/"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Bare lady, black lady
+Robed in your color, which is life, in your form, which is beauty
+I grew in your shade; sweetness of your hands swathed my eyes
+And there at the summer day zenith, I discovered you, Promised Land, in heights of a scorched, lofty pass
+And your beauty blasts me, full-hearted, like lightning flash of an eagle.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://theofipress.webs.com/ogbujiuche.htm</id>
+    <title>Papa Peugeot</title>
+    <updated>2012-10-27</updated>
+    <link href="http://theofipress.webs.com/ogbujiuche.htm"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://theofipress.webs.com/</id>
+      <title>The Ofi Press Magazine</title>
+      <link href="http://theofipress.webs.com/"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>When Britain left us those fine railways
+We thought of course "how utterly commie!"
+Give me sole sunroof, first person berth all balmy,
+I'll take those potholes and the go-slow.
+You dey look my moto, oga roadblock police?
+This one betta, gon, no be your papa Peugeot.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://www.strongverse.org/cgi-bin/poiesis.pl?search=682&amp;header=number&amp;method=perfect&amp;template=poem</id>
+    <title>Spirit Child</title>
+    <updated>2013-01-04</updated>
+    <link href="http://www.strongverse.org/cgi-bin/poiesis.pl?search=682&amp;header=number&amp;method=perfect&amp;template=poem"/>
+    <source>
+      <id>http://www.strongverse.org</id>
+      <title>Strong Verse</title>
+      <link href="http://www.strongverse.org"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre><i>Upon "The Icarus Girl," by Helen Oyeyemi</i>
+
+A spirit child is just a child
+In hunger, sleep and play
+The spirit world is just a world,
+A night within our day.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://www.redfez.net/poetry/1714</id>
+    <title>Rag Tags</title>
+    <updated>2012-11-13</updated>
+    <link href="http://www.redfez.net/poetry/1714"/>
+    <source>
+      <id>http://www.redfez.net</id>
+      <title>Red Fez</title>
+      <link href="http://www.redfez.net"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Such rag tags those clouds!
+They're on the sun's dole
+All sated at belly
+And gleaming at trim.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://www.coloradolifemagazine.com/novemberdecember-2012.html</id>
+    <title>Air Shot</title>
+    <updated>2012-11-01</updated>
+    <source>
+      <id>http://www.coloradolifemagazine.com/</id>
+      <title>Colorado Life</title>
+      <link href="http://www.coloradolifemagazine.com/"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Measured gaze at white, jutting hard-pack
+Iceberg one-ninth framed in the horizon;
+Eight parts dim mass bowed to angle of attack;
+Shot of hot red blood thaws will from cold
+Call "drop" and wend down the funneling track.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://www.ofzoos.tk/1.2=16ucheogbuji.html</id>
+    <title>À la Recherche</title>
+    <updated>2012-10-01</updated>
+    <link href="http://www.ofzoos.tk/1.2=16ucheogbuji.html"/>
+    <source>
+      <id>http://www.ofzoos.tk/1.2=16ucheogbuji.html</id>
+      <title>OF ZOOS</title>
+      <link href="http://www.ofzoos.tk/1.2=16ucheogbuji.html"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>His brain's bare purchase 
+From the top:
+He's homeward bound.
+He's left the shop.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://anglepoetry.yolasite.com/resources/Angle%20Issue%202.pdf</id>
+    <title>"Pas de Deux" &amp; "Pneumatic"</title>
+    <subtitle>Two poems on pages 86 &amp; 87</subtitle>
+    <updated>2012-10-05</updated>
+    <link href="http://anglepoetry.yolasite.com/resources/Angle%20Issue%202.pdf"/>
+    <source>
+      <id>http://anglepoetry.yolasite.com/</id>
+      <title>Angle Poetry Journal</title>
+      <link href="http://anglepoetry.yolasite.com/"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Though I've been slung from other duets,
+Accused of tone deafness such that
+I shrink to fever and frog-sweats
+
+Whenever whispered, coy-eyed chat
+Suggests a swinging through the scales
+Might be toward; 
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://www.shadowroad.org/?p=540</id>
+    <title>To Hell Tahitians!</title>
+    <subtitle>(Apparently not archived)</subtitle>
+    <updated>2012-09-22</updated>
+    <source>
+      <id>http://www.shadowroad.org</id>
+      <title>Shadow Road Quarterly</title>
+      <link href="http://www.shadowroad.org"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p><i>"A woman who attacked a painting by Paul Gauguin hanging in the National Gallery in Washington DC said the French artist was "evil"..."</i>—BBC, 5 April 2011</p>
+        <pre>
+Did she perhaps see the square Gauguin
+Made of their shoulders, and the finger-creep
+Of shadows at their necks, and their gaze
+So cast like fishing lines in age-old deep?
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://www.shadowroad.org/?p=637</id>
+    <title>Coy Luna</title>
+    <subtitle>(Apparently not archived)</subtitle>
+    <updated>2012-09-22</updated>
+    <source>
+      <id>http://www.shadowroad.org</id>
+      <title>Shadow Road Quarterly</title>
+      <link href="http://www.shadowroad.org"/>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>Moon turns its way through our notice:
+Twenty-eight days is some languor
+For these strobed winks!
+I stand my writing, my loving,
+My yearnings on their tip-toes
+As Luna shrinks.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://storiesforjapan.blogspot.com.au/2012/08/yamato-nadeshiko.html</id>
+    <title>Yamato Nadeshiko</title>
+    <updated>2013-10-01</updated>
+    <link href="http://storiesforjapan.blogspot.com.au/2012/08/yamato-nadeshiko.html"/>
+    <source>
+      <link href="http://storiesforjapan.blogspot.com.au"/>
+      <id>http://storiesforjapan.blogspot.com.au</id>
+      <title>New Sun Rising: Stories for Japan</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre><i>Women's World Cup Final, 2011</i>
+
+Nippon, land and lore
+Invokes such fascination,
+All to be admired…
+No! Not all to be admired…
+Such bold type of shy contrasts.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://blindoraclepress.wordpress.com/issue-i/a-heart-to-break-for-longing-uche-ogbuji</id>
+    <title>A heart to break for longing</title>
+    <updated>2012-04-20</updated>
+    <link href="http://blindoraclepress.wordpress.com/issue-i/a-heart-to-break-for-longing-uche-ogbuji"/>
+    <source>
+      <id>http://blindoraclepress.wordpress.com</id>
+      <title>Blind Oracle Press</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>The crumpled gap in your determination
+Is full width of your quick-cemented smile.
+That dead rictus purloined from the mourning,
+Refuses truth to those whose loving hands
+Press malaria from your heaving bosom;
+We call you from abyss, calm! we insist.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
+    <id>http://scree.co/?page_id=323</id>
+    <title>Mango flesh &amp; Mysteries of Harvest II</title>
+    <subtitle>Two poems in Scree, pages 55 &amp; 59</subtitle>
+    <updated>2012-04-29</updated>
+    <link href="http://scree.co/?page_id=323"/>
+    <category term="@choice"/>
+    <source>
+      <id>http://scree.co/</id>
+      <title>Scree</title>
+    </source>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <pre>I'd also forgotten—what crackling recall!—
+The many shades of mango flesh,
+The many textures of mango flesh,
+The tumescences of varied fruit,
+Sacred arrays upon seasonal trays,
+Indiscreet colors ablush, all orange,
+Formulae told at the tongue, all sweet.
+        </pre>
+      </div>
+    </summary>
+  </entry>
+  <entry>
     <id>http://versewisconsin.org/Issue110/audio.html</id>
     <title>At Wounded Knee</title>
     <subtitle>Poem text in Verse Wisconsin #110 print; link is to audio only</subtitle>
@@ -70,7 +474,7 @@ We shake from cold, we smell the ash
   <!-- Older -->
 
 
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.unsplendid.com/4-1/4-1_ogbuji_manna_frames.htm</id>
     <title>Manna and the maxim gun</title>
     <updated>2012-01-02</updated>
@@ -100,7 +504,7 @@ Until quinine did work of limes.
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/</id>
     <title>Endo</title>
     <subtitle>(scroll down to 5th poem)</subtitle>
@@ -125,7 +529,7 @@ Fatback...
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.stringpoet.com/2011/12/translation-uche-ogbuji/</id>
     <title>Love ascended between us &amp; Folly between us</title>
     <subtitle>Two poems: A translation and a looser adaptation of &#8220;El Amor Ascendía Entre Nosotros,&#8221; by Miguel Hernandez</subtitle>
@@ -152,7 +556,7 @@ To serve each tasty other.
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://ithacalit.com/uche-ogbuji.html</id>
     <title>Devil's Backbone &amp; Word Wounds in Time</title>
     <subtitle>Two poems</subtitle>
@@ -183,7 +587,7 @@ What brush hand daubed those seconds in dread?
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.the-flea.com/Issue19/SupervillaininTraining.html</id>
     <title>Supervillain in Training</title>
     <updated>2011-09-19</updated>
@@ -212,7 +616,7 @@ Propelled by legs in floor routine.
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.redfez.net/poetry/1392</id>
     <title>Rhapsody On Q A</title>
     <updated>2011-08-01</updated>
@@ -238,7 +642,7 @@ To present serene, composed asana;
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://lucidrhythms.com/2011-2/Ogbuji_Uche.htm</id>
     <title>What Belief</title>
     <updated>2011-08-05</updated>
@@ -272,7 +676,7 @@ Are left to my belief?
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://soundzine.net/index.php?option=com_content&amp;view=article&amp;id=287%3Auche-ogbuji&amp;catid=34%3Apoetry&amp;Itemid=53</id>
     <title>Fortune of Chi</title>
     <updated>2011-08-01</updated>
@@ -301,7 +705,7 @@ I am perfected fortune of my chi.
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.the-flea.com/Issue16/VillonaudoftheBarfleaBard.html</id>
     <title>Villonaud of the Barflea Bard</title>
     <updated>2011-05-22</updated>
@@ -330,7 +734,7 @@ Yield bruckle skin to miching flea.
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.thenervousbreakdown.com/uogbuji/2011/04/if-all/</id>
     <title>If All</title>
     <updated>2011-04-21</updated>
@@ -354,7 +758,7 @@ How shall our children live?
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.versewisconsin.org/wiprotests/apr8-apr30.html</id>
     <title>The Madison Front</title>
     <subtitle>Scroll down to 3rd poem</subtitle>
@@ -384,7 +788,7 @@ On molecules found everywhere.
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.coriummagazine.com/?page_id=602</id>
     <title>Demoiselle</title>
     <updated>2010-06-01</updated>
@@ -414,7 +818,7 @@ You're a soul flame.
       </div>
     </summary>
   </entry>
-  <entry xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <entry>
     <id>http://www.thenervousbreakdown.com/uogbuji/2010/03/growing-up-misfit/</id>
     <title>Growing Up Misfit</title>
     <updated>2010-03-29</updated>
