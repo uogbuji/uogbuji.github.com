@@ -6,16 +6,24 @@
 .. slug: index
 .. template: slideuser.tmpl
 
-![Ndewo, Colorado](/img/NdewoColoradoPlate.jpg)
-
 I'm excited to announce my collection of poetry, Ndewo, Colorado ([Kelsay Books](http://kelsaybooks.com/), due in November, 2013). You might as well just listen to me tell you about it, and of course that way learn about the meaning and pronunciation.
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F111975949"></iframe>
+<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F111975949"></iframe>
 
 Some of the poems in this book have already been published elsewhere, so enjoy this preview I've compiled.
 
 <!---->
-  <div class="slide-right">
+<div  class="cycle-slideshow slide-right"
+      data-cycle-slides="> section"
+      data-cycle-fx="scrollHorz"
+      data-cycle-pause-on-hover="true"
+      data-cycle-speed="2000"
+      data-cycle-auto-height="calc"
+      data-cycle-pager=".cycle-pager"
+      data-cycle-prev="#prev"
+      data-cycle-next="#next"
+  >
+  <!-- see: http://jquery.malsup.com/cycle2/demo/non-image.php -->
     <section>
       <a href="http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/">
       <h2>Endo (from "Mountain Tanka")</h2>
@@ -141,7 +149,13 @@ Science and history are the idle chatter here:&hellip;
       </p>
       </a>
     </section>
-  </div>
+</div>
+
+<div class="center cycle-prevnext">
+    <a href=# id="prev">Prev</a> 
+    <a href=# id="next">Next</a>
+</div>
+<div class="cycle-pager"></div>
 
 <!-- 
  style="max-width: 150%;"
@@ -163,6 +177,11 @@ Science and history are the idle chatter here:&hellip;
     </tr>
 </table>
 
+<!--
+![Ndewo, Colorado](/img/NdewoColoradoPlate.jpg)
+-->
+
+<img class="center" src="/img/NdewoColoradoPlate.jpg" title="Ndewo, Colorado">
 
 ---
 

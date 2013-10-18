@@ -11,7 +11,109 @@ I'm a poet, essayist and editor. Though my degree is in electrical and computer 
 ## Selected poems
 
 <!---->
-  <div class="slide-right">
+<div  class="cycle-slideshow slide-right"
+      data-cycle-slides="> section"
+      data-cycle-fx="scrollHorz"
+      data-cycle-pause-on-hover="true"
+      data-cycle-speed="2000"
+      data-cycle-auto-height="calc"
+      data-cycle-prev="#prev"
+      data-cycle-next="#next"
+  >
+  <!-- see: http://jquery.malsup.com/cycle2/demo/non-image.php -->
+  <div class="cycle-pager"></div>
+  <section>
+    <a href="http://www.musepiepress.com/shotglass/uche_ogbuji1.html">
+      <h2>Nnenna</h2>
+      <p class="source">
+        <cite>Shot Glass,</cite> October, 2013</p>
+        <p>How shall I get you something of dear nnenna?<br/>Or even just the "dear" when her cipher being<br/>Has but dream traces in my own live meaning;<br/>Can I project her self-god's promised witness?<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://atavicpoetry.com/unscheduled-flight/">
+      <h2>Unscheduled Flight</h2>
+      <p class="source">
+        <cite>Atavic Poetry,</cite> October, 2013</p>
+        <p>Where does one go in a black-lash mood<br/>But to a mountain town teahouse.<br/>He’d planned to use its walls to break his fist;<br/>He’d flung himself upon the ground—<br/>Somehow he’d missed.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://anglepoetry.yolasite.com/resources/Angle%20Issue%204.pdf">
+      <h2>Ad Astra per Tacta &amp; Satura Lanx (PDF)</h2>
+      <h3>Two poems</h3>
+      <p class="source">
+        <cite>Angle Poetry,</cite> September, 2013</p>
+        <p>The drift of helium and hydrogen,<br/>Not faint in its suggestion of my mind,<br/>Which creeps to your Sargasso Sea for men<br/>Under the birthing glow of humankind.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://djstpoetry.org/issues/2013/6/30/current-issue">
+      <h2>Dear Biafra</h2>
+      <h3>Poem's original title is "Dear Bonny, Dear Biafara,"</h3>
+      <p class="source">
+        <cite>Don't Just Sit There,</cite> October, 2013</p>
+        <p>My many trips through your waters where waves<br/>And tides pinch-mold the Niger and its Cross<br/>Nephew taught me the tongues my father's rich<br/>Loam supplied, as did my mother's spice board.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://www.levelerpoetry.com/catamount-levelheaded/">
+      <h2>Catamount</h2>
+      <p class="source">
+        <cite>Leveler,</cite> June, 2013</p>
+        <p>Que tiene amigo? Léon! Hermoso es!<br/>We all know that poem, that plaint for frost-face,<br/>Done in by poachers mad for yellow pelt;<br/>We teach it to our children in our schools,<br/>Spread wide along the Front Range<br/>And flung in pockets of the moneyed belt<br/>Where diamond mountain life buzzes against<br/>Gold flecks exposed as elder snows melt.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://www.stringpoet.com/2013/05/5-uche-ogbuji/">
+      <h2>Colorado… Du Grand Soleil… Du Vent</h2>
+      <p class="source">
+        <cite>String Poet,</cite> May, 2013</p>
+        <p>Continental divide is slingshot cord,<br/>Flyover country’s catapult of storms;<br/>The wind has plains to sweep and streams to ford<br/>And hills to shape into outrageous forms.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://qarrtsiluni.com/2013/05/28/autumn-equinox-creature-song/">
+      <h2>Autumn Equinox Creature Song</h2>
+      <p class="source">
+        <cite>Qarrtsiluni,</cite> May, 2013</p>
+        <p>Summer is receding out<br/>Shape up to yell “Shoo!”<br/>The leavings of trees whip through the breeze<br/>And garnish the crumbs we strew;<br/>Away rats: “Shoo!”<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://www.nicholls.edu/gris-gris/issue-2/two-kitchens/">
+      <h2>Two Kitchens</h2>
+      <p class="source">
+        <cite>Gris-Gris,</cite> May, 2013</p>
+        <p>I was alone, but my hand took on my mother’s,<br/>Hovering over the pot with a command gesture,<br/>Smothering all thought inessential to the task,<br/>All distractions from the essences I’d ranged:<br/>Cinnamon, cardamom, and then, snake-charmed<br/>From coriander, cumin and turmeric<br/>I swelled to the stove, which sprang wormhole<br/>To Chengdu, to Tehran, to Kabul and Lhasa,<br/>And over the möbius loop to Lomé, Yaoundé and Calabar.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://outsideinmagazine.com/issue-twelve/poetry/piazza-dei-miracoli-uche-ogbuji/">
+      <h2>Piazza dei Miracoli</h2>
+      <p class="source">
+        <cite>Outside In Magazine,</cite> April, 2013</p>
+        <p>White phosphorus to blinking eyes,<br/>Bleach of beach bone from autumn of the gate<br/>Then the sudden incandescence<br/>Then the green<br/>Then the warm mottling of the green<br/>Then the crowds and hawkers,<br/>Ramshackles and curbside blankets<br/>Spread with trinkets.<br/>        <br/>
+      </p>
+      </a>
+  </section>
+  <section>
+    <a href="http://ithacalit.com/uche-ogbuji1.html">
+      <h2>Above Left Hand Canyon &amp; How Close?</h2>
+      <p class="source">
+        <cite>IthacaLit,</cite> March, 2013</p>
+        <p>I, buffalo-brown transplant, enticed hence<br/>By what Cheyenne would call the pale-suited guide,<br/>Squint past bark beetles engaged in arborcide,<br/>Past insulted, host lodgepole whose shoots heighten<br/>The kite-eye perspective, the skied sense<br/>From green to pale green, from blue to pale blue,<br/>And ash and ash we've smudged where they meet from this view;<br/>        <br/>
+      </p>
+      </a>
+  </section>
   <section>
     <a href="http://eternalhauntedsummer.com/issues/winter-solstice-2012/mysteries-of-harvest-vi/">
       <h2>Mysteries of Harvest VI</h2>
@@ -116,6 +218,11 @@ I'm a poet, essayist and editor. Though my degree is in electrical and computer 
       </p>
       </a>
   </section>
+</div>
+
+<div class="center">
+    <a href=# id="prev">Prev</a> 
+    <a href=# id="next">Next</a>
 </div>
 
 ## Literary projects
