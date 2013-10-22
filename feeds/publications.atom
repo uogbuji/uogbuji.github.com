@@ -123,7 +123,9 @@
     <title>The Art of Linked Data: Architecting Recollection</title>
     <subtitle></subtitle>
     <link href="http://semanticweb.com/the-art-of-linked-data-architecting-recollection_b23186"/>
-    <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
+    <link href="http://semanticweb.com/" rel="via" title="Semanticweb.com"/>
+    <category term="Library"/>
+    <category term="Python"/>
     <category term="xml"/>
     <category term="semantic web"/>
     <category term="data visuaization"/>
@@ -137,6 +139,7 @@
     <summary type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">From the earliest days of computer science we’ve recognized that humans are infuriatingly sloppy, and that computers are infuriatingly precise. The Web was the first information space to scale globally in part because its architecture struck a good balance between precision and sloppiness, but also because it supported user-friendly mechanisms for consuming its nodes (pictures, embedded audio and video, scripting, etc.)  Linked Data helps codify such balanced architecture when you want a little bit more controlled context, and at Zepheira we feel that the right user-centered application basics are key to empowering users with such control of context. Recollection is an example within the cultural heritage space, but also broadly applicable, of how such systems provide value in practice.
       </div>
+      <!--Discussion of the architecture used to implement the Recollection Project for the US Library of Congress, and the motivatiosn for the architecture. In this column “The art of Linked Data” a few of us at Zepheira will try to bring observations, reflections and practical advice from various projects applying Linked Data and thus Semantic Web principles across diverse domains.-->
     </summary>
   </entry>
 
@@ -460,30 +463,6 @@
       <div xmlns="http://www.w3.org/1999/xhtml">
 <p>For a while, there has been a struggle for the future of markup on the web, a struggle between the W3C's XHTML 2 and HTML5, developed by the major browser vendors under a separate organizational umbrella. First, the W3C took over HTML5, and now it recently announced the sunset of the XHTML 2 effort. This makes a significant difference to the future of XML on the web, and furthermore, because of HTML5's momentum, it is now a technology that every XML developer already has to deal with.</p>
 <p>But fans of XML need not despair: HTML5 supports a proper XML serialization. Learn about the XML form of HTML5 including some key differences from older XHTML conventions and learn how to practically apply this vocabulary in modern web browsers.</p>
-      </div>
-    </summary>
-  </entry>
-
-  <entry>
-    <id>http://semanticweb.com/the-art-of-linked-data-architecting-recollection_b23186</id>
-    <title>The Art of Linked Data: Architecting Recollection</title>
-    <link href="http://semanticweb.com/the-art-of-linked-data-architecting-recollection_b23186"/>
-    <link href="http://semanticweb.com/" rel="via" title="Semanticweb.com"/>
-    <category term="Library"/>
-    <category term="tech"/>
-    <category term="Python"/>
-    <category term="Web services"/>
-    <category term="REST"/>
-    <category term="design"/>
-    <updated>2011-09-20T16:00:00Z</updated>
-    <author>
-      <name>Uche Ogbuji</name>
-      <uri>http://uche.ogbuji.net</uri>
-      <email>uche@ogbuji.net</email>
-    </author>
-    <summary type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">
-Discussion of the architecture used to implement the Recollection Project for the US Library of Congress, and the motivatiosn for the architecture. In this column “The art of Linked Data” a few of us at Zepheira will try to bring observations, reflections and practical advice from various projects applying Linked Data and thus Semantic Web principles across diverse domains.
       </div>
     </summary>
   </entry>
@@ -3816,9 +3795,9 @@ Use the node-set extension to break down the XSLT operation into two or more pas
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/past_present_future.pdf</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/past_present_future.pdf</id>
     <title>The Past, Present and Future of Web Services</title>
-    <link href="/tech/articles/past_present_future.pdf"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/past_present_future.pdf"/>
     <link href="http://www.webservices.org" rel="via" title="WebServices.org"/>
     <category term="XML"/>
     <category term="Web Services"/>
@@ -3840,9 +3819,9 @@ Those who find success using Web services will be those who understand the techn
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/bulging-std.html</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/bulging-std.html</id>
     <title>Battle of the Bulging Standards</title>
-    <link href="/tech/articles/bulging-std.html"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/bulging-std.html"/>
     <link href="http://www.sys-con.com/" rel="via" title="XML Journal"/>
     <category term="XML"/>
     <category term="W3C XML Schema language (WXS)"/>
@@ -4188,9 +4167,9 @@ Aimed at general Web professionals, this article discusses the ambitions behind 
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/rdfws-paper.doc?xslt=/ftss/data/docbook_html1.xslt</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/rdfws-paper.doc?xslt=/ftss/data/docbook_html1.xslt</id>
     <title>Using RDF for Web Services</title>
-    <link href="/tech/articles/rdfws-paper.doc?xslt=/ftss/data/docbook_html1.xslt"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/rdfws-paper.doc?xslt=/ftss/data/docbook_html1.xslt"/>
     <link href="http://idealliance.org" rel="via" title="Idealliance"/>
     <category term="Web services"/>
     <category term="RDF"/>
@@ -4317,9 +4296,9 @@ XML application developers usually have to contend with the complexities of SAX 
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/xml-europe-2002.pdf</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/xml-europe-2002.pdf</id>
     <title>XML, The Model Driven Architecture, and RDF [PDF]</title>
-    <link href="/tech/articles/xml-europe-2002.pdf"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/xml-europe-2002.pdf"/>
     <link href="http://idealliance.org" rel="via" title="Idealliance"/>
     <category term="MDA"/>
     <category term="MOF"/>
@@ -4359,9 +4338,9 @@ Many common XSLT tasks, including simple loops, can be made easier by using spec
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/whatarews.html</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/whatarews.html</id>
     <title>An Introduction to Web services</title>
-    <link href="/tech/articles/whatarews.html"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/whatarews.html"/>
     <link href="http://www.isgmlug.org/" rel="via" title="Interchange, newsletter of the International SGML/XML Users' Group (ISUG)"/>
     <category term="Web Services"/>
     <category term="tech"/><updated>2001-06-01T12:00:00Z</updated>
@@ -4494,9 +4473,9 @@ Uche Ogbuji moves on to a discussion of a far more sophisticated RDF query langu
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/ws-metadata.html</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/ws-metadata.html</id>
     <title>Powering Web Services Through Metadata </title>
-    <link href="/tech/articles/ws-metadata.html"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/ws-metadata.html"/>
     <link href="http://www.webservicesarchitect.com/" rel="via" title="Web Services Architect"/>
     <category term="Web Services"/>
     <category term="RDF"/>
@@ -5508,9 +5487,9 @@ Web Services Description Language (WDSL) is a new specification to describe netw
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/svgpres.html</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/svgpres.html</id>
     <title>SVG: What comes after XML?</title>
-    <link href="/tech/articles/svgpres.html"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/svgpres.html"/>
     <link href="http://www.unixinsider.com" rel="via" title="UNIX Insider"/>
     <category term="SVG"/>
     <category term="XML"/>
@@ -5552,9 +5531,9 @@ One of the jewels in the crown of Python's XML support is the 4Suite collection 
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/schematron.html</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/schematron.html</id>
     <title>Introducing the Schematron: A fresh approach to XML validation and reporting</title>
-    <link href="/tech/articles/schematron.html"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/schematron.html"/>
     <link href="http://www.unixinsider.com" rel="via" title="UNIX Insider"/>
     <category term="Schematron"/>
     <category term="Schemas"/>
@@ -5868,10 +5847,12 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/xmledi.html</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/xmledi.html</id>
     <title>XML: The future of EDI?</title>
-    <link href="/tech/articles/xmledi.html"/>
-    <link href="http://www.unixinsider.com" rel="via" title="UNIX Insider"/>
+    <link href="http://sunsite.uakom.sk/sunworldonline/swol-02-1999/swol-02-xmledi.html"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/xmledi.html"/>
+    <link href="http://www.unixinsider.com" rel="via" title="Sunworld/UNIX Insider"/>
+    <link rel="seealso" href="http://xml.coverpages.org/ogbuji-swol-02-xmledi.html"/>
     <category term="EDI"/>
     <category term="XML"/>
     <category term="UNIX"/>
@@ -5934,9 +5915,9 @@ How the infamous year-2000 bug affects Linux professionals.
     </summary>
   </entry>
   <entry>
-    <id>/tech/articles/oop-ll.pdf</id>
+    <id>http://uche.ogbuji.net/etc/tech/articles/oop-ll.pdf</id>
     <title>An Object-Oriented Language Engine</title>
-    <link href="/tech/articles/oop-ll.pdf"/>
+    <link href="http://uche.ogbuji.net/etc/tech/articles/oop-ll.pdf"/>
     <link href="pctech" rel="via" title="PC Techniques"/>
     <category term="object oriented"/>
     <category term="C++"/>

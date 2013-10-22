@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"><html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>XML The future of EDI?</title>
+<meta name='description' content='IT managers have long complained about the complexity and expense of EDI.  &#10;A vocal and growing group of professionals is advancing XML as the solution &#10;to these woes, and the key to the broader adoption of EDI. Is this just another &#10;car in the hype train, or does XML have a legitimate chance to revamp EDI?  &#10;As in many areas where Internet technologies collide with traditional business, &#10;change is inevitable, but the results are rarely as clear as anticipated. &#10;(3,400 words)&#10;'/>
+<meta name='keywords' content='XML, EDI, extended markup language, electronic data interchange, e-commerce, SGML, HTML, repositories'/>
+<meta name='author' content='Uche Ogbuji'/>
+<meta name='date' content='2001-03-05'/>
+<meta name='live' content='yes'/>
+<meta name='publicationDate' content='1999-02-01'/>
+</head>
+<body marginheight='0' vlink='#551a8b' text='#000000' alink='#FF0000' topmargin='0' link='#0000FF' bgcolor='#FFFFFF'>
+
+<h1 align='CENTER'>
+XML The future of EDI?
+</h1>
+
+<h3 align='CENTER'>
+Can XML revive EDI and accelerate its adoption as the best option for data exchange in this age of the Web?
+</h3>
+
+<i>Originally featured on SunWorld, now <a href='http://itworld.com'>ITWorld</a></i>
+
+<blockquote>
+<strong>Summary</strong><br/>
+IT managers have long complained about the complexity and expense of EDI.  
+A vocal and growing group of professionals is advancing XML as the solution 
+to these woes, and the key to the broader adoption of EDI. Is this just another 
+car in the hype train, or does XML have a legitimate chance to revamp EDI?  
+As in many areas where Internet technologies collide with traditional business, 
+change is inevitable, but the results are rarely as clear as anticipated. 
+<em>(3,400 words)</em>
+
+</blockquote>
+
+<strong>By <a href='mailto:uche.ogbuji@fourthought.com'>Uche Ogbuji</a></strong>
+
+<p>
+</p><hr noshade='noshade'/>
+<p>
+<!-- begin body text -->
+<img height='29' alt='X' align='LEFT' width='26' src='../images/X.gif'/>ML is looking like a magic elixir in a cloudy bottle these days:  
+cheap data exchange, document structure, and a proven cure 
+for warts.
+</p><p>
+Lately, many in the electronic data interchange (EDI) community have
+seized upon XML in a bid to increase the adoption of EDI, which
+traditionally has been expensive and complex to implement.  This is 
+a natural off-shoot of the recent interest in EDI over the Internet, 
+which originally involved traditional EDI formats transferred using 
+SMTP or FTP.  But the idea of improving EDI with structured document 
+approach isn't a new one; there have been several initiatives, such as the 
+Joint EDI group, to motivate SGML-EDI, with no more than spotty practical 
+application.  XML, being a subset of SGML designed with a view to Internet 
+communications, is a natural alternative.
+</p><p>
+While XML is much more than the "roll-your-own-tags" hype that often
+gets the most press, is it enough to replace the complex formats,
+industry experience, and careful standardization that have gone into 
+traditional EDI?  The answers to this question are still falling into place, as I
+will discuss, but the important thing for both XML enthusiasts and
+skeptics to remember is that the XML community hasn't advanced any
+radically new ideas in the area of data management.  Rather, XML's powerful
+appeal lies in the fact that so many IT vendors are rallying around a unified, 
+tractable format, which allows many desirable practices for data management and 
+exchange to be applied more broadly, and at lower cost.  XML is, in many ways, 
+a lucky inheritor to the remarkable success of HTML, and brings with it many
+improvements.  The hope of XML-EDI advocates is that XML will similarly
+drive broad adoption of EDI for business-to-business transactions.
+</p><p>
+Many small or medium enterprises (SMEs) are coming under pressure to
+support EDI.  This pressure usually comes from larger suppliers, customers, or
+distributors (collectively known as trading partners) that have invested
+a great deal in EDI in order to cut their trading costs, and are
+looking to deploy such automation more widely.  
+</p><p>
+Consider a small, Web-based retailer that stocks inventory from a major
+manufacturer.  For years the company has been ordering merchandise from
+the manufacturer using a human-readable purchase order such as that in
+<a href='#sidebar1'>Listing 1</a>,  for 1000 fuzzy dice.  Now the
+manufacturer is demanding that the retailer begin using EDI for
+transactions or else it will add a surcharge to every order to offset
+the cost of handling manual transactions.  The small retailer can't
+find a more lenient supplier, so it has little choice.
+</p><p>
+Unfortunately, EDI compliance means the retailer will now have to
+transmit its purchase orders in a format specified in one of the
+several standard sets for EDI format, the most widely used being ANSI
+X12 and UN/EDIFACT. <a href='#listing2'>Listing 2</a> shows part of an
+ANSI X12 version of the purchase order in Listing 1.  It's possible
+that the retailer's current accounting software supports EDI
+transactions, but not likely.  It will probably have to either convert
+to software that does; purchase software that can make
+the translation (if available); or contract with a third party to 
+convert the data on an ongoing basis.
+</p><p>
+So, would there be any advantage, for the retailer or the manufacturer,
+to using an XML format instead?  Perhaps the retailer's accounting
+software is tailored to Internet commerce, and already uses XML
+formats.  In this case, there are utilities for converting one
+data type definition (DTD) to another, and the conversion to EDI might
+be accomplished by a generic tool.  The resulting transmission would
+certainly be more comprehensible to humans, and perhaps even feasible
+for an employee with a text editor or XML editor to generate.  Of
+course, this would make sense only for occasional or special-case
+transactions, or for monitoring and auditing, but it's still a small
+advantage.  An example of how our sample purchase order might look in
+an XML rendering of X12 is given in <a href='#listing3'>Listing 3</a>.
+This example is loosely based on the work of the XML-EDI group (see <a href='#resources'>Resources</a>).  I say "loosely" because its
+specification is a work in progress, not yet complete, nor even yet
+consistent.
+</p><p>
+But then again, not everyone has yet embraced XML, and many business
+systems use proprietary formats that wouldn't be much less expensive
+to convert to XML as to traditional EDI formats.  Also, our retailer
+has to hope the manufacturer supports XML-based EDI or is
+willing to develop such support: a hard argument to put before a
+company that has already sunk millions of dollars into its traditional
+EDI infrastructure.
+</p><p>
+Indeed, for XML to have a significant effect on EDI, it must solve more
+fundamental shortcomings of traditional systems than just the 
+high-entry barriers for SMEs.  After all, many SMEs have no choice but to
+trade with Fortune 1000 companies that are heavy EDI users.  The effort
+surrounding XML-EDI goes beyond conveniences of data format.
+</p><p>
+</p><p>
+<font size='+1'><strong>The Web network</strong></font><br/>
+Early EDI often involved trading partners' dialing into each other's
+BBSes to initiate transactions.  This approach, of course, led to a
+chaotic and expensive tangle of connections in the supply chain, and
+value-added networks (VANs) emerged to move to a more manageable
+hub-and-spoke model.  Trading partners would require access to the same
+VAN, but once this was set up, they had only the one point of
+connection to manage, and they could tailor their processes
+accordingly.  VANs bloomed into one-stop EDI shops that could translate
+data to standard EDI formats, handle transmissions, and ensure security.
+Unfortunately, VAN service is expensive -- for instance, most VANs
+charge per bit transmitted -- which contributes to the reluctance 
+of SMEs.
+</p><p>
+In the meantime, the Web has developed into a broad,
+flexible, and durable network already used by many businesses.  Why not
+leverage this network to effectively commoditize EDI, allowing much
+wider usage, integration with a greater variety of systems, and cost
+savings?  Indeed, even before XML-EDI, there have been efforts to
+standardize methods for EDI in traditional formats over SMTP and HTTP,
+using MIME and Web forms, and with various practices for guaranteed
+transmission and tight security.  The advantages to this approach
+include reduced cost and broader service coverage (due to the enormous
+existing Internet infrastructure); distributed directory service (DNS
+and beyond) for commerce with arbitrary remote organizations; and the
+peer-to-peer structure of the Internet. Thus,  all participating
+organizations stand to reap the same benefits from EDI. 
+</p><p>
+But as Internet and intranet vendors of every stripe embrace XML for
+the increased structure it could give the Web, it becomes especially
+relevant to consider reformatting EDI to be more Web-friendly.  XML-EDI
+would certainly make sense for integrating EDI into common components
+such as Web browsers and office suites.  So, while it might be
+cumbersome to enter even an XML-based EDI transaction using a text
+editor, an employee might type up a purchase order on his or her favorite 
+XML-compliant word processor and have it injected directly into
+the EDI process.  Or the trading partner in question might have an
+extranet for such transactions, in which case, following authentication, 
+the employee could enter a transaction directly into a Web form 
+which would emit an XML transaction using a generic backend.
+</p><p>
+But perhaps more significantly, many major enterprise resource planning
+(ERP) vendors are building Web-based and often XML-based applications
+into their systems, and XML-EDI would fit naturally into this
+framework.  Of course, many ERP packages already support traditional
+EDI, but if it is as inevitable that they support intranets and
+extranets as it is that they support EDI, there is an obvious reduction
+in cost and complexity if the data exchange standards are unified.
+</p><p>
+Another important consideration is that as the Web is designed to have
+seamless international links, Web-friendly technologies such as XML are
+built with internationalization in mind: character sets, data
+notations, etc.  There are several traditional approaches to EDI
+internationalization, largely under the watchful eye of the ISO, but
+XML-EDI would automatically integrate EDI internationalization into
+ongoing efforts regarding data and document exchange.
+</p><p>
+EDI has adapted itself into a series of vertical markets (textile and
+rail, for example) through specialized interest groups attached to EDI
+standards groups, and also via independent efforts.  Many of these
+dialects of EDI are different enough for similar transactions that they
+complicate the translation effort for any organization that doesn't
+fit squarely into a vertical grouping.  Again, VANs often play a role
+in solving these tangles, but they are an expensive solution.  Similar
+vertical-format efforts are well underway for XML, but in a more
+generalized sense: to encode data for internal management as well as
+for exchange processes.  As such formats mature, it makes sense to
+apply the same technologies to the EDI processes as the internal data.
+Technologies from style sheets to XML-based schema languages could go a
+long way towards streamlining the process of moving data from
+repository to exchange formats.
+</p><p>
+The rigidity traditionally necessitated by EDI leads to some strange
+usage.  For instance, to send a basic message to a trading partner,
+ANSI X12 defines the 864 transaction set: "Text Message." It's almost
+comical to see the rigid structure behind what is essentially an e-mail
+message, but streamlining VANs and format translations necessitates
+this with traditional EDI.  This is one area where the document origins
+of XML actually prove a boon rather than an inhibitor.  Between many
+transaction partners, such one-time messages using 864 format can be
+quite frequent.  Of course, they could simply use Internet e-mail in
+such instances, but they may not want such exceptions to EDI because
+they want to track process flow, have seamless integration into
+transaction processing systems, or they require the legally binding
+proof of send-and-receipt that EDI infrastructure usually provides.
+Here XML-EDI has an advantage.  It has enough structure to integrate
+into the traditional security and process-management of EDI, but such
+SGML/XML-based formats as Text-Encoding Initiative (TEI) or ISO 12083
+would provide traditional document features, and even provide for
+additional seamless integration into office applications and document
+repositories.
+</p><p>
+But as much as traditional EDI and XML-EDI attempt to automate
+transactions, experience has shown that at some point in any real-life
+trading, an internal programmer or outside consultant must be put to
+the task of customizing the system for scenarios not handled by
+off-the-shelf tools From the point of view of such developers, the
+various standard APIs that have emerged around XML are an important
+advantage.  Such specifications as the document object model (DOM), or
+the simple API for XML (SAX) standardize the task of dealing with basic
+XML allowing programmers to concentrate on higher-level semantics.
+(See <a href='#resources'>Resources</a> for links to further
+information on DOM and SAX.) This in turn  improves code reuse and
+helps reduce development effort.
+</p><p>
+<!-- break -->
+</p><p>
+</p><p>
+<font size='+1'><strong>Repositories</strong></font><br/>
+Perhaps more important than these advantages is the furious work being
+done on XML-based repositories.  Again, this isn't new territory for
+EDI: The ISO's Basic Semantic Repository (BSR) project (see <a href='#resources'>Resources</a>), aims to create an official
+international register of "data concepts" (basically, schemata), which
+is actually amenable for use with XML as well as X12 and UN/EDIFACT,
+and is a powerful tool in the gentle migration from traditional EDI to
+XML-EDI.  Unfortunately, politics and short funding have dogged the BSR
+effort.  Pure XML initiatives such as XMI and UREP (see <a href='#resources'>Resources</a>) look to generalize data repositories,
+and with their broad industry support might be the future basis for
+managing business objects.
+</p><p>
+XML-EDI repositories would store, among other things, the data type
+definitions that describe various data sets for EDI transmissions.
+High-level and general repositories would be managed by standards
+organizations, industry-specific repositories by industry groups, and
+more specialized repositories could be maintained between small groups
+of partners, or within individual enterprises (for interdepartmental
+data). Relevant standards support a hierarchical structure so that
+these various levels of repositories can operate together seamlessly,
+and data definitions can be automatically retrieved from the
+appropriate repository depending on how general or specialized the
+domain.
+</p><p>
+XML-EDI repositories will probably also have to store information about
+the format of and constraints on data elements to be useful.  Basic XML
+DTDs allow only limited control in this regard.  XML notations provide
+only a partial solution.  The storage of such schematic information in
+XML-based repositories is still emerging in the various standards.
+Until such issues are worked out, users of XML as well as traditional
+EDI should probably consider specialized EDI repositories such as ISO
+BSR.
+</p><p>
+You might find overall in the arguments for XML-EDI that XML is not
+magically solving any problems of traditional EDI; instead, the
+advantages tend to involve scope.  For better or worse, XML has found
+very broad application in its brief life.  Experts apply it as readily
+to document management as to database management, traditionally very
+divergent domains.  EDI, on the other hand, has always focused on a
+narrow domain: standardized transactions between partners.  XML gains its
+attraction from being the more general technique.  Traditionally,
+enterprises have compiled data systems from a traditional DBMS,
+coupled with ERP-based business rules, application servers for intranet
+and Web publishing, and, of course, EDI for data exchange, all in
+different formats, using different mechanisms for management.  XML
+attempts to unify the technologies behind these various applications.
+However, computer scientists have found that even though such
+generality allows wider application and quicker assembly of complex
+systems, it can lead to problems at the seams of the components that
+make up such systems.
+</p><p>
+</p><p>
+<font size='+1'><strong>But can XML hack it?</strong></font><br/>
+If XML's greatest asset is the enthusiasm with which it has received
+widespread application and development, this is also the foundation of
+its weakness with respect to EDI.  XML 1.0 is barely an official
+standard, and certainly stands to be transformed by such developments
+as namespaces, and more sophisticated notations.  At the same time, the
+data exchange folks are constantly tugging at the World Wide Web
+consortium (W3C) to strengthen XML's facilities for specifying schemata.
+The current facility of document-type definitions, as its name implies,
+is more suited to document exchange than data exchange.  In fact, some
+features common in traditional EDI formats, such as segment loops,
+themselves require more expressive schema than XML currently provides.
+It would be perhaps premature to entrust such a solid and venerable
+system as EDI to a spec that might still be in flux.
+</p><p>
+There is the matter of the increased bandwidth taken up by XML, which
+might be a concern if transmitted by VAN, but is less of an issue over
+the Internet, or more specifically, virtual private networks.
+Compression also helps even the score.  The XML-EDIFACT pilots
+undertaken by the CEN/ISSS in Europe (see <a href='#resources'>Resources</a>) found about a three-times increase in
+typical transmission sizes, and my example, based on the XML-X12 work
+of the XML/EDI Group, balloons about eight times from the X12 to the
+XML version.
+</p><p>
+Then there is the hype factor, where vendors follow industry pundits
+into reflex adoption of technology before it is stable or broadly
+proven.  This fuels skepticism among experienced observers and can, in
+fact, impair the evaluation and adoption of promising technologies.
+Predictably, there has been some backlash by traditional EDI purists
+against the grand claims the computer press has made for XML.
+The reality is that XML and its attendant technologies have much to
+offer, but there also remains much work to be done before XML can help
+EDI into greater use.  Indeed, the future of EDI is hardly a zero-sum
+contest between XML and traditional EDI formats such as ANSI X12 and
+UN/EDIFACT.  Mainframes didn't go away when client-server buffs said
+they would, and with learned caution, not even the most ardent XML fans
+are predicting the disappearance of traditional EDI any time soon.
+</p><p>
+</p><p>
+<font size='+1'><strong>Conclusion</strong></font><br/>
+Sharp observers might note that this article focuses on
+e-commerce aspects of EDI.  Some EDI traditionalists insist
+that what the XML-EDI folk are really pushing is XML-EC.  But like it
+or not, all manner of business-to-business and even intramural
+transactions are taking on the character of e-commerce.  XML-EDI has
+the potential of taking EDI from an arcane, if venerable technique to
+the rapidly developing center of enterprise information technology.  On
+the other hand, XML-EDI poorly applied has the potential for wasting
+billions of dollars and a great deal of effort, and holding up
+traditional EDI development, for no more than a radically new format
+that runs immediately into the same old problems.
+</p><p>
+Other XML-based standards, like the Information and Content Exchange
+Protocol (see <a href='#resources'>Resources</a>), are being developed
+for business-to-business data exchange, but they don't have the
+significant advantage of building on all the effort and experience that
+has gone into EDI.  XML-EDI takes a median position between reinventing
+the wheel entirely and merely ignoring the developments and standards
+that have emerged around the success of the Internet.
+</p><p>
+You might be surprised at how much current activity there is to develop
+XML-EDI. If you're interested in early evaluation or adoption, I've
+found some handy resources you might want to check out (all are listed
+in the <a href='#resources'>Resources </a> section of this article).   
+</p><p>
+The success of XML-EDI depends on solid standards for XML and related
+technologies, the establishment of repositories, the continued support
+of software vendors across vertical and horizontal markets, and the
+support of traditional EDI implementors and VANs.  All of these factors
+are receiving a good deal of attention, and once in place, our intrepid
+Internet retailer might be able to gain as much benefit from EDI as its
+larger trading partners.
+
+<!-- end body text -->
+
+</p><p>
+<a name='bio'>
+<strong>
+<font size='-1' face='Arial,Helvetica,Sans-serif'>
+About the author
+</font>
+</strong><br/>
+Uche Ogbuji is a consultant and cofounder of </a><a href='http://FourThought.com'>FourThought LLC</a>, a consulting firm specializing in custom software development for enterprise applications, particularly Web-based integration 
+platforms for small or medium-sized businesses.
+
+<a name='resources'>
+</a></p><p>
+</p><table cellspacing='0' border='0' width='100%' cellpadding='0'>
+<tr>
+<td bgcolor='#FF6600' colspan='2'><font face='Arial,Helvetica,Sans-serif' color='#FFFFFF'><strong>Resources and Related Links</strong></font></td>
+</tr>
+<tr>
+<td> </td>
+<td>
+<ul>
+<li>Bruce Peat provides detailed information on EDI and XML
+<br/><a href='http://inf2.pira.co.uk/top032.htm'>http://inf2.pira.co.uk/top032.htm</a></li><li>The XML-EDI group has many documents, proposed standards, position papers, and other resources at its home page, and it maintains an XML-EDI mailing list 
+<br/><a href='http://www.xmledi.net '>http://www.xmledi.net </a></li><li>A variety of pilots of XML-EDI are underway, including several in Europe under the auspices of the CEN/ISSS, which has published <em>Interim Report for CEN/ISSS XML/EDI Pilot Project</em>
+<br/><a href='http://www.cenorm.be/isss/workshop/ec/xmledi/interim.html  '>http://www.cenorm.be/isss/workshop/ec/xmledi/interim.html  </a></li><li>Suli Dung provides a nifty program to automate the conversion of EDI documents to XML, which can help with pilots and early implementations of XML-EDI
+<br/><a href='http://www.geocities.com/SiliconValley/Platform/4871/'>http://www.geocities.com/SiliconValley/Platform/4871/</a></li><li>The document object model (DOM) and  the simple API for XML (SAX) standardize the task of dealing with basic XML, allowing programmers to concentrate on higher-level semantics <br/><a href='http://www.oasis-open.org/cover/dom.html'>http://www.oasis-open.org/cover/dom.html</a><br/><a href='http://www.megginson.com/SAX/'>http://www.megginson.com/SAX/</a></li><li>XMI and UREP are "pure" XML initiatives that look to generalize data repositories, and with their broad industry support might be the future basis for managing business objects <br/><a href='http://www.oasis-open.org/cover/xmi.html'>http://www.oasis-open.org/cover/xmi.html</a><br/><a href='http://www.marketplace.unisys.com/urep/'>http://www.marketplace.unisys.com/urep/</a></li><li>ISO's Basic Semantic Repository (BSR) project (note: this server can be difficult to reach at times).
+<br/><a href='http://www.iso.ch/BSR'>http://www.iso.ch/BSR</a></li><li>Information and Content Exchange Protocol (ICE) is an XML-based standard being developed for business-to-business data exchange
+<br/><a href='http://www.oasis-open.org/cover/ice.html'>http://www.oasis-open.org/cover/ice.html</a></li><li>EDI Meets the Internet (IETF-EDI working group)
+<br/><a href='http://www.va.gov/publ/standard/edifaq/INDEX.HTM'>http://www.va.gov/publ/standard/edifaq/INDEX.HTM</a></li><li>The Joint Electronic Data Interchange (JEDI) Web server
+<br/><a href='http://jedi.dmu.ac.uk/'>http://jedi.dmu.ac.uk/</a>
+</li></ul>
+</td><td> </td>
+</tr>
+</table>
+
+<a name='sidebar1'>
+</a><p>
+</p><table bgcolor='#cccccc' border='0' cellspacing='0' width='100%' cellpadding='1'>
+<tr>
+<td bgcolor='#FFCC66'>
+<font face='Arial,Helvetica,Sans-serif'><strong>Listing 1:  Plain purchase order</strong></font>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td bgcolor='#cccccc'>
+<p>
+</p><table cols='2' width='100%' nosave='NOSAVE'>
+<tr nosave='NOSAVE'>
+<td width='50' nosave='NOSAVE'>P.O. Number:</td>
+<td>003429</td>
+</tr>
+<tr>
+<td>Date:</td>
+<td>1 December 1998</td>
+</tr>
+<tr>
+<td>Order Contact:</td>
+<td>Obi Anozie</td>
+</tr>
+<tr>
+<td>Company:</td>
+<td>Internet Retailer Inc.</td>
+</tr>
+<tr>
+<td>Address:</td>
+<td>123 Via Way, Milwaukee WI, 53202</td>
+</tr>
+</table>
+<p>
+</p><table width='100%' nosave='NOSAVE'>
+<tr nosave='NOSAVE'>
+<td nosave='NOSAVE'><b>Qty</b></td>
+<td><b>Part No.</b></td>
+<td><b>Description</b></td>
+<td><b>Unit Price</b></td>
+<td><b>Total</b></td>
+</tr>
+<tr nosave='NOSAVE'>
+<td>100</td>
+<td nosave='NOSAVE'>CO633</td>
+<td>Fuzzy Dice</td>
+<td>$1.23</td>
+<td>$123.00</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+</table>
+<p>
+<a name='listing2'/></p><h2 align='CENTER'>Listing 2:  Fragment of ANSI X12 transaction set: 850 (PO) corresponding to Listing 1</h2>
+<p>
+ST*850*12345
+<br/>BEG*00*SA*3429**981201
+<br/>N1*BY*Internet Retailer Inc.*91*RET8999
+<br/>N1*ST*Internet Retailer Inc.
+<br/>N3*123 Via Way
+<br/>N4*Milwaukee*WI*53202
+<br/>PER*OC*Obi Anozie
+<br/>PO1**100*EA*1.23*WE*MG*CO633
+<br/>SE*9*12345
+</p><p>
+<a name='listing3'/></p><h2 align='CENTER'>Listing 3: XML analog of X12 transaction set in Listing 2</h2>
+<p>
+</p><pre>
+&lt;?XML version="1.0" encoding="UTF-8"?>
+&lt;PurchaseOrder Version="4010">
+&lt;PurchaseOrderHeader>
+  &lt;TransactionSetHeader X12.ID="850">
+    &lt;TransactionSetIDCode code="850"/>
+    &lt;TransactionSetControlNumber>12345&lt;/TransactionSetControlNumber>
+  &lt;/TransactionSetHeader>
+  &lt;BeginningSegment>
+    &lt;PurposeTypeCode Code="00 Original"/>
+    &lt;OrderTypeCode Code="SA Stand-alone Order"/>
+    &lt;PurchaseOrderNumber>RET8999&lt;/PurchaseOrderNumber>
+    &lt;PurchaseOrderDate>19981201&lt;/PurchaseOrderDate>
+   &lt;/BeginningSegment>
+  &lt;AdminCommunicationsContact>
+    &lt;ContactFunctionCode Code="OC Order Contact"/>
+    &lt;ContactName>Obi Anozie&lt;/ContactName>
+  &lt;/AdminCommunicationsContact>
+&lt;/PurchaseOrderHeader>
+&lt;PurchaseOrderDetail>
+  &lt;Name1InformationLOOP>
+    &lt;Name>
+      &lt;EntityIdentifierCode Code="BY Buying Party"/>
+      &lt;EntityName>Internet Retailer Inc.&lt;/EntityName>
+      &lt;IdentificationCodeQualifier Code="91 Assigned by Seller"/>
+      &lt;IdentificationCode>RET8999&lt;/IdentificationCode>
+    &lt;/Name>
+    &lt;Name>
+      &lt;EntityIdentifierCode Code="ST Ship To"/>
+      &lt;EntityName>Internet Retailer Inc.&lt;/EntityName>
+    &lt;/Name>
+    &lt;AddressInformation>123 Via Way&lt;/AddressInformation>
+    &lt;GeographicLocation>
+      &lt;CityName>Milwaukee&lt;/CityName>
+      &lt;StateProvinceCode>WI&lt;/StateProvinceCode>
+      &lt;PostalCode>53202&lt;/PostalCode>
+    &lt;/GeographicLocation>
+  &lt;/Name1InformationLOOP>
+  &lt;BaselineItemData>
+    &lt;QuantityOrdered>100&lt;/QuantityOrdered>
+    &lt;Unit Code="EA Each"/>
+    &lt;UnitPrice>1.23&lt;/UnitPrice>
+    &lt;PriceBasis Code="WE Wholesale Price per Each"/>
+    &lt;ProductIDQualifier Code="MG Manufacturer Part Number"/>
+    &lt;ProductID Description="Fuzzy Dice">CO633&lt;/ProductID>
+  &lt;/BaselineItemData>
+&lt;/PurchaseOrderDetail>
+&lt;/PurchaseOrder>
+</pre>
+<p>
+</p></td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td align='RIGHT' bgcolor='#FFCC66'>
+<font size='-1' face='Arial,Helvetica,Sans-serif'><a href='#return1'>Return to article</a></font>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>An Introduction to Web services</title>
+</head>
+
+<body marginheight='0' vlink='#551a8b' text='#000000' alink='#FF0000' topmargin='0' link='#0000FF' bgcolor='#FFFFFF'>
+
+<h1 align='CENTER'>An Introduction to Web services</h1>
+<div align='CENTER'><big>by <a href='uche.ogbuji@fourthought.com'>Uche Ogbuji</a>, Fourthought, Inc.</big></div>
+<div align='CENTER'><big><a href='http://Fourthought.com'>http://Fourthought.com</a></big></div>
+<div align='CENTER'><big><a href='http://uche.ogbuji.net'>http://uche.ogbuji.net</a></big></div>
+<div align='CENTER'>(Copyright 2001, Uche Ogbuji)</div>
+
+<p/>
+<p/>
+
+<i>Originally featured in InterChange, newsletter of the <a href='http://www.isgmlug.org/'>International SGML Users' Group (ISUG)</a></i>
+
+<p/>
+<p/>
+<p>
+<font size='+1'><strong>Background</strong></font><br/>
+When modern object-oriented development burst into the mainstream in the early nineties, the promise was that developers would gain a powerful system for packaging and even reusing code modules.  Using object-oriented interfaces developers could dig for an existing object implementation that fit a new need, and just plug it into the new code.  The next evolution of this was component development, which promised such modularization and reuse across language, platform and even machine boundaries, using abstract interface definition languages in order to rigidly describe the protocol for each component.</p>
+
+<p>
+On a different time-line, starting a couple of decades earlier than the OO evolution, organizations started looking for effective ways to automate business transactions with other organizations.  The result was electronic data interchange (EDI), which used structured messages and strict protocol to send requests and responses electronically.  But EDI transport and data-processing has remained quite expensive even after the Internet and XML have brought inexpensive options for communicating the transactional data.</p>
+
+<p>
+As a result, work has been on-going on using OO systems to implement electronic business transactions.  One of the biggest hurdles of using traditional OO and component techniques has been that these involve remote procedure calls, which require tight integration between both interacting parties in order to work.  This can place an unrealistic burden on organizations to find trading partners with similar enough information systems, and even if this is possible, the result is subject to brittleness in the face of change.</p>
+
+<p>
+Many companies involved in electronic business transactions have been working on ways to take advantage of inexpensive Internet protocols (such as HTTP, HTTPs, SMTP and S/MIME), extensible and generic data formats (XML, in particular) and component techniques (such as object and interface repositories) in order to make electronic commerce a pervasive reality.  These developments are collective known as Web services.</p>
+
+
+<p>
+<font size='+1'><strong>An example of Web services</strong></font><br/>
+</p>
+
+<p>
+Let us say we have a small financial services firm, W.S. Money, Ltd. with a highly-effective process for aggregating international monetary exchange rates in real time.  They would like to capitalize on this infrastructure by offering exchange-rate information at a competitive per-transaction cost to as many customers as possible.</p>
+
+<p>
+They have investigated traditional EDI systems for financial transactions, but the investment in technology and services is prohibitive, and the transactional fees to intermediaries would make it impossible for them to offer competitive rates to their own customers.  Also, because so many potential customers are also small businesses that couldn't afford EDI infrastructure, they would be unable to achieve the necessary economies of scale in an EDI marketplace.</p>
+
+<p>
+They also investigated proprietary systems from professional integrators, which could use less expensive and more pervasive technologies such as CORBA or DCOM, but this would require that customers also have CORBA or DCOM systems in order to make the remote procedure call, as well as access for procedure calls across security firewalls.  Even with expensive component integration technologies, they would have to undergo a design that anticipates all future aspects of the transactions, because of the difficulty of extension.</p>
+
+<p>
+Finally, W.S. Money discovers Web services.  They can put up a simple Web server, or find hosting with a commodity Internet service provider.  They can then either find an international monetary exchange data format from one of the many XML initiatives, or develop one of their own.  Then they develop a message format and protocol for the transactions and describe these in XML as well.</p>
+
+<p>
+Finally, they can register these technical parameters, expressed in XML, in a public exchange.  Their registration would also include contractual information such as cost and legal terms, all as much as possible structured using industry standard XML formats.  The public exchange would serve as a directory, with notifications to other financial information services such as Web portals.</p>
+
+<p>
+Now enter ZYX Partners, a small firm that trades in international commodities.  They are very sensitive to fluctuations in exchange rates and thus need real-time rates at a comfortable price.  They can afford the modest investment in Web technology to send and receive the data they need, so they query their favorite financial portal for a service provider, providing structured search criteria.  They receive a manageable list of hits based on technical and contractual parameters, from which they choose W.S. Money, Ltd. even though they are located across the world.  It's simply a series of remote Internet transactions.</p>
+
+
+<p>
+<font size='+1'><strong>Web services technologies</strong></font><br/>
+Some of the aspects of the above scenarios are in place, and all are in rapid development.  Web Services Description language (WSDL) provides an XML vocabulary for describing the technical aspects of Web services interactions.  It covers the transport and data format details of the messages to be exchanged in the transaction.  Universal Description, Discovery, and Integration (UDDI) is a system for registration and querying to directories of Web services, providing technical and some contractual information for search and negotiation.  It defines a data model and an interaction model, both of which have XML expressions.  Simple Object Access Protocol (SOAP) is a popular transport protocol for remote messages encoded in XML.  It also has capabilities for transmitting procedure calls, if necessary.</p>
+
+<p>
+A collection of technologies in partial competition with UDDI and WSDL is Electronic Business XML (ebXML), a joint project of OASIS and the UN center for trade facilitation, the same body that was behind a great deal of standardization in EDI.  ebXML defines a registry/repository mechanism for electronic business services.  This includes methods for expressing vertical industry efforts to standardize data formats and transactional processes.  Again the modeling and description facilities provide strong XML support.  Some observers marginalize ebXML's legitimacy as a Web services technology, but there are some political motivations behind this.  In every practical sense, ebXML addresses the problem domain of Web services and provides technologies that largely overlap UDDI and WSDL.</p>
+
+
+<p>
+<font size='+1'><strong>So what's real?</strong></font><br/>
+Web services are currently going through the phase where there is more pomp than substance.  Certainly the need is real: inexpensive electronic transactions that can be effectively registered by vendors and discovered by customers.  The use of XML technologies does mean that semi-structured data can be more readily managed in such transactions, and that extensibility in the face if inevitable change is more feasible than with other technologies.</p>
+
+<p>
+However, Web services are only in the infancy of tackling the tremendously difficult problems that EDI has worked at for decades.  Security and transparency are still dubious, integration with vertical industry efforts such as those in RosettaNet are just beginning, and directories and registries have not been deployed and tested in wide scale.</p>
+
+<p>
+Also tension is beginning to emerge in the technological architecture of Wen services.  For instance, SOAP is emerging as the messaging technology of choice, but is it flexible enough to work across very different information systems and through a potential array of intermediaries?</p>
+
+<p>
+The reality is that, today, one can currently take some of the pieces of Web services, such as SOAP messages and WSDL descriptions, and begin using them in the right places in current XML application architecture, but the ideal scenario I presented above: the eventual ambition of Web services, is still a ways off, if its day is ever to come.</p>
+
+</body>
+</html>
+<!--
+<p>
+</p>
+-->
+

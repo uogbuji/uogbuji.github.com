@@ -70,6 +70,51 @@
   <priority>0.5000</priority>
  </url>
  <url>
+  <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/4ODS-userguide.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/CoreManual.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/amara-manual.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/articles/FtSuiteWiki_2fUserNotes.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/articles/bulging-std.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/articles/schematron.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/articles/svgpres.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/articles/ws-metadata.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/etc/tech/articles/xmledi.html</loc>
+  <lastmod>2011-05-23</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
   <loc>http://uche.ogbuji.net/galleries/</loc>
   <lastmod>2013-09-29</lastmod>
   <priority>0.5000</priority>
