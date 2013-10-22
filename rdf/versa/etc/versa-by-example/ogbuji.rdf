@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+  <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+  <!ENTITY fam 'http://rdfinference.org/ril/eg/ogbuji-fam#'>
+]>
+<rdf:RDF
+  xmlns:rdfs='&rdfs;'
+  xmlns:rdf='&rdf;'
+  xmlns:o='&fam;'
+  xml:base=''
+>
+
+  <o:Male rdf:ID="uogbuji">
+    <o:fname>Uche Ogbuji</o:fname>
+    <o:age>30</o:age>
+    <o:father rdf:resource="#logbuji"/>
+    <o:mother rdf:resource="#mogbuji"/>
+  </o:Male>
+
+  <o:Male rdf:ID="cogbuji">
+    <o:fname>Chimezie Ogbuji</o:fname>
+    <o:age>24</o:age>
+    <o:father rdf:resource="#logbuji"/>
+  </o:Male>
+
+  <o:Male rdf:ID="logbuji">
+    <o:father rdf:resource="#togbuji"/>
+    <o:fname>Linus Ogbuji</o:fname>
+    <o:age>56</o:age>
+  </o:Male>
+
+  <o:Female rdf:ID="mogbuji">
+    <o:fname>Margaret Ogbuji</o:fname>
+    <o:age>52</o:age>
+  </o:Female>
+
+  <o:Female rdf:ID="logbuji1">
+    <o:father rdf:resource="#jstubblefield"/>
+    <o:mother rdf:resource="#lstubblefield"/>
+    <o:fname>Lori Ogbuji</o:fname>
+    <o:age>29</o:age>
+  </o:Female>
+
+  <o:Male rdf:ID="jstubblefield">
+    <o:fname>Jerry Stubblefield</o:fname>
+    <o:age>55</o:age>
+  </o:Male>
+
+  <o:Female rdf:ID="lstubblefield">
+    <o:fname>Lola Stubblefield</o:fname>
+    <o:age>50</o:age>
+  </o:Female>
+
+  <o:Male rdf:ID="oogbuji">
+    <o:father rdf:resource="#uogbuji"/>
+    <o:mother rdf:resource="#logbuji1"/>
+    <o:fname>Osita Ogbuji</o:fname>
+    <o:age>1</o:age>
+  </o:Male>
+
+  <o:Male rdf:ID="cogbuji1">
+    <o:fname>Chidi Ogbuji</o:fname>
+    <o:age>2</o:age>
+    <o:father rdf:resource="#cogbuji"/>
+  </o:Male>
+
+  <o:Male rdf:ID="togbuji">
+    <o:fname>Thomas Ogbuji</o:fname>
+    <o:age>100</o:age>
+  </o:Male>
+
+</rdf:RDF>

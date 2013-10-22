@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Web">
+    <rdfs:label>Web [ 1 ]</rdfs:label>
+    <rdfs:description>an intricate network suggesting something that was formed by weaving or interweaving; "the trees cast a delicate web of shadows over the lawn"</rdfs:description>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Object">
+        <rdfs:label>Object [ 1 ]</rdfs:label>
+        <rdfs:description>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</rdfs:description>
+        <rdfs:subClassOf>
+          <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Physical_object">
+            <rdfs:label>Physical_object [ 1 ]</rdfs:label>
+            <rdfs:description>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</rdfs:description>
+            <rdfs:subClassOf>
+              <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Entity">
+                <rdfs:subClassOf>
+                  <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Something">
+                  </rdfs:Class>
+                </rdfs:subClassOf>
+              </rdfs:Class>
+            </rdfs:subClassOf>
+          </rdfs:Class>
+        </rdfs:subClassOf>
+      </rdfs:Class>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+</rdf:RDF>

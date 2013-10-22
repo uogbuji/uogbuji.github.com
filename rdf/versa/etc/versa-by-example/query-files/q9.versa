@@ -1,0 +1,7 @@
+NS=vsort http://rdfinference.org/versa/0/2/sort/
+NS=o http://rdfinference.org/ril/eg/ogbuji-fam# 
+NS=rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#
+NS=rdfs http://www.w3.org/2000/01/rdf-schema#
+QUERY=sort(all()-o:age->*, vsort:number)
+#QUERY=sort(all()-o:age->*)
+#QUERY=sort(all()-o:age->*, vsort:number, vsort:descending)

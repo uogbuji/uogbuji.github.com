@@ -27,7 +27,7 @@
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="xml"/>
     <category term="tech"/>
-    <updated>2006-02-17T12:00:00Z</updated>
+    <updated>2013-02-17T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -47,7 +47,7 @@
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="xml"/>
     <category term="tech"/>
-    <updated>2006-02-17T12:00:00Z</updated>
+    <updated>2013-02-17T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -70,21 +70,50 @@
 -->
 
   <entry>
-    <id></id>
-    <title></title>
-    <subtitle></subtitle>
-    <link href=""/>
+    <id>http://www.ibm.com/developerworks/web/library/wa-bootstrap/index.html</id>
+    <title>Rapid web development with Bootstrap</title>
+    <subtitle>Get your website designs off the ground with Twitter Bootstrap</subtitle>
+    <link href="http://www.ibm.com/developerworks/web/library/wa-bootstrap/index.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="xml"/>
+    <category term="css"/>
+    <category term="JavaScript"/>
+    <category term="html"/>
+    <category term="mobile"/>
+    <category term="responsive design"/>
     <category term="tech"/>
-    <updated>2006-02-17T12:00:00Z</updated>
+    <updated>2013-08-06T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
       <email>uche@ogbuji.net</email>
     </author>
     <summary type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Learn how to use Bootstrap to kickstart websites and web applications, including mobile-friendly ones. Bootstrap, which is based on the LESS project, was developed by Twitter's internal engineers to provide a consistent framework for web application UIs.
+      </div>
+    </summary>
+  </entry>
+
+  <entry>
+    <id>http://www.ibm.com/developerworks/library/wa-less/</id>
+    <title>Do more in CSS with LESS</title>
+    <subtitle>Simplify the writing and maintenance of responsive design styles for modern web pages</subtitle>
+    <link href="http://www.ibm.com/developerworks/library/wa-less/"/>
+    <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
+    <link rel="seealso" href="https://www.ibm.com/developerworks/community/blogs/twodw/entry/efficient_and_maintainable_css_with_less?lang=en"/>
+    <category term="css"/>
+    <category term="html"/>
+    <category term="JavaScript"/>
+    <category term="Web"/>
+    <category term="tech"/>
+    <updated>2013-07-18T12:00:00Z</updated>
+    <author>
+      <name>Uche Ogbuji</name>
+      <uri>http://uche.ogbuji.net</uri>
+      <email>uche@ogbuji.net</email>
+    </author>
+    <summary type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">Learn how to use LESS to write readable and maintainable Cascading Style Sheets (CSS) for modern websites. CSS makes the terrible old days of layout tricks with tables and invisible images a dim memory. But CSS is still unfriendly, and several initiatives tried to tame it for developers. One of the best is LESS, which extends CSS with dynamic behavior such as variables, mixins, operations, and functions. LESS is a CSS-like language that compiles seamlessly into CSS either on the client side or through server-side preprocessing. Also, check out the <a href="https://www.ibm.com/developerworks/community/blogs/twodw/entry/efficient_and_maintainable_css_with_less?lang=en">follow-up video interview</a>.
       </div>
     </summary>
   </entry>

@@ -1,0 +1,105 @@
+<html><head><title>Battle of the Bulging Standards</title>
+<!--link rel="STYLESHEET" type="text/css" href="40468_p_files/css.css"-->
+
+<table width="100%">
+<tr>
+  <td><a href="http://xml.sys-con.com/"><img src="images/xmlj-mag-logo-145.gif" alt="" border="0"/></a>
+  </td>
+  <td align="right"><a href="http://xml.sys-con.com/read/40468.htm?CFID=97458&CFTOKEN=BB5F32E8-62A4-61B0-C1351140380B1481">Original publication address</a>
+  </td>
+</tr>
+</table>
+
+<h1>Battle of the Bulging Standards</h1>
+
+<div class="storybody">
+  
+  <p>
+The many people and organizations who came to the XML industry from 
+the database and software development industries have always wanted 
+better standards for modeling the native data structures they 
+interchange in XML. Some support for this was always likely in 
+developing the XML Schema language that was expected to supplant XML 
+1.0 DTDs. Yet when drafts of the W3C XML Schema language (WXS) 
+emerged, the mechanism provided for integrating with data type 
+support proved immediately controversial.
+</p><p>
+	To simplify the matter a bit, the Post Schema Validation 
+Infoset (PSVI) annotates the Infoset of an XML document (i.e., the 
+abstract model of its nodes) with information about the types that 
+became associated with each node during schema processing. The many 
+people who came to XML from the document and text management space, 
+and even from the Web architecture space, objected to this imposition 
+of programming types into XML at such a fundamental level. The main 
+fear was that this would end up causing a lot of complexity in other 
+XML technologies even if people didn't use XML as a mere data 
+serialization format.
+</p><p>
+	The introduction of the PSVI is one of the reasons that so 
+much interest persisted in alternate schema languages. RELAX and 
+TREX, which merged to form RELAX NG, limited themselves to validating 
+documents. RELAX NG allows one to assign data types from plug-in 
+libraries to simple element content and attribute values, but it 
+doesn't provide a model of any sort for these types. Such a model 
+would have to be layered upon the process that does the validation. 
+This difference has led to a palpable split in the XML community 
+between those who can't imagine XML without built-in provisions for 
+data typing and those who can't imagine why such things shouldn't be 
+layered very distinctly from XML's textual core. Furthermore, one 
+camp sees data typing as needed for XML tools, while the other 
+worries that the added complexity will make XML impossible to process 
+without sophisticated (and thus expensive) tools. The open source 
+versus commercial software battle thus enters into the mix.
+</p><p>
+	There is actually more to the choice between RELAX NG and WXS 
+than data typing: RELAX NG has gained unexpected momentum largely 
+because it's a much earlier tool for modeling common XML constructs. 
+However, the debate between XML-as-pure-text and 
+XML-as-serialized-data has become more prominent as the PSVI wends 
+itself into other specifications. The emerging new battlefield is the 
+W3C XML Query language and its effect on the next iterations of XPath 
+and XSLT.
+</p><p>
+	XPath and XSLT are arguably the most successful XML-related 
+technologies besides XML 1.0 itself - and they're relatively simple, 
+providing ways of addressing the nodes that make up XML documents 
+pretty much as they are after basic parsing. Some facilities, such as 
+the sum() function in XPath and <xsl:sort> in XSLT, do provide for 
+superimposing operations based on data types, but these are 
+lightweight. Users who take to WXS and thus end up using its 
+sophisticated
+data-typing system, including such things as dates and floating-point 
+numbers, wish for more tools for manipulating these in XPath and XSLT.
+</xsl:sort></p><p>
+	The XML Query working group early on recorded a requirement 
+for support of WXS types. XQuery modeled itself as a sort of 
+supercharged extension of XPath node access and XSLT result 
+templates, and eventually the W3C decided to pool the effort toward 
+XQuery 1.0, XPath 2.0, and XSLT 2.0. The result of all this was that 
+next-generation XPath and XSLT drafts became much more complex as 
+they included all manner of facilities for PSVI and data types.
+</p><p>
+	People in the XML-as-text camp, who at first simply wrote off 
+XQuery as a byzantine curiosity that they needn't worry about, 
+suddenly found their beloved XPath and XSLT transformed into exactly 
+the kinds of specifications they feared the PSVI would inspire.
+</p><p>
+	The result of all this right now is a pitched battle between 
+the text and data types camps, with XQuery held up as the model for 
+all that is supposedly good or bad about the directions in which XML 
+is moving. XQuery itself has been undergoing changes to try to 
+accommodate all the competing concerns. And comments on most of XML's 
+public mailing lists, including that of the W3C technical 
+architecture group, intimate that a showdown may be in the offing as 
+the drafts in question progress toward recommendation.
+</p><p>
+	XML technology has brought together an impressive diversity 
+of practitioners. Now a debate between the two prominent branches is 
+destined to shape its future.
+  </p><p>
+
+</p></div>
+
+<p>
+<small>© 2006 SYS-CON Media Inc.</small>
+</p></body></html>

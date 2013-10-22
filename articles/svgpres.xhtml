@@ -1,0 +1,812 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+    <title>SVG: What comes after XML?</title>
+    <meta name="description"
+    content="Are Powerpoint's days numbered? Author Uche Ogbuji introduces Scalable Vector Graphics (SVG) and demonstrates how to use Sun's new presentation toolkit for sharper slide presentations. (3,900 words) " />
+    <meta name="keywords"
+    content="XML, SVG, vector graphics, Powerpoint, Sun" />
+    <meta name="author" content="Uche Ogbuji" />
+    <meta name="date" content="2001-03-05" />
+    <meta name="live" content="yes" />
+    <meta name="publicationDate" content="2000-10-20" />
+  </head>
+
+  <body bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+  alink="#FF0000" vlink="#551a8b" marginheight="0" topmargin="0">
+    <!-- stopindex -->
+
+    <h1 align="CENTER">What comes after XML?</h1>
+
+    <h3 align="CENTER">SVG might be the application everyone's been
+    waiting for</h3>
+
+    <blockquote>
+      <strong>Summary</strong><br />
+      Are Powerpoint's days numbered? Author Uche Ogbuji introduces
+      Scalable Vector Graphics (SVG) and demonstrates how to use
+      Sun's new presentation toolkit for sharper slide
+      presentations. <em>(3,900 words)</em>
+    </blockquote>
+    <strong>By <a href="mailto:Uche.Ogbuji@fourthought.com">Uche Ogbuji</a></strong> 
+    <hr noshade="noshade" />
+
+    <p><!-- begin body text -->
+     <img align="left" width="40" height="29"
+    src="images/W.gif" alt="W"/>ith the huge
+    success of XML, a lot of speculation has arisen as to which
+    XML-related technology was the real killer app waiting in the
+    wings. As many experts will point out, XML is just syntax. Tim
+    Bray, one of the fathers of XML, loves to note that XML is
+    boring. The true magic of XML lies not in the basic syntax but
+    in the many attendant standards that emerge as syntactical
+    issues become effectively commoditized.</p>
+
+    <p>So what's the XML killer app? I'd say there have been four
+    major contenders for that title, each of which has received a
+    lot of hype: XSLT, RDF, XLink, and SVG. Scalable Vector
+    Graphics (SVG) is probably the least known of those
+    technologies, but it may be the one most likely to make a
+    splash in the world beyond data geeks. SVG is a 2-D vector
+    graphics format entirely encoded in XML. It's a candidate
+    recommendation of the W3C, which means it's pretty close to
+    final, or recommendation, status.</p>
+
+    <p>Some readers might be violently wagging their heads. In a <a
+    href="xmledi.html">
+    previous <em>Sunworld</em> article</a>, I gave an example of
+    how bloated a sample purchase order became when converted from
+    EDI to XML (over 10 times). XML formats tend to be more
+    verbose. Why on earth would anyone use XML in such a typically
+    byte-frugal area as graphical format?</p>
+
+    <p>It turns out that the W3C SVG Working Group (WG) has put a
+    heroic effort into making SVG 100 percent XML, fully functional
+    for vector graphics, and still compact. In fact, SVG
+    representations of a given graphic are often only a modest
+    increase over their equivalent in other vector formats and are
+    typically much smaller than raster formats for images suited to
+    vector display. Given its compactness and ease of processing,
+    it might at first seem to be an apples-to-oranges comparison,
+    but some have wondered whether SVG could or should supplant
+    Java's Swing GUI.</p>
+
+    <p>Enough hype. Let me show you SVG so you can form your own
+    opinion.</p>
+
+    <p><font size="+1"><strong>Introduction to
+    SVG</strong></font><br />
+    SVG's feature set includes nested transformations, clipping
+    paths, alpha masks, raster filter effects, template objects and
+    extensibility (it's XML, right?). SVG also supports animation,
+    zooming and panning views, a wide variety of graphic
+    primitives, grouping, scripting, hyperlinks, structured
+    metadata, a specialized Document Object Model (DOM), and easy
+    embedding in other XML documents. SVG supersedes PGML and VML,
+    two earlier XML-based vector formats that spawned the political
+    battles that fueled SVG's development.</p>
+
+    <p>Listing 1 is a small SVG sample illustrating the use of
+    several SVG features.</p>
+
+    <p><strong>Listing 1</strong></p>
+<pre>
+&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN" 
+ "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"
+&gt;
+&lt;svg width="10cm" height="10cm" viewBox="0 0 800 800"&gt;
+  &lt;desc&gt;SVG Sample for Unix Insider Article&lt;/desc&gt;
+
+  &lt;style type="text/css"&gt;
+    .Lagos { fill: white; stroke: green; stroke-width: 30 }
+    .ViaAppia { fill: none; stroke: black; stroke-width: 10 }
+    .OrthoLogos { font-size: 32; font-family: helvetica }
+  &lt;/style&gt;
+
+  &lt;ellipse transform="translate(500 200)" rx="250" ry="100"
+           style="fill: brown; stroke: yellow; stroke-width: 10"/&gt;
+
+  &lt;polygon transform="translate(100 200) rotate(45)"
+           class="Lagos"
+           points="350,75 379,161 469,161 397,215 423,301 350,250 277,
+                   301 303,215 231,161 321,161"/&gt;
+
+  &lt;text class="OrthoLogos" x="400" y="400"&gt;TO KALON&lt;/text&gt;
+
+  &lt;path class="ViaAppia" d="M500,600 C500,500 650,500 650,600
+                            S800,700 800,600"/&gt;
+&lt;/svg&gt;
+</pre>
+
+    <p>Note that I put together the listing by hand (with help in
+    some areas because I'm not a gold-medal geometrist). I've
+    included generous amounts of white space to give the listing a
+    friendlier look. In most cases, SVG will be generated either by
+    artists using tools, such as Adobe Illustrator, or by
+    software-generating automated images, such as maps from raw
+    data. In either case, the resulting SVG will likely be
+    condensed to save space and not be very readable. Of course,
+    that is the beauty of the XML basis: if you do get one of those
+    dense files, you can use just about any DOM library to read and
+    print it. You can even edit the SVG source directly, using one
+    of the many specialized XML editors.</p>
+
+    <p>The example includes the optional but highly encouraged XML
+    declaration and uses the SVG Document Type Definition (DTD)
+    given in the spec. Both can be eliminated for space, but
+    remember that if you omit the document type, it can't be
+    validated by the XML parser. Next comes the svg element: the
+    mandatory root element. The height and width attributes are
+    self-explanatory. The viewBox attribute means that after
+    logical rendering according to the natural size of each object,
+    the entire image will be stretched (or shrunk) to take up a
+    particular size, in this case 800 by 800 pixels. Like most
+    vector graphics systems, SVG supports a flexible set of
+    coordinate systems and measurement units.</p>
+
+    <p>The <code>desc</code> provides a description or title for
+    the image, and it is highly recommended by the spec.</p>
+
+    <p>The following element illustrates one of the huge advantages
+    SVG reaps by building on the wide variety of Web and XML
+    technologies. Many stylistic features of graphics objects can
+    be customized using Cascading Style Sheets (CSS) and other
+    stylistic systems. Building on that established technology
+    facilitates learning, implementing, and using SVG, and improves
+    its integration into current presentation systems. As usual for
+    CSS, one can place style attributes directly on the target
+    element, or one can define named global styles (with cascading
+    features available for fine-grained control).</p>
+
+    <p>In this example, I define three named styles in the style
+    element. Note the departure from XML to CSS syntax in the
+    element's body. That presents an obstacle to SVG manipulation
+    with XML tools. Using CSS is one of the trade-offs the SVG
+    group had to make between XML format, compactness, and
+    technology reuse. We shall soon see even more startling
+    compromises between those goals.</p>
+
+    <p>Next, we have our first graphics primitive: an ellipse. The
+    rx and ry attributes establish the ellipse's bounding box, and
+    you can see a style defined for the ellipse: it will be drawn
+    in yellow with a pen 10 pixels wide and then filled in with
+    brown. Finally, the entire object has a transform applied,
+    moving it 500 pixels right and 200 pixels down.</p>
+
+    <p>Then we define a polygon. The points attribute defines the
+    points that connect the straight lines of each segment of the
+    polygon. Here is another place where the CSS WG made the
+    controversial but understandable decision to cram a lot of
+    structured data into a single attribute, which is usually a
+    poor practice. Breaking each point into a separate attribute
+    wouldn't work because they must be in sequence, and XML
+    attributes have no defined sequence. Using subelements would
+    have meant tremendous bloat, both in SVG files and in the DOM
+    representation created by SV manipulation tools.</p>
+
+    <p>The polygon, like the rest of the objects I create, uses a
+    class attribute to adopt one of the named styles. The polygon
+    uses a slightly more involved transform that moves and rotates
+    it 45 degrees around the center of the entire image.</p>
+
+    <p>Then there's an example of text rendering. The text element
+    again uses a named style specifying font face and point size.
+    The x and y attributes indicate the origin of the bounding box
+    of the rendered text.</p>
+
+    <p>Finally, there's a path, a free-form curve. That curve can
+    be specified in multiple connected segments, each using a mix
+    of techniques from straight lines to bezier curves. If you look
+    very closely, you'll see that the right end of the path is
+    clipped a bit by the overall image boundary (in the svg
+    element).</p>
+
+    <p>Figure 1 is an example of that, using CSIRO's SVG viewer. I
+    used CSIRO's Java-based viewer because it gave me the least
+    trouble in Linux. I also tried IBM's SVGViewer from their
+    Alphaworks project but found it buggy and lacking several SVG
+    features. I wrestled with GNOME's CVS repository for a while,
+    that being the only way to get Ralph Levien's SVG Viewer, Gill.
+    Unfortunately, GNOME seems to have suffered a CVS meltdown for
+    a few days: I couldn't get in through anonymous CVS or through
+    any of its online repository tools (bonsai or LXR). That's too
+    bad because I saw a demo of Gill last year, and it promised to
+    be the fastest SVG viewer on Linux. Rendering my image changes
+    using CSIRO was a trying experience: it usually took five
+    seconds or so to render my very simple file on a PII 366.
+    Windows users are luckier: Adobe's SVG viewer is quite fast and
+    very complete.</p>
+
+    <center>
+      <table cellpadding="5" border="0">
+        <tr>
+          <td>
+            <center>
+              <a
+              href="images/swol-1020-svg_fig1.gif">
+              <img vspace="3" width="175" height="157"
+              src="images/swol-1020-svg_fig1_sml.gif" />
+              </a><br/>
+              <font size="-1"><strong>Figure 1. Click on thumbnail
+              to view full image (26 KB)</strong></font>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <p><!-- break -->
+    </p>
+
+    <p><font size="+1"><strong>Your first
+    presentation</strong></font><br />
+    Sun's SVG Slide Toolkit is a resource for authoring
+    presentations. It allows users to write their presentations in
+    a very simple XML-based format and generate a slick
+    presentation, using SVG. SVG potentially gives presentations
+    the same capabilities as Microsoft Powerpoint: style, images,
+    animations, multimedia. Sun's toolkit provides basic functions
+    as is, and uses the power of XSLT to allow the user to extend
+    the presentation with all of SVG's abilities.</p>
+
+    <p>Listing 2 demonstrates the basic features of Sun's
+    presentation source format.</p>
+
+    <p><strong>Listing 2</strong></p>
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;!DOCTYPE slideshow SYSTEM "slides.dtd"&gt;
+&lt;slideshow&gt; 
+
+&lt;title&gt;Introduction to SVG&lt;/title&gt;
+
+&lt;metadata&gt;
+  &lt;speaker&gt;Uche Ogbuji&lt;/speaker&gt;
+    &lt;jobTitle&gt;Principal Consultant&lt;/jobTitle&gt;
+  &lt;organization&gt;Fourthought Inc.&lt;/organization&gt;
+  &lt;presentationDate&gt;2000-09-25&lt;/presentationDate&gt;
+  &lt;presentationLocation&gt;Boulder, CO&lt;/presentationLocation&gt;
+  &lt;occasion&gt;Front Range XML Keiretsu&lt;/occasion&gt;
+&lt;/metadata&gt;
+
+&lt;slideset&gt; 
+
+  &lt;title&gt;Background and Motivation&lt;/title&gt;
+
+    &lt;slide id="I.1"&gt;
+        &lt;title&gt;Why Yet Another Graphics Format?&lt;/title&gt;
+
+        &lt;item&gt;Leveraging the existing XML technology base&lt;/item&gt;
+        &lt;item&gt;Integrating graphics into the semantic Web&lt;/item&gt;
+        &lt;speakerNote&gt;Talk about RDF, XLink, XSLT, DOM, etc.&lt;/speakerNote&gt;
+        &lt;item&gt;Giving browsers access to image &lt;emphasis&gt;internals&lt;/emphasis&gt;&lt;/item&gt;
+        &lt;item&gt;Supporting the next generation of browsers&lt;/item&gt;
+    &lt;/slide&gt;
+
+&lt;/slideset&gt; 
+
+&lt;slideset&gt; 
+
+    &lt;title&gt;The ABCs of SVG&lt;/title&gt;
+
+    &lt;slide id="II.1"&gt;
+        &lt;title&gt;SVG Features&lt;/title&gt;
+
+        &lt;heading&gt;Basic Features&lt;/heading&gt;
+        &lt;bulletlist&gt;
+            &lt;item&gt;Coordinate spaces and transforms&lt;/item&gt;
+            &lt;item&gt;Graphics primitives: ellipses, polygons, polylines, curves, etc.&lt;/item&gt;
+            &lt;item&gt;Stylesheets: CSS, XSL, etc.&lt;/item&gt;
+        &lt;/bulletlist&gt;
+
+        &lt;heading&gt;Advanced Features&lt;/heading&gt;
+        &lt;bulletlist&gt;
+            &lt;item&gt;Raster filter effects&lt;/item&gt;
+            &lt;item&gt;Alpha masking&lt;/item&gt;
+            &lt;item&gt;Animation&lt;/item&gt;
+            &lt;item&gt;Zooming and Panning&lt;/item&gt;
+            &lt;item&gt;Scripting and extensibility&lt;/item&gt;
+        &lt;/bulletlist&gt;
+
+    &lt;/slide&gt;
+
+    &lt;slide id="II.2"&gt;
+        &lt;title&gt;SVG Sample Source&lt;/title&gt;
+
+        &lt;preformatted&gt;
+&lt;![CDATA[
+&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000802//EN" 
+ "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"
+&gt;
+&lt;svg width="400" height="600"&gt;
+  &lt;desc&gt;SVG Sample for Presentation&lt;/desc&gt;
+
+  &lt;style type="text/css"&gt;
+    .Lagos { fill: white; stroke: green; stroke-width: 16 }
+    .ViaAppia { fill: none; stroke: black; stroke-width: 8 }
+    .OrthoLogos { font-size: 32; font-family: helvetica; fill:white }
+  &lt;/style&gt;
+
+  &lt;ellipse transform="translate(100 75)" rx="50" ry="100"
+           style="fill: brown; stroke: yellow; stroke-width: 3"/&gt;
+
+  &lt;polygon transform="translate(200 -250) rotate(45)"
+           class="Lagos"
+           points="350,75 379,161 469,161 397,215 423,301 350,250 277,
+                   301 303,215 231,161 321,161"/&gt;
+
+  &lt;text class="OrthoLogos" x="0" y="250"&gt;TO KALON&lt;/text&gt;
+
+  &lt;path class="ViaAppia" d="M100,200 C100,100 250,100 250,200
+                            S400,300 400,200"/&gt;
+&lt;/svg&gt;
+]]&lt;
+        &lt;/preformatted&gt;
+
+    &lt;/slide&gt;
+
+    &lt;slide id="II.3"&gt;
+        &lt;title&gt;SVG Sample Output&lt;/title&gt;
+        &lt;graphic file="sample.svg" height="400" width="600"/&gt;
+    &lt;/slide&gt;
+
+&lt;/slideset&gt; 
+
+&lt;slideset&gt; 
+
+  &lt;title&gt;The SVG Community&lt;/title&gt;
+
+    &lt;slide id="III.1"&gt;
+        &lt;title&gt;Some SVG Resources&lt;/title&gt;
+
+        &lt;item&gt;&lt;link href="http://www.w3.org/Graphics/SVG"&gt;The W3C's SVG Page&lt;/link&gt;&lt;/item&gt;
+        &lt;item&gt;&lt;link href="http://dmoz.org/Computers/Data_Formats/Graphics/Vector/SVG/"&gt;OpenDirectory SVG Links&lt;/link&gt;&lt;/item&gt;
+        &lt;item&gt;&lt;link href="http://www.sun.com/xml/developers/svg-slidetoolkit/"&gt;How to make slides like these&lt;/link&gt;&lt;/item&gt;
+    &lt;/slide&gt;
+
+    &lt;slide id="III.2"&gt;
+        &lt;title&gt;Quote Them on it&lt;/title&gt;
+
+        &lt;para&gt;"Over twenty organizations, including Sun Microsystems, Adobe, Apple, IBM, and Kodak, have been involved in defining SVG."&lt;emphasis role="note"&gt; -- Vincent J. Hardy, Sun&lt;/emphasis&gt;&lt;/para&gt;
+
+        &lt;para&gt;"I have been working with computer graphics for
+over 25 years and spilt an immense amount of blood on the floor at
+midnight. With SVG I can now do almost anything I want [except for 3-D, in
+which I also have a molecular interest]. And I suspect that I can stick
+with it for the foreseeable future." &lt;emphasis role="note"&gt;-- Peter Murray-Rust, XML-DEV Founder&lt;/emphasis&gt;&lt;/para&gt;
+        &lt;para&gt;"I envision a day where we have XHTML Webpages with SVG as the chrome of our interfaces -- defining the buttons, the layers, the coloring, and the grid -- where we can actually use a language that's XML-based rather than these separate GIF files that can take so long to download. That's certainly one vision; that vision not just extending on the Web, on a monitor, but wireless onto my PalmPilot or to print and other output as well." &lt;emphasis role="note"&gt;-- Steve Mulder, Razorfish&lt;/emphasis&gt;&lt;/para&gt;
+
+    &lt;/slide&gt;
+
+&lt;/slideset&gt; 
+
+&lt;/slideshow&gt;
+</pre>
+
+    <p>Note that a full doctype is specified, once again optional.
+    The <code>slides.dtd</code> is provided by Sun to define the
+    slide format it uses. Unfortunately, that is the only
+    documentation users have to go by, so I illustrate the most
+    important elements in my example above. Sun also provides a
+    sample presentation source file.</p>
+
+    <p>The slideshow element represents the entire presentation,
+    which is generated as a single (sometimes quite large) SVG
+    file. It starts with an optional title for the entire
+    presentation, and follows with an optional metadata element
+    providing information about the speaker and occasion of the
+    presentation. The core of the presentation is in one or more
+    slideset children, each of which represents a subsection of the
+    presentation.</p>
+
+    <p>Each slideset has its own title and set of slide elements,
+    each of which is a single panel. Note that Sun's SVG
+    presentations are designed to take up 1024 by 768 pixels. That
+    can be changed, but only with significant effort. The slide
+    element allows the user to specify the traditional bullet
+    items, images, and links, with a range of style options
+    available for highlights and formatting. Each slide has an ID
+    that can be used as an internal reference in the presentation;
+    I'll use it as a guide as we take a closer look at our
+    example.</p>
+
+    <p>Slide I.1 shows the basics. It has a slide title and a
+    series of plain items. It also has a speaker's note not
+    rendered into the final SVG. The third item illustrates
+    emphasis, which is rendered as a color change.</p>
+
+    <p>Slide II.1 demonstrates headings and places items within a
+    bullet list, which renders each item with a leading graphic.
+    There are also flat lists and numbered lists.</p>
+
+    <p>Slide II.2 renders SVG source code into the presentation.
+    It's our earlier example, modified to fit into the generated
+    presentation. As you can see, I've moved the graphics around,
+    resized some things, and changed the text style to print in
+    white so that it shows up against the default black background
+    of the presentation. The source code is enclosed, naturally, in
+    a CDATA section so it can be rendered verbatim. It is placed in
+    a preformatted tag, supposedly to leave the formatting as
+    is.</p>
+
+    <p>That <em>supposedly</em> points to one of the biggest
+    problem areas in Sun's toolkit: poor support for block-level
+    structures. Block-level structures are those that can encompass
+    several physical display lines and are formatted accordingly.
+    Many presentation elements, including preformatted, only make
+    sense as block-level elements, and are indeed indicated as such
+    in Sun's DTD. Yet the toolkit uses in-line styling to render
+    such elements, so they're displayed in one long line.</p>
+
+    <p>A work-around for now, one that Sun uses in its own
+    presentation example, is enclosing each line of the desired
+    output in a separate formatting tag. So, for instance, each
+    line in the SVG listing in slide II.2 would be enclosed in its
+    own preformatted tag. However, that is not only tedious but
+    antithetical to the most fundamental ideas behind XML and
+    reusable style.</p>
+
+    <p>The right answer is to fix the stylesheet. Unfortunately, I
+    found after some fiddling that the straightforward fix didn't
+    seem to have the expected effect, and it might just be that Sun
+    was dealing with problems in Adobe's SVG viewer (the
+    recommended one, and the only one I found capable of handling
+    the resulting presentations).</p>
+
+    <p>Slide II.3 renders the actual SVG image into the
+    presentation. The graphic element establishes a specialized
+    link that instructs the SVG viewer to display the graphic
+    in-line. Other graphic formats such as PNG and JPEG can be used
+    as well.</p>
+
+    <p>Slide III.1 shows some quotes in paragraph form.
+    Attributions are highlighted with emphasis. Note the role
+    attribute on the emphasis element. That is used to specify
+    different types of emphasis. Sun's toolkit doesn't yet render
+    different types of emphasis differently, and the valid role
+    attributes in the given DTD are rather limited. That is
+    probably an area Sun is still working on.</p>
+
+    <p>Also note that the contents of the paraelement suffer from
+    the block-level element problem I mentioned earlier, and they
+    are unfortunately rendered in a single line. In all three of
+    the quotes, the line goes off the edge of the presentation area
+    and, because Adobe's viewer lacks scroll bars, information is
+    lost. The work-around (hacking the quotes into multiple
+    paraelements) is too horrid to contemplate, and hopefully that
+    bug will be addressed soon.</p>
+
+    <p>Figure 2 illustrates what the presentation looks like while
+    on slide II.3, the one that incorporates the sample SVG image.
+    Next I'll explain how I got from Listing 2 to Figure 2.</p>
+
+    <center>
+      <table cellpadding="5" border="0">
+        <tr>
+          <td>
+            <center>
+              <a
+              href="images/swol-1020-svg_fig2.gif">
+              <img vspace="3" width="175" height="157"
+              src="images/swol-1020-svg_fig2_sml.gif" />
+              </a><br />
+              <font size="-1"><strong>Figure 2. Click on thumbnail
+              to view full image (36 KB)</strong></font>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <p><font size="+1"><strong>Working the
+    machinery</strong></font><br />
+    Now for the fun part: making this stuff happen on your
+    computer. Several hoops and gotchas exist for now, so I'll try
+    to walk you through it all. As SVG adoption spreads and the
+    technology matures, I fully expect the process for SVG
+    presentation (and the millions of other SVG application
+    opportunities) to become much smoother.</p>
+
+    <p>First, get the software you need. Links for all downloads
+    are given in the Resources section. Sun's SVG Slide Toolkit
+    came as <code>svgslidetool.zip</code>. You need a fully
+    compliant XSLT 1.0 processor to work the toolkit and, believe
+    me, the SVG toolkit is a very thorough test of XSLT 1.0
+    compliance. Sun tested using XT and Saxon. I used 4Suite, which
+    I codevelop (version 0.9.1 or greater is required). Finally,
+    you need an SVG viewer to see the resulting presentation. Sun
+    recommends Adobe's SVG viewer, which is fine except for one
+    thing: it only runs on Windows. I tried IBM's SVGView, CSIRO's
+    SVG toolkit, and Ralph Levien's Gill, none of which even came
+    close to properly rendering the SVG Sun's toolkit emits. I
+    don't suppose there's much chance of a Unix port from
+    Adobe.</p>
+
+    <p>For now, install Adobe's SVG viewer on the Windows box on
+    which you'll be viewing the presentation. Then install 4Suite
+    (or other XSLT processor of choice) on the box you'll be using.
+    Unzip <code>svgslidetool</code>. It has several files in the
+    created <code>SVGslides</code> directory and more in
+    <code>SVGslides/images</code>. It also has an all-but-useless
+    <code>README.html</code>. Start with our example
+    presentation.</p>
+
+    <p>Listing 2 has an image link, <code>sample.svg</code>. You
+    can make this file by copying from Listing 3.</p>
+
+    <p><strong>Listing 3</strong></p>
+
+    <p>&lt;?xml version="1.0"?&gt; &lt;!DOCTYPE svg PUBLIC
+    "-//W3C//DTD SVG 20000802//EN"
+    "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd"
+    &gt; &lt;svg width="400" height="600"&gt; &lt;desc&gt;SVG
+    Sample for Presentation&lt;/desc&gt;</p>
+
+    <p>&lt;style type="text/css"&gt; .Lagos { fill: white; stroke:
+    green; stroke-width: 16 } .ViaAppia { fill: none; stroke:
+    black; stroke-width: 8 } .OrthoLogos { font-size: 32;
+    font-family: helvetica; fill:white } &lt;/style&gt;</p>
+
+    <p>&lt;ellipse transform="translate(100 75)" rx="50" ry="100"
+    style="fill: brown; stroke: yellow; stroke-width: 3"/&gt;</p>
+
+    <p>&lt;polygon transform="translate(200 -250) rotate(45)"
+    class="Lagos" points="350,75 379,161 469,161 397,215 423,301
+    350,250 277, 301 303,215 231,161 321,161"/&gt;</p>
+
+    <p>&lt;text class="OrthoLogos" x="0" y="250"&gt;TO
+    KALON&lt;/text&gt;</p>
+
+    <p>&lt;path class="ViaAppia" d="M100,200 C100,100 250,100
+    250,200 S400,300 400,200"/&gt; &lt;/svg&gt; </p>
+
+    <p>Copy Listing 2 to a file called <code>listing2.xml</code>.
+    Then copy Listing 3 to <code>sample.svg</code>. You can place
+    those two files right into the <code>SVGslides</code>
+    directory, or you can copy <code>SVGslides/slides.dtd,
+    SVGslides/svgslides.xsl, SVGslides/svgslides_custom.xsl</code>
+    to the same directory as <code>listing1.xml</code> or whatever
+    presentation you happen to be building.</p>
+
+    <p>Now use the XSLT processor to apply the toolkit:</p>
+<pre>
+[uogbuji@borgia SVGslides]$ 4xslt listing2.xml svgslides.xsl &gt; test.svg
+</pre>
+
+    <p>That runs the 4XSLT processor with <code>listing2.xml</code>
+    as sources and <code>svgslides.xsl</code> as stylesheet. The
+    output is redirected to <code>test.svg</code>, which has the
+    entire presentation in SVG form.</p>
+
+    <p>To display that in Adobe's SVG viewer, copy the generated
+    <code>test.svg</code> and <code>slides.css</code> into a
+    directory on the Windows machine and use Netscape Navigator or
+    Internet Explorer to browse the svg file. That should launch
+    Adobe's viewer if it has been properly installed.</p>
+
+    <p>These are the files needed for building the presentation
+    files:</p>
+
+    <ul>
+      <li>The source file</li>
+
+      <li>SVG images referenced by the source file</li>
+
+      <li><code>svgslides.xsl</code></li>
+
+      <li><code>svgslides_custom.xsl</code></li>
+
+      <li><code>slides.dtd</code> (if your XSLT processor will try
+      to validate)</li>
+    </ul>
+
+    <p>These are the files needed for viewing the presentation
+    files:</p>
+
+    <ul>
+      <li>The generated SVG presentation file</li>
+
+      <li><code>slides.css</code></li>
+
+      <li>Non-SVG images referenced by the source file</li>
+    </ul>
+
+    <p>The above dependency lists are the main detail to remember
+    when using Sun's toolkit. If you omit any while building the
+    presentation, you'll get errors from your XSLT engine. If you
+    omit any referenced SVG images, they will be silently ignored.
+    If you omit any files while building the presentation, Adobe's
+    SVG viewer will hang with a message in the status bar saying
+    <em>Retrieving Referenced Files...</em></p>
+
+    <p>Note that in the examples that come with Sun's SVG toolkit,
+    all the referenced images are placed in an images directory. Be
+    careful that the relative directory structure remains the same
+    from building to viewing if you do things that way. I found it
+    easier just to keep all the needed files in the same
+    directory.</p>
+
+    <p>One final note: Sun touts its SVG slide toolkit as being
+    customizable. I think that is an overstatement. True, you can
+    tweak most presentation appearance and behavior facilities by
+    modifying <code>SVGslides/svgslides_custom.xsl</code>, but that
+    is such a complex beast that you might as well write your own
+    stylesheet from scratch. Customization is one area where Sun
+    might make a real difference in making the toolkit a Powerpoint
+    killer.</p>
+
+    <p><font size="+1"><strong>Conclusion</strong></font><br />
+    SVG is a marvelous technology. It must be mentioned that its
+    proponents (myself included) should be careful not to turn it
+    into the overhyped technology of the week. Its main
+    revolutionary claim is to take a well-trodden problem space
+    (vector graphics) and craft a solution that works with the rest
+    of the XML universe. That sounds simple, but many sharks lurk
+    in those waters, and the SVG WG did a tremendous job.</p>
+
+    <p>Sun's SVG Slide Toolkit is a neat application of SVG's XML
+    integration. It uses XML, SVG, XSLT, CSS, and XLink to turn
+    very simple slide specifications into slick-looking slides that
+    gain potential extensibility and power from SVG.
+    <em>Potential</em> is the key word. The toolkit is a usable
+    solution, but glitches and complex use and deployment mean that
+    the user experience is much less friendly than the standard
+    established by traditional presentation programs. That is not
+    in itself a bad thing: the toolkit is definitely aimed at power
+    users. But to make power users happy, it will have to make
+    customization a straightforward task.</p>
+
+    <p>Because SVG viewers are still emerging, even the modest goal
+    of providing sophisticated slides to Unix users isn't met
+    because only Adobe's SVG viewer for Windows can handle the
+    output.</p>
+
+    <p>However, Sun's toolkit is still useful for basic
+    presentations and is a nice learning tool for SVG. It also
+    packs a significant <em>wow</em> factor as a demonstration of
+    XML. I definitely recommend you give it a try for your next
+    presentation if you have an extra hour to experiment. <img
+    height="8" width="8"
+    src="http://a301.g.akamai.net/7/301/1403/v001/www.unixinsider.com/unixinsideronline/icons/dingbat.gif" />
+     <!-- end body text -->
+    </p>
+
+    <p><a id="bio" name="bio"></a></p>
+
+    <table cellpadding="0" cellspacing="3" border="0">
+      <tr>
+        <td valign="TOP"><!--IMG-->
+        </td>
+
+        <td valign="TOP"><strong><font size="-1"
+        face="Arial,Helvetica,Sans-serif">About the
+        author</font></strong> <br />
+        <a href="mailto:Uche.Ogbuji">Uche Ogbuji</a> is a
+        consultant for and cofounder of <a
+        href="http://www.fourthought.com">FourThought</a>, a
+        consulting firm that specializes in custom software
+        development for enterprise applications, particularly using
+        XML to provide Web-based integration platforms for small or
+        medium-size businesses.</td>
+      </tr>
+    </table>
+
+    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="2" bgcolor="#FF6600"><font color="#FFFFFF"
+        face="Arial,Helvetica,Sans-serif"><strong>Resources and
+        Related Links</strong></font></td>
+      </tr>
+
+      <tr>
+        <td>&#160;</td>
+
+        <td>
+          <ul>
+            <li>W3C Scalable Vector Graphics:<br />
+            <a
+            href="http://www.w3.org/Graphics/SVG/Overview.htm8">http://www.w3.org/Graphics/SVG/Overview.htm8</a></li>
+
+            <li>Sun's SVG Executive Summary:<br />
+            <a
+            href="http://www.sun.com/software/xml/developers/svg/">http://www.sun.com/software/xml/developers/svg/</a></li>
+
+            <li>Sun's SVG Slide Toolkit:<br />
+            <a
+            href="http://www.sun.com/xml/developers/svg-slidetoolkit/">
+            http://www.sun.com/xml/developers/svg-slidetoolkit/</a></li>
+
+            <li>"XML: The Future of EDI?" Uche Ogbuji (<em>Unix
+            Insider,</em> February 1999):<br />
+            <a
+            href="http://www.unixinsider.com/swol-02-1999/swol-02-xmledi.html">
+            http://www.unixinsider.com/swol-02-1999/swol-02-xmledi.html</a></li>
+
+            <li>Sample SVG generated from XML/XSLT for chemical
+            processing:<br />
+            <a
+            href="http://www.ch.ic.ac.uk/svg/">http://www.ch.ic.ac.uk/svg/</a></li>
+
+            <li>IBM's SVGView:<br />
+            <a
+            href="http://www.alphaworks.ibm.com/aw.nsf/techs/svgview">
+            http://www.alphaworks.ibm.com/aw.nsf/techs/svgview</a></li>
+
+            <li>Damper for the SVG hype:<br />
+            <a
+            href="http://www.levien.com/svg/shame.html">http://www.levien.com/svg/shame.html</a></li>
+
+            <li>SVG in GNOME:<br />
+            <a
+            href="http://www.levien.com/svg/">http://www.levien.com/svg/</a></li>
+
+            <li>Sketch, a vector graphics editor for Linux that
+            supports SVG:<br />
+            <a
+            href="http://sketch.sourceforge.net/">http://sketch.sourceforge.net/</a></li>
+
+            <li>Adobe's SVG page, including their SVG viewer for
+            Windows:<br />
+            <a
+            href="http://www.adobe.com/svg">http://www.adobe.com/svg</a></li>
+
+            <li>4Suite:<br />
+            <a
+            href="http://FourThought.com/4Suite/">http://FourThought.com/4Suite/</a></li>
+
+            <li>XT:<br />
+            <a href="http://4xt.org/">http://4xt.org/</a></li>
+
+            <li>Saxon, Mike Kay's XSLT processor<br />
+            <a
+            href="http://users.iclway.co.uk/mhkay/saxon/">http://users.iclway.co.uk/mhkay/saxon/</a></li>
+          </ul>
+          <strong>Other Unix Insider resources</strong>
+
+          <ul>
+            <li>The <em>Unix Insider</em> Topical Index -- a
+            comprehensive listing of all <em>Unix Insider</em>
+            articles by subject:<br />
+            <a
+            href="http://www.unixinsider.com/common/swol-siteindex.html">
+            http://www.unixinsider.com/common/swol-siteindex.html</a></li>
+
+            <li>Visit UnixWHERE -- launchpad to hundreds of online
+            resources for Sun users:<br />
+            <a
+            href="http://www.unixinsider.com/common/unixwhere.html">
+            http://www.unixinsider.com/common/unixwhere.html</a></li>
+
+            <li>Explore back issues of <em>Unix Insider:</em><br />
+            <a
+            href="http://www.unixinsider.com/common/swol-backissues.html">
+            http://www.unixinsider.com/common/swol-backissues.html</a></li>
+
+            <li>IDG.net, your one-stop IT resource:<br />
+            <a
+            href="http://www.idg.net">http://www.idg.net</a></li>
+          </ul>
+        </td>
+
+        <td>&#160;</td>
+      </tr>
+    </table>
+
+<!--
+    <div align="CENTER">
+      <a href="/unixinsideronline/common/swol-copyright.html"><img
+      border="0" width="400" height="22"
+      src="http://a301.g.akamai.net/7/301/1403/v002/www.unixinsider.com/unixinsideronline/icons/b-copyright99.gif"
+       alt="(c) Copyright 2000 Web Publishing Inc., and IDG Communication company" />
+      </a>
+    </div>
+-->
+
+  </body>
+</html>
+

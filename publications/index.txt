@@ -1,0 +1,21 @@
+<title>Uche Ogbuji's publications</title>
+<main>
+<p>I have written a great deal on technology topics, including the articles listed on this page.  Also see:</p>
+    
+<ul>
+  <li><a href="http://www-106.ibm.com/developerworks/xml/library/x-think-xml/">The index of my <i>Thinking XML</i> column on IBM developerWorks</a>.</li>
+  <li><a href="http://www-106.ibm.com/developerworks/webservices/library/ws-pythcol.html">The index of my <i>Python Web services developer</i> column on IBM developerWorks</a>.</li>
+  <li><a href="http://www.xml.com/pub/au/84">My article summary page on XML.com</a>.</li>
+  <li><a href="http://www.oreillynet.com/pub/au/1054">Summary page of weblog on XML.com</a>.</li>
+  <li><a href="http://www.adtmag.com/article.asp?id=8515">Summary of my articles at ADT</a>.</li>
+</ul>
+
+<!--
+<div>
+  <p><a href="/uche.ogbuji.net/tech/pub.doc?xslt=/uche.ogbuji.net/main.xslt&amp;details=yes">Click here to view article summaries</a>.  Also see:</p>
+</div>
+-->
+
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="/feed/xhtml/pubs"/>
+</main>
+

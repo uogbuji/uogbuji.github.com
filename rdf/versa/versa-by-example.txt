@@ -1,0 +1,931 @@
+title: Uche Ogbuji: Versa by example
+csslink: /main.css
+
+Versa by example
+================
+
+This document is [on-line](http://uche.ogbuji.net/tech/rdf/versa/versa-by-example).  You can [download](http://uche.ogbuji.net/tech/rdf/versa/etc/versa-by-example.zip) the entire packet of this tutorial, which includes support files (graph images of the sample models, query files, etc.).
+
+I will be using the Versa implementation in 4suite 1.0a1 to run the examples.
+There are also notations sprinkled into the article that allow me to
+extract test cases from the article.  For example, a line starting with
+"@@NS" sets up a namespace mapping.  "@@SOURCE" sets up the current source RDF
+document for testing. "@@QUERY" sets up a test query.  "@@EXPECTED" sets up
+the expected result for the preceding test query, expressed in the XML
+mapping to the for Versa data model.  The latter three can involve
+listings with multiple lines, and so use the explicit terminator "@@"
+
+
+##Lessons 1-20
+
+Let us start with wordnet.rdf an example based on the WordNet model from `http://xmlns.com/wordnet/1.6/Web`, updated so that no default namespaces are used.  See wordnet.jpg in the download packet for a graph view.
+
+    $ cat wordnet.rdf
+    @@SOURCE
+    <?xml version="1.0"?>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:wn="http://xmlns.com/wordnet/1.6/"
+      xml:base=""
+    >
+      <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Web">
+        <rdfs:label>Web [ 1 ]</rdfs:label>
+        <rdfs:description>an intricate network suggesting something that was formed by weaving or interweaving; "the trees cast a delicate web of shadows over the lawn"</rdfs:description>
+        <rdfs:subClassOf>
+          <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Object">
+            <rdfs:label>Object [ 1 ]</rdfs:label>
+            <rdfs:description>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</rdfs:description>
+            <rdfs:subClassOf>
+              <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Physical_object">
+                <rdfs:label>Physical_object [ 1 ]</rdfs:label>
+                <rdfs:description>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</rdfs:description>
+                <rdfs:subClassOf>
+                  <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Entity">
+                    <rdfs:subClassOf>
+                      <rdfs:Class rdf:about="http://xmlns.com/wordnet/1.6/Something">
+                      </rdfs:Class>
+                    </rdfs:subClassOf>
+                  </rdfs:Class>
+                </rdfs:subClassOf>
+              </rdfs:Class>
+            </rdfs:subClassOf>
+          </rdfs:Class>
+        </rdfs:subClassOf>
+      </rdfs:Class>
+    </rdf:RDF>
+    @@
+    $
+
+
+###Lesson 1
+
+First of all I can get all the resources in the model, using the all()
+function.  Using 4versa, this would look like:
+
+    $ 4versa --rdf-file=wordnet.rdf "all()"
+    Executing Query:
+    @@QUERY
+    all()
+    @@
+
+    @@EXPECTED
+    <List>
+      <Resource>http://www.w3.org/2000/01/rdf-schema#subClassOf</Resource>
+      <Resource>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Something</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Web</Resource>
+      <Resource>http://www.w3.org/2000/01/rdf-schema#label</Resource>
+      <Resource>http://www.w3.org/2000/01/rdf-schema#description</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Object</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Physical_object</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Entity</Resource>
+    </List>
+    @@
+
+all() does not return literal objects, but it does return
+predicates.  Technically, the underlying RDF implementation determines
+what is considered to be a resource for Versa purposes, but any compliant.
+RDF processor would return the above as all the known resources specified in
+wordnet.rdf, according to standard RDF 1.0 rules.  The support and presence
+of RDF schemata, could, of course, change what objects are considered
+resources and literals based on applicable declarations.
+
+
+###Lesson 2
+
+Let us get the label of all resources that have one.  We'll do this using
+a traversal expression, 
+
+    all()-rdfs:label->*
+
+rdfs:label is a resource.  Versa allows you to express resources in an
+abbreviated form that should be familiar to RDF users: the URI of the
+resource is broken into two parts, and the first part is mapped to a
+namespace prefix, in this case "rdfs".  The abbreviation form consists
+of the namespace prefix and the latter part of the URI joined by a colon.
+This is similar to a "QName" from XML.
+
+I use the namespace mappings expressed in the source document:
+
+    @@NS wn -> http://xmlns.com/wordnet/1.6/
+    @@NS rdf -> http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    @@NS rdfs -> http://www.w3.org/2000/01/rdf-schema#
+
+Traversal expressions are a core feature of Versa.  They allow you to
+match patterns in the model, by analogy to their structure as directed
+graphs.  The above traversal expression is a forward traversal expession,
+with an expression that yields a set of subjects, one that yields a
+set of predicates.  A set of statements is gathered: all statements whose
+subject is in the subject set and whose predicate is in the predicate set.
+The last expression acts as a filter, taking the object from each statement
+set, and using it as the context for evaluation.  If the result of this
+evaluation is boolean true (after any necessary conversions), the object
+is added to the result set.
+
+To reiterate: this means that the result set comes from the *objects* of
+statements matching the traversal expression.
+
+I only specify a single resource for the predicate (rdfs:label), but
+this is OK, as it is converted to a Set of length 1 automatically by
+Versa.
+
+    $ 4versa --rdf-file=wordnet.rdf "all()-rdfs:label->*"
+    Executing Query:
+    @@QUERY
+    all()-rdfs:label->*
+    @@
+    With nsMapping of:
+    wn --> http://xmlns.com/wordnet/1.6/Web
+    rdf --> http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs --> http://www.w3.org/2000/01/rdf-schema#
+    @@EXPECTED
+    <List>
+      <String>Web [ 1 ]</String>
+      <String>Physical_object [ 1 ]</String>
+      <String>Object [ 1 ]</String>
+    </List>
+    @@
+
+From now on we'll display the results without reference to the
+4versa command line.  You should expect the same structure of
+results from any Versa engine, although they may not be presented
+in the same XML form as 4versa uses, or they may not be in XML at all.
+
+
+###Lesson 3
+
+I can make my criteria more sophisticated.  For instance, to get
+only values whose label is "Web [ 1 ]", I can replace the catch-all
+"*" with an equality check:
+
+    @@QUERY
+    all() - rdfs:label -> eq("Web [ 1 ]")
+    @@
+
+    @@EXPECTED
+    <List>
+      <String>Web [ 1 ]</String>
+    </List>
+    @@
+
+
+If I want all values whose label contains the string "je", I can use
+
+    @@QUERY
+    all() - rdfs:label -> contains("je")
+    @@
+
+    @@EXPECTED
+    <List>
+      <String>Object [ 1 ]</String>
+      <String>Physical_object [ 1 ]</String>
+    </List>
+    @@
+
+Of course, in such cases, what I usually want are the resource that
+are subjects of matching statements rather than the objects.  See
+lesson 9 for how to retrieve the subjects instead.
+
+
+###Lesson 4
+
+But actually, the above will get the label of all all resources in the model
+that have one.  If I want to restrict it to resource of type rdfs:Class
+that have labels, I could write
+
+    @@QUERY
+    (rdfs:Class <- rdf:type - *) - rdfs:label -> *
+    @@
+
+This uses a chained traversal expression, one backward, and one forward.
+Let's take a quick look at the backward traversal:
+
+    rdfs:Class <- rdf:type - *
+
+This is similar to the forward traversal, but it starts with a set of
+objects.  The second expression is a set of predicates, and the third
+is still a filtering expression that is evaluated on all the partial
+results of statements matching the subject and predicate set.  The filter
+is applied with each subject as context, and if true, the subject is added
+to the result set.
+
+So if you can think of the forward traversal as moving along the specified
+arcs from subjects to objects, and then filtering the result, think of
+a backward traversal as moving *against* the specified predicates from
+objects to subjects, and then filtering the subjects.
+
+The result of the first traversal becomes the subject set of the second one.
+
+It will help to make this process clear if you follow this movement
+on the graph of my sample model.
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <String>Web [ 1 ]</String>
+      <String>Physical_object [ 1 ]</String>
+      <String>Object [ 1 ]</String>
+    </List>
+    @@
+
+
+###Lesson 5
+
+Because type checks are so common in query, Versa has a short cut, the type function.  The following is the same as the above query
+
+    @@QUERY
+    type(rdfs:Class) - rdfs:label -> *
+    @@
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <String>Web [ 1 ]</String>
+      <String>Physical_object [ 1 ]</String>
+      <String>Object [ 1 ]</String>
+    </List>
+    @@
+
+
+###Lesson 6
+
+But what if I want to do the same thing, but I want the label *and* the description?  I can retrieve the list of resources of interest, and then use the
+distribute function to compute subexpressions over each:
+
+    @@QUERY
+    distribute(type(rdfs:Class), ".- rdfs:label->*", ".-rdfs:description->*")
+    @@
+
+The distribute function takes 2 or more aruments.  The result of the first
+argument is converted to a list (the source list).  Each item in the list
+is take in turn, and treated as context.  The second and following arguments
+are each converted to a string, which is parsed as a Versa sub-query
+(a dynamic expression) and evaluated with this context.  The result
+of the distribute function is a list of lists.  The outer list is as
+long as the list given by the first argument.  Each inner list contains
+the results of evaluating each item in the initial list against
+the dynamic expressions.
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <List>
+        <List>
+          <String>Web [ 1 ]</String>
+        </List>
+        <List>
+          <String>an intricate network suggesting something that was formed by weaving or interweaving; "the trees cast a delicate web of shadows over the lawn"</String>
+        </List>
+      </List>
+      <List>
+        <List>
+        </List>
+        <List>
+        </List>
+      </List>
+      <List>
+        <List>
+          <String>Object [ 1 ]</String>
+        </List>
+        <List>
+          <String>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</String>
+        </List>
+      </List>
+      <List>
+        <List>
+          <String>Physical_object [ 1 ]</String>
+        </List>
+        <List>
+          <String>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</String>
+        </List>
+      </List>
+      <List>
+        <List>
+        </List>
+        <List>
+        </List>
+      </List>
+    </List>
+    @@
+
+Notice the empty sets.  This is because not all of the resources have labels or descriptions.  The empty sets act as placeholders for this.
+
+
+###Lesson 7
+
+If the empty sets are a nuisance, I could explicitly exclude resources that don't have a label, using the filter function:
+
+@@QUERY
+distribute(filter(type(rdfs:Class), ".- rdfs:label->*"), ".- rdfs:label->*", ".-rdfs:description->*")
+@@
+
+The filter function takes 2 or more arguments.  The first one is converted
+to a list (the source list).  Each item in this list is used as the context
+in evaluating the dynamic expressions given by the second and subsequent
+arguments.  The result of each dynamic expression is converted to boolean
+and the result is a list of each item from the source list that produces
+a true result when applied against all the dynamic expression.
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <List>
+        <List>
+          <String>Web [ 1 ]</String>
+        </List>
+        <List>
+          <String>an intricate network suggesting something that was formed by weaving or interweaving; "the trees cast a delicate web of shadows over the lawn"</String>
+        </List>
+      </List>
+      <List>
+        <List>
+          <String>Object [ 1 ]</String>
+        </List>
+        <List>
+          <String>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</String>
+        </List>
+      </List>
+      <List>
+        <List>
+          <String>Physical_object [ 1 ]</String>
+        </List>
+        <List>
+          <String>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</String>
+        </List>
+      </List>
+    </List>
+    @@
+
+
+###Lesson 8
+
+I can easily look up a particular resource, using a traversal expression.
+Let us get the description of one of the resources:
+
+    @@QUERY
+    @"http://xmlns.com/wordnet/1.6/Object" - rdfs:description -> *
+    @@
+
+One can't always use an abbreviated resource literal.  Versa allows
+you to spell out the entire URL of the resource:
+@"http://xmlns.com/wordnet/1.6/Object".  The part between the quotes
+must be a valid URI, and the literal represents the resource with that URI.
+In this case, I could also have used an abbreviated form, such as wn:Object.
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <String>a physical (tangible and visible) entity; "it was full of rackets, balls and other objects"</String>
+    </List>
+    @@
+
+
+###Lesson 9
+
+So far I have obtained the objects of statements in traversal expressions,
+but often what I want are the subjects of matching statements.  Versa provides
+filter expressions, which are similar to traversal expressions, but which
+return subjects rather than objects.
+
+For example, to get all resources with a label of "Web [ 1 ]", I can use
+the following:
+
+    @@QUERY
+    all() |- rdfs:label -> eq("Web [ 1 ]")
+    @@
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <Resource>http://xmlns.com/wordnet/1.6/Web</Resource>
+    </List>
+    @@
+
+The operation of this expressions is almost exactly like the similar
+forward traversal from lesson 3, but rather than returning the object,
+it returns the subject.
+
+Similarly, to get all resources whose label contains the label "je"
+
+    @@QUERY
+    all() |- rdfs:label -> contains("je")
+    @@
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <Resource>http://xmlns.com/wordnet/1.6/Object</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Physical_object</Resource>
+    </List>
+    @@
+
+
+###Lesson 10
+
+In lesson 1, a simple "all()" returned all resources, including predicates.
+If I only want resources that have a label property, I can do so as follows:
+
+    @@QUERY
+    all() |- rdfs:label -> *
+    @@
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <Resource>http://xmlns.com/wordnet/1.6/Web</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Object</Resource>
+      <Resource>http://xmlns.com/wordnet/1.6/Physical_object</Resource>
+    </List>
+    @@
+
+
+##Lessons 21-40
+
+
+Let's examine another sample model, ogbuji.rdf:
+
+    @@SOURCE
+    <?xml version='1.0' encoding='UTF-8'?>
+    <!DOCTYPE rdf:RDF [
+      <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+      <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+      <!ENTITY fam 'http://rdfinference.org/ril/eg/ogbuji-fam#'>
+    ]>
+    <rdf:RDF
+      xmlns:rdfs='&rdfs;'
+      xmlns:rdf='&rdf;'
+      xmlns:o='&fam;'
+      xml:base=""
+    >
+
+      <o:Male rdf:ID="uogbuji">
+        <o:fname>Uche Ogbuji</o:fname>
+        <o:age>30</o:age>
+        <o:father rdf:resource="#logbuji"/>
+        <o:mother rdf:resource="#mogbuji"/>
+      </o:Male>
+
+      <o:Male rdf:ID="cogbuji">
+        <o:fname>Chimezie Ogbuji</o:fname>
+        <o:age>24</o:age>
+        <o:father rdf:resource="#logbuji"/>
+      </o:Male>
+
+      <o:Male rdf:ID="logbuji">
+        <o:father rdf:resource="#togbuji"/>
+        <o:fname>Linus Ogbuji</o:fname>
+        <o:age>56</o:age>
+      </o:Male>
+
+      <o:Female rdf:ID="mogbuji">
+        <o:fname>Margaret Ogbuji</o:fname>
+        <o:age>52</o:age>
+      </o:Female>
+
+      <o:Female rdf:ID="logbuji1">
+        <o:father rdf:resource="#jstubblefield"/>
+        <o:mother rdf:resource="#lstubblefield"/>
+        <o:fname>Lori Ogbuji</o:fname>
+        <o:age>29</o:age>
+      </o:Female>
+
+      <o:Male rdf:ID="jstubblefield">
+        <o:fname>Jerry Stubblefield</o:fname>
+        <o:age>55</o:age>
+      </o:Male>
+
+      <o:Female rdf:ID="lstubblefield">
+        <o:fname>Lola Stubblefield</o:fname>
+        <o:age>50</o:age>
+      </o:Female>
+
+      <o:Male rdf:ID="oogbuji">
+        <o:father rdf:resource="#uogbuji"/>
+        <o:mother rdf:resource="#logbuji1"/>
+        <o:fname>Osita Ogbuji</o:fname>
+        <o:age>1</o:age>
+      </o:Male>
+
+      <o:Male rdf:ID="cogbuji1">
+        <o:fname>Chidi Ogbuji</o:fname>
+        <o:age>2</o:age>
+        <o:father rdf:resource="#cogbuji"/>
+      </o:Male>
+
+      <o:Male rdf:ID="togbuji">
+        <o:fname>Thomas Ogbuji</o:fname>
+        <o:age>100</o:age>
+      </o:Male>
+
+    </rdf:RDF>
+    @@
+
+
+Note that I shall be using a couple of additional namespace declarations
+in following Versa examples:
+
+@@NS vsort -> http://rdfinference.org/versa/0/2/sort/
+@@NS vtrav -> http://rdfinference.org/versa/0/2/traverse/
+
+These are used as special flags in Versa functions, as we'll see.
+
+Also, I'll use the following namespace rom the listing:
+
+@@NS o -> http://rdfinference.org/ril/eg/ogbuji-fam#
+
+
+###Lesson 21
+
+Let us Get the names of all people in the model, in sorted order:
+
+    @@QUERY
+    sort(all()-o:fname->*)
+    @@
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <String>Chidi Ogbuji</String>
+      <String>Chimezie Ogbuji</String>
+      <String>Jerry Stubblefield</String>
+      <String>Linus Ogbuji</String>
+      <String>Lola Stubblefield</String>
+      <String>Lori Ogbuji</String>
+      <String>Margaret Ogbuji</String>
+      <String>Osita Ogbuji</String>
+      <String>Thomas Ogbuji</String>
+      <String>Uche Ogbuji</String>
+    </List>
+    @@
+
+###Lesson 22
+
+The sort function can sort numerically as well.  Let us get all ages in
+the model, in sorted order:
+
+Result:
+
+    @@QUERY
+    sort(all()-o:age->*, vsort:number)
+    @@
+
+    @@EXPECTED
+    <List>
+      <String>1</String>
+      <String>2</String>
+      <String>24</String>
+      <String>29</String>
+      <String>30</String>
+      <String>50</String>
+      <String>52</String>
+      <String>55</String>
+      <String>56</String>
+      <String>100</String>
+    </List>
+    @@
+
+Note: if you had omitted the "vsort:number" argument, you would have ended up with a string-based soert and the following results:
+
+    @@EXPECTED
+    <List>
+      <String>1</String>
+      <String>100</String>
+      <String>2</String>
+      <String>24</String>
+      <String>29</String>
+      <String>30</String>
+      <String>50</String>
+      <String>52</String>
+      <String>55</String>
+      <String>56</String>
+    </List>
+    @@
+
+If you'd like to sort in descending order, use the optional third argument
+to say so:
+
+    @@QUERY
+    sort(all()-o:age->*, vsort:number, vsort:descending)
+    @@
+
+with result:
+
+    @@EXPECTED
+    <List>
+      <String>100</String>
+      <String>56</String>
+      <String>55</String>
+      <String>52</String>
+      <String>50</String>
+      <String>30</String>
+      <String>29</String>
+      <String>24</String>
+      <String>2</String>
+      <String>1</String>
+    </List>
+    @@
+
+
+Note that if you want to set the sort direction, you must also specify the sort type.
+
+
+###Lesson 23
+
+I can also get the names of people, sorted by their ages.
+
+    @@QUERY
+    sortq(all(), ".-o:age->*", vsort:number) - o:fname -> *
+    @@
+
+This uses sortq, a dynamic version sort function, which sorts the list
+of the results of evaluating each item in the source list using the
+dynamic expression in the second argument.
+
+sortq would typically be used as what SQL folks would call an aggregate
+function.
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <String>Osita Ogbuji</String>
+      <String>Chidi Ogbuji</String>
+      <String>Chimezie Ogbuji</String>
+      <String>Lori Ogbuji</String>
+      <String>Uche Ogbuji</String>
+      <String>Lola Stubblefield</String>
+      <String>Margaret Ogbuji</String>
+      <String>Jerry Stubblefield</String>
+      <String>Linus Ogbuji</String>
+      <String>Thomas Ogbuji</String>
+    </List>
+    @@
+
+
+###Lesson 24
+
+I can also traverse properties transitively.  In for instance, if I wanted
+to get all ancestors of Uche Ogbuji, I need to transitively traverse
+father and mother relationships.  I can do so using a special long-hand
+form of the traversal expression: the traverse function.  Notably, this
+function also allows us to specify arguments, including the transitivity
+of the traversals:
+
+    @@QUERY
+    traverse(@"#uogbuji", set(o:mother, o:father))
+    @@
+
+returns a similar result to that of:
+
+    @"#uogbuji" - set(o:mother, o:father) -> *
+
+The traverse function takes a set of subjects and predicates to be matched
+in the model.  The objects of all statements matching one of the given
+subjects and predicates are returned.
+
+Result:
+
+    @@EXPECTED
+    <Set>
+      <Resource>#mogbuji</Resource>
+      <Resource>#logbuji</Resource>
+    </Set>
+    @@
+
+
+And I can now find all ancestors by setting the transitivity flag:
+
+    @@QUERY
+    traverse(@"#uogbuji", set(o:mother, o:father), vtrav:forward, vtrav:transitive)
+    @@
+
+Result:
+
+    @@EXPECTED
+    <Set>
+      <Resource>#togbuji</Resource>
+      <Resource>#mogbuji</Resource>
+      <Resource>#logbuji</Resource>
+    </Set>
+    @@
+
+
+Of course, Osita Ogbuji has a richer set of ancestors according to my model:
+
+    @@QUERY
+    traverse(@"#oogbuji", set(o:mother, o:father), vtrav:forward, vtrav:transitive)
+    @@
+
+Result:
+
+    @@EXPECTED
+    <Set>
+      <Resource>#mogbuji</Resource>
+      <Resource>#lstubblefield</Resource>
+      <Resource>#togbuji</Resource>
+      <Resource>#jstubblefield</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#logbuji</Resource>
+    </Set>
+    @@
+
+
+###Lesson 25
+
+
+I can also traverse the inverses of properties (similar to backward
+traversals).  To find the children of Linus Ogbuji:
+
+    @@QUERY
+    traverse(@"#logbuji", o:father, vtrav:inverse)
+    @@
+
+Note that I just traverse o:father, since I know in this case o:mother
+is otiose
+
+Result:
+
+    @@EXPECTED
+    <Set>
+      <Resource>#cogbuji</Resource>
+      <Resource>#uogbuji</Resource>
+    </Set>
+    @@
+
+And to find all his descendants:
+
+    @@QUERY
+    traverse(@"#logbuji", set(o:mother, o:father), vtrav:inverse, vtrav:transitive)
+    @@
+
+Note that I restored o:mother, even though it's still otiose.  This would
+have been required if Linus or any of his children had daughters who
+in turn had any children.
+
+Result:
+
+    @@EXPECTED
+    <Set>
+      <Resource>#oogbuji</Resource>
+      <Resource>#cogbuji1</Resource>
+      <Resource>#cogbuji</Resource>
+      <Resource>#uogbuji</Resource>
+    </Set>
+    @@
+
+
+###Lesson 26
+
+
+So far I have always known exactly what properties I want to use in querying
+This won't always be the case.  You can always find all properties expressed
+on a given resource easily enough:
+
+    @@QUERY
+    properties(@"#uogbuji")
+    @@
+
+Result:
+
+    @@EXPECTED
+    <Set>
+      <Resource>http://rdfinference.org/ril/eg/ogbuji-fam#age</Resource>
+      <Resource>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Resource>
+      <Resource>http://rdfinference.org/ril/eg/ogbuji-fam#mother</Resource>
+      <Resource>http://rdfinference.org/ril/eg/ogbuji-fam#father</Resource>
+      <Resource>http://rdfinference.org/ril/eg/ogbuji-fam#fname</Resource>
+    </Set>
+    @@
+
+
+And I can just get the values of all properties of Uche ogbuji:
+
+    @@QUERY
+    @"#uogbuji" - properties(.) -> *
+    @@
+
+    @@EXPECTED
+    <List>
+      <String>http://rdfinference.org/ril/eg/ogbuji-fam#Male</String>
+      <String>30</String>
+      <String>Uche Ogbuji</String>
+      <Resource>#mogbuji</Resource>
+      <Resource>#logbuji</Resource>
+    </List>
+    @@
+
+
+###Lesson 27
+
+Again, if I execute a simple "all() query on the model, I get all
+resources, including predicates:
+
+    <List>
+      <Resource>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</Resource>
+      <Resource>http://rdfinference.org/ril/eg/family/age</Resource>
+      <Resource>#mogbuji</Resource>
+      <Resource>#togbuji</Resource>
+      <Resource>#oogbuji</Resource>
+      <Resource>#cogbuji1</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#logbuji</Resource>
+      <Resource>http://rdfinference.org/ril/eg/family/father</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#jstubblefield</Resource>
+      <Resource>#cogbuji</Resource>
+      <Resource>http://rdfinference.org/ril/eg/family/mother</Resource>
+      <Resource>#lstubblefield</Resource>
+      <Resource>http://rdfinference.org/ril/eg/family/fname</Resource>
+    </List>
+
+
+If I want to to narrow it down to
+only those resources that are subjects of some whatement, I can
+combine a forward filter expression with the properties function:
+
+    @@QUERY
+    all() |- properties() -> *
+    @@
+
+Result:
+
+    @@EXPECTED
+    <List>
+      <Resource>#mogbuji</Resource>
+      <Resource>#mogbuji</Resource>
+      <Resource>#mogbuji</Resource>
+      <Resource>#togbuji</Resource>
+      <Resource>#togbuji</Resource>
+      <Resource>#togbuji</Resource>
+      <Resource>#oogbuji</Resource>
+      <Resource>#oogbuji</Resource>
+      <Resource>#oogbuji</Resource>
+      <Resource>#oogbuji</Resource>
+      <Resource>#oogbuji</Resource>
+      <Resource>#cogbuji1</Resource>
+      <Resource>#cogbuji1</Resource>
+      <Resource>#cogbuji1</Resource>
+      <Resource>#cogbuji1</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#logbuji</Resource>
+      <Resource>#logbuji</Resource>
+      <Resource>#logbuji</Resource>
+      <Resource>#logbuji</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#jstubblefield</Resource>
+      <Resource>#jstubblefield</Resource>
+      <Resource>#jstubblefield</Resource>
+      <Resource>#cogbuji</Resource>
+      <Resource>#cogbuji</Resource>
+      <Resource>#cogbuji</Resource>
+      <Resource>#cogbuji</Resource>
+      <Resource>#lstubblefield</Resource>
+      <Resource>#lstubblefield</Resource>
+      <Resource>#lstubblefield</Resource>
+    </List>
+    @@
+
+Hmm.  Perhaps this is not quite what I want.  I get one copy of
+each resource for each of its properties.  One way to fix this is to
+convert the resulting list to a set, which will eliminate the duplicates
+(and destroy any ordering).
+
+    @@QUERY
+    set(all() |- properties() -> *)
+    @@
+
+Result:
+
+    @@EXPECTED
+    <Set>
+      <Resource>#jstubblefield</Resource>
+      <Resource>#cogbuji</Resource>
+      <Resource>#lstubblefield</Resource>
+      <Resource>#mogbuji</Resource>
+      <Resource>#togbuji</Resource>
+      <Resource>#oogbuji</Resource>
+      <Resource>#cogbuji1</Resource>
+      <Resource>#logbuji1</Resource>
+      <Resource>#uogbuji</Resource>
+      <Resource>#logbuji</Resource>
+    </Set>
+    @@
+

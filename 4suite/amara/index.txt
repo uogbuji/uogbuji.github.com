@@ -1,0 +1,257 @@
+<title>Uche Ogbuji: Amara XML Toolkit</title>
+<![CDATA[
+Amara XML toolkit is an open-source collection of Python tools for XML processing, not just tools that happen to be written in Python, but tools built from the ground up to use Python idioms and take advantage of the many advantages of Python over other programming languages.
+
+Amara builds on 4Suite, but whereas 4Suite focuses more on literal implementation of XML standards in Python, Amara adds a much more Pythonic face to these capabilities.
+
+Amara provides tools you can trust to conform with XML standards without losing the familiar Python feel. The current version is 1.2.0.
+
+<!--  The development version has many performance and API improvements, but it is not quite as field-tested as the stable version. -->
+
+The components of Amara are: 
+
+* _Bindery_: a data binding tool (fancy way of saying it's a very Pythonic XML API)
+
+* _Scimitar_: an implementation of the ISO Schematron schema language for XML, which converts Schematron files to Python scripts
+
+* _domtools_: A set of tools to augment Python DOMs
+
+* _saxtools_: A set of tools to make SAX easier to use in Python
+
+<!--
+* _Flextyper_: an implementation of Jeni Tennison's Data Type Library Language (DTLL). Supports user-defined datatypes in Python for XML processing.
+-->
+
+## Get started
+
+Amara 1.2a2 requires [Python](http://python.org) 2.4 and [4Suite XML 1.0](http://cheeseshop.python.org/pypi/4Suite-XML).  The easiest way to get going is using [easy_install](http://peak.telecommunity.com/DevCenter/EasyInstall):
+
+    easy_install amara
+
+easy_install will automatically take care of installing dependencies for
+you.  If you prefer not to use easy_install, then grab a 4Suite-XML package and install that, then install the Amara package using the usual:
+
+python setup.py install
+
+Or a [Windows installer](http://livingpyxml.python-hosting.com/wiki/AmaraWinInstallers), or other method.
+
+To report any problems, contribute, or just discuss Amara, please use the [the 4Suite mailing list](http://lists.fourthought.com/mailman/listinfo/4Suite) for now. Just make sure you mention Amara in the subject line, preferably by prefixing with "\[amara]".
+
+## Downloads, etc.
+
+You can either grab what you need from the [Amara FTP site](ftp://ftp.4suite.org/pub/Amara/), or from the links below.  You can also use CVS (see farther below).
+
+* [Quick reference, online](quickref)
+* <a href="/tech/4Suite/etc/amara-manual.html">User manual, online</a>
+* <a href="/tech/4Suite/etc/Amara-1.2a2.zip">Latest release (.zip)</a>
+* <a href="/tech/4Suite/etc/Amara-1.2a2.tar.gz">Latest release (.tar.gz)</a>
+* <a href="/tech/4Suite/etc/Amara-1.2a2.tar.bz2">Latest stand alone release (.tar.bz2)</a>
+* <a href="ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.zip">Latest CVS snapshot (.zip)</a>
+* <a href="ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.tar.gz">Latest CVS snapshot (.tar.gz)</a>
+* <a href="ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.tar.bz2">Latest CVS snapshot (.tar.bz2)</a>
+* [browse CVS on-line](http://cvs.4suite.org/viewcvs/Amara/)
+
+Windows users might want to start with Luis Miguel Morillas' nice page ["Amara For Windows Installer"](http://livingpyxml.python-hosting.com/wiki/InstallerForWindows).  There are links to other installation resources from the [wiki](http://notes.4suite.org/AmaraXmlToolkit).
+
+<!--
+<table style="width: 100%">
+<thead>
+<tr>
+  <th style="align: left">Development branch</th>
+  <th style="align: left">Stable branch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="quickref">Bindery quick reference, online</a></td>
+  <td>&#160;</td>
+</tr>
+<tr>
+  <td><a href="manual-dev">User manual, online</a></td>
+  <td><a href="manual-stable">User manual, online</a></td>
+</tr>
+<tr>
+  <td><a href="/tech/4Suite/etc/Amara-1.1.7-allinone.win32-py2.4.exe">Latest allinone Windows package</a></td>
+  <td><a href="/tech/4Suite/etc/Amara-allinone-1.0.win32-py2.4.exe">Latest allinone Windows package</a></td>
+</tr>
+<tr>
+  <td><a href="/tech/4Suite/etc/Amara-1.1.7-allinone.tar.gz">Latest allinone release (.tar.gz)</a></td>
+  <td><a href="/tech/4Suite/etc/Amara-1.0-allinone.tar.gz">Latest allinone release (.tar.gz)</a></td>
+</tr>
+<tr>
+  <td><a href="/tech/4Suite/etc/Amara-1.1.7-allinone.tar.bz2">Latest allinone release (.tar.bz2)</a></td>
+  <td><a href="/tech/4Suite/etc/Amara-1.0-allinone.tar.bz2">Latest allinone release (.tar.bz2)</a></td>
+</tr>
+<tr>
+  <td><a href="/tech/4Suite/etc/Amara-1.1.7.zip">Latest stand alone release (.zip)</a></td>
+  <td><a href="/tech/4Suite/etc/Amara-1.0.zip">Latest stand alone release (.zip)</a></td>
+</tr>
+<tr>
+  <td><a href="/tech/4Suite/etc/Amara-1.1.7.tar.gz">Latest stand alone release (.tar.gz)</a></td>
+  <td><a href="/tech/4Suite/etc/Amara-1.0.tar.gz">Latest stand alone release (.tar.gz)</a></td>
+</tr>
+<tr>
+  <td><a href="/tech/4Suite/etc/Amara-1.1.7.tar.bz2">Latest stand alone release (.tar.bz2)</a></td>
+  <td><a href="/tech/4Suite/etc/Amara-1.0.tar.bz2">Latest stand alone release (.tar.bz2)</a></td>
+</tr>
+<tr>
+  <td><a href="ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.zip">Latest CVS snapshot (.zip)</a></td>
+  <td>&#160;</td>
+</tr>
+<tr>
+  <td><a href="ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.tar.gz">Latest CVS snapshot (.tar.gz)</a></td>
+  <td>&#160;</td>
+</tr>
+<tr>
+  <td><a href="ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.tar.bz2">Latest CVS snapshot (.tar.bz2)</a></td>
+  <td>&#160;</td>
+</tr>
+</tbody>
+</table>
+-->
+
+<!--
+Contributed packages:
+
+* [Amara 1.0 allinone binary package for Windows users (Python 2.4 only)](/tech/4Suite/etc/Amara-allinone-1.0.win32-py2.4.exe) ([Sylvain Hellegouarch](http://www.defuze.org/oss/blog/))
+-->
+
+There's a lot in Amara, but here are highlights: 
+
+## Amara Bindery: XML as easy as py
+
+Bindery turns an XML document into a tree of Python objects corresponding to the vocabulary used in the XML document, for maximum clarity. For example, the document 
+
+    <monty>
+      <python spam="eggs">What do you mean "bleh"</python>
+      <python ministry="abuse">But I was looking for argument</python>
+    </monty>
+
+Becomes a data structure such that you can write: 
+
+    binding.monty.python.spam
+
+In order to get the value "eggs" (as a Python Unicode object) or 
+
+    binding.monty.python[1]
+
+In order to get the element object with the contents "But I was looking for argument". 
+
+There are other such tools for Python, and one thing that makes Bindery unique is that it's driven by a very declarative rules-based system for binding XML to the Python data. You can register rules that are triggered by XPattern expressions specialized binding behavior. It includes XPath support and is very efficient, using SAX to generate bindings. See the [user documentation](/tech/4Suite/etc/amara-manual.html).
+
+## Scimitar: exceptional schema language for an exceptional programming language
+
+Scimitar is an implementation of ISO Schematron that compiles a Schematron schema into a Python validator script.  You typically use scimitar in two phases. Say you have a schematron schema schema1.stron and you want to validate multiple XML files against it, instance1.xml, instance2.xml, instance3.xml. 
+
+First you run schema1.stron through the scimitar compiler script, scimitar.py: 
+
+    scimitar.py schema1.sch
+
+A file, schema1.py (same file stem with the "py" extension sunstituted), is generated in the current working directory. If you'd prefer a different location or file name, use the "-o" option. The generated file is a validator script in Python. It checks the schematron rules specified in schema1.sch. You now run the generated validator script on each XML file you wish to validate: 
+
+    python schema1-stron.py instance1.xml
+
+The validation report is generated on standard output by default, or you can use the "-o" option to redirect it to a file. 
+
+The validation report is an XML external parsed entity, a format much like
+a well-formed XML document, but with some restrictions relaxed.
+
+## Amara DOM Tools: giving DOM a more Pythonic face
+
+Amara DOM Tools features pushdom, similar to xml.dom.pulldom, but easier
+to use, and a function to return an XPath location for any DOM node.
+
+## Amara SAX Tools: SAX without the brain explosion
+
+Tenorsax (amara.saxtools.tenorsax) is a framework for "linerarizing" SAX logic so that it flows a bit more naturally, and needs a lot less state machine wizardry. 
+
+<!--
+## Getting started
+
+**There is only one prereqisite:**
+
+* [Python][56] 2.3 or more recent (tested on 2.3.5 and 2.4.1) 
+
+[4Suite 1.0b1][57] or more recent is optional.  If you have 4Suite, grab the stand alone package, otherwise grab the allinone package.
+-->
+
+## Getting the latest CVS version
+
+If you want to check on a new feature or bug fix recently checked in before there has been a full release, grabbing Amara from CVS is probably your best bet.
+
+First of all, if you do not have a compatible 4Suite build installed, follow the instructions for getting and installing [4Suite CVS](http://4suite.org/docs/4SuiteCVS.xml).
+
+Then to get Amara, log in for CVS operations and then pull the package:
+
+    cvs -d:pserver:anonymous@cvs.4suite.org:/var/local/cvsroot login
+    cvs -d:pserver:anonymous@cvs.4suite.org:/var/local/cvsroot get Amara
+
+Then build as usual, by running:
+
+    python setup.py install
+
+## Amara resources
+
+* [Jason Gaudette](http://lists.fourthought.com/pipermail/4suite/2005-March/007150.html)'s notes on using [Py2Exe](http://www.py2exe.org/) with Amara.
+* Amara intro in Spanish: ["Procesamiento fácil de XML con Python y Amara"](http://livingpyxml.python-hosting.com/wiki/ArticuloCesarCardenas)
+
+## Others on Amara
+
+* Ron Bourret: "[XML Data Binding Resources](http://www.rpbourret.com/xml/XMLDataBinding.htm#runtime)"
+
+* ["paron"](http://groups.google.com/group/turbogears/browse_frm/thread/c79474f728b0958a/8b29d458a3815325?hl=en#8b29d458a3815325): "Amara is terrific -- easy to use, easy to learn."
+
+* Michael Williams: ["I would recommend using Amara. It works wonders with XML."](http://mail.python.org/pipermail/python-list/2006-January/322470.html)
+
+* ["Kofno"](http://kofno.blogspot.com/2005/08/amara-xml-toolkit.html): "This tool handles XML exactly the way I think it should be handled. It's marvelous."
+
+* [Jason Gaudette](http://lists.fourthought.com/pipermail/4suite/2005-March/007150.html): "Amara is the best tool I've found so far for quick XML processing (and I've probably looked at a dozen by this point).  It's a pleasure to use.  If I had your mailing address, I'd have my wife send you some homemade cookies..."
+
+* [Matthew Hawkins](http://www.livejournal.com/users/darthmdh/66117.html): "I forgot to mention a week or so ago, if you're doing any XML work in Python, get Amara."  [He also wrote](http://keithdevens.com/weblog/archive/2005/Aug/10/Amara#comment8148): "Goodbye ugly, crud-filled SAX/DOM parsers, hello Amara! This is a fantastic toolset; very highly recommended.  Refactoring a small library script I have to use amara culled 2k worth of (now dead) code and also made it much more readable."
+
+* [Derek Willis](http://www.thescoop.org/archives/2005/04/29/xml-parsing-with-python/): " If I have to parse XML into a relational database, Amara is my tool of choice.... Nice and easy - the way everybody says XML should be." 
+
+* [Tom Lazar:](http://lists.fourthought.com/pipermail/4suite/2005-April/013607.html): "i just wanted to chime in that just yesterday I had an urgent, real- world problem in where I needed to manipulate an XML Document programmatically...using Amara i hacked a python script that did the whole job in (literally) ten minutes. as I started the script I was a bit apprehensive: afterall our script would pick out certain nodes and assign new values to them (or delete them, depending) and then write it back to the file - but it all worked without a hitch. and looking at the script, you'd never think it was handling XML at all ;-)"  
+[Tom also says](https://zope1.tomster.org/tomster/site/blog/archive/2005/08/10/uche) "I've been using Amara for several months now and except for some initial hickups in the early beta phase (which he cleared away at an impressive speed) it's been rock-solid for me ever since (I use the tools I wrote with Amara on a daily basis)."
+
+* "I just ran across your Amara toolkit, and have to say, I am quite impressed! This is by far one of the best open source python projects that I have come across to date. :o)" -- Shannon Johnson
+* "[Amara rules xml to python conversions. I've used it successfully for an xml interface to legacy databases.](http://mail.python.org/pipermail/python-list/2005-March/271605.html)"
+
+* [Eric van der Vlist](http://advogato.org/person/vdv/) ("...if you're using something like uche's \[Amara Bindery] you may find XML configuration files easier to parse than native files formats."). Note: Eric is author of a similar tool to Amara Bindery, described in "[Data-driven classes for Python](http://dyomedea.com/papers/2004-OSCON/xmlDataDrivenClasses.pdf)"
+
+* "[Kieth Devens: Yet another XML API (for Python)](http://keithdevens.com/weblog/archive/2003/Aug/05/Anobind-XML-API)" [dates from Anobind days]. 
+
+* "[Pensieri di un lunatico minore: Converting XML to something useful](http://www.amber.org/~petrilli/archive/2003/08/05/converting_xml_to_something_useful.html) [dates from Anobind days]" 
+
+* [César Cárdenas Desales](http://livingpyxml.python-hosting.com/wiki/ArticuloCesarCardenas): "A pesar de que la libreria estándar Python cuenta con herramientas y modulos para el procesamiento de XML con SAX y DOM, muchos programadores han pensado que podrían existir formas más simples de trabajar con XML. Amara es un conjunto de herramientas que sirven para facilitar el procesamiento de XML usando Python."
+
+<!--
+## My articles on Amara
+
+[Hands-on intro to Schematron [tutorial]](http://www.ibm.com/developerworks/edu/x-dw-xschematron-i.html)
+
+## Amara resources
+
+...
+-->
+
+   [47]: ftp://ftp.4suite.org/pub/Amara/
+   [51]: ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.zip
+   [52]: ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.tar.gz
+   [53]: ftp://ftp.4suite.org/pub/cvs-snapshots/Amara-CVS.tar.bz2
+   [56]: http://python.org
+   [57]: http://4Suite.org
+   [61]: http://lists.fourthought.com/mailman/listinfo/4Suite
+   [62]: http://www.ibm.com/developerworks/edu/x-dw-xschematron-i.html
+   [63]: http://www.ibm.com/developerworks
+   [64]: http://www.xml.com/pub/a/2003/08/13/py-xml.html
+   [65]: http://www.xml.com
+   [66]: http://www.thescoop.org/archives/2005/04/29/xml-parsing-with-python/
+   [67]: http://lists.fourthought.com/pipermail/4suite/2005-April/013607.html
+   [68]: http://mail.python.org/pipermail/python-list/2005-March/271605.html
+   [69]: http://advogato.org/person/vdv/
+   [70]: http://dyomedea.com/papers/2004-OSCON/xmlDataDrivenClasses.pdf
+   [71]: http://keithdevens.com/weblog/archive/2003/Aug/05/Anobind-XML-API
+   [72]: http://www.amber.org/~petrilli/archive/2003/08/05/converting_xml_to_something_useful.html
+   [73]: http://www.rpbourret.com/xml/XMLDataBinding.htm#runtime
+]]>

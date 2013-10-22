@@ -1,0 +1,4 @@
+NS=wn http://xmlns.com/wordnet/1.6/
+NS=rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#
+NS=rdfs http://www.w3.org/2000/01/rdf-schema#
+QUERY=distribute(type(rdfs:Class), ".- rdfs:label->*", ".-rdfs:description->*")

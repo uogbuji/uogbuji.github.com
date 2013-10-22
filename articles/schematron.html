@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"><html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>Introducing the Schematron</title>
+<meta name='description' content="Judging from the ongoing developments and debates about XML document validation, it's evident the language is in flux. In this article, writer and consultant Uche Ogbuji gets a handle on some of these changes and introduces the Schematron, a new validation and reporting methodology and toolkit. (4,200 words)&#10;"/>
+<meta name='keywords' content='XML, validation, Schematron, DTD, schemas, RELAX, XSLT, XPath'/>
+<meta name='author' content='Uche Ogbuji'/>
+<meta name='date' content='2001-03-05'/>
+<meta name='live' content='yes'/>
+<meta name='publicationDate' content='2000-09-08'/>
+</head>
+<body marginheight='0' vlink='#551a8b' text='#000000' alink='#FF0000' topmargin='0' link='#0000FF' bgcolor='#FFFFFF'>
+<!-- stopindex -->
+
+<h1 align='CENTER'>
+Introducing the Schematron
+</h1>
+
+<h3 align='CENTER'>
+A fresh approach to XML validation and reporting
+</h3>
+
+<i>Originally featured August 2000 on UNIX Insider, now <a href='http://itworld.com'>ITWorld</a></i>
+
+<blockquote>
+<strong>Summary</strong><br/>
+Judging from the ongoing developments and debates about XML document validation, it's evident the language is in flux. In this article, writer and consultant Uche Ogbuji gets a handle on some of these changes and introduces the Schematron, a new validation and reporting methodology and toolkit. <em>(4,200 words)</em>
+
+</blockquote>
+
+<strong>By <a href='mailto:uche.ogbuji@fourthought.com'>Uche Ogbuji</a></strong>
+
+<p>
+</p><hr noshade='noshade'/>
+<p>
+<!-- begin body text -->
+
+<img height='29' alt='T' align='left' width='24' src='../images/T.gif'/>his article introduces the Schematron, a current validation methodology. Understanding the Schematron requires familiarity with XML and XML DTDs, along with some familiarity with XPath and XSLT transforms. For those who might need some grounding on one or more of those areas, I've added some helpful links in the <a href='#resources'>Resources</a> section below.
+</p><p>
+</p><p>
+<font size='+1'><strong>A bit of background</strong></font><br/>
+As I pointed out in my last <a href='http://www.unixinsider.com/swol-02-1999/swol-02-xmledi.html'>XML article</a> for <em>Unix Insider,</em> although XML doesn't introduce any notable innovation in data processing, it has introduced many useful disciplines inherited from Standard Generalized Markup Language (SGML). Perhaps the core discipline in this regard is its native support for validation. One of XML's early promises involved its support for bundling a data schema with data, and its provision for standard schema discovery in cases where this bundling was not done. Of course, the real world has proven that this facility, while useful, is no panacea. Even if one has a schema for machine interpretation of a data set, how does one determine the semantics associated with that schema? A further problem is the schema methodology with which XML ends up being bundled: the Document Type Definition (DTD).
+</p><p>
+DTDs are an odd mix of very generic and very specific expressions. For instance, simple tasks such as specifying that an element can have a number of particular child elements within a given range can be very cumbersome using DTDs. Yet DTDs are generic enough to allow elegant design patterns such as architectural forms. The expressive shortcomings of DTDs, along with arguments that XML validation should not require a separate computer language (DTDs differ in syntax from XML instances), encouraged the W3C, XML's major standards body, to develop a new schema language for XML using XML syntax. The resulting XML Schema specification is currently in the candidate recommendation phase and will presumably hit version 1.0 soon.
+</p><p>
+One of the key XML developments since XML 1.0's release is XML Namespaces 1.0. This recommendation provided a mechanism for disambiguating XML names, but did so in a way that is unfriendly to DTD users. There are tricks for using namespaces with DTDs but they are quite arcane. Many members of the SGML school of thought have argued that namespaces are a brittle solution and solve too narrow a problem to justify such disruption in XML technologies. The reality, however, is that with XML-related standards from XSLT to XLink relying heavily on namespaces, we'll have to develop solutions to the core problems that take namespaces into account.
+</p><p>
+The W3C Schema specification was a long time in development, and along the way there were rumblings about the complexity of the emerging model. XML Schemas did fill a very ambitious charter: covering document structure, data-typing worthy of databases, and even abstract data-modeling such as inheritance and subclassing.
+</p><p>
+Due to the gap between the emergence of namespaces and the completion of XML Schemas, as well as fears that the coming specification was far too complex, the XML community, which has a remarkable history of practical problem solving, went to work. 
+</p><p>
+One of the developments was Murata Makoto's Regular Language description for XML, RELAX (see <a href='#resources'>Resources</a>). RELAX provides a system for developing grammars to describe XML documents. It uses XML-like syntax and offers features similar to those offered by DTDs. It includes facilities offered by XML Schemas, such as schema annotation and data typing, as well as exotic additions of its own, such as hedge grammars. RELAX also supports namespaces and provides a clean and inherently modular approach to validation. It has become popular enough to spawn its own mailing lists and contributed tools, such as a DTD-to-RELAX translator.
+</p><p>
+</p><p>
+<font size='+1'><strong>Harnessing the power of XPath</strong></font><br/>
+In the meantime, XSLT emerged as a W3C standard and immediately established itself as one of the most successful XML-related products. Most people are familiar with XSLT as a tool to display XML content on legacy HTML-only browsers, but there is much more to XSLT, largely because XPath, which it uses to express patterns in the XML source, is such a well-conceived tool.
+</p><p>
+In fact, because XPath is such a comprehensive system for indicating patterns and selecting from among them in XML, there is no reason that it could not express structural concepts similar to those expressed in a DTD. Take the DTD in Listing 1:
+</p><p>
+<strong>Listing 1</strong>
+</p><p>
+</p><pre>
+&lt;!ELEMENT ADDRBOOK (ENTRY*)>
+&lt;!ELEMENT ENTRY (NAME, ADDRESS, PHONENUM+, EMAIL) >
+&lt;!ATTLIST ENTRY
+    ID ID #REQUIRED
+>
+&lt;!ELEMENT NAME (#PCDATA)>
+&lt;!ELEMENT ADDRESS (#PCDATA)>
+&lt;!ELEMENT PHONENUM (#PCDATA)>
+&lt;!ATTLIST PHONENUM
+    DESC CDATA #REQUIRED
+>
+&lt;!ELEMENT EMAIL (#PCDATA)>
+</pre>
+<p>
+Listing 2 is a sample document valid against this DTD:
+</p><p>
+<strong>Listing 2</strong>
+</p><p>
+</p><pre>
+&lt;?xml version = "1.0"?>
+&lt;!DOCTYPE ADDRBOOK SYSTEM "addr_book.dtd">
+&lt;ADDRBOOK>
+        &lt;ENTRY ID="pa">
+                &lt;NAME>Pieter Aaron&lt;/NAME>
+                &lt;ADDRESS>404 Error Way&lt;/ADDRESS>
+                &lt;PHONENUM DESC="Work">404-555-1234&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">404-555-4321&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Pager">404-555-5555&lt;/PHONENUM>
+                &lt;EMAIL>pieter.aaron@inter.net&lt;/EMAIL>
+        &lt;/ENTRY>
+        &lt;ENTRY ID="en">
+                &lt;NAME>Emeka Ndubuisi&lt;/NAME>
+                &lt;ADDRESS>42 Spam Blvd&lt;/ADDRESS>
+                &lt;PHONENUM DESC="Work">767-555-7676&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">767-555-7642&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Pager">800-SKY-PAGEx767676&lt;/PHONENUM>
+                &lt;EMAIL>endubuisi@spamtron.com&lt;/EMAIL>
+        &lt;/ENTRY>
+&lt;/ADDRBOOK>
+</pre>
+<p>
+Examine the declaration of the <code>ADDRBOOK</code> element. It says that such elements must have at least four child elements: a <code>NAME</code>, an <code>ADDRESS</code>, one or more <code>PHONENUM</code>s and an <code>EMAIL</code>. This can be expressed in XPath with a combination of the following three Boolean expressions (using the <code>ADDRBOOK</code> element as the context):
+</p><p>
+</p><ol>
+<li><code>count(NAME) = 1 and count(ADDRESS) = 1 and count(EMAIL) = 1</code>
+</li>
+</ol><p>
+<code>NAME[following-sibling::ADDRESS] and ADDRESS[following-sibling::PHONENUM] and PHONENUM[following-sibling::EMAIL]</code>
+</p><p>
+<code>count(NAME|ADDRESS|PHONENUM|EMAIL) = count(*)</code>
+
+
+</p><p>
+The first is true if and only if (<em>iff</em>) there is exactly one <code>NAME</code>, one <code>ADDRESS</code>, and one <code>EMAIL</code>. This establishes the occurrence rule for these children. The second is true <em>iff</em> there is a <code>NAME</code> followed by an <code>ADDRESS</code>, an <code>ADDRESS</code> followed by a <code>PHONENUM</code>, and a <code>PHONENUM</code> followed by an <code>EMAIL</code>. This establishes the sequence rule for the children. Note that the preceding-sibling axis could have been used to the same effect. The third expression is true <em>iff</em> there are no other elements besides the <code>NAME</code>, <code>ADDRESS</code>, <code>PHONENUM</code>, <code>EMAIL</code>. This establishes the (implied) DTD rule that elements are not permitted except where specified in the content model by name, or with the <code>ANY</code> symbol.
+</p><p>
+Your first reaction might be that the XPath expressions are much more verbose than the equivalent DTD specification. That is true in this case, though one can easily think of situations where the opposite would be true. The DTD version is more concise because it is carefully designed to model such occurrence and sequence patterns. XPath has a far more general purpose, and we are building the DTD equivalent through a series of primitives, each of which operates at a more granular conceptual level than the DTD equivalent. So it may be more wordy, but it has greater expressive power.
+</p><p>
+Let's say we wanted to specify that there can be multiple <code>ADDRESS</code> and <code>EMAIL</code> children, but that they must be of the same number. This task, which seems a simple enough extension of the previous content model, is beyond the abilities of DTD. This is not true for XPath. Because XPath gives a primitive but complete model of the document, it's an easy addition.
+</p><p>
+</p><ol>
+<li><code>count(NAME) = 1 and count(ADDRESS) = count(EMAIL)</code></li>
+</ol><p>
+<code>NAME[following-sibling::ADDRESS] and ADDRESS[following-sibling::PHONENUM] and PHONENUM[following-sibling::EMAIL] </code>
+</p><p>
+<code>count(NAME|ADDRESS|PHONENUM|EMAIL) = count(*)
+
+</code>
+
+</p><p>
+The only change is in expression one and it should be self-explanatory. This small foray beyond the scope of DTD illustrates the additional power offered by XPath. Of course, XPath can handle the attribute declarations as well. For example, the attribute declaration for <code>PHONENUM</code> in the DTD can be expressed as follows (again using the <code>ADDRBOOK</code> element as context):
+</p><p>
+</p><pre>
+PHONENUM/@DESC
+</pre>
+<p>
+All these XPath expressions are fine in the abstract, but how would one actually use them for validation? The most convenient way is to write an XSLT transform that uses them to determine validity. Listing 3 represents a subset of the address book DTD.
+</p><p>
+<strong>Listing 3</strong>
+</p><p>
+</p><pre>
+&lt;?xml version="1.0"?>
+&lt;xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+version="1.0">
+
+  &lt;xsl:template match="/">
+    &lt;xsl:if test='not(ADDRBOOK)'>
+      Validation error: there must be an ADDRBOOK element at the root of the document.
+    &lt;/xsl:if>
+    &lt;xsl:apply-templates select='*'/>
+  &lt;/xsl:template>
+
+  &lt;xsl:template match="ENTRY">
+    &lt;xsl:if test='not(count(NAME) = 1)'>
+      Validation error: ENTRY element missing a NAME child.
+    &lt;/xsl:if>
+    &lt;xsl:if test='not(count(ADDRESS) = 1)'>
+      Validation error: ENTRY element missing an ADDRESS child.
+    &lt;/xsl:if>
+    &lt;xsl:if test='not(count(EMAIL) = 1)'&amp;gt
+      Validation error: ENTRY element missing an EMAIL child.
+    &lt;/xsl:if>
+    &lt;xsl:if test='not(NAME[following-sibling::ADDRESS] and ADDRESS[following-sibling::PHONENUM] and PHONENUM[following-sibling::EMAIL])'>
+      Validation error: ENTRY must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequence
+    &lt;/xsl:if>
+    &lt;xsl:if test='not(count(NAME|ADDRESS|PHONENUM|EMAIL) = count(*))'>
+      Validation error: there is an extraneous element child of ENTRY
+    &lt;/xsl:if>
+    &lt;xsl:apply-templates select='*'/>
+  &lt;/xsl:template>
+
+  &lt;xsl:template match="PHONENUM">
+    &lt;xsl:if test='not(@DESC)'>
+      Validation error: PHONENUM must have a DESC attribute
+    &lt;/xsl:if>
+    &lt;xsl:apply-templates select='*'/>
+  &lt;/xsl:template>
+
+  &lt;xsl:template match="*">
+    &lt;xsl:apply-templates select='*'/>
+  &lt;/xsl:template>
+
+&lt;/xsl:transform>
+</pre>
+<p>
+When run with a valid document such as the one above, this stylesheet would produce no output; with an invalid document such as Listing 4, however, it's a different story.
+</p><p>
+<strong>Listing 4</strong>
+</p><p>
+</p><pre>
+&lt;?xml version = "1.0"?>
+&lt;ADDRBOOK>
+        &lt;ENTRY ID="pa">
+                &lt;NAME>Pieter Aaron&lt;/NAME>
+                &lt;PHONENUM DESC="Work">404-555-1234&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">404-555-4321&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Pager">404-555-5555&lt;/PHONENUM>
+                &lt;EMAIL>pieter.aaron@inter.net&lt;/EMAIL>
+        &lt;/ENTRY>
+        &lt;ENTRY ID="en">
+                &lt;NAME>Emeka Ndubuisi&lt;/NAME>
+                &lt;PHONENUM DESC="Work">767-555-7676&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">767-555-7642&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Pager">800-SKY-PAGEx767676&lt;/PHONENUM>
+                &lt;EMAIL>endubuisi@spamtron.com&lt;/EMAIL>
+                &lt;ADDRESS>42 Spam Blvd&lt;/ADDRESS>
+                &lt;SPAM>Make money fast&lt;/SPAM>
+        &lt;/ENTRY>
+        &lt;EXTRA/>
+&lt;/ADDRBOOK>
+</pre>
+<p>
+Note that all of the XPath expressions we came up with are placed in <em>iff</em> statements and then negated. This is because a message is put out if certain conditions are not met. Running this source against the validation stylesheet using an XSLT processor results in the following output: 
+</p><p>
+</p><pre>
+    Validation error: ENTRY element missing an ADDRESS child.
+
+    Validation error: ENTRY must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequence
+
+    Validation error: ENTRY must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequence
+
+    Validation error: there must be an ENTRY element at the root of the document.
+</pre>
+<p>
+And so we have our validation result. Note that it's a report of the document and that you can see all the validation errors at once. Most XML parsers will only give you one error at a time. But the real power of this XSLT-based validation report is that it's just that: a report. We used it for DTD-based XML validation, but it's not hard to see how this could be extended to more sophisticated data-management needs. For instance, suppose we wanted to examine address book documents for email addresses in the <code>.gov</code> domain. This is beyond the realm of validation, but it is an example of reporting.
+</p><p>
+While it might be argued whether or not validation and reporting are cut from the same cloth, in practice, XML document validation can be treated as a subset of XML document reporting, and XPath and XSLT provide a powerful toolkit for document validation.
+</p><p>
+<!-- break -->
+</p><p>
+</p><p>
+<font size='+1'><strong>Introducing the Schematron</strong></font><br/>
+The Schematron (see <a href='#resources'>Resources</a> for a link) is a validation and reporting methodology and toolkit developed by Rick Jeliffe, a member of the W3C Schema working group. Without denigrating the efforts of his group, Mr. Jeliffe has pointed out that XML Schemas may be too complex for many users, and so he approaches validation from the same approach as the DTD.
+</p><p>
+Jeliffe developed the Schematron as a simple tool to harness the power of XPath, attacking the schema problem from a new angle. As he writes on his Website (see <a href='#resources'>Resources</a> for a link), "The Schematron differs in basic concept from other schema languages in that it is not based on grammars but on finding tree patterns in the parsed document. This approach allows many kinds of structures to be represented which are inconvenient and difficult in grammar-based schema languages."
+</p><p>
+The Schematron is no more than an XML vocabulary that can be used as an instruction set for generating stylesheets such as the one above. For instance, Listing 5 shows how our XPath-based validation might look like in the Schematron:
+</p><p>
+<strong>Listing 5</strong>
+</p><p>
+</p><pre>
+
+&lt;schema xmlns='http://www.ascc.net/xml/schematron'>
+        &lt;pattern name="Structural Validation">
+                &lt;!-- Use a hack to set the root context.  Necessary because of
+                     a bug in the schematron 1.3 meta-transforms. -->
+                &lt;rule context="/*">
+                        &lt;assert test="../addr:ADDRBOOK">Validation error: there must be an ADDRBOOK element at the root of the document.&lt;/assert>
+                &lt;/rule>
+                &lt;rule context="ENTRY">
+                        &lt;assert test="count(NAME) = 1">Validation error: &lt;name/> element missing a NAME child.&lt;/assert>
+                        &lt;assert test="count(ADDRESS) = 1">Validation error: &lt;name/> element missing an ADDRESS child.&lt;/assert>
+                        &lt;assert test="count(EMAIL) = 1">Validation error: &lt;name/> element missing an EMAIL child.&lt;/assert>
+                        &lt;assert test="NAME[following-sibling::ADDRESS] and ADDRESS[following-sibling::PHONENUM] and PHONENUM[following-sibling::EMAIL]">Validation error: &lt;name/> must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequence&lt;/assert>
+                        &lt;assert test="count(NAME|ADDRESS|PHONENUM|EMAIL) = count(*)">Validation error: there is an extraneous element child of ENTRY&lt;/assert>
+                &lt;/rule>
+                &lt;rule context="PHONENUM">
+                        &lt;assert test="@DESC">Validation error: &lt;name/> must have a DESC attribute&lt;/assert>
+                &lt;/rule>
+        &lt;/pattern>
+&lt;/schema>
+
+</pre>
+<p>
+The root element in the Schematron is the schema element in the appropriate namespace. It contains one or more patterns, each of which represents a conceptual grouping of declarations. Patterns contain one or more rules, each of which sets a context for a series of declarations. This is not only a conceptual context, but one used for the XPath expressions in declarations within each rule.
+</p><p>
+Each rule contains a collection of asserts, reports, and keys. You can see asserts at work in the listing above. Asserts here are similar to asserts in C. They represent a declaration that a condition is true, and a signal if it is not. In the Schematron, assert elements specify that if the condition in their test attribute is not true, the text message within the assert elements will be printed. You'll note that the assert messages contain empty name elements. This is a convenient shorthand for the name of the current context node, given by the parent rule element, which makes it easy to reuse asserts from context to context.
+</p><p>
+Reports are similar to asserts, except that they output their contents when the condition in their test attribute is true rather than false. They also allow the use of the empty name element. Reports, as their name implies, tend to make sense for structural reporting tasks. For instance, to implement our earlier example of reporting email addresses in the <code>.gov</code> domain, we might add the following rule to our Schematron:
+</p><p>
+</p><pre>
+&lt;rule context="EMAIL">
+                        &lt;report test="contains(., '.gov') and not(substring-after(., '.gov'))">This address book contains government contacts.&lt;/report>
+                &lt;/rule>
+</pre>
+<p>
+I've already mentioned that namespaces are an important reason to seek a validation methodology other than DTDs. Schematron supports namespaces through XPath's. For instance, if we wanted to validate that all child elements of <code>ENTRY</code> in our address book document were in a particular namespace, we could do so by adding an assert to check the count of elements in a particular namespace.  Assume that the prefix <code>addr</code> is bound to the valid namespace in the following example:
+</p><p>
+</p><pre>
+count(addr:*) = count(*)
+</pre>
+<p>
+Perhaps that's too draconian for your practical needs and you also want to allow elements in a particular namespace reserved for extensions:
+</p><p>
+</p><pre>
+count(addr:*) + count(ext:*) = count(*)
+</pre>
+<p>
+Maybe rather than permitting a single particular extension namespace, you want to allow any elements with namespaces whose URI contains the string <code>extension</code>:
+</p><p>
+</p><pre>
+count(addr:*) + count(*[contains(namespace(.), 'extension')]) = count(*)
+</pre>
+<p>
+With this latter addition and the addition of a report for email addresses in the <code>.gov</code> address, our Schematron looks like Listing 6:
+</p><p>
+<strong>Listing 6</strong>
+</p><p>
+</p><pre>
+&lt;schema xmlns='http://www.ascc.net/xml/schematron'>
+
+        &lt;ns prefix='addr' uri='http://addressbookns.com'/>
+
+        &lt;pattern name="Structural Validation">
+                &lt;!-- Use a hack to set the root context.  Necessary because of
+                     a bug in the schematron 1.3 meta-transforms. -->
+                &lt;rule context="/*">
+                        &lt;assert test="../addr:ADDRBOOK">Validation error: there must be an ADDRBOOK element at the root of the document.&lt;/assert>
+                &lt;/rule>
+                &lt;rule context="addr:ENTRY">
+                        &lt;assert test="count(addr:*) + count(*[contains(namespace-uri(.), 'extension')]) = count(*)">
+Validation error: all children of &lt;name/> must either be in the namespace 'http://addressbookns.com' or in a namespace containing the substring 'extension'.
+                        &lt;/assert>
+                        &lt;assert test="count(addr:NAME) = 1">
+Validation error: &lt;name/> element missing a NAME child.
+                        &lt;/assert>
+                        &lt;assert test="count(addr:ADDRESS) = 1">
+Validation error: &lt;name/> element missing an ADDRESS child.
+                        &lt;/assert>
+                        &lt;assert test="count(addr:EMAIL) = 1">
+Validation error: &lt;name/> element missing an EMAIL child.
+                        &lt;/assert>
+                        &lt;assert test="addr:NAME[following-sibling::addr:ADDRESS] and addr:ADDRESS[following-sibling::addr:PHONENUM] and addr:PHONENUM[following-sibling::addr:EMAIL]">
+Validation error: &lt;name/> must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequence
+                        &lt;/assert>
+                        &lt;assert test="count(addr:NAME|addr:ADDRESS|addr:PHONENUM|addr:EMAIL) = count(*)">
+Validation error: there is an extraneous element child of ENTRY
+                        &lt;/assert>
+                &lt;/rule>
+                &lt;rule context="addr:PHONENUM">
+                        &lt;assert test="@DESC">
+Validation error: &lt;name/> must have a DESC attribute
+                        &lt;/assert>
+                &lt;/rule>
+        &lt;/pattern>
+        &lt;pattern name="Government Contact Report">
+                &lt;rule context="addr:EMAIL">
+                        &lt;report test="contains(., '.gov') and not(substring-after(., '.gov'))">
+This address book contains government contacts.
+                        &lt;/report>
+                &lt;/rule>
+        &lt;/pattern>
+&lt;/schema>
+
+</pre>
+<p>
+Note the new top-level element, <code>ns</code>. We use this to declare the namespace we'll be incorporating into the Schematron rules. If you have multiple namespaces to declare, use one <code>ns</code> element for each. There are advanced uses of Schematron namespace declarations which you can read about on the Schematron site.
+</p><p>
+This was a pretty quick whirl through the Schematron. For more instruction, there is the tidy tutorial put together by Dr Miloslav Nic (see <a href='#resources'>Resources</a>).
+</p><p>
+</p><p>
+<font size='+1'><strong>Putting the Schematron to work</strong></font><br/>
+Remember that a Schematron document can be thought of as a set of instructions for generating special validation and report stylesheets, as we demonstrated earlier. This is the most common way of using the Schematron in practice. Conveniently, XSLT has all the power to convert Schematron specifications to XSLT-based validators. There is a metastylesheet available at the Schematron Website which, when run against a Schematron specification, will generate a specialized validator/reporter stylesheet, which can then be run against target source documents.
+</p><p>
+For instance, suppose I have the above Schematron specification as <code>addrbook.schematron</code>. I can turn it into a validator/reporter stylesheet as follows:
+</p><p>
+</p><pre>
+[uogbuji@borgia code]$ 4xslt.py listing6.schematron ~/devel/Ft/Xslt/test_suite/borrowed/schematron-skel-ns.xslt > addrbook.validator.xslt
+</pre>
+<p>
+As with all examples in this article, I'm using the 4XSLT stylesheet processor, which is an XSLT 1.0-compliant stylesheet processor written in Python and distributed as open source by my company, Fourthought. I ran the above from Linux. The first argument to <code>4xslt.py</code> is the XML source document, the Schematron specification in the above listing, and the second is the stylesheet to be used, the Schematron namespace-aware metastylesheet. Next, I redirect the standard output to the file <code>addrbook.validator.xslt</code>, which becomes my validator/reporter stylesheet. I then run the validator stylesheet against the source document in Listing 7:
+</p><p>
+<strong>Listing 7</strong>
+</p><p>
+</p><pre>
+&lt;?xml version = "1.0"?>
+&lt;ADDRBOOK xmlns='http://addressbookns.com'>
+        &lt;ENTRY ID="pa">
+                &lt;NAME xmlns='http://bogus.com'>Pieter Aaron&lt;/NAME>
+                &lt;ADDRESS>404 Error Way&lt;/ADDRESS>
+                &lt;PHONENUM DESC="Work">404-555-1234&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">404-555-4321&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Pager">404-555-5555&lt;/PHONENUM>
+                &lt;EMAIL>pieter.aaron@inter.net&lt;/EMAIL>
+        &lt;/ENTRY>
+        &lt;ENTRY ID="en">
+                &lt;NAME xmlns='http://bogus.com'>Emeka Ndubuisi&lt;/NAME>
+                &lt;ADDRESS>42 Spam Blvd&lt;/ADDRESS>
+                &lt;PHONENUM DESC="Work">767-555-7676&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">767-555-7642&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Pager">800-SKY-PAGEx767676&lt;/PHONENUM>
+                &lt;EMAIL>endubuisi@spamtron.com&lt;/EMAIL>
+        &lt;/ENTRY>
+&lt;/ADDRBOOK>
+</pre>
+<p>
+This yields the following output:
+</p><p>
+</p><pre>
+[uogbuji@borgia code]$ 4xslt.py listing7.xml addrbook.validator.xslt Validation error: all children of ENTRY must either be in the namespace 'http://addressbookns.com' or in a namespace containing the substring 'extension'.Validation error: ENTRY element missing a NAME child.Validation error: ENTRY must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequenceValidation error: there is an extraneous element child of ENTRYValidation error: all children of ENTRY must either be in the namespace 'http://addressbookns.com' or in a namespace containing the substring 'extension'.Validation error: ENTRY element missing a NAME child.Validation error: ENTRY must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequenceValidation error: there is an extraneous element child of ENTRY
+</pre>
+<p>
+Hmm. Rather a mess. Looks as if there were quite a few messages combined without clear separation. There were actually two sets of messages, one for each <code>ENTRY</code> in the source document, because we caused the same cascade of validation errors in both by messing with the namespace of the <code>NAME</code> element. The two messages ran together because we used the skeleton Schematron metastylesheet. The skeleton comes with only basic output support, and normalizes space in all output, running the results together.
+</p><p>
+There's a good chance this is not what you want, and luckily Schematron is designed to be quite extensible. There are several Schematron metastylesheets on the Schematron home page that build on the skeleton by importing it. They range from basic, clearer text messages to HTML for browser integration. Using the sch-basic metastylesheet rather than the skeleton yields the following:
+</p><p>
+</p><pre>
+[uogbuji@borgia code]$ 4xslt.py listing6.schematron ~/devel/Ft/Xslt/test_suite/borrowed/sch-basic.xslt > addrbook.validator.xslt
+[uogbuji@borgia code]$ 4xslt.py listing7.xml addrbook.validator.xslt 
+In pattern Structural Validation:
+   Validation error: all children of ENTRY must either be in the namespace 'http://addressbookns.com' or in a namespace containing the substring 'extension'.
+In pattern Structural Validation:
+   Validation error: ENTRY element missing a NAME child.
+In pattern Structural Validation:
+   Validation error: ENTRY must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequence
+In pattern Structural Validation:
+   Validation error: there is an extraneous element child of ENTRY
+In pattern Structural Validation:
+   Validation error: all children of ENTRY must either be in the namespace 'http://addressbookns.com' or in a namespace containing the substring 'extension'.
+In pattern Structural Validation:
+   Validation error: ENTRY element missing a NAME child.
+In pattern Structural Validation:
+   Validation error: ENTRY must have a NAME, ADDRESS, one or more PHONENUM, and an EMAIL in sequence
+In pattern Structural Validation:
+   Validation error: there is an extraneous element child of ENTRY
+</pre>
+<p>
+To round things up, Listing 8 is a source document that validates cleanly against our sample Schematron:
+</p><p>
+<strong>Listing 8</strong>
+</p><p>
+</p><pre>
+&lt;?xml version = "1.0"?>
+&lt;ADDRBOOK xmlns='http://addressbookns.com'>
+        &lt;ENTRY ID="pa">
+                &lt;NAME>Pieter Aaron&lt;/NAME>
+                &lt;ADDRESS>404 Error Way&lt;/ADDRESS>
+                &lt;PHONENUM DESC="Work">404-555-1234&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">404-555-4321&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Pager">404-555-5555&lt;/PHONENUM>
+                &lt;EMAIL>pieter.aaron@inter.net&lt;/EMAIL>
+        &lt;/ENTRY>
+        &lt;ENTRY ID="en">
+                &lt;NAME>Manfredo Manfredi&lt;/NAME>
+                &lt;ADDRESS>4414 Palazzo Terrace&lt;/ADDRESS>
+                &lt;PHONENUM DESC="Work">888-555-7676&lt;/PHONENUM>
+                &lt;PHONENUM DESC="Fax">888-555-7677&lt;/PHONENUM>
+                &lt;EMAIL>mpm@scudetto.dom.gov&lt;/EMAIL>
+        &lt;/ENTRY>
+&lt;/ADDRBOOK>
+</pre>
+<p>
+We can test this as follows:
+</p><p>
+</p><pre>
+[uogbuji@borgia code]$ 4xslt.py listing8.xml addrbook.validator.xslt 
+In pattern Government Contact Report:
+   This address book contains government contacts.
+</pre>
+<p>
+Everything is in the correct namespace, so we get no validation errors. However, notice that we did get the report from the email address in the <code>.gov</code> domain.
+</p><p>
+This is all very well and good, but no doubt you're wondering whether XSLT is fast enough to suit your real-world validation needs. This will depend on your requirements.  In my experience, it is rarely necessary to validate a document every time it is processed. If you have attributes with default value, or no control over the data sources throughout your processing applications, you may have no choice. In this case, validation by an XML 1.0-compliant validating parser such as <code>xmlproc</code> is almost certainly faster than XSLT-based Schematron. But then again, there is no hard requirement that a Schematron processor must use XSLT. It would not be terribly difficult, given an efficient XPath library, to write a specialized Schematron application that doesn't need translation from metastylesheets. 
+</p><p>
+But to give a quick comparison, I parsed a 170 KB address book example similar to the one above but with more entries. Using <code>xmlproc</code> and DTD validation, it took 7.25 seconds.  Parsing this document without validation and then applying the Schematron stylesheet took 10.61 seconds, hardly a great penalty.
+</p><p>
+There are several things that DTDs provide that Schematron cannot, such as entity and notation definitions, and fixed or default attribute values. RELAX does not provide any of these facilities either, but XML Schemas provide them all -- as they must, because they are positioned as a DTD replacement. RELAX makes no such claim, and indeed the RELAX documentation has a section on using RELAX in concert with DTDs.
+</p><p>
+We have already mentioned that Schematron, far from claiming to be a DTD replacement, is positioned as an entirely fresh approach to validation. Nevertheless, attribute-value defaulting can be a useful way to reduce the clutter of XML documents for human readability, so we'll examine one way to provide default attributes in association with Schematron.
+</p><p>
+Remember that you're always free to combine DTDs with Schematron to get the best of both worlds, but if you want to leave DTDs behind, you can still get attribute-defaulting at the cost of one more pass through the document when the values are to be substituted. This can be done by a stylesheet that transforms a source document into a result that is identical except that all default attribute values are given.
+</p><p>
+There are other features of Schematron for those interested in further exploration. For instance, it supports keys, a mechanism similar to DTD's ID and IDREF. There are some hooks for embedding and control through external applications.
+</p><p>
+A more formal introduction to Schematron is available in the Schematron specification (see a href="#resources">Resources).
+</p><p>
+</p><p>
+<font size='+1'><strong>Conclusion</strong></font><br/>
+At Fourthought, we've used Schematron in deployed work products both for our clients and for ourselves. Because we already do a lot of work with XSLT, it's a very comfortable system and there's not much training required for XPath. To match the basic features of DTD, not a lot more knowledge is needed than path expressions, predicates, unions, the sibling and attribute axes, and a handful of functions. Performance has not been an issue because we typically have strong control over XML data in our systems and rarely use defaulted attributes. This allows us to validate only when a new XML datum is input, or an existing datum has modified our systems, reducing performance concerns.
+</p><p>
+Schematron is a clean, well-considered approach to validation and simple reporting. XML Schemas are significant, but it is debatable whether such a new and complex system is required for validation. RELAX and the Schematron both present simpler approaches coming from different angles, and might be a better fit for quick integration into XML systems. In any case, Schematron once again demonstrates the extraordinary reach of XSLT and the flexibility of XML as a data-management technology.
+
+<!-- end body text -->
+
+</p><p>
+<a name='bio'>
+<strong>
+<font size='-1' face='Arial,Helvetica,Sans-serif'>
+About the author
+</font>
+</strong><br/>
+</a><a href='mailto:uche.ogbuji@fourthought.com'>Uche Ogbuji</a> is a consultant for and cofounder of <a href='http://www.fourthought.com'>Fourthought</a>, a consulting firm that specializes in custom software development for enterprise applications. Fouthought uses XML to provide Web-based integration platforms for small or medium-sized businesses.
+
+<a name='resources'>
+</a></p><p>
+</p><table cellspacing='0' border='0' width='100%' cellpadding='0'>
+<tr>
+<td> </td>
+<td>
+<ul>
+<li>The Schematron homepage:
+<br/><a href='http://www.ascc.net/xml/resource/schematron/schematron.html'>http://www.ascc.net/xml/resource/schematron/schematron.html</a><br/>Schematron specification: <a href='http://www.ascc.net/xml/resource/schematron/Schematron2000.html'>http://www.ascc.net/xml/resource/schematron/Schematron2000.html</a></li><li>General news, product info, etc. concerning XSLT:
+<br/><a href='http://www.xslt.com'>http://www.xslt.com</a></li><li>General news, product info, etc. concerning XML:
+<br/><a href='http://www.xmlhack.com'>http://www.xmlhack.com</a></li><li>Slides from an XSLT introduction by the author:
+<br/><a href='http://fourthought.com/Presentations/xmlforum-xslt-20000830'>http://fourthought.com/Presentations/xmlforum-xslt-20000830</a></li><li>The XSLT FAQ:
+<br/><a href='http://www.dpawson.freeserve.co.uk/xsl/xslfaq.html'>http://www.dpawson.freeserve.co.uk/xsl/xslfaq.html</a></li><li>Zvon XSLT Reference:
+<br/><a href='http://www.zvon.org/xxl/XSLTreference/Output/index.html'>http://www.zvon.org/xxl/XSLTreference/Output/index.html</a></li><li>Zvon DTD tutorial:
+<br/><a href='http://www.zvon.org/xxl/DTDTutorial/General/book.html'>http://www.zvon.org/xxl/DTDTutorial/General/book.html</a></li><li>Zvon namespace tutorial:
+<br/><a href='http://www.zvon.org/xxl/NamespaceTutorial/Output/index.html'>http://www.zvon.org/xxl/NamespaceTutorial/Output/index.html</a></li><li>Zvon XML tutorial:
+<br/><a href='http://www.zvon.org/xxl/XMLTutorial/General/book_en.html'>http://www.zvon.org/xxl/XMLTutorial/General/book_en.html</a></li><li>Zvon XPath tutorial:
+<br/><a href='http://www.zvon.org/xxl/XPathTutorial/General/examples.html'>http://www.zvon.org/xxl/XPathTutorial/General/examples.html</a></li><li>Zvon XSLT tutorial:
+<br/><a href='http://www.zvon.org/xxl/XSLTutorial/Books/Book1/index.html'>http://www.zvon.org/xxl/XSLTutorial/Books/Book1/index.html</a></li><li>Links related to architectural forms:
+<br/><a href='http://www.xml.com/pub/Guide/Architectural_Forms'>http://www.xml.com/pub/Guide/Architectural_Forms</a></li><li>RELAX XML Schema system:
+<br/><a href='http://www.xml.gr.jp/relax/'>http://www.xml.gr.jp/relax/</a></li><li>W3C XML Schemas -- Primer:
+<br/><a href='http://www.w3.org/TR/xmlschema-0/'>http://www.w3.org/TR/xmlschema-0/</a></li><li>W3C XML Schemas Part 1 -- Structures:
+<br/><a href='http://www.w3.org/TR/xmlschema-1/'>http://www.w3.org/TR/xmlschema-1/</a></li><li>W3C XML Schemas Part 2 -- Datatypes:
+<br/><a href='http://www.w3.org/TR/xmlschema-2/'>http://www.w3.org/TR/xmlschema-2/</a></li><li>DTD2 RELAX:
+<br/><a href='http://www.horobi.com/Projects/RELAX/Archive/'>http://www.horobi.com/Projects/RELAX/Archive/</a>
+</li><li>Rick Jelliffe's comparison of various schema methods:
+<br/><a href='http://www.ascc.net/~ricko/XMLSchemaInContext.html'>http://www.ascc.net/~ricko/XMLSchemaInContext.html</a>
+</li><li>4XSLT:
+<br/><a href='http://4Suite.org/'>http://4Suite.org/</a>
+</li><li>Schematron tutorial:
+<br/><a href='http://www.zvon.org/HTMLonly/SchematronTutorial/General/contents.html'>http://www.zvon.org/HTMLonly/SchematronTutorial/General/contents.html</a></li></ul>
+</td><td> </td>
+</tr>
+</table>
+
+</body>
+</html>

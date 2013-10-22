@@ -1,0 +1,38 @@
+Versa tutorial by example
+=========================
+
+Copyright 2002, Uche Ogbuji, Fourthought Inc.
+
+
+Basically, just follow along
+
+versa-quick-start.txt
+
+If you want to try things out for yourself, you'll need to get 4Suite until other processors that support Versa are available.
+
+* Make sure you have Python 2.0 or more recent (http://python.org)
+
+* Get a 4Suite CVS snapshot dated after February 18th from
+
+ftp://ftp.fourthought.com/pub/cvs-snapshots/
+
+Unpack it, then install using "python setup.py install"
+
+* Or get the 4Suite HEAD from anonymous CVS at cvs.4suite.org
+
+cvs -d:pserver:anonymous@cvs.4suite.org:/var/local/cvsroot login
+
+[just hit enter at the [Password prompt]
+
+cvs -z3 -d:pserver:anonymous@cvs.4suite.org:/var/local/cvsroot co 4Suite
+
+Then "python setup.py install"
+
+
+The 4versa script will be in your Python library directory (or in a subdirectory of that called "site-packages", as Ft/Share/Bin/4versa
+
+For example, on my machine, 
+
+/usr/local/lib/python2.2/site-packages/Ft/Share/Bin/4versa
+
+

@@ -1,0 +1,42 @@
+<title>Uche Ogbuji: IBM developerWorks Tutorial Series on 4Suite</title>
+
+[4Suite][40] is an open-source platform for XML and RDF development. It allows
+users to take advantage of standard XML technologies rapidly and to develop
+and integrate Web-based applications. My brother Chimezie Ogbuji and I have
+written a series of tutorials on 4Suite on IBM developerWorks. This page is a
+general index and resource page on these tutorials. 
+
+The tutorials are as follows: 
+
+* [Python and XML development using 4Suite, Part 1: PyXml][41].
+* [Python and XML development using 4Suite, Part 2: 4XPath and 4XSLT][42].
+* [Python and XML development using 4Suite, Part 3: 4RDF][43].
+* [Develop Python/XML with 4Suite, Part 4: Composition and updates][44].
+* [Part 5: The Repository Features][45].
+
+All require free registration on the IBM developerWorks site. Updates are
+available on this tutorial below. 
+
+## Part 5: The Repository Features
+
+The document definition for XSA really only works for files with a single
+product and vendor. For simplicity I did not cover the more general XSLT
+document definitions. If these are used, the one product/one vendor
+restriction is easily eliminated.
+
+The utility namespace mapping scripts do not work properly in recent builds of
+4Suite because they do not account for the "ftss://" URI scheme for 4Suite
+repository objects. Use the versions hosted here rather than those that came
+with the tutorial: [create-nsmapping-file.py][46] establishes a mapping file
+for the user who invokes it. [add-nsmapping-file.py][47] adds a
+prefix/namespace URI pair to the mapping. Both are updated 7 November 2003.
+
+   [40]: /uche.ogbuji.net/tech/4Suite/
+   [41]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite-i.html
+   [42]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suit2-i.html
+   [43]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite3-i.html
+   [44]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite4-i.html
+   [45]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite5-i.html
+   [46]: create-nsmapping-file.py
+   [47]: add-nsmapping-file.py
+

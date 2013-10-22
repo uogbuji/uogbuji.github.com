@@ -1,0 +1,103 @@
+<title>Uche Ogbuji: Amara quick reference</title>
+<![CDATA[
+# Amara Bindery quick reference
+
+## Parsing
+
+    import amara
+    doc = amara.parse("<spam/>")  #string
+    doc = amara.parse(open("spam.xml", "r"))  #stream (file-like object)
+    doc = amara.parse("spam.xml") #OS file path
+    doc = amara.parse("http://example.com/spam.xml") #URL
+
+## First sample document
+
+The next two sections are based on this sample document:
+
+    <a x="1"><b>i</b><c>j<d/>k</c><b>l</b></a>
+
+## Basic XML data access
+
+    doc.a                 #object representing a element (instance of a)
+    doc[u'a']            #object representing a element (instance of a)
+    doc.a.b               #first instance of b
+    doc.a.x               #u"1"
+    doc.a[u'x']           #u"1"
+    doc.a.localName       #u'a'
+    doc.a.nodeName        #u'a', may not match localName if doc uses namespaces
+    doc.a.xml_children    #list with two b instances and one c instance
+    doc.a.b[0]            #first instance of b
+    doc.a.b[1]            #second instance of b
+    doc.a[u'b'][1]            #second instance of b
+    iter(doc.a.b)         #iterator over both instances of b
+    unicode(doc.a.b)      #u"i"
+    unicode(doc.a.b[1])   #u"l"
+    unicode(doc.a)        #u"ijkl"
+    doc.a.xml_child_text  #u"" (only immediate text children, concatenated)
+
+    doc.a.xml_attributes  #{"x": (None, u"1")}, None => no namespace
+    doc.a.c.xml_child_elements    #{"d": <d instance>}
+
+    doc.xml()             #entire document serialized as XML
+    doc.a.c.xml()         #c element subtree serialized as XML
+
+## XPath
+
+    doc.xml_xpath(u"//b") #list of 2 b instances (XPath node set = Py list)
+    doc.xml_xpath(u"count(//b)")  #2.0 (XPath number = Py float)
+    doc.xml_xpath(u"/a/@x")       #u'1' (XPath string = Py unicode)
+    doc.xml_xpath(u"/a/@x = '1'") #True (XPath boolean = Py bool)
+    doc.a.xml_xpath(u"b") #list of 2 b instances
+
+## Basic document update
+
+    doc.a.append(u'New Content')  #Add a new text node to a
+    #Add a new text node to a immediately after its first b element child
+    doc.a.insert_after(doc.a.b, u'New Content')
+    #Add a new text node to a immediately before its first b element child
+    doc.a.insert_before(doc.a.b, u'New Content')
+    #Create a new free-standing element named 'new'
+    e = doc.a.xml_create_element(u'new')
+    #Use the append and insert methods to place the element in the tree
+    doc.a.append(e)
+    doc.a.insert_after(doc.a.b, e)
+    doc.a.insert_before(doc.a.b, e)
+
+    #create a tree of objects from an XML fragment then append them to a
+    doc.a.xml_append_fragment('<c x="1">p</c><d y="2">q</d>')
+
+    doc.a.xml_remove_child(e)  #Remove the given child object from a
+    doc.a.xml_remove_child_at(0)  #Remove the first child object from a
+    doc.a.xml_clear()  #Remove all children from a
+    
+## New document creation
+
+    #Create a document with a single top-level element named root
+    doc = amara.create_document(u"root")
+
+## Reserialize to XML
+
+    xmlstr = doc.xml()  #Reserialize the document to a string
+    xmlstr = doc.xml(indent=u"yes")  #Pretty-print the document to a string
+
+## Namespaces
+
+Sample document:
+
+    <n:a xmlns:n="urn:x-bogus1" n:x="1"><b xmlns="urn:x-bogus2">c</b></n:a>
+
+Code:
+
+    NS1 = u'urn:x-bogus1'
+    NS2 = u'urn:x-bogus2'
+    doc.a                 #object representing a element (instance of a)
+    doc.a.x               #u"1"
+    doc[NS1, u'a'].x                      #u"1"
+    doc[NS1, u'a'][NS1, u'x']             #u"1"
+    doc.a.localName, doc.a.nodeName       #u'a', u'n:a'
+    doc.a.prefix, doc.a.namespaceURI      #u'n', u'urn:x-bogus1'
+    doc.a.xml_attributes  #{u'x': (u'n:x', u'urn:x-bogus1')}
+    doc.a.b.localName, doc.a.b.nodeName   #u'b', u'b'
+    doc.a.b.prefix, doc.a.b.namespaceURI  #None, u'urn:x-bogus2'
+    doc[NS1, u'a'][NS2, u'b']             #u"c"
+]]>

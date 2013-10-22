@@ -1,0 +1,266 @@
+<title>Uche Ogbuji: 4Suite: Platform for XML and RDF processing</title>
+<![CDATA[
+[4Suite](http://4suite.org) is an open-source platform for XML and RDF development. It allows users to take advantage of standard XML technologies rapidly and to develop and integrate Web-based applications. It comprises three separate packages:
+
+* 4Suite XML - XML, XPath, XSLT, related technologies and support libraries
+* 4Suite RDF - RDF processing libraries and stand-alone DBMS
+* 4Suite Repository - XML and RDF repository
+
+This is a release of only the first component.
+
+[4Suite XML](http://cheeseshop.python.org/pypi/4Suite-XML) is a comprehensive library for XML processing.  It's implemented in Python and C and supports XML (SAX-like and DOM-like),
+XPath, XSLT, RELAX NG, XUpdate, XInclude, XPointer, and more.
+
+<!--
+4Suite is primarily developed by my company, [Fourthought, Inc.][45] [Contact us][46] for priority support and customizations.--> For free support (no guarantees), join, then post to the [4Suite mailing list][47]. Other resources include [The 4Suite Wiki](http://notes.4suite.org) and the [4Suite IRC channel](irc://irc.freenode.net/4suite) (#4suite on irc.freenode.net).
+
+## Consider Amara
+
+If your main need is just basic XML processing in Python, consider using [Amara XML Toolkit](amara/).  EasyInstall makes it easy to install 4Suite and Amara in one go.  See [The Amara wiki](http://notes.4suite.org/AmaraXmlToolkit) for more info.
+
+<!--
+## Official docs
+
+I host local copies of the official 4Suite docs as a convenience to users. If you are new to 4Suite, I suggest following these documents in order, choosing between the first three according to your platform, and whether you want to use the most recent CVS version.
+
+[Installing 4Suite from CVS][50]
+
+[The Windows install doc][51]
+
+[The UNIX install doc][52]
+
+[The 4Suite XML user manual](/tech/4suite/etc/CoreManual.html)
+
+[An introduction to the 4Suite repository][53]
+-->
+
+## Local Resources
+
+[Python/XML Akara](http://uche.ogbuji.net/tech/akara/nodes/2003-01-01/pyxml-akara): A collation and annotation of many documents and other resources for Python/XML users, with an extensive and [section on 4Suite](http://uche.ogbuji.net/tech/akara/nodes/2003-01-01/4suite-section).
+
+[developerWorks 4Suite tutorial update page](ibmdw-tutorial/): A page of updates and expansions on the 4Suite tutorial series on developerWorks users.
+
+[A record for 4Suite](/tech/4suite/etc/4Suite-cc.rdf) based on the [Creative Commons metadata](http://creativecommons.org/metadata/spec) specification draft: This is an RDF vocabulary for describing information about licenses and the works they apply to.
+
+<!--
+[The 4Suite configuration helper][64]: An interactive form for creating 4Suite configuration files.
+-->
+
+[4XSLT paper \[PDF] \[in Dutch]](/tech/pubs/4xslt.pdf). I am hosting, a paper on the use and architecture of 4XSLT, in dutch, for Davy Friedrich, Joe Achten, and Wim Deprez, who wrote it as a student paper.
+
+Utility scripts to manage namespace mapping files for user convenience. Namespace mappings files can be used with many 4Suite RDF tools to set prefixes a user can employ in abbreviating URIs, much like in the RDF/XML syntax. [create-nsmapping-file.py][65] establishes a mapping file for the user who invokes it. [add-nsmapping-file.py][66] adds a prefix/namespace URI pair to the mapping.
+
+<!--
+[Triclops demo][67]: Triclops is a visualization tool for RDF models managed in 4Suite.
+-->
+
+## Other Resources
+
+Questions on 4Suite? First stop is the official [FAQ](http://4suite.org/docs/FAQ.xml), then the <a href="http://notes.4suite.org/4SuiteFaq">Community FAQ</a>. If you can't find your answers check the [mailing archives](http://lists.fourthought.com/pipermail/4suite/) of the 4Suite list or post to that list. Or drop by IRC (see above).  Several 4Suite developers are usually on-line on the channel, but be prepared to maybe wait a few hours for response, as we may be away from the computer.
+
+People interested in participating in or closely following the development process of 4Suite can join the [mailing list for core 4Suite developers](http://lists.fourthought.com/mailman/listinfo/4suite-dev), which is open (as are its [archives](http://lists.fourthought.com/pipermail/4suite/)).
+
+<!--
+You can try an [on-line, forms-based on-line XSLT transformation demo][61] using 4Suite and the [CherryPy app server][62]. Also shows rendering of HTML results.
+
+SENRI Hiroshi has translated [some of the 4Suite docs to Japanese][63].
+-->
+
+[Cheshire3](http://www.cheshire3.org/) is an XML repository search engine by Robert Sanderson, "written over top of 4Suite (and a bunch of other stuff)."  ([FTP site](ftp://ftp.cheshire3.org/pub/cheshire3/)).
+
+<!--
+## Relationship to PyXML
+
+PyXML is now a retired project
+
+[by Mike Brown, I think] 4Suite versions through 0.11.1 were essentially add-ons to specific versions of PyXML. Newer versions of 4Suite can utilize xmlproc, the validating parser that comes with PyXML, but in general, PyXML is no longer a prerequisite for 4Suite.
+
+Stable versions of 4Suite's XPath and XSLT processing modules are occasionally folded back into the PyXML distribution, but this tracking has been temporarily suspended until the 4Suite 1.0 release arrives and stabilizes. In PyXML, the xml.xpath and xml.xslt modules are currently (as of PyXML 0.6.6 to 0.8.2) equivalent to those that came with 4Suite 0.10.2, plus some necessary patches. Many folks use these PyXML modules without complaint, but the modules are known to be buggy and slow, compared to the Ft.Xml.XPath and Ft.Xml.Xslt modules in current releases of 4Suite. They also are not compatible with the newer 4Suite releases, so for people needing both 4Suite and PyXML, it is recommended that when PyXML is installed, that setup.py be run with the - -without-xpath and - -without-xslt options, preventing xml.xpath and xml.xslt from being installed at all.
+-->
+
+## Odds and ends
+
+4ODS is no longer maintained, but for convenience, here is the rather sparse user guide for 4ODS in [HTML][72] and [Docbook source][73]. For the real scoop, see the [ODMG 3.0 book][74], which was pretty strictly our implementation guide.
+
+<!--
+## Articles on 4Suite
+
+[Python & XML [column]: XML Namespaces Support in Python Tools, Part 2][75]
+
+2004-05-13   in [XML.com][76]
+
+[Python & XML [column]: Three More For XML Output][77]
+
+2003-10-15   in [XML.com][76]
+
+[Python & XML [column]: Introducing Anobind][78]
+
+2003-08-13   in [XML.com][76]
+
+[Introducing Examplotron][79]
+
+2003-06-09   in [IBM developerWorks][80]
+
+[Develop Python/XML with 4Suite, Part 5: The Repository Features [tutorial]][81]
+
+2003-01   in [IBM developerWorks][80]
+
+[Python & XML [column]: A Python & XML Companion][82]
+
+2002-12-11   in [XML.com][76]
+
+[Python & XML [column]: Proper XML Output in Python][83]
+
+2002-11-13   in [XML.com][76]
+
+[Python & XML [column]: A Tour of 4Suite][84]
+
+2002-10-16   in [XML.com][76]
+
+[Develop Python/XML with 4Suite, Part 4: Composition and updates [tutorial]][85]
+
+2002-10   in [IBM developerWorks][80]
+
+[Python and XML development using 4Suite, Part 3: 4RDF [tutorial]][86]
+
+2002-07   in [IBM developerWorks][80]
+
+[Python and XML development using 4Suite, Part 2: 4XPath and 4XSLT [tutorial]][87]
+
+2002-05   in [IBM developerWorks][80]
+
+[The Python Web services developer [column]: 10th International Python Conference][88]
+
+2002-04   in [IBM developerWorks][80]
+
+[Python and XML development using 4Suite, Part 1: PyXml [tutorial]][89]
+
+2002-03   in [IBM developerWorks][80]
+
+[The Python Web services developer [column]: Web services software repository, Part 3][90]
+
+2001-07   in [IBM developerWorks][80]
+
+[The Python Web services developer [column]: Web services software repository, Part 2 developerWorks: Web services : The Python Web services developer, Part 3: Web services software repository, Part 2 The Python Web services developer [column]: Web services software repository, Part 2][91]
+
+2001-052001-05   in [IBM developerWorks][92]
+
+[Introducing the 4Suite ServerIntroducing the 4Suite Server][93]
+
+2001-03-052001-03-05   in [UNIX Insider][94]
+
+[The Python Web services developer [column]: Web Services Software Repository, Part 1developerWorks: Web services : The Python Web services developer, Part 2: Web services software repository, Part 1The Python Web services developer [column]: Web Services Software Repository, Part 1][95]
+
+2001-032001-03   in [IBM developerWorks][96]
+
+[Practical XML with Linux, Part 3: XML database tools for Linux][97]
+
+2001-02-08   in [LinuxWorld][98]
+
+[The Python Web services developer [column]: The world of Python Web servicesThe Python Web services developer (column): The world of Python Web services][99]
+
+2001-022001-02   in [IBM developerWorks][100]
+
+[Introduction to XML messaging (introductory article)Introduction to XML messaging (introductory article)][101]
+
+2001-022001-02   in [IBM developerWorks][102]
+
+[XML messaging with SOAP [tutorial]][103]
+
+2001-02   in [IBM developerWorks][80]
+
+[Introduction to XML messaging (tutorial)][104]
+
+2001-02   in [IBM developerWorks][80]
+
+[WSDL processing with XSLT (First steps for Web service description processing)WSDL processing with XSLT (First steps for Web service description processing)][105]
+
+2000-112000-11   in [IBM developerWorks][106]
+
+[Supercharging WSDL with RDF (Managing structured Web service metadata)Supercharging WSDL with RDF (Managing structured Web service metadata)][107]
+
+2000-112000-11   in [IBM developerWorks][108]
+
+[SVG: What comes after XML?][109]
+
+2000-10-23   in [UNIX Insider][110]
+
+[4RDF: A Library for Web Metadata4RDF: A Library for Web Metadata][111]
+
+2000-10-112000-10-11   in [XML.com][112]
+
+[Introducing the Schematron: A fresh approach to XML validation and reporting][113]
+
+2000-09   in [UNIX Insider][110]
+
+   [45]: http://Fourthought.com
+   [46]: mailto:info@fourthought.com
+   [47]: http://lists.fourthought.com/mailman/listinfo/4suite
+   [48]: http://purl.net/wiki/xml-sig/FtSuiteWiki
+   [49]: irc://irc.freenode.net/4suite
+   [50]: docs/4SuiteCVS.html
+   [51]: docs/Windows.html
+   [52]: docs/UNIX.html
+   [53]: docs/QuickStart.html
+   [54]: http://4suite.org/docs/FAQ.xml
+   [55]: /tech/akara/pyxml/
+   [56]: http://uche.ogbuji.net/tech/akara/nodes/2003-01-01/4suite-section
+   [57]: http://lists.fourthought.com/pipermail/4suite/
+   [58]: http://lists.fourthought.com/mailman/listinfo/4suite-dev
+   [59]: http://lists.fourthought.com/pipermail/4suite-dev/
+   [60]: http://uche.ogbuji.net/tech/akara/?xslt=irc.xslt
+   [61]: http://www.cherrypy.org/demo/xmlXslOnline
+   [62]: http://www.cherrypy.org/
+   [63]: http://senri.homelinux.com/4suite/
+   [64]: ./?xslt=config-helper.xslt
+   [65]: create-nsmapping-file.py
+   [66]: add-nsmapping-file.py
+   [67]: ./?xslt=Triclops.xslt&versa-query=@%22/uche.ogbuji.net%22&manageable=1&queryType=Graph
+   [68]: ibmdw-tutorial/
+   [69]: /tech/pubs/4xslt.pdf
+   [70]: /tech/4suite/etc/4Suite-cc.rdf
+   [71]: http://creativecommons.org/metadata/spec
+   [72]: /tech/4suite/etc/4ODS-userguide.html
+   [73]: /tech/4suite/etc/4ODS-userguide.doc
+   [74]: http://www.odmg.org/standard/orderingbook.html
+   [75]: http://www.xml.com/pub/a/2004/05/12/py-xml.html
+   [76]: http://www.xml.com
+   [77]: http://www.xml.com/pub/a/2003/10/15/py-xml.html
+   [78]: http://www.xml.com/pub/a/2003/08/13/py-xml.html
+   [79]: http://www-106.ibm.com/developerworks/xml/library/x-xmptron/
+   [80]: http://www.ibm.com/developerworks
+   [81]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite5-i.html
+   [82]: http://www.xml.com/pub/a/2002/12/11/py-xml.html
+   [83]: http://www.xml.com/pub/a/2002/11/13/py-xml.html
+   [84]: http://www.xml.com/pub/a/2002/10/16/py-xml.html
+   [85]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite4-i.html
+   [86]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite3-i.html
+   [87]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suit2-i.html
+   [88]: http://www-106.ibm.com/developerworks/library/ws-pyth7.html
+   [89]: http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite-i.html
+   [90]: http://www-106.ibm.com/developerworks/webservices/library/ws-pyth4/
+   [91]: http://www-106.ibm.com/developerworks/webservices/library/ws-pyth3/
+   [92]: http://www.ibm.com/developerworkshttp://4suite.org/rdf/anonymous/ab9e1a8c-5c48-4026-a1ac-06b1766a74e0
+   [93]: http://www.unixinsider.com/unixinsideronline/swol-03-2001/swol-0309-4Suite.html
+   [94]: http://www.unixinsider.comhttp://4suite.org/rdf/anonymous/802cab1e-4704-4986-b8c0-2ac716628a46
+   [95]: http://www-106.ibm.com/developerworks/webservices/library/ws-pyth2/
+   [96]: http://www.ibm.com/developerworkshttp://4suite.org/rdf/anonymous/a5166701-170f-4877-a052-9592c2f49c28
+   [97]: http://www.linuxworld.com/story/32934.htm
+   [98]: http://www.linuxworld.com
+   [99]: http://www-106.ibm.com/developerworks/library/ws-pyth1.html?dwzone=ws
+   [100]: http://www.ibm.com/developerworkshttp://4suite.org/rdf/anonymous/b193dcd2-01d3-4cc7-b2e0-273ac75b3977
+   [101]: http://www-106.ibm.com/developerworks/library/co-tutintro.html
+   [102]: http://www.ibm.com/developerworkshttp://4suite.org/rdf/anonymous/31194061-0d92-42e4-8a84-4d2156298b34
+   [103]: http://www-105.ibm.com/developerworks/education.nsf/components-onlinecourse-bytitle/52CEEC8554DB0C1586256A0D005A6E41
+   [104]: http://www-105.ibm.com/developerworks/education.nsf/components-onlinecourse-bytitle/601681DFBDBD06E2862569F1004DB6B9
+   [105]: http://www-4.ibm.com/software/developer/library/ws-trans/index.html?dwzone=ws
+   [106]: http://www.ibm.com/developerworkshttp://4suite.org/rdf/anonymous/8a312542-d24f-4a04-9aa3-77e5d6ae3bbf
+   [107]: http://www-4.ibm.com/software/developer/library/ws-rdf/index.html?dwzone=ws
+   [108]: http://www.ibm.com/developerworkshttp://4suite.org/rdf/anonymous/87e27912-458b-450e-8d07-e82d47110f4f
+   [109]: /tech/pubs/svgpres.html
+   [110]: http://www.unixinsider.com
+   [111]: http://www.xml.com/2000/10/11/rdf/index.html
+   [112]: http://www.xml.comhttp://4suite.org/rdf/anonymous/58902eed-0ab9-482a-8d83-85642a287744
+   [113]: /tech/pubs/schematron.html
+-->
+]]>

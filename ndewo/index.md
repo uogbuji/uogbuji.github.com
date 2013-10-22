@@ -17,7 +17,7 @@ Some of the poems in this book have already been published elsewhere, so enjoy t
       data-cycle-slides="> section"
       data-cycle-fx="scrollHorz"
       data-cycle-pause-on-hover="true"
-      data-cycle-speed="2000"
+      data-cycle-speed="2500"
       data-cycle-auto-height="calc"
       data-cycle-pager=".cycle-pager"
       data-cycle-prev="#prev"

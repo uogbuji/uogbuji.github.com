@@ -1,0 +1,361 @@
+<?xml version = "1.0"?>
+<article
+  xmlns="http://docbook.org/docbook/xml/4.0/namespace"
+  xmlns:common="http://namespaces.fourthought.com/doc-common"
+  xmlns:dc= "http://purl.org/dc/elements/1.1/"
+  xmlns:u= "http://uche.ogbuji.net/home/xmlns/"
+  version="1.0"
+>
+
+  <articleinfo>
+    <title>Using RDF for Web Services</title>
+    <author>
+      <firstname>Uche</firstname>
+      <surname>Ogbuji</surname>
+<!--
+      <jobtitle>Principal Consultant</jobtitle>
+      <address>
+        <affil>Fourthought, Inc.</affil>
+        <city>Boulder</city><stateorprovince>CO</stateorprovince>
+        <country>USA</country><email>uche.ogbuji@fourthought.com</email>
+        <web>http://fourthought.com</web>
+      </address>
+      <bio>
+        <para>Uche Ogbuji is a Computer Engineer, co-founder and CEO of Fourthought, Inc., a software vendor and consultancy specializing in open,
+standards-based XML solutions, especially as applicable to problems of knowledge management. He has worked with XML for several
+years, co-developing 4Suite, a pioneering library of open-source tools for XML development and object database management in Python. He
+also co-develops 4Suite Server, an XML data server using 4Suite to provide a flexible XML processing platform. He writes articles on XML
+for ITWorld and IBM developerWorks, where he is XML and Web Services columnist. He is co-author of Professional XML Web Services,
+ISBN 1861005091 (Wrox Press, 2001). He also speaks extensively at conferences including XML 2001, Web Services One, Software
+Development, Web Developer World, International Python Conference, and XML DevCon.
+        </para>
+        <para>Mr. Ogbuji is a Nigerian immigrant with a B.S. in Computer Engineering from Milwaukee School of Engineering. He currently resides in
+Boulder, Colorado where he enjoys playing amateur soccer in the summer and snowboarding in the winter. His main interest is literature, and
+poetry in particular.
+        </para>
+      </bio>
+-->
+    </author>
+    <keywordset>
+      <keyword>Web services</keyword>
+      <keyword>RDF</keyword>
+      <keyword>WSDL</keyword>
+      <keyword>SOAP</keyword>
+      <keyword>UDDI</keyword>
+    </keywordset>
+
+  </articleinfo>
+
+  <section>
+      <title>Abstract</title>
+      <para>
+A rich description mechanism is the key to highly-automated Web
+Services.  The discovery of suitable services with vetted business and
+technical contracts can help human decision-makers rapidly match their
+needs to service providers.  There is already a great deal of work in
+the area of standardizing these descriptions, from WSDL to UDDI (at the
+fine-grained level) to ebXML registry/repository (at the coarse-grained
+level).  These specifications provide a vocabulary, yet the
+quickest way to turn XML vocabularies into practical information systems
+is by using XML's companion from the W3C: Resource Description Framework
+(RDF).
+      </para>
+      <para>
+The many factors that make RDF an excellent tool for knowledge management also make it an excellent tool for Web services infrastructure.  This paper provides an overview of RDF and the advantage it provides for Web services development.
+      </para>
+      <para>
+This is paper 03-02-02 from XML Conference and Exposition 2001.
+      </para>
+  </section>
+
+  <section>
+    <title>Introduction</title>
+    <para>
+Web services have emerged from an interesting combination of trends.  On one hand, there is the increasing legitimacy of semi-structured data management ushered in by XML.  There is also the long march in distributed computing from the narrow world of remote-procedure calls, through remote object invocations (flexibility through polymorphism), through even more generic remote computing systems offered by networked component systems, and beyond.  And of course, there is the history of business-to-business transactions that have migrated from the high infrastructure costs of establised Electronic Data Interchange (EDI) towards inexpensive Internet technologies and lighter-weight business processes.
+    </para>
+    <para>
+The very promise of Web services lies in its broad background, and its ability to unify so many service development and deployment problems with an (eventually) standardized solution.  However, this ambition has also caused the Web services community to ignore some lessons in existing technology and practice that could speed up its development.  There is a significant opportunity for Web services to build on the complex data inter-relationships that must be navigated in order to prepare, describe, constrain, and execute remote, generic services.  Processing this data holistically is the key to building emergent value upon the basic foundations of Web services.
+    </para>
+    <para>
+But the same technology that can work to amplify the value of Web services can be used to put it into practice quickly, and integrate it into existing tools.  Web services have ushered in a thicket of new specifications, some of which have gone through several major iterations of version just within the year 2001.  While the industry has done an admirable job of working to navigate the inevitable chaos through the development of tools, all the frantically moving parts tend to get in the way of building practical Web services that can be used by a large cross-section of existing clients.  By starting with broader, generic technologies, and adopting specialized Web services instruments as they mature or become widespread, one can avoid some of this volatility.
+    </para>
+    <section>
+      <title>Introducing RDF</title>
+      <para>
+Resource Description Framework (RDF)  <bibref refloc='rdfres'/> is a standard for Internet-based metadata recommended to be used alongside XML and even HTML (it is also developed by the W3C).  It provides an abstract model for statements about resources (which are URIs) and relationships between resources.  It also defines an XML-based syntax for exchanging descriptions, and a schema mechanism for expressing logical statements about resources.
+      </para>
+      <para>
+RDF is very simple.  The statements about resources that form the basis of RDF are each structured assertions.  For example:
+      </para>
+      <para>
+<b><i>"Uche Ogbuji is the author of this paper"</i></b>
+      </para>
+      <para>
+      This is called a <b>statement</b> in the RDF model.  It has three structural parts: <b>subject</b> ("this paper"), <b>predicate</b> ("author"), and <b>object</b> ("Uche Ogbuji").  Note that this structural mapping is quite different from the English grammar mapping, which has "Uche Ogbuji" as the subject of the above statement.  This is a common problem with modeling formalisms for computer representations.  In effect, "author" is an attribute or property of "this paper", which motivates the structure suggested above.  In fact, RDF is also commonly conceived as a set of mappings from resources, through formal properties to the property values.  It turns out that object-oriented systems would typically express things similarly ("this instance of paper has an 'author' attribute with value 'Uche Ogbuji'", as would predicate logic systems ("the predicate 'author' relates 'this paper' to 'Uche Ogbuji'", or "the function 'author' maps from 'this paper' in the domain to 'Uche Ogbuji' in the range").
+      </para>
+      <para>
+Indeed, RDF comes from study in object-oriented systems, knowledge-representation and metadata management systems.  It operates on a universe consisting of items accessible on the Web.  Each resource is represented by a Uniform Resource Identifiers (URI).  The subject of RDF statements must actually be a resource, and so the above english statement could be turned into an RDF statement illustrated in the following figure:
+      </para>
+      <figure>
+        <title>A sample RDF graph</title>
+        <mediaobject><imageobject fileref='images/rdf-eg.png' format='PNG'/><textobject><phrase>A sample RDF graph</phrase></textobject></mediaobject>
+      </figure>
+      <para>
+Here we have several RDF statements combined into a single diagram.  All of RDF is pretty much an expansion of this concept.  RDF defines a directed graph of statements which describe Web-based resources.  As you can see, I have replaced the literal "Uche Ogbuji" in the original statement with a URI representing this person, which in turn is the subject of several more statements.  Such a collection of RDF statements is called a <b>model</b> in RDF.
+      </para>
+      <para>
+This might seem rather simple to be such an important technology, but it is in fact RDF's very simplicity that makes it so powerful.  Computer science already has plenty to say about the effectiveness of graphs for representing information and RDF allows many simple statements to be aggregated so that machine agents can apply the well-tested graph traversal techniques to glean data.  These statements are also called <b>triples</b> because there are three predominant parts (subject, object and predicate).  Databases of such triples have been shown to be scalable to many millions of triples, mostly because of the simplicity of this information.  Such scalability is the only hope if a technology is to make an attempt at taming the vast Web.
+      </para>
+      <para>
+Even within this simple framework, there lie nuances that are key to RDF's expressiveness, and the more powerful aspects of processing RDF.  For one thing, predicates must also be resources, about which other statements can be made.  The implications of this are that an agent plying the RDF model can encounter an unfamiliar predicate and have a chance of automatically interpreting this predicate by following statements about the predicate itself until it reaches a description of some authority that it does recognize: say a dictionary, directory or machine-readable specification.  In fact, there are several schema methodologies for RDF: formalisms for defining properties and constraints of classifications of resources.  There is the W3C's RDF schema specification, and the DARPA Agent Markup Language (DAML).
+      </para>
+      <para>
+Indeed, the high ambition of RDF is to build a global knowledge-base upon today's Web, transforming the Web into an analytical medium of unfathomable potential.  This is the "Semantic Web" which is the subject of much discussion, debate, and activity.  However, there are many less ambitious projects for which RDF is well suited, and automating Web services happens to be one very good example.
+      </para>
+      <para>
+If you are not familiar with RDF, it would be a good idea to browse Pierre-Antoine Champin's excellent tutorial <bibref refloc='rdftut'/> to get familiar enough with RDF to understand the examples in this paper.  You will also need to be familiar with XSLT.
+      </para>
+    </section>
+    <section>
+      <title>Bootstrapping Web services with RDF</title>
+      <para>
+The first contribution that RDF can bring to Web services is to support description and discovery using existing RDF tools and mechanisms.
+      </para>
+      <para>
+First of all, let us consider discovery, assuming that one has the right descriptions tools available.  In particular, let us assume that the Web services developer has a body of WSDL, and they want to publish it in a directory.  The Web services orthodoxy for this is to use UDDI, but UDDI is not universally available or implemented, and there are many issues of dispute about current conventions around public and private UDDI directories.
+      </para>
+      <para>
+If one can convert WSDL to RDF, they can use current RDF query, search and management tools to quickly integrate Web service description discovery into RDF form.  They can then tie into standard ontologies for business information such as ISO Basic Semantic Registry (BSR) in order to model the business-description information that UDDI reinvents.  The following is a snippet of an XSLT transform for converting WSDL to RDF.
+      </para>
+      <screen>
+<![CDATA[
+<?xml version="1.0"?>
+<xsl:stylesheet
+  version='1.0'
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+  xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:xsd="http://www.w3.org/2000/10/XMLSchema"
+  xmlns:x="http://xmlns.rdfinference.org/tools"
+  xmlns:rxsd="http://rdfinference.org/xsd.rdfs#"
+  xmlns:rwsdl="http://rdfinference.org/wsdl.rdfs#"
+>
+
+  <xsl:strip-space elements='*'/>
+  <xsl:output method='xml' indent='yes'/>
+
+  <!-- do nothing on unknown elements in general -->
+  <xsl:template match='*' priority='-100'/>
+  <xsl:template match='text()' priority='-100'/>
+
+  <!-- Very limited XML schema processing -->
+
+  <xsl:template match='xsd:schema'>
+    <rdf:Description ID='xsd:{@targetNamespace}'>
+      <rxsd:targetNamespace><xsl:value-of select='@targetNamespace'/></rxsd:targetNamespace>
+      <xsl:apply-templates/>
+    </rdf:Description>
+  </xsl:template>
+
+  <xsl:template match='xsd:element'>
+    <xsl:param name='parent' select=''/>
+    <rxsd:element>
+      <rdf:Description ID='xsd.{@name}'>
+        <xsl:if test='@type'>
+          <rxsd:type><xsl:value-of select='@type'/></rxsd:type>
+        </xsl:if>
+        <xsl:if test='$parent'>
+          <rxsd:parent><xsl:value-of select='$parent'/></rxsd:parent>
+        </xsl:if>
+      </rdf:Description>
+    </rxsd:element>
+        <xsl:apply-templates>
+          <xsl:with-param name='parent' select='@name'/>
+        </xsl:apply-templates>
+  </xsl:template>
+
+  <xsl:template match='xsd:all'>
+    <xsl:param name='parent' select=''/>
+    <xsl:apply-templates>
+      <xsl:with-param name='parent' select='$parent'/>
+    </xsl:apply-templates>
+  </xsl:template>
+
+  <xsl:template match='xsd:complexType'>
+    <xsl:param name='parent' select=''/>
+    <xsl:apply-templates>
+      <xsl:with-param name='parent' select='$parent'/>
+    </xsl:apply-templates>
+  </xsl:template>
+
+
+  <!-- On to the WSDL -->
+
+  <xsl:variable name='rdf-ns' select='"http://www.w3.org/1999/02/22-rdf-syntax-ns#"'/>
+  <xsl:variable name='wsdl-rdfs' select='"http://rdfinference.org/wsdl.rdfs#"'/>
+  <xsl:variable name='def-name' select='/wsdl:definitions/@name'/>
+
+  <xsl:template match='wsdl:definitions'>
+    <rdf:RDF>
+      <xsl:copy>
+        <xsl:attribute name='rdf:ID' namespace='{$rdf-ns}'>
+          <xsl:value-of select='@name'/>
+        </xsl:attribute>
+        <rwsdl:targetNamespace>
+          <xsl:value-of select='@targetNamespace'/>
+        </rwsdl:targetNamespace>
+      </xsl:copy>
+      <xsl:apply-templates/>
+    </rdf:RDF>
+  </xsl:template>
+
+  <xsl:template match='wsdl:types'>
+    <!--
+    <rwsdl:defined-by rdf:resource="#{$def-name}"/>
+    -->
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match='wsdl:message|wsdl:portType|wsdl:service'>
+    <xsl:copy>
+      <xsl:attribute name='rdf:ID' namespace='{$rdf-ns}'>
+        <xsl:value-of select='@name'/>
+      </xsl:attribute>
+      <rwsdl:defined-by rdf:resource="#{$def-name}"/>
+      <xsl:apply-templates select='*'/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match='wsdl:part'>
+    <xsl:copy>
+      <xsl:attribute name='rdf:ID' namespace='{$rdf-ns}'>
+        <xsl:value-of select='@name'/>
+      </xsl:attribute>
+      <xsl:attribute name='rdf:type' namespace='{$rdf-ns}'>
+        <xsl:value-of select='concat($wsdl-rdfs, "part")'/>
+      </xsl:attribute>
+      <xsl:apply-templates select='@*' mode='copy-over'/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match='wsdl:portType/wsdl:operation'>
+    <xsl:copy>
+      <xsl:attribute name='rdf:ID' namespace='{$rdf-ns}'>
+        <xsl:value-of select='@name'/>
+      </xsl:attribute>
+      <xsl:attribute name='rdf:type' namespace='{$rdf-ns}'>
+        <xsl:value-of select='concat($wsdl-rdfs, "operation")'/>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match='wsdl:input|wsdl:output|wsdl:fault'>
+    <xsl:copy>
+      <xsl:attribute name='rdf:parseType' namespace='{$rdf-ns}'>
+        <xsl:value-of select='"resource"'/>
+      </xsl:attribute>
+      <rwsdl:message>
+        <xsl:value-of select='@message'/>
+      </rwsdl:message>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match='wsdl:binding'>
+    <xsl:copy>
+      <xsl:attribute name='rdf:ID' namespace='{$rdf-ns}'>
+        <xsl:value-of select='@name'/>
+      </xsl:attribute>
+      <rwsdl:defined-by rdf:resource="#{$def-name}"/>
+      <xsl:apply-templates select='@*'/>
+      <xsl:apply-templates select='*' mode='copy-other'/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match='*|@*' mode='copy-over'>
+    <xsl:if test='not(name() = "name")'>
+      <xsl:copy/>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match='*' mode='copy-over'>
+    <xsl:copy>
+      <xsl:apply-templates select='@*|*' mode='copy-over'/>
+    </xsl:copy>
+  </xsl:template>
+
+</xsl:stylesheet>
+]]>
+      </screen>
+      <para>
+One could expand on this basis to convert a body of WSDL to RDF, and import the result into the RDF tools of choice.  There still needs to be an effort among those who are interested in RDF-enabling of Web services <bibref refloc='rdfws'/> as to the exact RDF schema to be used.  This would drive standard query and other matters, but it would at least involve building on the solid foundation of RDF rather than starting from scratch.
+      </para>
+      <para>
+WSDL is indeed growing quickly, but it is not yet pervasive, and it is well designed for remote procedure calls (RPC), but generally overkill for rich messaging.  Therefore, if your Web services are a matter of exchanging XML messages with the flexibility associated with documents, much of WSDL is otiose.  This is clearly the case when using Web services in content management, but a strong argument can be made that it is also the case for business-to-business processes.  Remember that these processes have traditionally been performed using letters and forms: this is classic semi-structured content, and often has to be shoe-horned into RPC models at the expense of expressiveness and extensibility.  The future of B2B processing using XML and Web architecture is still a matter of development and dispute, but there is a good bet that the current narrow scope of Web services will need to be relaxed in the process.
+      </para>
+      <para>
+But if describing Web services should be no more than describing content to be exchanged, then there is already a very successful, RDF-based format for this very purpose: RDF Site Summary (RSS) <bibref refloc='rsshome'/> <bibref refloc='rssart'/>.  RSS, one of RDF's and XML's early success stories, is designed for content syndication, but in essence, it provides detailed and extensible details about anything accessible by URL, and there is no reason a Web service cannot be so described.  The following is an example of a Web service description in RSS.
+      </para>
+      <screen>
+<![CDATA[
+<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://purl.org/rss/1.0/"
+>
+  <channel rdf:about="http://uche.ogbuji.net/eg/super-eagles/editor">
+    <title>Editor interface for Uche's Super Eagles Page</title>
+    <link>http://uche.ogbuji.net/eg/super-eagles</link>
+    <description>Access for posting, updating and querying the article database</description>
+    <image rdf:resource="http://uche.ogbuji.net/eg/super-eagles/logo.jpg"/>
+    <items>
+      <rdf:Seq><rdf:li resource="http://uche.ogbuji.net/eg/super-eagles/QueueArticleForPublishing"/></rdf:Seq>
+    </items>
+  </channel>
+  
+  <image rdf:about="http://uche.ogbuji.net/eg/super-eagles/logo.jpg">
+    <title>Uche's Super Eagles Page Logo</title>
+    <link>http://uche.ogbuji.net/eg/super-eagles</link>
+    <url>http://uche.ogbuji.net/eg/super-eagles/logo.jpg</url>
+  </image>
+  
+  <item rdf:about="http://uche.ogbuji.net/eg/super-eagles/QueueArticleForPublishing">
+    <title>QueueArticleForPublishing</title>
+    <link>http://uche.ogbuji.net/eg/super-eagles/editor.wsdl#QueueArticleForPublishing</link>
+    <description>Send this message in order to queue up a new article for editorial review and publishing</description>
+  </item>
+  
+</rdf:RDF>
+]]>
+      </screen>
+      <para>
+Traditionally, RSS organizes materials into channels.  For example, all content updates from a given site, might be a channel.  Each channel has a title and description, which can be applied to a Web service in the natural sense.  One can associate an image with a title, which is often used in portal environments as an icon for the channel.  Web service discovery portals and listings can use this image in a similar way.  The channel's link is pretty much the home page of the Web service.  The meat of a channel is in its collection of items, each of which can represent an individual message type handled by the Web service.  RPC folks would call each of these a "method".
+      </para>
+      <para>
+Each item has similar properties, with similar translations to a Web services usage.  The main distinction is that each item's link would be the actual protocol end-point, i.e. the very URL (or e-mail address, etc.) to which one would address the SOAP request.
+      </para>
+      <para>
+The great advantage to this is that RSS already has so many tools, portals and users that it would allow a lightweight method for describing Web services that sits side by side with distributed descriptions of so many other Internet resources.
+      </para>
+    </section>
+    <section>
+      <title>Conclusion</title>
+      <para>
+So why hasn't the mainstream of Web services development standardized on RDF?  My personal experience in discussions with creators of Web services specifications is that most have been completely unaware of RDF.  Many do seem to agree with its value as long as their brain-children, such as WSDL and UDDI, are maintained as exchange formats.  Certainly there is a great deal of activity, much of which brings together core XML and RDF, and the Web services that can build on these.  The W3C, which developed RDF and has put it to work in areas including privacy preferences and content ratings, has jumped into the standardization effort for Web services.  Given this juxtaposition, it's not at all unlikely that some accommodation of or consideration of RDF will not make its way into standardized Web services.
+      </para>
+      <para>
+If Web services are not just to become yet another painful medicine one must take while developing an application to solve a practical problem, it should work in a way that enhances the value of an organizations information as it is reporposed towards the Web.  RDF as a general technology goes a long way towards making this enhancement a reality, and certainly it has all the expressive power needed (using the specialized Web services formats as a benchmark).  Add to this the fact that there are many existing open tools, formats, and practices for RDF that have been maturing over its 3+ year history, and one might begin to see the value of using RDF as much as possible in Web services development.
+      </para>
+    </section>
+    <section>
+      <title>Bibliography</title>
+      <para>[RDFTUT]: Pierre-Antoine Champin, <ulink url="http://www710.univ-lyon1.fr/~champin/rdf-tutorial/">RDF Tutorial</ulink></para>
+      <para>[RSSHOME]: <ulink url="http://purl.org/rss/1.0">RSS 1.0 home page</ulink></para>
+      <para>[RDFWS]: <ulink url="http://rdfinference.org/index.html#rdfws">RDF Web Services information page</ulink></para>
+      <para>[RSSART]: Rael Dornfest, <ulink url="http://www.xml.com/pub/a/2000/07/17/syndication/rss.html">RSS: Lightweight Web Syndication</ulink>, XML.com</para>
+      <para>[RDFRES]: Dave Beckett, <ulink url="http://www.ilrt.bris.ac.uk/discovery/rdf/resources/">RDF Resource Guide</ulink></para>
+    </section>
+  </section>
+</article>

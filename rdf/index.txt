@@ -1,0 +1,12 @@
+<title>Uche Ogbuji: RDF: metadata for the Web</title>
+
+Resource Description Framework (RDF) is a system for representing metadata for
+the Web. That is, it is a way of expressing the attributes relationships that
+help computers make sense of data on the Web. I first discovered RDF in 1999
+and have co-developed an RDF implementation, and the specification and
+implementation of Versa, an RDF query language, among other efforts.
+
+[Versa](/tech/rdf/versa)
+
+Versa: an RDF query language to which I contribute
+

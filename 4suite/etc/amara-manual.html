@@ -1,0 +1,1741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+    <title>Amara XML Toolkit manual (for version 1.2)</title>
+    <meta content="" name="description">
+    <link href="docbook_html.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="article">
+      <div class="article-title">
+        <h1 class="title">Amara XML Toolkit manual (for version 1.2)
+          <br><span class="subtitle">User Manual</span></h1>
+      </div>
+      <div class="header">
+        <dl>
+          <dt>This version:</dt>
+          <dd>Revision 1.2</dd>
+        </dl>
+        <div class="abstract">
+          <h2>Abstract</h2>
+          <p></p>
+        </div>
+      </div>
+      <hr>
+      <div class="toc">
+        <h2>Table Of Contents</h2>
+        <p style="display: inline; padding-left: 1em">1 <a href="#intro">Introduction</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 1em">2 <a href="#getstarted">Getting started</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 1em">3 <a href="#bindery">Amara Bindery: XML as easy as py</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.1 <a href="#complex-example">More complex example</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.2 <a href="#bindery-workings">The workings of Bindery</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.3 <a href="#complex-children">Complex element children</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.4 <a href="#node_structure">Checking the structure of nodes</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.5 <a href="#writing-xml">Writing XML back out</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.6 <a href="#xpath">XPath</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.7 <a href="#xslt">Applying a transform (XSLT) to a bindery node</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.8 <a href="#namespaces">Namespaces</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.9 <a href="#naming">Naming things</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.10 <a href="#pushbind">Push binding</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.11 <a href="#modification">Modification</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.12 <a href="#createelem">Creating elements (and attributes)</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.13 <a href="#attrmod">Modifying attributes</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.14 <a href="#xmlfrag">Appending XML fragments</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.15 <a href="#createdoc">Creating full documents</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.16 <a href="#deepcopies">Making deep copies of nodes</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.17 <a href="#picomments">Processing instructions and comments</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.18 <a href="#doctypes">Document types</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.18.1 <a href="#future">Future doctype support from parse</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.19 <a href="#custom-binding">Customizing the binding</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.19.1 <a href="#simple-string">Treating some elements as simple string values</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.19.2 <a href="#omit-elem">Omitting certain elements entirely</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.19.3 <a href="#wsstripping">Stripping whitespace</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.19.4 <a href="#element-skeleton">Creating an element skeleton</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.19.5 <a href="#typeinf">The type inferencer</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.19.6 <a href="#rules-namespaces">Using namespaces in custom rules</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.20 <a href="#rules-pushbind">Push binding and rules</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.21 <a href="#custom-binding-classes">Using custom binding classes</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.21.1 <a href="#custom-binding-warning">General warning about customized bindings</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">3.22 <a href="#extensions">Bindery extension guide</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 3em">3.22.1 <a href="#laws">Bindery laws:</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 1em">4 <a href="#scimitar">Scimitar: the most flexible schema language for the most flexible programming language</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 1em">5 <a href="#domtools">Amara DOM Tools: giving DOM a more Pythonic face</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">5.1 <a href="#pushdom">The pushdom</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">5.2 <a href="#domtools-generators">Generator tools</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 2em">5.3 <a href="#domtools-xpath">Getting an XPath for a given node</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 1em">6 <a href="#saxtools">Amara SAX Tools: SAX without the brain explosion</a>
+          <br>
+        </p>
+        <p style="display: inline; padding-left: 1em">7 <a href="#flextyper">Flextyper: user-defined datatypes in Python for XML processing</a>
+          <br>
+        </p>
+      </div>
+      <hr>
+      <div class="body">
+        <div class="section" id="intro"><a id="intro" name="intro"></a>
+          <div class="section-title">
+            <h1 class="title"><span class="section-number">1 </span>Introduction</h1>
+          </div>
+          <p>
+      <a href="http://uche.ogbuji.net/tech/4suite/amara">Amara XML Tools</a> is a collection of Pythonic tools for XML data binding. Not just tools that
+happen to be written in Python, but tools built from the ground up to
+use Python idioms and take advantage of the many advantages of Python
+over other programming languages.</p>
+          <p>Amara builds on 4Suite, but whereas 4Suite focuses more on literal
+implementation of XML standards in Python, Amara adds a much more
+Pythonic face to these capabilities.  The combination ensures standards
+compliance within expressive Python form.</p>
+          <p>The main component of Amara is:</p>
+          <ul style="list-style-type: disc; list-style-position: outside;">
+            <li>
+              <p>Bindery: a data binding tool (fancy way of saying it's a very
+Pythonic XML API)</p>
+            </li>
+          </ul>
+          <p>Other components are:</p>
+          <ul style="list-style-type: disc; list-style-position: outside;">
+            <li>
+              <p>Scimitar: an implementation of the ISO Schematron schema language
+for XML, which converts Schematron files to Python scripts</p>
+            </li>
+            <li>
+              <p>domtools: a set of tools to augment Python DOMs</p>
+            </li>
+            <li>
+              <p>saxtools: a set of tools to make SAX easier to use in Python</p>
+            </li>
+          </ul>
+        </div>
+        <div class="section" id="getstarted"><a id="getstarted" name="getstarted"></a>
+          <div class="section-title">
+            <h1 class="title"><span class="section-number">2 </span>Getting started</h1>
+          </div>
+          <p>The easiest way to get started is to install Amara and all its dependencies at a stroke using <a href="">EasyInstall</a>.  Just type <b class="command">easy_install amara</b> and you're all set.  If you run into trouble you may not have EasyInstall.  It's very easy to set up.  If you still run into problems, please report them on the mailing list.
+    </p>
+          <p>You might choose not to uae EasyInstall.  If so, grab the minimally required 4Suite-XML package, install that, then grab Amara and install that using 
+using the usual
+    <b class="command">python setup.py install</b>, a Windows installer or some other method.</p>
+        </div>
+        <div class="section" id="bindery"><a id="bindery" name="bindery"></a>
+          <div class="section-title">
+            <h1 class="title"><span class="section-number">3 </span>Amara Bindery: XML as easy as py</h1>
+          </div>
+          <p>The following example shows how to create a binding from a simple XML
+file, monty.xml. (All example files mentioned are available in the
+demo directory of the Amara package.)</p>
+          <p>First, the contents of monty.xml:</p>
+          <div class="programlisting">
+            <pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;monty&gt;
+  &lt;python spam="eggs"&gt;
+    What do you mean "bleh"
+  &lt;/python&gt;
+  &lt;python ministry="abuse"&gt;
+    But I was looking for argument
+  &lt;/python&gt;
+&lt;/monty&gt;
+    </pre>
+          </div>
+          <p>Now the code to create the binding:</p>
+          <div class="programlisting">
+            <pre>
+import amara
+doc = amara.parse('monty.xml')
+    </pre>
+          </div>
+          <p>
+      <b class="command">doc</b> is the data binding result, an object representing the XML. Since I fed the binder a full XML document, I get back an object
+representing the document itself which then has a member representing
+the top-level element.</p>
+          <p>It's that simple. In order to get the value "eggs" (as a Python
+Unicode object) you can write:</p>
+          <div class="programlisting">
+            <pre>
+      doc.monty.python.spam
+    </pre>
+          </div>
+          <p>Or in order to get the element object with the contents "But I was looking for argument" you can
+write:</p>
+          <div class="programlisting">
+            <pre>
+      doc.monty.python[1]
+    </pre>
+          </div>
+          <p>The <b class="command">parse</b> function can be passed a file-like object (stream) as well
+as a string.  There is also a <b class="command">parse_path</b> function for parsing
+XML retrieved from local files and URLs.</p>
+          <p>You can pass <b class="command">amara.parse</b> a string (<em class="emphasis">not Unicode object</em>) with the
+XML content, an open-file-like object, a file path or a URI.</p>
+          <div class="section" id="complex-example"><a id="complex-example" name="complex-example"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.1 </span>More complex example</h2>
+            </div>
+            <p>The following example shows how to create a binding from an XBEL file
+(a popular XML format for bookmarks that was developed by Python's
+very own XML-SIG). There is a sample XBEL file you can use in the demo
+directory.</p>
+            <div class="programlisting">
+              <pre>
+        doc = amara.parse('xbel.xml')
+      </pre>
+            </div>
+            <p>The following sample code prints the first and second bookmark titles:</p>
+            <div class="programlisting">
+              <pre>
+        print doc.xbel.folder.bookmark.title
+print doc.xbel.folder.bookmark[1].title
+      </pre>
+            </div>
+            <p>Note that Bindery tries to make things as natural as possible. You can access child elements by just using their name, usually. If there is
+more than one with the same name it grabs the first one. You can use
+list indices to specify one of multiple child elements with the same
+name. Naturally, a more explicit way of getting the first bookmark's
+title is:</p>
+            <div class="programlisting">
+              <pre>
+        print doc.xbel.folder.bookmark[0].title
+      </pre>
+            </div>
+            <p>
+        <b class="command">title</b> is an element containing only text.  the expression <b class="command">doc.xbel.folder.bookmark[0].title</b> returns the binding object representing the element.  Such objects have unicode conversion methods so that you can get their descendant text (all text nodes in the element's subtree), which is printed in the above line.  The following four lines are all equivalent:</p>
+            <div class="programlisting">
+              <pre>
+print doc.xbel.folder.bookmark.title
+print doc.xbel.folder.bookmark[0].title
+print unicode(doc.xbel.folder.bookmark.title)
+print unicode(doc.xbel.folder.bookmark[0].title)
+      </pre>
+            </div>
+            <p>Calling the <b class="command">unicode</b> conversion on an element node in Amara is very similar to
+calling the <b class="command">string</b> conversion on an element node in XPath.</p>
+            <p>The following snippet is a recursive function that prints out all bookmark URLs in the file:</p>
+            <div class="programlisting">
+              <pre>
+def all_titles_in_folder(folder):
+    #Warning: folder.bookmark will raise an AttributeError if there are no bookmarks
+    for bookmark in folder.bookmark:
+        print bookmark.href
+    if hasattr(folder, "folder"):
+        #There are sub-folders
+        for folder in folder.folder:
+            all_titles_in_folder(folder)
+    return
+
+for folder in doc.xbel.folder:
+    all_titles_in_folder(folder)
+      </pre>
+            </div>
+            <p>
+        <em class="emphasis">You would probably not do this in actual usage, though.</em>  You can perform this task with much less code, without recursion, and with a speed boost using XPath, which is covered <a href="#xpath">in a later section</a>.</p>
+            <p>If you want to count the number of elements of the same name, use <b class="command">len</b>.</p>
+            <div class="programlisting">
+              <pre>
+        len(doc.xbel.folder)
+      </pre>
+            </div>
+            <p>This gives the number of top-level folders.</p>
+          </div>
+          <div class="section" id="bindery-workings"><a id="bindery-workings" name="bindery-workings"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.2 </span>The workings of Bindery</h2>
+            </div>
+            <p>In the default binding XML elements turn into specialized objects. For
+each generic identifier (element name) a class is generated that is
+derived from <b class="command">bindery.element_base</b>. Attributes become simple data
+members whose value is a Unicode object containing the attribute
+value.</p>
+            <p>Element objects are specially constructed so they can be treated as
+single objects (in which case the first child element of the
+corresponding name is selected, or one can use list item access
+notation or even iterate.</p>
+            <p>Going back to the example, <b class="command">binding.xbel.folder.bookmark</b> is the same
+as <b class="command">binding.xbel.folder.bookmark[0]</b>. Both return the first bookmark
+in the first folder. To get the second bookmark in the first folder,
+use <b class="command">binding.xbel.folder.bookmark[1]</b>.</p>
+          </div>
+          <div class="section" id="complex-children"><a id="complex-children" name="complex-children"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.3 </span>Complex element children</h2>
+            </div>
+            <p>Bindery by default preserves ordering information from the source
+XML. You can access this through the children list of element and
+document objects:</p>
+            <div class="programlisting">
+              <pre>
+        folder.xml_children
+      </pre>
+            </div>
+            <p>Within the children list, child elements are represented using the
+corresponding binding objects, child text becomes simple Unicode
+objects. Notice that in the default binding text children are
+normalized, meaning that the binding will never place two text nodes
+next to each other in <b class="command">xml_children</b>.</p>
+            <p>If an element node contains text as well as child elements, be aware of
+the how descendant text nodes are accessed.  You can get the accumulated
+text children of an element using the <b class="command">xml_child_text property</b>.  Given
+the document <b class="command">&lt;a&gt;1&lt;b&gt;2&lt;/b&gt;3&lt;c/&gt;&lt;/a&gt;</b>, <b class="command">a.xml_child_text</b> would return
+<b class="command">u'13'</b>.  On the other hand, converting to Unicode (<b class="command">unicode(a)</b>)
+would return <b class="command">u'123'</b>.</p>
+          </div>
+          <div class="section" id="node_structure"><a id="node_structure" name="node_structure"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.4 </span>Checking the structure of nodes</h2>
+            </div>
+            <p>You can get some information about the structure of most bindery objects
+by calling the <b class="command">xml_doc method</b>.</p>
+            <div class="programlisting">
+              <pre>
+&gt;&gt;&gt; import amara
+&gt;&gt;&gt; doc = amara.parse('monty.xml')
+&gt;&gt;&gt; print doc.xml_doc()
+Object references based on XML child elements:
+monty (1 element) based on 'monty' in XML
+&gt;&gt;&gt; print doc.monty.xml_doc()
+Object references based on XML child elements:
+python (2 elements) based on 'python' in XML
+&gt;&gt;&gt; print doc.monty.python.xml_doc()
+Object references based on XML attributes:
+spam based on 'spam' in XML
+Object references based on XML child elements:
+&gt;&gt;&gt; print doc.monty.python.spam
+eggs
+      </pre>
+            </div>
+            <p>This is human-readable material, for convenience, but you can also get
+node structure information in machine-readable form. <b class="command"> xml_properties</b>
+returns a dictionary whose keys represent the object reference names from
+the XML attributes and elements.</p>
+            <div class="programlisting">
+              <pre>
+&gt;&gt;&gt; import amara
+&gt;&gt;&gt; doc = amara.parse("&lt;a x='1'&gt;hello&lt;b/&gt;lovely&lt;c/&gt;world&lt;/a&gt;")
+&gt;&gt;&gt; doc.a.xml_properties
+{u'x': u'1', u'c': &amp;lt;amara.bindery.c object at 0xb7bbcdcc&gt;, u'b': &amp;lt;amara.bindery.b object at 0xb7bbcb8c&gt;}
+      </pre>
+            </div>
+            <p>
+        <b class="command">xml_child_elements</b> returns similar dictionary, but reduced to only the child element.</p>
+            <div class="programlisting">
+              <pre>
+&gt;&gt;&gt; #Continuing from the above snippet
+&gt;&gt;&gt; doc.a.xml_child_elements
+      </pre>
+            </div>
+            <p>{u'c': &lt;amara.bindery.c object at 0xb7bbcdcc&gt;, u'b': &lt;amara.bindery.b object at 0xb7bbcb8c&gt;}</p>
+          </div>
+          <div class="section" id="writing-xml"><a id="writing-xml" name="writing-xml"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.5 </span>Writing XML back out</h2>
+            </div>
+            <p>The preservation of ordering information means that Bindery does a
+pretty good job of allowing you to render binding objects back to XML
+form. Use the <b class="command">xml</b> method for this.</p>
+            <div class="programlisting">
+              <pre>
+        print doc.xml()
+      </pre>
+            </div>
+            <p>The <b class="command">xml</b> method returns <em class="emphasis">encoded text</em>, not Unicode. The default encoding
+is UTF-8. You can also serialize a portion of the document.</p>
+            <div class="programlisting">
+              <pre>
+        print doc.xbel.folder.xml() #Just the first folder
+      </pre>
+            </div>
+            <p>You can pass in a stream for the output:</p>
+            <div class="programlisting">
+              <pre>
+        doc.xml(sys.stdout)
+      </pre>
+            </div>
+            <p>You can control such matters as the output encoding, whether the
+output is pretty-printed, whether there is an output XML declaration,
+etc. by using parameters that control the output, based on the XSLT output
+control attributes.  As an example, if you pas in <b class="command">omitXmlDeclaration=u"yes"</b>
+the output of the XML declaration is suppressed.  Here are the other
+parameters you can set.</p>
+            <ul style="list-style-type: disc; list-style-position: outside;">
+              <li>
+                <p>encoding - the character encoding to use (default UTF-8). The writer will automatically use character entities where necessary.</p>
+              </li>
+              <li>
+                <p>omitXmlDeclaration - "yes" to suppress output of the XML declaration. Default "no".</p>
+              </li>
+              <li>
+                <p>standalone - "yes" to set standalone in the XML declaration.</p>
+              </li>
+              <li>
+                <p>mediaType - sets the media type of the output. You'll probably never need this.</p>
+              </li>
+              <li>
+                <p>cdataSectionElements - a list of element names whose output will be wrapped in a CDATA section. This can provide for friendlier output in some cases.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="section" id="xpath"><a id="xpath" name="xpath"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.6 </span>XPath</h2>
+            </div>
+            <p>Bindery supports an XPath subset that covers almost all of that standard.  The XPath features that are not supported are very rare, and for pracctical purposes you can assume it's complete XPath support.  The folowing example retrieves all top-level folders:</p>
+            <div class="programlisting">
+              <pre>
+        tl_folders = doc.xbel.xml_xpath(u'folder')
+for folder in tl_folders:
+    print folder.title
+      </pre>
+            </div>
+            <p>You invoke the <b class="command">xml_xpath</b> method on the object you wish to serve as
+the context for the XPath query. To get the first element child
+(regardless of node name) of the first bookmark of the first folder,
+use:</p>
+            <div class="programlisting">
+              <pre>
+        doc.xbel.folder.bookmark.xml_xpath(u'*[1]')
+      </pre>
+            </div>
+            <p>or</p>
+            <div class="programlisting">
+              <pre>
+        doc.xbel.xml_xpath(u'folder[1]/bookmark[1]/*[1]')
+      </pre>
+            </div>
+            <p>or</p>
+            <div class="programlisting">
+              <pre>
+        doc.xbel.xml_xpath(u'/folder[1]/bookmark[1]/*[1]')
+      </pre>
+            </div>
+            <p>or</p>
+            <div class="programlisting">
+              <pre>
+        doc.xml_xpath(u'xbel/folder[1]/bookmark[1]/*[1]')
+      </pre>
+            </div>
+            <p>etc.</p>
+            <p>
+        <em class="emphasis">Warning:</em> in Python, lists indices start with 0 while they start
+with 1 in XPath.</p>
+            <p>
+        <em class="emphasis">Notice</em>: this XPath returns a node set, rendered in Python as a
+list of nodes. It happens to be a list of one node, but you still have
+to extract it with [0].</p>
+            <p>The return value depends on the XPath expression (expr)</p>
+            <ul style="list-style-type: disc; list-style-position: outside;">
+              <li>
+                <p>If expr reults in an XPath string, the return value is a Python Unicode object</p>
+              </li>
+              <li>
+                <p>If expr reults in an XPath number, the return value is a Python float</p>
+              </li>
+              <li>
+                <p>If expr reults in an XPath boolean, the return value is a Python bool object</p>
+              </li>
+              <li>
+                <p>If expr reults in an XPath node set, the return value is a Python list (always a list, even if it is empty or contains only one node)</p>
+              </li>
+            </ul>
+            <p>The following example prints out all bookmark URLs in the file, but is
+much simpler and more compact than the equivalent code <a href="#complex-example">earlier in this document</a>:</p>
+            <div class="programlisting">
+              <pre>
+bookmarks = doc.xml_xpath(u'//bookmark')
+for bookmark in bookmarks:
+    print bookmark.href
+      </pre>
+            </div>
+            <p>The following just returns all hrefs
+wherever they appear in the document, using an attribute query:</p>
+            <div class="programlisting">
+              <pre>
+hrefs = doc.xml_xpath(u'//@href')
+for href in hrefs:
+    print unicode(href)
+      </pre>
+            </div>
+            <p>The following prints the title of the bookmark for the 4Suite project:</p>
+            <div class="programlisting">
+              <pre>
+url = u"http://4suite.org/"
+title_elements = doc.xml_xpath('//bookmark[@url="%s"]/title'%url)
+#XPath node set expression always returns a list
+print unicode(title_elements[0])
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="xslt"><a id="xslt" name="xslt"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.7 </span>Applying a transform (XSLT) to a bindery node</h2>
+            </div>
+            <p>You can apply XSLT directly to a bindery document or element.  You could of course <b class="command">xml()</b> to serialize it and apply XSLT against that, but it's probably easier and a more efficient to work directly on the node.  To do so, use the <b class="command">xml_xslt()</b> method.</p>
+            <div class="programlisting">
+              <pre>
+        result_string = doc.xml_xslt('transform.xslt')
+      </pre>
+            </div>
+            <p>The one required argument is a reference to a transform.  It can be a a string (not Unicode object), file-like object (stream), file path, URI or
+an Ft.Xml.InputSource.InputSource instance.  If string or stream
+it must be self-contained  XML (i.e. not requiring access to
+any other resource such as external entities or includes).</p>
+            <p>The optional <b class="command">param</b> argument is a dictionary of stylesheet parameters, the keys of
+            which may be given as unicode objects if they have no namespace,
+            or as (uri, localname) tuples if they do.</p>
+            <p>The optional <b class="command">output</b> argument is a file-like object to which output is written
+            (incrementally, as processed).
+</p>
+            <p>See the following examples:</p>
+            <div class="programlisting">
+              <pre>
+        params = params={u'id' : u'2', (u'http://example.com/ns', u'tags') : [u'a', u'b', u'c']}
+        result_string = doc.xml_xslt('transform.xslt', params=params)
+      </pre>
+            </div>
+            <p>This would execute the XSLT with overridden values for the <b class="command">id</b> (unprefixed) top level parameter and for the <b class="command">x:tags</b> top level parameter where x is a prefix for the <b class="command">http://example.com/ns</b> namespace.  The latter case provides a node set of text nodes as the parameter.</p>
+            <div class="programlisting">
+              <pre>
+        doc.xml_xslt(TRANSFORM_STRING, output=open('/tmp/foo.txt', 'w'))
+      </pre>
+            </div>
+            <p>Would execute the XSLT provided in the string, with output streaming into teh file <b class="command">/tmp/foo.txt</b> (remember that XSLT output can be text, XML or HTML).  There is no return value since <b class="command">output</b> is specified.</p>
+            <div class="programlisting">
+              <pre>
+        result_string = doc.xml_xslt(open('transform.xslt'))
+      </pre>
+            </div>
+            <p>Read the transform from an open file object.</p>
+          </div>
+          <div class="section" id="namespaces"><a id="namespaces" name="namespaces"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.8 </span>Namespaces</h2>
+            </div>
+            <p>Bindery supports documents with namespaces. The following example
+displays a summary of the contents of an RSS 1.0 feed:</p>
+            <div class="programlisting">
+              <pre>
+import amara
+
+#Set up customary namespace bindings for RSS
+#These are used in XPath query and XPattern rules
+RSS10_NSS = {
+    u'rdf': u'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+    u'dc': u'http://purl.org/dc/elements/1.1/',
+    u'rss': u'http://purl.org/rss/1.0/',
+    }
+
+doc = amara.parse('rss10.rdf', prefixes=RSS10_NSS)
+
+#Create a dictionary of RSS items
+items = {}
+item_list = doc.xml_xpath(u'//rss:item')
+items = dict( [ ( item.about, item) for item in item_list ] )
+print items
+
+for channel in doc.RDF.channel:
+    print "Channel:", channel.about
+    print "Title:", channel.title
+    print "Items:"
+    for item_ref in channel.items.Seq.li:
+        item = items[item_ref.resource]
+        print "\t", item.link
+        print "\t", item.title
+      </pre>
+            </div>
+            <p>The following illustrates how namespace details are maintained in
+bindery objects:</p>
+            <div class="programlisting">
+              <pre>
+#Show the namespace particulars of the rdf:RDF element
+print doc.RDF.namespaceURI
+print doc.RDF.localName
+print doc.RDF.prefix
+      </pre>
+            </div>
+            <p>For attributes, <b class="command">xml_attributes</b> is a dictionary containing namespace
+information for all of an element's attributes. See the Attributes
+section below for more details.</p>
+            <p>Namespaces work naturally with XPath as well:</p>
+            <div class="programlisting">
+              <pre>
+#Get the RSS item with a given URL
+item_url = u'http://www.oreillynet.com/cs/weblog/view/wlg/532'
+matching_items = doc.RDF.xml_xpath(u'//rss:item[@rdf:about="%s"]'%item_url)
+print matching_items
+assert matching_items[0].about == item_url
+      </pre>
+            </div>
+            <p>In the above example I manually set the mapping from namespace prefixes to namespace names, but if your use of XML namespaces is "sane", you might not need this step.  Bindery document objects automatically remember the namespace declarations made on the top level element of any document you parse.</p>
+          </div>
+          <div class="section" id="naming"><a id="naming" name="naming"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.9 </span>Naming things</h2>
+            </div>
+            <p>The Python object reference and class names used in Amara bindings are based on the corresponding XML IDs, but there are limits to such mappings.
+For one thing, XML allows characters that are not allowed in Python IDs,
+such as <b class="command">-</b>.  In such cases Amara mangles the name.  In the case of a document such as <b class="command">&amp;lt;a-1 b-1=""/&gt;</b> you would access the element using <b class="command">doc.a_1</b>, and the attribute using <b class="command">doc.a_1.b_1</b>.</p>
+            <p>This can be problematic when writing generic code to address XML, because any element's name might be mangled in a different way depending on document context.  You always have the option of accessing objects using their proper XML names in XPath:</p>
+            <p>
+        <b class="command">doc.xml_xpath(u"a-1/b-1)</b>
+      </p>
+            <p>You can get the original XML name information from any object using
+properties named after DOMs:</p>
+            <ul style="list-style-type: disc; list-style-position: outside;">
+              <li>
+                <p>
+            <b class="command">element.nodeName</b>
+          </p>
+              </li>
+              <li>
+                <p>
+            <b class="command">element.localName</b>
+          </p>
+              </li>
+              <li>
+                <p>
+            <b class="command">element.namespaceURI</b>
+          </p>
+              </li>
+              <li>
+                <p>
+            <b class="command">element.prefix</b>
+          </p>
+              </li>
+            </ul>
+            <p>And you can get similar information on attributes by reading the <b class="command">xml_attributes</b> dictionary on the element node.</p>
+          </div>
+          <div class="section" id="pushbind"><a id="pushbind" name="pushbind"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.10 </span>Push binding</h2>
+            </div>
+            <p>If you're dealing with a large XML file, you may not want the entire data binding in memory at the same time. You may want to instantiate it bit by bit. If you have a clear pattern for how you want to break up the document, you can use the function <b class="command">amara.pushbind</b>. See the following example:</p>
+            <div class="programlisting">
+              <pre>
+import amara
+
+for folder in amara.pushbind('xbel.xml', u'/xbel/folder'):
+    title = folder.title
+    bm_count = len(list(folder.bookmark))
+    print "Folder", title, "has", bm_count, "top level bookmarks"
+      </pre>
+            </div>
+            <p>The neat thing is that this program doesn't have the entire binding in memory at time. In each iteration it loads just enough XML to represent each top-level folder element. <b class="command">pushbind</b> is a generator that yields each little subtree each time it's invoked.</p>
+            <p>In general <b class="command">pushbind</b> subtrees are Amara bindery objects based on the XSLT pattern that is passed in as its first argument. You also pass in an XML source, either a string (use the <b class="command">string= keyword</b>) or a URI or file-name (use the <b class="command">source= keyword</b>).</p>
+            <p>An interactive session helps illustrate:</p>
+            <div class="programlisting">
+              <pre>
+&gt;&gt;&gt; XML="""\
+... &lt;doc&gt;
+...   &lt;one&gt;&lt;a&gt;0&lt;/a&gt;&lt;a&gt;1&lt;/a&gt;&lt;/one&gt;
+...   &lt;two&gt;&lt;a&gt;10&lt;/a&gt;&lt;a&gt;11&lt;/a&gt;&lt;/two&gt;
+... &lt;/doc&gt;
+... """
+&gt;&gt;&gt; import amara
+&gt;&gt;&gt; chunks = amara.pushbind(XML, u'a')
+&gt;&gt;&gt; a = chunks.next()
+&gt;&gt;&gt; print a
+0
+&gt;&gt;&gt; print a.xml()
+&lt;a&gt;0&lt;/a&gt;
+&gt;&gt;&gt; a = chunks.next()
+&gt;&gt;&gt; print a.xml()
+&lt;a&gt;1&lt;/a&gt;
+&gt;&gt;&gt; a = chunks.next()
+&gt;&gt;&gt; print a.xml()
+&lt;a&gt;10&lt;/a&gt;
+&gt;&gt;&gt; a = chunks.next()
+&gt;&gt;&gt; print a.xml()
+&lt;a&gt;11&lt;/a&gt;
+&gt;&gt;&gt; a = chunks.next()
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in ?
+StopIteration
+
+      </pre>
+            </div>
+            <p>In the above case the XSLT pattern "a" matched all the elements with this name in the file.  All the XML outside the "a" elements is essentially discarded by this code, so you have to tailor the XSLT pattern to include all the material you're interested in.  In the following example, only the first two "a" elements are included in the generator yield.</p>
+            <div class="programlisting">
+              <pre>
+        &gt;&gt;&gt; chunks = amara.pushbind(XML, u'one/a')
+&gt;&gt;&gt; a = chunks.next()
+&gt;&gt;&gt; print a.xml()
+&lt;a&gt;0&lt;/a&gt;
+&gt;&gt;&gt; a = chunks.next()
+&gt;&gt;&gt; print a.xml()
+&lt;a&gt;1&lt;/a&gt;
+&gt;&gt;&gt; a = chunks.next()
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in ?
+StopIteration
+      </pre>
+            </div>
+            <p>The pattern <b class="command">/doc/one/a</b> would result in similar behavior for the sample document.</p>
+            <p>You can use namespaces in these patterns by using prefixes defined in a dictionary passed to <b class="command">pushbind</b>.</p>
+            <div class="programlisting">
+              <pre>
+import amara
+#Set up customary namespace bindings for RSS
+#These are used in XPath query and XPattern rules
+RSS10_NSS = {
+u'rdf': u'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+u'dc': u'http://purl.org/dc/elements/1.1/',
+u'rss': u'http://purl.org/rss/1.0/',
+}
+
+#Print out all titles in the RSS feed
+items = amara.pushbind('demo/rss10.rdf', u'rss:item',
+                               prefixes=RSS10_NSS)
+for item in items:
+    print item.title
+#Print out all titles in the RSS feed, slightly different approach
+chunks = amara.pushbind('demo/rss10.rdf', u'rss:item/rss:title',
+                               prefixes=RSS10_NSS)
+for title in chunks:
+    print title
+
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="modification"><a id="modification" name="modification"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.11 </span>Modification</h2>
+            </div>
+            <p>Modifying a binding is pretty straightforward. You can create or
+modify an attribute by simple assignment:</p>
+            <div class="programlisting">
+              <pre>
+import amara
+doc = amara.parse('monty.xml')
+doc.monty.foo = u'bar'
+doc.monty.spam = u'[attr modified]'
+      </pre>
+            </div>
+            <p>You can also replace an element's contents with a single text node,
+using similar notation:</p>
+            <div class="programlisting">
+              <pre>
+        doc.monty.python = u'[elem 1 modified]\n'
+doc.monty.python[1] = u'[elem 2 modified]\n'
+      </pre>
+            </div>
+            <p>The resut of the above code is:</p>
+            <div class="programlisting">
+              <pre>
+&lt;monty&gt;
+  &lt;python spam="[attr modified]" foo="bar"&gt;[elem 1 modified]
+&lt;/python&gt;
+  &lt;python ministry="abuse"&gt;[elem 2 modified]
+&lt;/python&gt;
+&lt;/monty&gt;
+      </pre>
+            </div>
+            <p>You can empty out all children of an element:</p>
+            <div class="programlisting">
+              <pre>
+doc.monty.python.xml_clear()
+      </pre>
+            </div>
+            <p>And add new elements and text.  Create a new, empty element named <b class="command">new</b>
+and append it as the last childof the first <b class="command">python</b> element.</p>
+            <div class="programlisting">
+              <pre>
+doc.monty.python.xml_append(doc.xml_create_element(u'new'))
+      </pre>
+            </div>
+            <p>Append a text node.</p>
+            <div class="programlisting">
+              <pre>
+doc.monty.python.new.append(u'New Content')
+      </pre>
+            </div>
+            <p>You can insert new elements or text into specific locations, either before or after an existing child.</p>
+            <div class="programlisting">
+              <pre>
+#Create a new `python` element as the second element child of `monty`
+doc.monty.xml_insert_after(doc.monty.python,
+                           doc.xml_create_element(u'python'))
+#Create a new `python` element as the first element child of `monty`
+doc.monty.xml_insert_before(doc.monty.python,
+                            doc.xml_create_element(u'python'))
+      </pre>
+            </div>
+            <p>You can also delete a specific element, attribute, or text child:</p>
+            <div class="programlisting">
+              <pre>
+del doc.monty.python
+      </pre>
+            </div>
+            <p>which does the same thing as</p>
+            <div class="programlisting">
+              <pre>
+del doc.monty.python[0]
+    </pre>
+            </div>
+            <p>You can also use the <b class="command">xml_remove_child</b> method:</p>
+            <div class="programlisting">
+              <pre>
+        child = doc.monty.python
+doc.monty.xml_remove_child(child)
+
+      </pre>
+            </div>
+            <p>Just to exhaustively list the approaches to deletion, you can use the position of an object among its siblings to remove it from its parent.
+You can get this position using the <b class="command">xml_index_on_parent</b> property.</p>
+            <div class="programlisting">
+              <pre>
+        ix = doc.monty.python.xml_index_on_parent
+      </pre>
+            </div>
+            <p>This assigns ix the value 1 since the first python element is the
+second child of monty.</p>
+            <div class="programlisting">
+              <pre>
+ix = doc.monty.python[1].xml_index_on_parent
+      </pre>
+            </div>
+            <p>This assigns <b class="command">ix</b> the value 3 since the second python element is the fourth child of <b class="command">monty</b>. Once you have an index, you can use that index in order to delete a specific child by passing it to the <b class="command">xml_remove_child_at</b> method:</p>
+            <div class="programlisting">
+              <pre>
+doc.monty.xml_remove_child_at(3)
+      </pre>
+            </div>
+            <p>This removes the second python element, using the index determined
+above. This works for text as well:</p>
+            <div class="programlisting">
+              <pre>
+doc.monty.xml_remove_child_at(0)
+      </pre>
+            </div>
+            <p>Removes the first text node.  You can omit the index in the call to
+this method. By default it removes the last child:</p>
+            <div class="programlisting">
+              <pre>
+doc.monty.xml_remove_child_at()
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="createelem"><a id="createelem" name="createelem"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.12 </span>Creating elements (and attributes)</h2>
+            </div>
+            <p>You can create a new element with a namespace:</p>
+            <div class="programlisting">
+              <pre>
+e = doc.xml_create_element(element_qname, element_ns)
+      </pre>
+            </div>
+            <p>which is equivalent to</p>
+            <div class="programlisting">
+              <pre>
+e = doc.xml_create_element(element_qname, namespace=element_ns)
+      </pre>
+            </div>
+            <p>You can easily add attributes while you're creating elements.</p>
+            <div class="programlisting">
+              <pre>
+import amara
+doc = amara.parse('monty.xml')
+#Create a third python element
+e = doc.xml_create_element(u'python', attributes={u'life': u'brian'})
+doc.monty.xml_append(e)
+print doc.xml()
+      </pre>
+            </div>
+            <p>This gives the following output:</p>
+            <div class="programlisting">
+              <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;monty&gt;
+  &lt;python spam="eggs"&gt;
+    What do you mean "bleh"
+  &lt;/python&gt;
+  &lt;python ministry="abuse"&gt;
+    But I was looking for argument
+  &lt;/python&gt;
+&lt;python life="brian"/&gt;&lt;/monty&gt;
+      </pre>
+            </div>
+            <p>You can see how the attribute is manifested on the new element.</p>
+            <p>The dictionary <b class="command">attributes={u'life': u'brian'}</b> is actually a short-hand. The full form is:</p>
+            <div class="programlisting">
+              <pre>
+{
+  (&lt;attr1_qname&gt;, &lt;attr1_namespace&gt;): attr1_value},
+  (&lt;attr2_qname&gt;, &lt;attr2_namespace&gt;): attr2_value},
+  ...
+  (&lt;attrN_qname&gt;, &lt;attrN_namespace&gt;): attrN_value},
+}
+      </pre>
+            </div>
+            <p>But you can abbreviate <b class="command">(&lt;attrN_qname&gt;, &lt;attrN_namespace&gt;)</b> to just <b class="command">&lt;attrN_qname&gt;</b> if the namespace is None (i.e. the attribute is
+not in a namespace).</p>
+            <p>So you could add a namespace qualified attribute as follows:</p>
+            <div class="programlisting">
+              <pre>
+import amara
+NS = u'urn:bogus'
+doc = amara.parse('monty.xml')
+#Create a third python element
+e = doc.xml_create_element(
+     u'python',
+     attributes={(u'ns:life', NS): u'brian'},
+     content=u'unfortunate'
+     )
+doc.monty.xml_append(e)
+print doc.xml()
+     </pre>
+            </div>
+            <p>Notice that this time I threw in some content as well. The result:</p>
+            <div class="programlisting">
+              <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;monty&gt;
+  &lt;python spam="eggs"&gt;
+    What do you mean "bleh"
+  &lt;/python&gt;
+  &lt;python ministry="abuse"&gt;
+    But I was looking for argument
+  &lt;/python&gt;
+&lt;python xmlns:ns="urn:bogus" ns:life="brian"&gt;unfortunate&lt;/python&gt;&lt;/monty&gt;
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="attrmod"><a id="attrmod" name="attrmod"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.13 </span>Modifying attributes</h2>
+            </div>
+            <p>To create an attribute after the element is created, use the
+<b class="command">xml_set_attribute</b> method. To add the namespace
+qualified attribute from the example above, use the following:</p>
+            <div class="programlisting">
+              <pre>
+import amara
+NS = u'urn:bogus'
+doc = amara.parse('monty.xml')
+#Create a third python element
+e = doc.xml_create_element(
+          u'python',
+          content=u'unfortunate'
+          )
+doc.monty.xml_append(e)
+doc.monty.python[2].xml_set_attribute((u'ns:life', NS), u'brian')
+print doc.xml()
+      </pre>
+            </div>
+            <p>This produces the same XML as above. If no namespace is required, the first argument to <b class="command">xml_set_attribute</b> is just the attribute name.</p>
+            <p>The <b class="command">xml_set_attribute</b> method returns the name of the resulting attribute.</p>
+            <p>You can set an attribute's value using Python idiom as well:</p>
+            <div class="programlisting">
+              <pre>
+doc.monty.python[2].life = u'Pi'
+      </pre>
+            </div>
+            <p>Information about an element's attributes, including namespace
+information, is kept in <b class="command">xml_attributes</b>. This is a dictionary keyed by the local name of each attribute, with the value being a tuple of
+the namespace qualified attribute name and the namespace URL. For
+example, given the following code:</p>
+            <div class="programlisting">
+              <pre>
+import amara
+NS = u'urn:bogus'
+doc = amara.parse('monty.xml')
+#Create a third python element
+e = doc.xml_create_element(
+  u'python',
+  content=u'unfortunate'
+)
+doc.monty.xml_append(e)
+#Add a namespace qualified attribute
+doc.monty.python[2].xml_set_attribute((u'ns:life', NS), u'brian')
+#Add an attribute with no namespace
+doc.monty.python[2].xml_set_attribute(u'foo', u'bar')
+      </pre>
+            </div>
+            <p>
+        <b class="command">doc.monty.python[2].xml_attributes</b> gives the value:</p>
+            <div class="programlisting">
+              <pre>
+{u'life': (u'ns:life', u'urn:bogus'), u'foo': (u'foo', None)}
+      </pre>
+            </div>
+            <p>Just for fun, here's an interesting variation that illustrates the
+special status of the XML namespace.</p>
+            <div class="programlisting">
+              <pre>
+import amara
+from xml.dom import XML_NAMESPACE as XML_NS
+doc = amara.parse('monty.xml')
+#Create a third python element
+e = doc.xml_create_element(
+          u'python',
+          attributes={(u'xml:lang', XML_NS): u'en'},
+          content=u'Ni!'
+          )
+doc.monty.xml_append(e)
+print doc.xml()
+     </pre>
+            </div>
+            <p>This gives the following output:</p>
+            <div class="programlisting">
+              <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;monty&gt;
+  &lt;python spam="eggs"&gt;
+    What do you mean "bleh"
+  &lt;/python&gt;
+  &lt;python ministry="abuse"&gt;
+    But I was looking for argument
+  &lt;/python&gt;
+&lt;python xml:lang="en"&gt;Ni!&lt;/python&gt;&lt;/monty&gt;
+
+      </pre>
+            </div>
+            <p>Notice that there's no declaration for the XML namespace, as allowed by the standard.</p>
+          </div>
+          <div class="section" id="xmlfrag"><a id="xmlfrag" name="xmlfrag"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.14 </span>Appending XML fragments</h2>
+            </div>
+            <p>Amara offers a powerful facility for adding to XML documents through the <b class="command">xml_append_fragment</b> method on elements.  You pass this method a string (<em class="emphasis">not Unicode</em>, since this is a parse operation) with a fragment of literal XML which is parsed and added to the element.  The XML fragment must be a well formed external parsed entity.  Basically multiple root elements are allowed, but they must be properly balanced, special characters escaped, and so on.  Doctype declaration is prohibited.  According to XML rules, the encoded string is assumed to be UTF-8 or UTF-16, but you can override this with an XML text declaration (<b class="command">&lt;?xml version="1.0" encoding="ENC"?&gt;</b>) or by passing in an encoding parameter to this function.</p>
+            <div class="programlisting">
+              <pre>
+import amara
+doc = amara.parse('monty.xml')
+doc.monty.xml_append_fragment('&lt;py3 x="1"&gt;p&lt;/py3&gt;&lt;py4 y="2"&gt;q&lt;/py4&gt;')
+print doc.monty.xml_child_elements.keys()
+      </pre>
+            </div>
+            <p>The output is <b class="command">[u'python', u'py3', u'py4']</b>, as two elements are added in the <b class="command">xml_append_fragment</b> call.</p>
+            <p>The optional encoding is a string with the encoding to be used in parsing the XML fragment.  If this parameter is specified, it overrrides any text
+declaration in the XML fragment.</p>
+            <div class="programlisting">
+              <pre>
+#Latin-1 ordinal 230 is the a-e ligature
+doc.monty.xml_append_fragment('&lt;q&gt;P%an&lt;/q&gt;'%chr(230), 'latin-1')
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="createdoc"><a id="createdoc" name="createdoc"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.15 </span>Creating full documents</h2>
+            </div>
+            <p>You can create entire documents from scratch</p>
+            <div class="programlisting">
+              <pre>
+doc = amara.create_document()
+doc.xml_append(doc.xml_create_element(u"hello"))
+doc.xml()
+      </pre>
+            </div>
+            <p>Yields</p>
+            <div class="programlisting">
+              <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;hello/&gt;
+      </pre>
+            </div>
+            <p>You can specify a root element to be created in the empty document.  The following code:</p>
+            <div class="programlisting">
+              <pre>
+doc = amara.create_document(u"hello")
+doc.hello.xml_append(doc.xml_create_element(u"world"))
+doc.xml()
+
+      </pre>
+            </div>
+            <p>Yields</p>
+            <div class="programlisting">
+              <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;hello&gt;&lt;world/&gt;&lt;/hello&gt;
+      </pre>
+            </div>
+            <p>This is equivalent to:</p>
+            <div class="programlisting">
+              <pre>
+doc = amara.create_document()
+doc.xml_append(doc.xml_create_element(u"hello"))
+doc.hello.xml_append(doc.xml_create_element(u"world"))
+doc.xml()
+
+      </pre>
+            </div>
+            <p>You can set a namespace on the root element using the <b class="command">ns</b> parameter.  There are many other useful parameters.  Try <b class="command">import amara; help(amara.create_document)</b> at a Python prompt for more details.</p>
+          </div>
+          <div class="section" id="deepcopies"><a id="deepcopies" name="deepcopies"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.16 </span>Making deep copies of nodes</h2>
+            </div>
+            <p>If you're familiar with XSLT, you might wonder how to do the equivalent of xsl:copy-of in Amara.  You can create such a deep copy using the <b class="command">copy</b> module in the Python standard library.</p>
+            <div class="programlisting">
+              <pre>
+import copy
+import amara
+doc = amara.parse('monty.xml')
+#Clone the document
+doc2 = copy.deepcopy(doc)
+#This modification only affects the clone
+doc2.monty.python.spam = u"abcd"
+
+#This output will just like what was read in
+print doc.xml()
+#This output will show the change from "eggs" to "abcd"
+print doc2.xml()
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="picomments"><a id="picomments" name="picomments"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.17 </span>Processing instructions and comments</h2>
+            </div>
+            <p>Bindery supports these XML constructs in a fairly natural way. If you have PIs or comments in a source document parsed into a binding, it
+will have objects representing the PIs and comments:</p>
+            <div class="programlisting">
+              <pre>
+import amara
+DOC = """\
+&lt;?xml-stylesheet url="xxx.css" type="text/css"?&gt;
+&lt;!--A greeting for all--&gt;
+&lt;hello-world/&gt;
+"""
+doc = amara.parse(DOC)
+print doc.xml_children
+      </pre>
+            </div>
+            <p>shows the following list:</p>
+            <div class="programlisting">
+              <pre>
+[
+&amp;lt;amara.bindery.pi_base instance at 0x433f6c&gt;,
+&amp;lt;amara.bindery.comment_base instance at 0x433fac&gt;,
+&amp;lt;amara.bindery.hello_world object at 0x433fec&gt;
+]
+      </pre>
+            </div>
+            <p>The first item is a bound PI object and the second a bound
+comment. You can dig deeper if you like:</p>
+            <div class="programlisting">
+              <pre>
+pi = doc.xml_children[0]
+comment = doc.xml_children[1]
+print repr(pi.target) #shows u'xml-stylesheet'
+print repr(pi.data) #shows u'url="xxx.css" type="text/css"'
+print repr(comment.data) #shows u'A greeting for all'
+      </pre>
+            </div>
+            <p>You can also create or mutate these objects.</p>
+            <div class="programlisting">
+              <pre>
+doc = amara.create_document()
+pi = bindery.pi_base(u"xml-stylesheet", u'url="xxx.css" type="text/css"')
+doc.xml_append(pi)
+doc.xml_append(doc.xml_create_element(u"A"))
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="doctypes"><a id="doctypes" name="doctypes"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.18 </span>Document types</h2>
+            </div>
+            <p>There is also an API for document type declarations (DTDecls).</p>
+            <p>To create a document with a DTDecl, do something like the following:</p>
+            <div class="programlisting">
+              <pre>
+doc = amara.create_document(
+    u"xsa",
+    pubid=u"-//LM Garshol//DTD XML Software Autoupdate 1.0//EN//XML",
+    sysid=u"http://www.garshol.priv.no/download/xsa/xsa.dtd"
+    )
+      </pre>
+            </div>
+            <p>Which results in a tree equivalent to:</p>
+            <div class="programlisting">
+              <pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE xsa PUBLIC "-//LM Garshol//DTD XML Software Autoupdate 1.0//EN//XML"
+                     "http://www.garshol.priv.no/download/xsa/xsa.dtd"&gt;
+&lt;xsa/&gt;
+      </pre>
+            </div>
+            <p>Notice how this automatically creates the document element for you (no need for a separate <b class="command">xml_append</b>). You can expand on this to create attributes and content for the document element:</p>
+            <div class="programlisting">
+              <pre>
+from xml.dom import XML_NAMESPACE as XML_NS
+
+doc = amara.create_document(
+    u"xsa",
+    attributes={(u'xml:lang', XML_NS): u'en'},
+    content=u' ',
+    pubid=u"-//LM Garshol//DTD XML Software Autoupdate 1.0//EN//XML",
+    sysid=u"http://www.garshol.priv.no/download/xsa/xsa.dtd"
+    )
+
+      </pre>
+            </div>
+            <p>Which results in:</p>
+            <div class="programlisting">
+              <pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE xsa PUBLIC "-//LM Garshol//DTD XML Software Autoupdate 1.0//EN//XML"                     "http://www.garshol.priv.no/download/xsa/xsa.dtd"&gt;
+&lt;xsa xml:lang="en"&gt; &lt;/xsa&gt;
+      </pre>
+            </div>
+            <p>You can then access the DTDecl details:</p>
+            <div class="programlisting">
+              <pre>
+assert doc.xml_pubid == u"-//LM Garshol//DTD XML Software Autoupdate 1.0//EN//XML" 
+assert doc.xml_sysid == u"http://www.garshol.priv.no/download/xsa/xsa.dtd"
+assert doc.xml_doctype_name == u"xsa"
+      </pre>
+            </div>
+            <div class="section" id="future"><a id="future" name="future"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.18.1 </span>Future doctype support from parse</h3>
+              </div>
+              <p>The idea is that if you parse a document with a DTDecl, the root node contains the document element QName, the public ID and the system ID. This does not work yet because of idiosyncracies of the Python/XML libraries. This should be fixed when I remove dependencies on these libraries in a coming version. When it does work, you should be able to do:</p>
+              <div class="programlisting">
+                <pre>
+#DOES NOT YET WORK
+
+XSA = """\
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!DOCTYPE xsa PUBLIC "-//LM Garshol//DTD XML Software Autoupdate 1.0//EN//XML"                     "http://www.garshol.priv.no/download/xsa/xsa.dtd"&gt;
+&lt;xsa&gt;
+  &lt;vendor&gt;
+    &lt;name&gt;Fourthought, Inc.&lt;/name&gt;
+    &lt;email&gt;info@fourthought.com&lt;/email&gt;
+    &lt;url&gt;http://fourthought.com&lt;/url&gt;
+  &lt;/vendor&gt;
+  &lt;product id="FourSuite"&gt;
+    &lt;name&gt;4Suite&lt;/name&gt;
+    &lt;version&gt;1.0a1&lt;/version&gt;
+    &lt;last-release&gt;20030327&lt;/last-release&gt;
+    &lt;info-url&gt;http://4suite.org&lt;/info-url&gt;
+    &lt;changes&gt;
+ - Begin the 1.0 release cycle
+    &lt;/changes&gt;
+  &lt;/product&gt;
+&lt;/xsa&gt;
+"""
+doc = amara.parse(XSA)
+assert doc.xml_pubid == u"-//LM Garshol//DTD XML Software Autoupdate 1.0//EN//XML"
+assert doc.xml_sysid == u"http://www.garshol.priv.no/download/xsa/xsa.dtd"
+assert doc.xml_doctype_name == u"xsa"
+        </pre>
+              </div>
+              <p>Internal DTD subset constructs are not preserved in the binding.</p>
+            </div>
+          </div>
+          <div class="section" id="custom-binding"><a id="custom-binding" name="custom-binding"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.19 </span>Customizing the binding</h2>
+            </div>
+            <p>Bindery works by iterating over XML nodes and firing off a set of
+rules triggered by the node type and other details. The default
+binding is the result of the default rules that are registered for
+each node type, but Bindery makes this easy to tweak by letting you
+register your own rules.</p>
+            <p>Bindery comes bundled with 3 easy rule frameworks to handle some
+common binding needs.</p>
+            <div class="section" id="simple-string"><a id="simple-string" name="simple-string"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.19.1 </span>Treating some elements as simple string values</h3>
+              </div>
+              <p>The title elements in XBEL are always simple text, and creating full Python objects for them is overkill in most cases. They could be just
+as easily simple data members with the Unicode value of the element's
+content. To make this adjustment in Bindery, register an instance of
+the <b class="command">simple_string_element_rule</b> rule. This rule takes an list of XSLT pattern expressions which indicate which elements are to be
+simplified. So to simplify all title elements:</p>
+              <div class="programlisting">
+                <pre>
+import amara
+from amara import binderytools
+#Specify (using XSLT patterns) elements to be treated similarly to attributes
+rules = [
+    binderytools.simple_string_element_rule(u'title')
+    ]
+#Execute the binding
+doc = amara.parse('xbel.xml', rules=rules)
+
+#title is now simple unicode
+print doc.xbel.folder.bookmark.title.__class__
+	</pre>
+              </div>
+            </div>
+            <div class="section" id="omit-elem"><a id="omit-elem" name="omit-elem"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.19.2 </span>Omitting certain elements entirely</h3>
+              </div>
+              <p>Perhaps you want to focus on only part of a document, and to save
+memory and hassle, you want to omit certain elements that are not of
+interest in the binding. You can use the <b class="command">omit_element_rule</b> in this case.</p>
+              <p>The following example does not create bindings for folder titles at all (but bookmark titles are preserved):</p>
+              <div class="programlisting">
+                <pre>
+import amara
+from amara import binderytools
+#Specify (using XSLT patterns) elements to be ignored
+rules = [
+    binderytools.omit_element_rule(u'folder/title')
+    ]
+#Execute the binding
+doc = amara.parse('xbel.xml', rules=rules)
+
+#Following would now raise an exception:
+#print doc.xbel.folder.title
+        </pre>
+              </div>
+            </div>
+            <div class="section" id="wsstripping"><a id="wsstripping" name="wsstripping"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.19.3 </span>Stripping whitespace</h3>
+              </div>
+              <p>A common need is to strip out pure whitespace nodes so that they don't clutter up "children" lists. Bindery bundles the <b class="command">ws_strip_element_rule</b> rule for this purpose.  Elements that match the pattern are stripped of whitespace.</p>
+              <div class="programlisting">
+                <pre>
+import amara
+from amara import binderytools
+#Specify (using XSLT patterns) elements to be stripped
+#In this case select all top-level elements for stripping
+rules = [
+    binderytools.ws_strip_element_rule(u'/*')
+    ]
+#Execute the binding
+doc = amara.parse('xbel.xml', rules=rules)
+        </pre>
+              </div>
+              <p>You can combine rules, such as stripping white space while still
+omitting certain elements.</p>
+            </div>
+            <div class="section" id="element-skeleton"><a id="element-skeleton" name="element-skeleton"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.19.4 </span>Creating an element skeleton</h3>
+              </div>
+              <p>If all you care about is the structure of elements and attributes, and not the text content you can use the <b class="command">element_skeleton_rule</b>.</p>
+              <p>Elements that match the pattern have all character data stripped.</p>
+              <div class="programlisting">
+                <pre>
+import amara
+from amara import binderytools
+#Specify (using XSLT patterns) elements to be bound as skeletons
+#In this case select all elements
+rules = [
+    binderytools.element_skeleton_rule(u'*')
+    ]
+#Execute the binding
+doc = amara.parse('xbel.xml', rules=rules)
+        </pre>
+              </div>
+            </div>
+            <div class="section" id="typeinf"><a id="typeinf" name="typeinf"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.19.5 </span>The type inferencer</h3>
+              </div>
+              <p>The basic idea behind data binding is translating XML into native data types. Amara provides a rule that looks at each XML node to see if it can infer a native Python data type for the value, in particular int, float or datetime.</p>
+              <div class="programlisting">
+                <pre>
+TYPE_MIX = """\
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;a a1="1"&gt;
+  &lt;b b1="2.1"/&gt;
+  &lt;c c1="2005-01-31"&gt;
+    &lt;d&gt;5&lt;/d&gt;
+  &lt;e&gt;2003-01-30T17:48:07.848769Z&lt;/e&gt;
+  &lt;/c&gt;
+  &lt;g&gt;good&lt;/g&gt;
+&lt;/a&gt;"""
+
+import amara
+from amara import binderytools
+rules=[binderytools.type_inference()]
+doc = amara.parse(TYPE_MIX, rules=rules)
+doc.a.a1 == 1     #type int
+doc.a.b.b1 == 2.1 #type float
+doc.a.c.c1 == datetime.datetime(2005, 1, 31) #type datetime.
+        </pre>
+              </div>
+            </div>
+            <div class="section" id="rules-namespaces"><a id="rules-namespaces" name="rules-namespaces"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.19.6 </span>Using namespaces in custom rules</h3>
+              </div>
+              <p>The built-in custom rules use XSLT patterns, which use prefixes to specify namespaces. You may have to let the binder tools know what namespace bindings are in effect:</p>
+              <div class="programlisting">
+                <pre>
+import amara
+from amara import binderytools
+#Set up customary namespace bindings for RSS
+#These are used in XPath query and XPattern rules
+RSS10_NSS = {
+    'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+    'dc': 'http://purl.org/dc/elements/1.1/',
+    'rss': 'http://purl.org/rss/1.0/',
+    }
+
+rules = [
+    binderytools.simple_string_element_rule(u'title')
+    ]
+#Execute the binding
+doc = amara.parse('rss10.rdf', prefixes=RSS10_NSS, rules=rules)
+        </pre>
+              </div>
+              <p>Remember, however, as dicussed above, if you declare all the namespaces you use on top-level elements, you do not need to repeat them in the explicit <b class="command">prefixes</b> dictionary.</p>
+            </div>
+          </div>
+          <div class="section" id="rules-pushbind"><a id="rules-pushbind" name="rules-pushbind"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.20 </span>Push binding and rules</h2>
+            </div>
+            <p>You can also use rules with pushbind.  If all you ever want from "a" elements is to extract the text content, you could do something like the following.  Look carefully: the sample document is slightly different this time.</p>
+            <div class="programlisting">
+              <pre>
+&gt;&gt;&gt; XML="""\
+... &lt;doc&gt;
+...   &lt;one&gt;&lt;a&gt;0&lt;/a&gt;&lt;b&gt;1&lt;/b&gt;&lt;/one&gt;
+...   &lt;two&gt;&lt;a&gt;10&lt;/a&gt;&lt;b&gt;11&lt;/b&gt;&lt;/two&gt;
+... &lt;/doc&gt;
+... """
+&gt;&gt;&gt; import amara
+&gt;&gt;&gt; from amara import binderytools
+&gt;&gt;&gt; #This rule says "treat all elements at the third level of depth as simple strings"
+&gt;&gt;&gt; rule = binderytools.simple_string_element_rule(u'/*/*/*')
+&gt;&gt;&gt; #Push back bindings of all second level elements ('one' and 'two')
+&gt;&gt;&gt; chunks = amara.pushbind(XML, u'/*/*', rules=[rule])
+&gt;&gt;&gt; elem = chunks.next()
+&gt;&gt;&gt; print elem.a.__class__
+&lt;type 'unicode'&gt;
+&gt;&gt;&gt; print elem.a
+u'0'
+&gt;&gt;&gt; print elem.b.__class__
+&lt;type 'unicode'&gt;
+&gt;&gt;&gt; print elem.b
+u'1'
+      </pre>
+            </div>
+          </div>
+          <div class="section" id="custom-binding-classes"><a id="custom-binding-classes" name="custom-binding-classes"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.21 </span>Using custom binding classes</h2>
+            </div>
+            <p>If you need more sophisticated tweaking, you proably want to register your own customized binding class. The following example gives bookmark elements a method, <b class="command">retrieve</b>, which retrieves the body of the Web page:</p>
+            <div class="programlisting">
+              <pre>
+import urllib
+from xml.dom import Node
+import amara
+from amara import bindery
+
+#Subclass from the default binding class
+#We're adding a specialized method for accessing a bookmark on the net
+class specialized_bookmark(bindery.element_base):
+    def retrieve(self):
+        try:
+            stream = urllib.urlopen(self.href)
+            content = stream.read()
+            stream.close()
+            return content
+        except IOError:
+            import sys; sys.stderr.write("Unable to access %s\n"%self.href)
+
+doc = amara.parse(XML, binding_classes={(None, u'bookmark'): specialized_bookmark})
+
+#Show specialized instance
+print doc.xbel.folder.bookmark.__class__
+
+#Exercise the custom method
+print "Content of first bookmark:"
+print doc.xbel.folder.bookmark.retrieve()
+      </pre>
+            </div>
+            <p>Focus on the line:</p>
+            <div class="programlisting">
+              <pre>
+doc = amara.parse(XML, binding_classes={(None, u'bookmark'): specialized_bookmark})
+      </pre>
+            </div>
+            <p>When you register classes to use in binding a given elements type you do so by specifying namespace URI and local name of the element. If you know that the element is not in a namespace, as in the XBEL example, you use <b class="command">None</b>. <b class="command">None</b> is the Right Way to signal "not in a namespace" in most Python/XML tools, and not the empty string <b class="command">""</b>.</p>
+            <p>See also the <b class="command">accesstrigger.py</b> demo.</p>
+            <div class="section" id="custom-binding-warning"><a id="custom-binding-warning" name="custom-binding-warning"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.21.1 </span>General warning about customized bindings</h3>
+              </div>
+              <p>Bindery tries to manage things so that writing back the XML from a binding makes sense, and that XPath gives expected results, but it is easy to bring about odd results if you customize the binding.</p>
+              <p>As an exampe, if you use <b class="command">simple_string_element_rule</b> and then reserialize using the <b class="command">xml</b> method, the elements that were simplified will be written back out as XML attributes rather than child elements. If you do run into such artifacts after customizing a binding the usual remedy is to write a custoized <b class="command">xml</b> method or add  specialized XPath wrapper code (see <b class="command">bonderyxpath.xpath_wrapper_mixin</b> for the default XPath wrappering).</p>
+            </div>
+          </div>
+          <div class="section" id="extensions"><a id="extensions" name="extensions"></a>
+            <div>
+              <h2 class="title"><span class="section-number">3.22 </span>Bindery extension guide</h2>
+            </div>
+            <p>Bindery is designed to be extensible, but this is not a simple
+proposition given the huge flexibility of XML expression, and the many
+different ways developpers might want to generate resulting Python
+objects (and vice versa). You can pretty much do whatever you need to
+by writing Bindery extensions, but in order to keep things basically
+manageable, there are some ground rules.</p>
+            <div class="section" id="laws"><a id="laws" name="laws"></a>
+              <div>
+                <h3 class="title"><span class="section-number">3.22.1 </span>Bindery laws:</h3>
+              </div>
+              <ol style="list-style-type: decimal; list-style-position: outside;">
+                <li>
+                  <p>Binding objects corresponding to an XML document have a single root object from which all other objects can be reached through navigating attributes (no, fancy method calls don't count)</p>
+                </li>
+              </ol>
+              <p>[TODO: more on this section to come. If you try tweaking bindery extensions and have some useful notes, please pitch in by sending them along.]</p>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="scimitar"><a id="scimitar" name="scimitar"></a>
+          <div class="section-title">
+            <h1 class="title"><span class="section-number">4 </span>Scimitar: the most flexible schema language for the most flexible programming language</h1>
+          </div>
+          <p>Scimitar is an implementation of ISO Schematron that compiles a
+  Schematron schema into a Python validator script.</p>
+          <p>Scimitar supports all of the draft ISO Schematron specification. See
+  the TODO file for known gaps in Scimitar convenience.</p>
+          <p>You typically use scimitar in two phases. Say you have a schematron
+  schema schema1.stron and you want to validate multiple XML files
+against it, instance1.xml, instance2.xml, instance3.xml.</p>
+          <p>First you run schema1.stron through the scimitar compiler script,
+scimitar.py:</p>
+          <div class="programlisting">
+            <pre>
+      scimitar.py schema1.stron
+
+    </pre>
+          </div>
+          <p>A file, schema1.py (same file stem with the "py" extension
+sunstituted), is generated in the current working directory. If you'd
+prefer a different location or file name, use the "-o" option. The
+generated file is a validator script in Python. It checks the
+schematron rules specified in schema1.stron.</p>
+          <p>You now run the generated validator script on each XML file you wish
+to validate:</p>
+          <div class="programlisting">
+            <pre>
+      python schema1.py instance1.xml
+
+    </pre>
+          </div>
+          <p>The validation report is generated on standard output by default, or
+you can use the "-o" option to redirect it to a file.</p>
+          <p>The validation report is an XML external parsed entity, in other words
+a file that is much like a well-formed XML document, but with some
+restrictions loosened so that it's effectively text with possible
+embedded tags.</p>
+          <p>To elaborate using the example from the schematron 1.5 specification:</p>
+          <div class="programlisting">
+            <pre>
+      $ cat simple1.stron
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;sch:schema xmlns:sch="http://www.ascc.net/xml/schematron" version="ISO"&gt;
+ &lt;sch:title&gt;Example Schematron Schema&lt;/sch:title&gt;
+ &lt;sch:pattern&gt;
+   &lt;sch:rule context="dog"&gt;
+    &lt;sch:assert test="count(ear) = 2"
+    &gt;A 'dog' element should contain two 'ear' elements.&lt;/sch:assert&gt;
+    &lt;sch:report test="bone"
+    &gt;This dog has a bone.&lt;/sch:report&gt;
+   &lt;/sch:rule&gt;
+  &lt;/sch:pattern&gt;
+&lt;/sch:schema&gt;
+
+$ scimitar.py simple1.stron
+$ ls simple*.py
+simple1-stron.py
+$ cat instance2.xml
+&lt;dog&gt;&lt;ear/&gt;&lt;/dog&gt;
+
+$ python simple1-stron.py instance2.xml
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+Processing schema: Example Schematron Schema
+
+Processing pattern: [unnamed]
+
+Assertion failure:
+A 'dog' element should contain two 'ear' elements.
+
+    </pre>
+          </div>
+        </div>
+        <div class="section" id="domtools"><a id="domtools" name="domtools"></a>
+          <div class="section-title">
+            <h1 class="title"><span class="section-number">5 </span>Amara DOM Tools: giving DOM a more Pythonic face</h1>
+          </div>
+          <p>DOM came from the Java world, and hardly the most Pythonic API
+possible (see the Bindery above for a good step forward). Some
+DOM-like implementations such as 4Suite's Domlettes mix in some
+Pythonic idiom. Amara DOM Tools goes even further in this regard.</p>
+          <div class="section" id="pushdom"><a id="pushdom" name="pushdom"></a>
+            <div>
+              <h2 class="title"><span class="section-number">5.1 </span>The pushdom</h2>
+            </div>
+            <p>You're probably familiar with <b class="command">xml.dom.pulldom</b>, which offers a nice hybrid between SAX and DOM, allowing you to efficiently isolate important parts of a document in a SAX-like manner, and then using DOM for finer-grained manipulation. Amara's pushdom makes this process even more convenient You give it a set of XPatterns, and it provides a generator yielding a series of DOM chunks according to the patterns.</p>
+            <p>In this way you can process huge files with very little memory usage, but most of the convenience of DOM.</p>
+            <div class="programlisting">
+              <pre>
+for docfrag in domtools.pushdom('demo/labels.xml', u'/labels/label'):
+    label = docfrag.firstChild
+    name = label.xpath('string(name)')
+    city = label.xpath('string(address/city)')
+    if name.lower().find('eliot') != -1:
+        print city.encode('utf-8')
+      </pre>
+            </div>
+            <p>Prints "Stamford".</p>
+            <p>See also <a href="http://lists.xml.org/archives/xml-dev/200412/msg00606.html">this XML-DEV message</a>.</p>
+          </div>
+          <div class="section" id="domtools-generators"><a id="domtools-generators" name="domtools-generators"></a>
+            <div>
+              <h2 class="title"><span class="section-number">5.2 </span>Generator tools</h2>
+            </div>
+            <p>For more on the generator tools see the article "<a href="http://www.xml.com/pub/a/2003/01/08/py-xml.html">Generating DOM
+Magic</a>".</p>
+          </div>
+          <div class="section" id="domtools-xpath"><a id="domtools-xpath" name="domtools-xpath"></a>
+            <div>
+              <h2 class="title"><span class="section-number">5.3 </span>Getting an XPath for a given node</h2>
+            </div>
+            <p>
+        <b class="command">domtools.abs_path</b> allows you to get the absolute path for a node. The following code:</p>
+            <div class="programlisting">
+              <pre>
+from amara import domtools
+from Ft.Xml.Domlette import NonvalidatingReader
+from Ft.Lib import Uri
+file_uri = Uri.OsPathToUri('labels.xml', attemptAbsolute=1)
+doc = NonvalidatingReader.parseUri(file_uri)
+
+print domtools.abs_path(doc)
+print domtools.abs_path(doc.documentElement)
+for node in doc.documentElement.childNodes:
+    print domtools.abs_path(node)
+      </pre>
+            </div>
+            <p>Displays:</p>
+            <div class="programlisting">
+              <pre>
+/
+/labels[1]
+/labels[1]/text()[1]
+/labels[1]/label[1]
+/labels[1]/text()[2]
+/labels[1]/label[2]
+/labels[1]/text()[3]
+/labels[1]/label[3]
+/labels[1]/text()[4]
+/labels[1]/label[4]
+/labels[1]/text()[5]
+      </pre>
+            </div>
+            <p>For more on abs_path tools see the article "<a href="http://www.xml.com/pub/a/2004/11/24/py-xml.html">Location, Location, Location</a>".</p>
+          </div>
+        </div>
+        <div class="section" id="saxtools"><a id="saxtools" name="saxtools"></a>
+          <div class="section-title">
+            <h1 class="title"><span class="section-number">6 </span>Amara SAX Tools: SAX without the brain explosion</h1>
+          </div>
+          <p>Tenorsax (<b class="command">amara.saxtools.tenorsax</b>) is a framework for "linerarizing" SAX logic so that it flows a bit more naturally, and needs a lot less state machine wizardry.</p>
+          <p>I haven't yet had time to document it heavily, but see
+test/saxtools/xhtmlsummary.py for an example.</p>
+          <p>See also this <a href="http://lists.xml.org/archives/xml-dev/200412/msg00605.html">XML-DEV message</a>.</p>
+        </div>
+        <div class="section" id="flextyper"><a id="flextyper" name="flextyper"></a>
+          <div class="section-title">
+            <h1 class="title"><span class="section-number">7 </span>Flextyper: user-defined datatypes in Python for XML processing</h1>
+          </div>
+          <p>Flextyper is an implementation of Jeni Tennison's Data Type Library Language (DTLL) (on track to become part 5 of ISO Document Schema Definition Languages (DSDL). You can use Flextyper to generate Python modules containing data types classes that can be used with 4Suite's RELAX NG library</p>
+          <p>Flextyper is currently experimental. It won't come into its full usefulness until the next release of 4Suite, although you can use it with current CVS releases of 4Suite.</p>
+          <p>Flextyper compiles a DTLL file into a collection of Python modules implementing the contained data types. Run it as follows:</p>
+          <div class="programlisting">
+            <pre>
+      flextyper.py dtll.xml
+   </pre>
+          </div>
+          <p>A set of files, one per data type namespace defined in the DTLL, is
+created. By default the output file names are based on the input,
+e.g. dtll-datatypes1.py, dtll-datatypes2.py, etc.</p>
+          <p>You can now register these data types modules with a processor instance of 4Suite's RELAX NG implementation.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

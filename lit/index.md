@@ -15,8 +15,9 @@ I'm a poet, essayist and editor. Though my degree is in electrical and computer 
       data-cycle-slides="> section"
       data-cycle-fx="scrollHorz"
       data-cycle-pause-on-hover="true"
-      data-cycle-speed="2000"
+      data-cycle-speed="2500"
       data-cycle-auto-height="calc"
+      data-cycle-pager=".cycle-pager"
       data-cycle-prev="#prev"
       data-cycle-next="#next"
   >
@@ -220,10 +221,11 @@ I'm a poet, essayist and editor. Though my degree is in electrical and computer 
   </section>
 </div>
 
-<div class="center">
+<div class="center cycle-prevnext">
     <a href=# id="prev">Prev</a> 
     <a href=# id="next">Next</a>
 </div>
+<div class="cycle-pager"></div>
 
 ## Literary projects
 

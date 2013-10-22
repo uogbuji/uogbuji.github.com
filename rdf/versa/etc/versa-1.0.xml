@@ -1,0 +1,2016 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+<meta content="text/html; charset=us-ascii" http-equiv=
+"Content-Type" />
+<meta content="Mike Olson, Uche Ogbuji" name="author" />
+<meta content="4Suite" name="keywords" />
+<meta content="4Suite" name="description" />
+<title>Versa</title>
+</head>
+<body>
+<h1>Versa</h1>
+<div><a href="mailto:mike.olson@fourthought.com">Mike Olson</a>
+(<a href="http://Fourthought.com">Fourthought, Inc.</a>), <a href=
+"mailto:uche.ogbuji@fourthought.com">Uche Ogbuji</a> (<a href=
+"http://Fourthought.com">Fourthought, Inc.</a>)<br />
+Revision (Initial release) [MO]</div>
+<div class="abstract">
+<div>
+<p>Versa is a specialized language for addressing and querying an
+RDF model. It allows traversal of arcs, processing of node
+contents, and general expression evaluation.</p>
+</div>
+</div>
+<hr />
+<table border="0">
+<tr valign="top">
+<td width="5%">1.&nbsp;</td>
+<td><a href="#id1271762708">Introduction</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">2.&nbsp;</td>
+<td><a href="#id1250370732">The domain of operation</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">3.&nbsp;</td>
+<td><a href="#id1250371020">Data model</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">3.1.&nbsp;</td>
+<td><a href="#id1250371236">Data types</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">3.1.1.&nbsp;</td>
+<td><a href="#id1250371380">Resource</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">3.1.2.&nbsp;</td>
+<td><a href="#id1250373180">String</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">3.1.3.&nbsp;</td>
+<td><a href="#id1262683524">Number</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">3.1.4.&nbsp;</td>
+<td><a href="#id1262684820">Boolean</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">3.2.&nbsp;</td>
+<td><a href="#id1262555684">Set</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">4.&nbsp;</td>
+<td><a href="#id1262556980">Conversions</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">5.&nbsp;</td>
+<td><a href="#id1272257892">Conversion functions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">5.1.&nbsp;</td>
+<td><a href="#id1272258108">list</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">5.2.&nbsp;</td>
+<td><a href="#id1271197740">set</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">5.3.&nbsp;</td>
+<td><a href="#id1271198172">boolean</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">5.4.&nbsp;</td>
+<td><a href="#id1271198532">string</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">5.5.&nbsp;</td>
+<td><a href="#id1271198892">number</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">6.&nbsp;</td>
+<td><a href="#id1271199252">Comparisons</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">6.1.&nbsp;</td>
+<td><a href="#id1271201412">Comparison or relational
+Functions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">6.1.1.&nbsp;</td>
+<td><a href="#id1271201628">lt</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">6.1.2.&nbsp;</td>
+<td><a href="#id1170833740">gt</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">6.1.3.&nbsp;</td>
+<td><a href="#id1170834172">lte</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">6.1.4.&nbsp;</td>
+<td><a href="#id1170834604">gte</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">6.1.5.&nbsp;</td>
+<td><a href="#id1170835036">eq</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">6.1.6.&nbsp;</td>
+<td><a href="#id1170835468">neq</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">7.&nbsp;</td>
+<td><a href="#id1170835900">Versa Query Structure</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">7.1.&nbsp;</td>
+<td><a href="#id1170836044">Query</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">7.2.&nbsp;</td>
+<td><a href="#id1170836260">Context</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">7.3.&nbsp;</td>
+<td><a href="#id1170836476">Traversal and filter
+expressions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">7.3.1.&nbsp;</td>
+<td><a href="#id1170836692">Forward traversal and filter
+expressions</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">7.3.2.&nbsp;</td>
+<td><a href="#id166032196">Backward traversal expression</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">7.3.3.&nbsp;</td>
+<td><a href="#id166032988">Aggregate functions</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">7.3.4.&nbsp;</td>
+<td><a href="#id166033204">sortq</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">8.&nbsp;</td>
+<td><a href="#id166033924">Variables</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">9.&nbsp;</td>
+<td><a href="#id166034140">Formal Versa grammar</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.&nbsp;</td>
+<td><a href="#id166034356">Functions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">10.1.&nbsp;</td>
+<td><a href="#id166034572">Resource functions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">10.1.1.&nbsp;</td>
+<td><a href="#id166034788">all</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.1.2.&nbsp;</td>
+<td><a href="#id1272229932">type</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.1.3.&nbsp;</td>
+<td><a href="#id1272230364">traverse</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.1.4.&nbsp;</td>
+<td><a href="#id1272231300">properties</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.&nbsp;</td>
+<td><a href="#id1272231660">Set and list functions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">10.2.1.&nbsp;</td>
+<td><a href="#id1272231876">member</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.2.&nbsp;</td>
+<td><a href="#id1272232308">distribute</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.3.&nbsp;</td>
+<td><a href="#id1272233172">map</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.4.&nbsp;</td>
+<td><a href="#id1233711652">filter</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.5.&nbsp;</td>
+<td><a href="#id1233712156">sort</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.6.&nbsp;</td>
+<td><a href="#id1233713596">max</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.7.&nbsp;</td>
+<td><a href="#id1233714604">min</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.8.&nbsp;</td>
+<td><a href="#id1252532700">union</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.9.&nbsp;</td>
+<td><a href="#id1252533132">intersection</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.10.&nbsp;</td>
+<td><a href="#id1252533564">difference</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.11.&nbsp;</td>
+<td><a href="#id1252533996">join</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.12.&nbsp;</td>
+<td><a href="#id1252534428">head</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.13.&nbsp;</td>
+<td><a href="#id1252534860">rest</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.14.&nbsp;</td>
+<td><a href="#id1252535364">tail</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.15.&nbsp;</td>
+<td><a href="#id1252535796">length</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.2.16.&nbsp;</td>
+<td><a href="#id1252536156">slice</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">10.3.&nbsp;</td>
+<td><a href="#id1259418004">Number Functions</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.&nbsp;</td>
+<td><a href="#id1259418364">String Functions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">10.4.1.&nbsp;</td>
+<td><a href="#id1259418580">concat</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.2.&nbsp;</td>
+<td><a href="#id1259419012">starts-with</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.3.&nbsp;</td>
+<td><a href="#id1259419444">contains</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.4.&nbsp;</td>
+<td><a href="#id1259419876">substring-before</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.5.&nbsp;</td>
+<td><a href="#id1259420308">substring-after</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.6.&nbsp;</td>
+<td><a href="#id1259420740">substring</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.7.&nbsp;</td>
+<td><a href="#id1259421244">string-length</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.4.8.&nbsp;</td>
+<td><a href="#id1259421604">find-regex</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">10.5.&nbsp;</td>
+<td><a href="#id143737380">Boolean Functions</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">10.5.1.&nbsp;</td>
+<td><a href="#id143737596">and</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.5.2.&nbsp;</td>
+<td><a href="#id143738028">or</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.5.3.&nbsp;</td>
+<td><a href="#id143738460">not</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.5.4.&nbsp;</td>
+<td><a href="#id143738820">isResource</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">10.5.5.&nbsp;</td>
+<td><a href="#id143739180">isLiteral</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">11.&nbsp;</td>
+<td><a href="#id143739540">References and resources</a></td>
+</tr>
+<tr valign="top">
+<td width="5%">12.&nbsp;</td>
+<td><a href="#id143740548">Appendix A (non-normative): Use
+cases</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">12.1.&nbsp;</td>
+<td><a href="#id1241735284">Get all resources of type
+"h:Person"</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">12.1.1.&nbsp;</td>
+<td><a href="#id1241735500">[No title]</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">12.2.&nbsp;</td>
+<td><a href="#id1241736076">Get all people named "Ezra
+Pound"</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">12.2.1.&nbsp;</td>
+<td><a href="#id1241736292">[No title]</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">12.3.&nbsp;</td>
+<td><a href="#id1241736796">Get one of the people who wrote a poem
+called "The Love Song of J Alfred Prufrock"</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">12.3.1.&nbsp;</td>
+<td><a href="#id1241737012">[No title]</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">12.4.&nbsp;</td>
+<td><a href="#id1241737228">The name and age of the oldest
+author</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">12.4.1.&nbsp;</td>
+<td><a href="#id1241737444">[No title]</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr valign="top">
+<td width="5%">12.5.&nbsp;</td>
+<td><a href="#id1241737804">The name of the second oldest ancestor
+of Joe</a><br />
+<table border="0">
+<tr valign="top">
+<td width="5%">12.5.1.&nbsp;</td>
+<td><a href="#id1241738020">[No title]</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<hr />
+<div style="margin-left: 1em">
+<h2>1.&nbsp;<a name="#id1271762708">Introduction</a></h2>
+<div>
+<p>Versa is a specialized language for addressing and querying
+nodes and arcs in a Resource Description Framework (RDF) model. It
+uses a simple and expressive syntax, designed to be incorporated
+into other expression systems, including XML, where, for instance,
+Versa can be used in extension functions or attributes of extension
+elements that provide RDF-related capabilities. Versa operates on
+the abstract graph model of RDF, and not any particular
+serialization.</p>
+</div>
+<div>
+<p>Where used in this document, the keywords "SHOULD", "MUST", and
+"MUST NOT" are to be interpreted as described in RFC 2119
+[RFC2119]. However, for readability, these words do not appear in
+all uppercase letters in this specification.</p>
+</div>
+<div>
+<p>Versa uses constructs from XML namespaces for convenient
+abbreviation of URIs. Within this document, in examples and other
+discussion, some prefixes are commonly used without being defined
+each time. In this document consider these prefixes to be bound to
+the following namespaces:</p>
+</div>
+<ul>
+<li><b>versa</b>: http://rdfinference.org/versa/0/2/</li>
+<li><b>vsort</b>: http://rdfinference.org/versa/0/2/sort/</li>
+<li><b>vtrav</b>: http://rdfinference.org/versa/0/2/traverse/</li>
+<li><b>h</b>: http://rdfinference.org/eg/versa/humanitas</li>
+<li><b>dc</b>: http://purl.org/dc/elements/1.1</li>
+<li><b>daml</b>: http://www.daml.org/2001/03/daml+oil#</li>
+</ul>
+<div>
+<p>This is just a convenience for this document. There is no
+normative binding of these prefixes.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>2.&nbsp;<a name="#id1250370732">The domain of
+operation</a></h2>
+<div>
+<p>Versa queries operate on an RDF model. Any RDF model that
+follows the RDF Model defined in RDF 1.0 [RDFMS], or the most
+recent RDF Model Theory specification [RDFMT] is a valid processing
+space for Versa. There are some cases where the precise behavior of
+Versa is dependent on implementation details of the RDF model.</p>
+</div>
+<div class="comment">
+<p>[DAML+OIL], while mostly based on RDF 1.0, does include some
+slight modifications and enhancements to RDF semantics. None of
+these changes appear to affect the abstract model, so Versa can
+also process DAML+OIL systems.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>3.&nbsp;<a name="#id1250371020">Data model</a></h2>
+<div>
+<p>Versa operates on the abstract graph model of RDF. As such it
+operates on labeled nodes and arcs. In support of this processing,
+Versa defines a small set of standard data types.</p>
+</div>
+<div style="margin-left: 1em">
+<h3>3.1.&nbsp;<a name="#id1250371236">Data types</a></h3>
+<div style="margin-left: 1em">
+<h4>3.1.1.&nbsp;<a name="#id1250371380">Resource</a></h4>
+<div>
+<p>A resource is a special string-like object that represents the
+URI of a resource in the model. Its literal expression can be in
+one of two forms. The first is as a simple QName (as defined in
+[XMLNS]), in which case the URI mapped to the prefix used in the
+QName is expanded to a string and concatenated to the local portion
+of the QName to derive the resource object's URI. Versa does not
+define a mechanism for mapping prefixes to URIs. Such a facility
+must be provided by a Versa implementation. For instance, when
+Versa is expresed within an XML document, prefixes might be mapped
+according to the namespace declarations in scope of the relevant
+element. A resource can also be expressed using the full URI in
+string form preceded by an "@" sign. This form is not a true
+literal: the @ is techically a conversion operator that take a
+string and return a resource object (See the section on conversions
+below.)</p>
+</div>
+<div>
+<p>The following are examples of literal resources:</p>
+</div>
+<table>
+<tr>
+<td><i>spam:eggs</i></td>
+<td>if the prefix <i>spam</i> is mapped to the URI
+<i>http://python.org/</i>, the resulting resource has the URI
+<i>http://python.org/eggs</i>.</td>
+</tr>
+<tr>
+<td><i>myobj:oute66</i></td>
+<td>if the prefix <i>myobj</i> is mapped to the URI
+<i>urn:oid:this.is.not.really.a.valid.oid.r</i>, the resulting
+resource has the URI
+<i>urn:oid:this.is.not.really.a.valid.oid.route66</i>.</td>
+</tr>
+<tr>
+<td><i>@"http://rdfinference.org"</i></td>
+<td>A resource with URI <i>http://rdfinference.org</i></td>
+</tr>
+</table>
+<div>
+<p>Note that the lexical rules of XML QNames may limit the
+situations in they may be used in Versa. For instance, if the URIs
+are UUIDs in URN form. The full form can always be used to express
+any valid URI.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>3.1.2.&nbsp;<a name="#id1250373180">String</a></h4>
+<div>
+<p>A sequence of zero or more characters, as defined in the XML 1.0
+recommendation. Versa strings are similar to XPath strings. The
+main difference is in quote escaping.</p>
+</div>
+<div>
+<p>Literal strings again are are expressed as in XPath: using
+either single or double quotes. The following are examples of
+literal strings:</p>
+</div>
+<table>
+<tr>
+<td><i>"What thou lovest well remains, the rest is dross"</i></td>
+<td></td>
+</tr>
+<tr>
+<td><i>'What thou lovest well remains, the rest is dross'</i></td>
+<td>Equivalent to the above</td>
+</tr>
+<tr>
+<td><i>"Embedded'Apostrophe"</i></td>
+<td>If the string contains an apostrophe or quotaion mark, you
+would usually use the other to delimit the string.</td>
+</tr>
+<tr>
+<td><i>"Embedded\"Apostrophe"</i></td>
+<td>You can also use "\" to escape quotes</td>
+</tr>
+<tr>
+<td><i>"Doubly'Embedded\"Quote'and\'Apostrophe"</i></td>
+<td>Escaping allows you to express all variety of quote
+combinations within a string.</td>
+</tr>
+</table>
+</div>
+<div style="margin-left: 1em">
+<h4>3.1.3.&nbsp;<a name="#id1262683524">Number</a></h4>
+<div>
+<p>Versa numbers are the same as XPath numbers: positive or
+negative floating-point numbers, based on the rules and semantics
+for double precision, 64-bit numbers in IEEE 754.</p>
+</div>
+<div>
+<p>The following are examples of literal numbers:</p>
+</div>
+<table>
+<tr>
+<td><i>2</i></td>
+<td>Note that this is neither stored nor processed as an integer,
+since it is actually a floating point number expressed in
+abbreviated form.</td>
+</tr>
+<tr>
+<td><i>3.14</i></td>
+<td>pi to three decimal places</td>
+</tr>
+<tr>
+<td><i>6.022e23</i></td>
+<td>Avogadro's number: an example of using scientific notation</td>
+</tr>
+</table>
+</div>
+<div style="margin-left: 1em">
+<h4>3.1.4.&nbsp;<a name="#id1262684820">Boolean</a></h4>
+<div>
+<p>Boolean types represent logical truth or falsehood. As such
+there are two boolean literals: <samp>true</samp> and
+<samp>false</samp>. <samp>*</samp> is provided as a synonym for
+<samp>true</samp>: a more readable form in such cases as traversal
+and filter expressions.</p>
+</div>
+</div>
+<div>
+<p>There is strictly no list literal. Lists can be expressed most
+simply using the list() conversion function (see below) with simple
+values as the arguments. The following are examples of lists:</p>
+</div>
+<table>
+<tr>
+<td><i>list("W. B. Yeats", "T. S. Eliot")</i></td>
+<td></td>
+</tr>
+<tr>
+<td><i>list(2000, 2001, 2000)</i></td>
+<td></td>
+</tr>
+<tr>
+<td><i>list(x:epound, x:tseliot,
+@"http://rdfinference.org/eg/versa/wyeats")</i></td>
+<td></td>
+</tr>
+<tr>
+<td><i>list()</i></td>
+<td>An empty list</td>
+</tr>
+</table>
+</div>
+<div style="margin-left: 1em">
+<h3>3.2.&nbsp;<a name="#id1262555684">Set</a></h3>
+<div>
+<p>An heterogeneous unordered collection of any data type
+(including other sets or lists), with no duplicate values.</p>
+</div>
+<div>
+<p>There is strictly no list literal. Lists can be expressed most
+simply using the set() conversion function (see below) with simple
+values as the arguments. The following are examples of sets:</p>
+</div>
+<table>
+<tr>
+<td><i>set("J. Alfred Prufrock", "Hugh Selwyn Mauberley")</i></td>
+<td></td>
+</tr>
+<tr>
+<td><i>set(4.7, "four point seven")</i></td>
+<td></td>
+</tr>
+<tr>
+<td><i>set(4.7)</i></td>
+<td>Just one item</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>4.&nbsp;<a name="#id1262556980">Conversions</a></h2>
+<div>
+<p>When implicit conversions between data types are needed, the
+following matrix defines the operations applied.</p>
+</div>
+<table>
+<tr>
+<td><b>From/To</b></td>
+<td><b>Resource</b></td>
+<td><b>String</b></td>
+<td><b>Number</b></td>
+<td><b>Boolean</b></td>
+<td><b>List</b></td>
+<td><b>Set</b></td>
+</tr>
+<tr>
+<td><b>Resource</b></td>
+<td>Identity</td>
+<td>A resource with a URI as given by the string, using escaping as
+required [once a standard for RDF data literals emerges, using such
+would be the preferred approach]</td>
+<td>If the resource can be interpreted as a representation of a
+number by the implementation, this is used, otherwise
+NaN.<sup><small>*</small></sup></td>
+<td>If the resource can be interpreted as a representation of a
+boolean by the implementation, this is used, otherwise false
+[Editor's note: this is a dangerous conversion, as the "exception"
+value lies within the normal boolean value
+space].<sup><small>*</small></sup></td>
+<td>List of length one with the resource in it.</td>
+<td>Set of size one with the resource in it.</td>
+</tr>
+<tr>
+<td><b>String</b></td>
+<td>A resource with a URI as given by the string, using escaping as
+required</td>
+<td>Identity</td>
+<td>The number that is represented by the string, or NaN</td>
+<td>false if the string is empty, otherwise true</td>
+<td>List of length one with the string in it.</td>
+<td>Set of size one with the string in it.</td>
+</tr>
+<tr>
+<td><b>Number</b></td>
+<td>A conversion of the number to a literal in URI form, as
+determined by the implementation<sup><small>*</small></sup></td>
+<td>String representation of the number</td>
+<td>Identity</td>
+<td>false if the number is positive or negative 0, otherwise
+true</td>
+<td>List of length one with the number in it.</td>
+<td>Set of size one with the number in it.</td>
+</tr>
+<tr>
+<td><b>Boolean</b></td>
+<td>A conversion of the boolean to a literal in URI form, as
+determined by the implementation<sup><small>*</small></sup></td>
+<td>"true" or "false"</td>
+<td>0 if false, or 1 if true</td>
+<td>Identity</td>
+<td>List of length one with the boolean in it.</td>
+<td>Set of size one with the boolean in it.</td>
+</tr>
+<tr>
+<td><b>List</b></td>
+<td>The result of conversion to resource of the first item in the
+list, or versa:nil if the list is empty</td>
+<td>The result of conversion to string of the first item in the
+list, or "" if the list is empty</td>
+<td>The result of conversion to number of the first item in the
+list, or 0 if the list is empty</td>
+<td>false if the list is empty, otherwise true</td>
+<td>Identity</td>
+<td>A set with the same entries as the list, except that if there
+are duplicate values, any equivalent values following the first are
+omitted (e.g. set(list(1,2,1)) = set(1,2))</td>
+</tr>
+<tr>
+<td><b>Set</b></td>
+<td>The result of conversion to list and then conversion to
+resource</td>
+<td>The result of conversion to list and then conversion to
+string</td>
+<td>The result of conversion to list and then conversion to
+number</td>
+<td>The result of conversion to list and then conversion to
+boolean</td>
+<td>A list with the same entries as the set, in arbitrary
+order</td>
+<td>Identity</td>
+</tr>
+</table>
+<div>
+<p>* Note that conversions from literals to URIs are especially
+subject to change as the RDFCore working group works on URI-based
+datatype literal representations</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>5.&nbsp;<a name="#id1272257892">Conversion functions</a></h2>
+<div>
+<p>Conversion functions are special functions that convert their
+arguments to a particular data type, using the conversion rules
+described above.</p>
+</div>
+<div style="margin-left: 1em">
+<h3>5.1.&nbsp;<a name="#id1272258108">list</a></h3>
+<div>
+<pre>
+list(<i>expression</i>[, <i>expression</i>, [...]])
+        
+</pre></div>
+<div>
+<p>Create a list comprising each of the arguments in order.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>5.2.&nbsp;<a name="#id1271197740">set</a></h3>
+<div>
+<pre>
+set(<i>expression</i>[, <i>expression</i>, [...]])
+        
+</pre></div>
+<div>
+<p>Create a set comprising each of the arguments with duplicate
+values removed.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>5.3.&nbsp;<a name="#id1271198172">boolean</a></h3>
+<div>
+<pre>
+boolean(<i>expression</i>)
+        
+</pre></div>
+<div>
+<p>Return the boolean value of the argument</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>5.4.&nbsp;<a name="#id1271198532">string</a></h3>
+<div>
+<pre>
+string(<i>expression</i>)
+        
+</pre></div>
+<div>
+<p>Return the string value of the argument</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>5.5.&nbsp;<a name="#id1271198892">number</a></h3>
+<div>
+<pre>
+number(<i>expression</i>)
+        
+</pre></div>
+<div>
+<p>Return the number value of the argument</p>
+</div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>6.&nbsp;<a name="#id1271199252">Comparisons</a></h2>
+<div>
+<p>Comparisons between values follow specific rules for each data
+type. In general if two values are being compared, A and B, B is
+first converted to the same type as A before the comparison is
+made.</p>
+</div>
+<div>
+<p>Comparisons can be explicitly applied in various operations, or
+can be explicitly made by invoking the relational functions (see
+below).</p>
+</div>
+<div>
+<p>The following are the comparison rules for the various
+types.</p>
+</div>
+<table>
+<tr>
+<td><i>Resources</i></td>
+<td>Resources are converted to strings for comparisons.</td>
+</tr>
+<tr>
+<td><i>Strings</i></td>
+<td>The strings are compared as are XPath strings.</td>
+</tr>
+<tr>
+<td><i>Numbers</i></td>
+<td>The numbers are compared as are XPath numbers</td>
+</tr>
+<tr>
+<td><i>Booleans</i></td>
+<td>true is evaluated as greater than false.</td>
+</tr>
+<tr>
+<td><i>Lists</i></td>
+<td>Unspecified [Editor's note: suggestions are requested. On
+epossibility is the XPath approach of testing whether there is any
+intersection between the two lists. Or one could compare each list
+item in turn. Or one could compare the first items of each]</td>
+</tr>
+<tr>
+<td><i>Sets</i></td>
+<td>Unspecified [Editor's note: suggestions are requested.]</td>
+</tr>
+</table>
+<div style="margin-left: 1em">
+<h3>6.1.&nbsp;<a name="#id1271201412">Comparison or relational
+Functions</a></h3>
+<div style="margin-left: 1em">
+<h4>6.1.1.&nbsp;<a name="#id1271201628">lt</a></h4>
+<div>
+<pre>
+lt(<i>expression</i> [ , <i>expression</i> ])
+        
+</pre></div>
+<div>
+<p>If there is a single argument, return true if the context is
+less than the argument (after the argument has been converted to
+the same type as the context). If there are two arguments, return
+true if the first is less than the second (after the second
+argument has been converted to the same type as the first).
+Otherwise return false.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>6.1.2.&nbsp;<a name="#id1170833740">gt</a></h4>
+<div>
+<pre>
+gt(<i>expression</i> [ , <i>expression</i> ])
+        
+</pre></div>
+<div>
+<p>If there is a single argument, return true if the context is
+greater than the argument (after the argument has been converted to
+the same type as the context). If there are two arguments, return
+true if the first is greater than the second (after the second
+argument has been converted to the same type as the first).
+Otherwise return false.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>6.1.3.&nbsp;<a name="#id1170834172">lte</a></h4>
+<div>
+<pre>
+lte(<i>expression</i> [ , <i>expression</i> ])
+        
+</pre></div>
+<div>
+<p>If there is a single argument, return true if the context is
+less than or equal to the argument (after the argument has been
+converted to the same type as the context). If there are two
+arguments, return true if the first is less than or equal to the
+second (after the second argument has been converted to the same
+type as the first). Otherwise return false.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>6.1.4.&nbsp;<a name="#id1170834604">gte</a></h4>
+<div>
+<pre>
+gte(<i>expression</i> [ , <i>expression</i> ])
+        
+</pre></div>
+<div>
+<p>If there is a single argument, return true if the context is
+greater than or equal to the argument (after the argument has been
+converted to the same type as the context). If there are two
+arguments, return true if the first is greater than or equal to the
+second (after the second argument has been converted to the same
+type as the first). Otherwise return false.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>6.1.5.&nbsp;<a name="#id1170835036">eq</a></h4>
+<div>
+<pre>
+eq(<i>expression</i> [ , <i>expression</i> ])
+        
+</pre></div>
+<div>
+<p>If there is a single argument, return true if the context is
+equal to the argument (after the argument has been converted to the
+same type as the context). If there are two arguments, return true
+if the first is equal to the second (after the second argument has
+been converted to the same type as the first). Otherwise return
+false.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>6.1.6.&nbsp;<a name="#id1170835468">neq</a></h4>
+<div>
+<pre>
+neq(<i>expression</i> [ , <i>expression</i> ])
+        
+</pre></div>
+<div>
+<p>If there is a single argument, return true if the context is
+unequal to the argument (after the argument has been converted to
+the same type as the context). If there are two arguments, return
+true if the first is unequal to the second (after the second
+argument has been converted to the same type as the first).
+Otherwise return false.</p>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>7.&nbsp;<a name="#id1170835900">Versa Query Structure</a></h2>
+<div style="margin-left: 1em">
+<h3>7.1.&nbsp;<a name="#id1170836044">Query</a></h3>
+<div>
+<p>Versa defines expressions. An expression is a combination of
+literals, traversals and filters, variable references and function
+calls. Traversala and filters are expressions that matche patterns
+in the RDF model by selecting sets of starting resources and arc
+resources, and conditions for selecting end-points from the RDF
+model.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>7.2.&nbsp;<a name="#id1170836260">Context</a></h3>
+<div>
+<p>Many Versa constructs are evaluated with regard to a context.
+The context is a value of any data type, and it can always be
+referred to explicitloy in an expression using the token "."</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>7.3.&nbsp;<a name="#id1170836476">Traversal and filter
+expressions</a></h3>
+<div>
+<p>Traversal and filter expressions are the core of Versa. They
+provide a system for matching patterns in an RDF model by
+specifying desired nodes and arcs in the graph representing the
+model. The traversal and filter operators are the bases of the
+respective expression, and result in a list.</p>
+</div>
+<div style="margin-left: 1em">
+<h4>7.3.1.&nbsp;<a name="#id1170836692">Forward traversal and
+filter expressions</a></h4>
+<div>
+<p>The forward traversal operator matches patterns based on given
+sets of subjects and predicates. It returns a list of resulting
+objects. It takes the following form:</p>
+</div>
+<div>
+<pre>
+<i>list</i> - <i>list</i> -&gt; <i>boolean</i>
+        
+</pre></div>
+<div>
+<p>The forward filter operator matches patterns based on given sets
+of subjects and predicates. In contrast to the forward traversal
+operator, it returns a list of the subjects that result from the
+patterns rather than the objects. It takes the following form:</p>
+</div>
+<div>
+<pre>
+<i>list</i> |- <i>list</i> -&gt; <i>boolean</i>
+        
+</pre></div>
+<div>
+<p>In both cases the first <i>list</i> is a evaluated to obtain
+list of resources which are the subjects of statements. Each of
+these resources is set as the context for evaluating the second
+<i>list</i>, which is treated as a list of predicate resources. All
+statements in the model with these subjects and objects are marked
+as candidate statements. The object of each of the candidate
+statements is evaluated as the context of the <i>boolean</i>.</p>
+</div>
+<div>
+<p>In the case of forward traversal, if the result, after
+conversion to boolean type, of evaluating the <i>boolean</i> is
+true, the object is added to the list of results. In the case of
+forward filtering, if the result, after conversion to boolean type,
+of evaluating the <i>boolean</i> is true, the subject of the
+corresponding statement is added to the list of results.</p>
+</div>
+<div>
+<p>Unless an ordering aggregate function (see below) is used, the
+order of the resulting elements in the list is undefined in Versa,
+and is determined by the underlying model.</p>
+</div>
+<div>
+<p>[<i>Editor's note:</i> When data types are formally incorporated
+into the Versa model, the treatment of object set expressions will
+certainly change]</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>7.3.2.&nbsp;<a name="#id166032196">Backward traversal
+expression</a></h4>
+<div>
+<p>The backward traversal operator is similar to the forward
+traversal operator, but it is used to match patterns using the
+inverses of predicates. A backward traversal expression takes the
+following form:</p>
+</div>
+<div>
+<pre>
+<i>list</i> &lt;- <i>list</i> - <i>boolean</i>
+        
+</pre></div>
+<div>
+<p>The first set is a set of resources which are the objects of
+statements, the predicates of which are given by the resources in
+the second set expression. This results in a list of matching
+statements, and the subject of each statement is evaluated as the
+context of the boolean expression. If the result, after conversion
+to boolean type, is true, the subject is added to the list of
+results. Conversions are automatically applied, as with forward
+traversal expressions.</p>
+</div>
+<div>
+<p><i>Editor's note:</i> There is no backward filter expression
+yet, but <a href=
+"http://lists.fourthought.com/pipermail/ril/2002-May/000124.html">this
+post</a> points to a possible use case.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>7.3.3.&nbsp;<a name="#id166032988">Aggregate functions</a></h4>
+<div>
+<p>Versa provides a set of special functions which are designed to
+be used within traversal operations to transform partial results
+within the context of the traversal.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>7.3.4.&nbsp;<a name="#id166033204">sortq</a></h4>
+<div>
+<pre>
+sortq(<i>set</i>, <i>expression</i> [, vsort:number | vsort:string [, vsort:ascending | vsort:descending ] ])
+        
+</pre></div>
+</div>
+<div>
+<p><i>Editor's note:</i> Are there any others that cannot be
+expressed as operations on the result list? Grouping primitives,
+perhaps.</p>
+</div>
+<div>
+<p><i>Editor's note:</i> How to express multi-key sorting?</p>
+</div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>8.&nbsp;<a name="#id166033924">Variables</a></h2>
+<div>
+<p>A variable reference evaluates to the value to which the
+variable name is bound in the set of variable bindings in the
+context. It is an error if the variable name is not bound to any
+value in the set of variable bindings in context.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>9.&nbsp;<a name="#id166034140">Formal Versa grammar</a></h2>
+<div>
+<pre>
+[1] query ::= expression
+[2] expression ::= traversal filter | '(' expression ')' | function-call | literal | particle | arithmetic-operation | variable-reference
+[3] traversal = forward-traversal | backward-traversal
+[3] filter = forward-filter
+[4] forward-traversal = set-expression "-" set-expression "-&gt;" boolean-expression
+[4] forward-filter = set-expression "|-" set-expression "-&gt;" boolean-expression
+[5] backward-traversal = expression "&lt;-" expression "-" expression
+[6] function-call ::= identifier '(' ( expression ( ',' expression ) * ) ? ')'
+[7] literal = resource-literal | string-literal | number-literal | list-literal | boolean-literal
+[8] resource-literal ::= '@' string-literal
+[8] string-literal ::= 
+[9] number-literal ::= 
+[10] list-literal ::= '[' expression ( ',' expression ) * ) ?']'
+[11] boolean-literal ::= 'true' | 'false'
+[12] variable-reference ::= '$' identifier
+[15] particle ::= '.' | '*'
+    
+</pre></div>
+</div>
+<div style="margin-left: 1em">
+<h2>10.&nbsp;<a name="#id166034356">Functions</a></h2>
+<div>
+<p>Versa defines a core function library. Extension functions can
+be defined using a similar mechanism to that provided by XPath.</p>
+</div>
+<div style="margin-left: 1em">
+<h3>10.1.&nbsp;<a name="#id166034572">Resource functions</a></h3>
+<div>
+<p>Resource functions operate on or return resources.</p>
+</div>
+<div style="margin-left: 1em">
+<h4>10.1.1.&nbsp;<a name="#id166034788">all</a></h4>
+<div>
+<pre>
+all([<i>string</i>, [<i>string</i>, [...]]])
+        
+</pre></div>
+<div>
+<p>Without any arguments, all returns a list of all resources in
+the model. If there are arguments, they are treated as query
+objects, evaluated and the results converted to boolean such that ,
+it is a short cut for "</p>
+</div>
+<div>
+<pre>
+all(qo1, qo2, ..., qoN)
+        
+</pre></div>
+<div>
+<p>Is equivalent to</p>
+</div>
+<div>
+<pre>
+filter(all(), qo1, qo2, ..., qoN)
+        
+</pre></div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.1.2.&nbsp;<a name="#id1272229932">type</a></h4>
+<div>
+<pre>
+type(<i>resource</i>)
+        
+</pre></div>
+<div>
+<p>Returns a list of all resources of a specified type, as defined
+by RDFS and optionally DAML schema specifications. This function is
+essentially a short cut for:</p>
+</div>
+<div>
+<pre>
+all() - rdf:type -&gt; *
+        
+</pre></div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.1.3.&nbsp;<a name="#id1272230364">traverse</a></h4>
+<div>
+<pre>
+traverse(<i>list</i>, <i>list</i> [ , vtrav:forward | vtrav:inverse [ , vtrav:transitive ] ])
+        
+</pre></div>
+<div>
+<p>This is a function similar to the traversal operator. The first
+and second arguments are converted to sets of resources. A list is
+generated with the results of matching all statements in the model
+with the subject given by the first argument and the predicate
+given by the second. The return value is a set of subjects or
+objects of the matching statements according to whether forward or
+inverse traversal has been selected. The special resource vtrav:any
+acts as a wild-card and causes any value to be matched.</p>
+</div>
+<div>
+<p>The optional third argument indicates the direction in which
+predicates are to be traversed. It must match one of the following
+resources:</p>
+</div>
+<ul>
+<li><i>vtrav:forward</i>: return the objects of matching statements
+(the default)</li>
+<li><i>vtrav:inverse</i>: return the subjects of matching
+statements</li>
+</ul>
+<div>
+<p>The optional fourth argument, which must match vtrav:transitive,
+traverses predicates transitively, considering all nodes along the
+chain. If omitted, no transitivity is applied except any applied by
+the underlying model (e.g. if rdf:type statements are traversed, or
+statements marked as daml:transitiveProperty).</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.1.4.&nbsp;<a name="#id1272231300">properties</a></h4>
+<div>
+<pre>
+properties(<i>list</i> [ , vtrav:inverse ])
+        
+</pre></div>
+<div>
+<p>The first argument is converted to a set of resources (the
+source set), and a set of resources is returned. If the optional
+second argument is present, the resources are all properties
+expressed on each resource in the source set. Otherwise the
+returned properties are all those which have one of the source
+resources as a value.</p>
+</div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>10.2.&nbsp;<a name="#id1272231660">Set and list
+functions</a></h3>
+<div>
+<p>Set and list functions operate on or return sets and lists.</p>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.1.&nbsp;<a name="#id1272231876">member</a></h4>
+<div>
+<pre>
+member(<i>list</i> [ , <i>value</i> ])
+        
+</pre></div>
+<div>
+<p>Return true if the list value of the first argument has an entry
+equal to the second. If only one argument is given, the context is
+used as the first.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.2.&nbsp;<a name="#id1272232308">distribute</a></h4>
+<div>
+<pre>
+distribute(<i>list</i>, <i>string</i>, [<i>string</i>, [...]])
+        
+</pre></div>
+<div>
+<p>distribute converts the first argument into a list. The second
+and subsequent arguments (the query arguments) are strings that are
+interpreted as Versa queries. It uses each item in the list as the
+context for evaluating each of the query arguments. The result is a
+list of lists; each entry in the outer list is a list containing
+the results from evaluating each of the query arguments in order
+using the Nth list item as context.</p>
+</div>
+<div>
+<p>For example, the query:</p>
+</div>
+<div>
+<pre>
+distribute(list(@"http://4suite.org", @"http://rdfinference.org"), q(.), q(string-length()), q(substring-after(., ":")))
+        
+</pre></div>
+<div>
+<p>returns</p>
+</div>
+<div>
+<pre>
+[[@"http://4suite.org", 17, "4suite.org"], [@"http://rdfinference.org", 23, "rdfinference.org"]]
+        
+</pre></div>
+<div>
+<p>The outer list is of length two because there are two items in
+the first argument. Each inner list has three items because there
+are so many query arguments.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.3.&nbsp;<a name="#id1272233172">map</a></h4>
+<div>
+<pre>
+map(<i>string</i>, <i>list</i>, [<i>list</i>, [...]])
+        
+</pre></div>
+<div>
+<p>map converts the first argument to string and dynamically
+evaluates this as a Versa query with one or more lists as the
+context. These lists are constructed as follows: The first item
+from each of the list expressions in the second and subsequent
+arguments are gathered into a list, as long as at least one list
+from the list expression arguments has an item. Then the second
+item if taken from each list expression, if at least one of them
+has two or more items, and so on, with as many iterations as the
+longest list from the list expression arguments. If the lists from
+the list expression arguments are of differing lengths, then all
+lists that are shorter than the longest are padded with nil
+resources (daml:nil).</p>
+</div>
+<div>
+<p>The result is a list of values, as long as the longest item in
+the list from the list expression arguments.</p>
+</div>
+<div>
+<p>As an example, the query:</p>
+</div>
+<div>
+<pre>
+map("concat()", ["A", "B", "C"], ["1", "2", "3"])
+        
+</pre></div>
+<div>
+<p>Will return a list of length 3:</p>
+</div>
+<div>
+<pre>
+["A1", "B2", "C3"]
+        
+</pre></div>
+<div>
+<p>And the query:</p>
+</div>
+<div>
+<pre>
+map(".-h:formatted-name-&gt;*", h:principia-h:author-&gt;*)
+        
+</pre></div>
+<div>
+<p>Returns the formatted name of the author of the book identified
+as "h:principia", and thus in our sample model would return</p>
+</div>
+<div>
+<pre>
+["Isaac Newton"]
+        
+</pre></div>
+<div>
+<p>This is equivalent to the chained traversal expression</p>
+</div>
+<div>
+<pre>
+h:principia - h:author -&gt; * - h:formatted-name -&gt; *
+        
+</pre></div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.4.&nbsp;<a name="#id1233711652">filter</a></h4>
+<div>
+<pre>
+filter(<i>list</i>, <i>string</i>, [<i>string</i>, [...]])
+        
+</pre></div>
+<div>
+<p>filter converts the first argument into a list (the source
+list). The second and following arguments are strings that are
+dynamically evaluated as Versa queries. The context for these
+evaluations are the items from the source list taken in turn. If
+all these evaluations return true, then the resource is added to
+the result list.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.5.&nbsp;<a name="#id1233712156">sort</a></h4>
+<div>
+<pre>
+sort(<i>list</i>[, <i>conversion-indicator</i>[, <i>direction-indicator</i>[, <i>string</i> ]]])
+        
+</pre></div>
+<div>
+<p>The argument is converted to a list or a set. The result is the
+list obtained by sorting according to the given criteria. The
+second parameter indicates the conversion that should be applied to
+each item before sorting, and the style of the resulting sort. It
+must be a resource with one of the following URIs:</p>
+</div>
+<ul>
+<li><i>vsort:string</i>: convert to string and sort according to
+unicode sorting conventions, as described in the XSLT
+specification's section on xsl:sort</li>
+<li><i>vsort:number</i>: convert to number and sort according to
+the magnitude of the number</li>
+</ul>
+<div>
+<p>The default is vsort:string. The third parameter indicates the
+direction of sorting. It is converted to resource and must have one
+of the following URIs:</p>
+</div>
+<ul>
+<li><i>vsort:ascending</i>: sort in ascending order</li>
+<li><i>vsort:descending</i>: sort in descending order</li>
+</ul>
+<div>
+<p>The default is http://rdfinference.org/versa/sort/ascending.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.6.&nbsp;<a name="#id1233713596">max</a></h4>
+<div>
+<pre>
+max(<i>list</i>[, <i>conversion-indicator</i>[, <i>string</i> ]])
+        
+</pre></div>
+<div>
+<p>The argument is converted to a list or a set (the source list).
+The result is the maximum value in the source list according to the
+given criteria. The second parameter indicates the conversion that
+should be applied to each item before sorting, and the style of the
+resulting sort. It must be a resource with one of the following
+URIs:</p>
+</div>
+<ul>
+<li><i>http://rdfinference.org/versa/sort/string</i>: convert to
+string and sort according to unicode sorting conventions [provide
+reference]</li>
+<li><i>http://rdfinference.org/versa/sort/number</i>: convert to
+number and sort according to the magnitude of the number</li>
+</ul>
+<div>
+<p>The default is http://rdfinference.org/versa/sort/string.</p>
+</div>
+<div>
+<p>max($a, $b, $c) is equivalent to head(sort($a, $b, v:descending,
+$c))</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.7.&nbsp;<a name="#id1233714604">min</a></h4>
+<div>
+<pre>
+min(<i>list</i>[, <i>conversion-indicator</i>[, <i>string</i> ]])
+        
+</pre></div>
+<div>
+<p>The argument is converted to a list or a set (the source list).
+The result is the minimum value in the source list according to the
+given criteria. The second parameter indicates the conversion that
+should be applied to each item before sorting, and the style of the
+resulting sort. It must be a resource with one of the following
+URIs:</p>
+</div>
+<ul>
+<li><i>http://rdfinference.org/versa/sort/string</i>: convert to
+string and sort according to unicode sorting conventions [provide
+reference]</li>
+<li><i>http://rdfinference.org/versa/sort/number</i>: convert to
+number and sort according to the magnitude of the number</li>
+</ul>
+<div>
+<p>The default is http://rdfinference.org/versa/sort/string.</p>
+</div>
+<div>
+<p>min($a, $b, $c) is equivalent to head(sort($a, $b, v:ascending,
+$c))</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.8.&nbsp;<a name="#id1252532700">union</a></h4>
+<div>
+<pre>
+union(<i>set</i>, <i>set</i>)
+        
+</pre></div>
+<div>
+<p>Both arguments are converted to sets, and the result is a set
+consisting of all items that are in either argument set.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.9.&nbsp;<a name="#id1252533132">intersection</a></h4>
+<div>
+<pre>
+intersection(<i>set</i>, <i>set</i>)
+        
+</pre></div>
+<div>
+<p>Both arguments are converted to sets, and the result is a set
+consisting of all items that are in both argument sets.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.10.&nbsp;<a name="#id1252533564">difference</a></h4>
+<div>
+<pre>
+difference(<i>set</i>, <i>set</i>)
+        
+</pre></div>
+<div>
+<p>Both arguments are converted to sets, and the result is a set
+consisting of all items that are in neither argument set.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.11.&nbsp;<a name="#id1252533996">join</a></h4>
+<div>
+<pre>
+join(<i>list</i>[, <i>list</i>, [...]])
+        
+</pre></div>
+<div>
+<p>Each argument is converted to a list, and the result is a list
+which consists of the concatenation of all the argument lists in
+order.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.12.&nbsp;<a name="#id1252534428">head</a></h4>
+<div>
+<pre>
+head(<i>list</i>, [<i>number</i>])
+        
+</pre></div>
+<div>
+<p>Converts the first argument to a list L, and the second to a
+number N. Returns a list consisting of the first N items in L. N
+defaults to 1. If N is negative, or exceeds the length of the list,
+the entire list is the result.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.13.&nbsp;<a name="#id1252534860">rest</a></h4>
+<div>
+<pre>
+rest(<i>list</i>, [<i>number</i>])
+        
+</pre></div>
+<div>
+<p>Converts the first argument to a list L, and the second to a
+number N. Returns a list consisting of all items in L after
+position N. N defaults to 1. If N is negative, or exceeds the
+length of the list, an empty list is the result. The following
+expression returns the same list as L, regardless of the value of
+N:</p>
+</div>
+<div>
+<pre>
+concat(first(L, N), rest(L, N))
+        
+</pre></div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.14.&nbsp;<a name="#id1252535364">tail</a></h4>
+<div>
+<pre>
+tail(<i>list</i>, [<i>number</i>])
+        
+</pre></div>
+<div>
+<p>Converts the first argument to a list L, and the second to a
+number N. Returns a list consisting of the last N items in L. N
+defaults to 1. If N is negative, or exceeds the length of the list,
+an empty list is the result.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.15.&nbsp;<a name="#id1252535796">length</a></h4>
+<div>
+<pre>
+length(<i>list</i>)
+        
+</pre></div>
+<div>
+<p>Converts the argument to a list and returns the number of items
+in the list.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.2.16.&nbsp;<a name="#id1252536156">slice</a></h4>
+<div>
+<pre>
+slice(<i>list</i>, <i>number</i> [, <i>number</i>])
+        
+</pre></div>
+<div>
+<p>The first expression is evaluated and converted to a list (the
+source list). The second argument is evaluated and converted to a
+number which is the starting index. If the third argument is
+present, it is evaluated and converted to a number which is the
+ending index. If not specified, the ending index is the length of
+the list. Return a new list comprising the elements in the source
+list from the starting index to the ending index, in order.</p>
+</div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>10.3.&nbsp;<a name="#id1259418004">Number Functions</a></h3>
+<div>
+<p>Number Functions are functions that work with numbers. All
+return number types</p>
+</div>
+<div>
+<p><i>Editor's note:</i> the Versa number function library is
+identical to that of XPath. The details will be adde din the next
+draft.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>10.4.&nbsp;<a name="#id1259418364">String Functions</a></h3>
+<div>
+<p>String functions work with strings.</p>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.1.&nbsp;<a name="#id1259418580">concat</a></h4>
+<div>
+<pre>
+concat(<i>string</i>[, <i>string</i>, [...]])
+        
+</pre></div>
+<div>
+<p>Each argument is converted to a string, and the result is a
+string which consists of the concatenation of all the arguments in
+order.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.2.&nbsp;<a name="#id1259419012">starts-with</a></h4>
+<div>
+<pre>
+starts-with(<i>string</i> [ , <i>string</i> ])
+        
+</pre></div>
+<div>
+<p>Return true if the string value of the first argument starts
+with the value of the second. If only one argument is given, the
+context is used as the first argument.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.3.&nbsp;<a name="#id1259419444">contains</a></h4>
+<div>
+<pre>
+contains(<i>string</i> [ , <i>string</i> ] [ versa:ignore-case ])
+        
+</pre></div>
+<div>
+<p>Return true if the string value of the second argument is a
+substring value of the first. If only one argument is given, the
+context is used as the first.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.4.&nbsp;<a name="#id1259419876">substring-before</a></h4>
+<div>
+<pre>
+substring-before(<i>string</i> [ , <i>string</i> ])
+        
+</pre></div>
+<div>
+<p>Convert all arguments to strings. Return the substring of the
+first argument that precedes the first occurrence of the second
+argument, or the empty string if the first argument does not
+contain the second. If only one argument is given, the context is
+used as the first argument.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.5.&nbsp;<a name="#id1259420308">substring-after</a></h4>
+<div>
+<pre>
+substring-after(<i>string</i> [ , <i>string</i> ])
+        
+</pre></div>
+<div>
+<p>Convert all arguments to strings. Return the substring of the
+first argument that succeeds the first occurrence of the second
+argument, or the empty string if the first argument does not
+contain the second. If only one argument is given, the context is
+used as the first argument.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.6.&nbsp;<a name="#id1259420740">substring</a></h4>
+<div>
+<pre>
+substring(<i>string-or-number</i>, <i>number</i> [, <i>number</i>])
+        
+</pre></div>
+<div>
+<p>The first argument is the source string and the second is the
+starting index. If there is a third argument, it is the ending
+index, otherwise the ending index is the length of the string. The
+substring is returned comprising the characters in the source
+string from the starting index to the ending index. If the ending
+index exceeds the length of the string, the length of the string is
+substituted for its value.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.7.&nbsp;<a name="#id1259421244">string-length</a></h4>
+<div>
+<pre>
+string-length([<i>string</i>])
+        
+</pre></div>
+<div>
+<p>If there is no argument, the context is converted to a string
+and used as the argument. The number of characters in the string is
+returned.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.4.8.&nbsp;<a name="#id1259421604">find-regex</a></h4>
+<div>
+<pre>
+find-regex(<i>string</i> [ , <i>string</i> ] [ versa:ignore-case ])
+        
+</pre></div>
+<div>
+<p>If there are three arguments, then after conversions, the first
+is the outer string, the second the inner string and the last one
+must be the special flag resource versa:ignore-case. If there are
+two arguments and the second can be converted to the special flag
+resource versa:ignore-case, then the first one is the inner string
+and the context is the outer string. If there are two arguments and
+the second cannot be converted to the special flag resource
+versa:ignore-case, then the first one is the outer string and the
+second is the outer string. If there is only one argument, then it
+is the inner string and the context is the outer string.</p>
+</div>
+<div>
+<p>The inner string is interpreted as a POSIX Simple Regular
+Expression [PSRE] and The return value is the first index at which
+it is matched in the outer string. If the versa:ignore-case flag is
+given, then the regular expression is matched without regard to the
+case of alphabetic characters. If there is no regular expression
+match at all, the return value is -1. [<i>Editor's note:</i> is
+this a suitable flag for "not found"? NaN is another option, though
+perhaps a clumsy one.]</p>
+</div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>10.5.&nbsp;<a name="#id143737380">Boolean Functions</a></h3>
+<div>
+<p>Boolean Functions are functions that work with booleans. All
+return number types of 0 or 1</p>
+</div>
+<div style="margin-left: 1em">
+<h4>10.5.1.&nbsp;<a name="#id143737596">and</a></h4>
+<div>
+<pre>
+and(<i>boolean</i>[, <i>boolean</i>, [...]])
+        
+</pre></div>
+<div>
+<p>Return true if the boolean values of all the arguments are
+true.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.5.2.&nbsp;<a name="#id143738028">or</a></h4>
+<div>
+<pre>
+or(<i>boolean</i>[, <i>boolean</i>, [...]])
+        
+</pre></div>
+<div>
+<p>Return true if the boolean value of one or more arguments are
+true</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.5.3.&nbsp;<a name="#id143738460">not</a></h4>
+<div>
+<pre>
+not(<i>boolean</i>)
+        
+</pre></div>
+<div>
+<p>If the boolean value of the argument is true, return false,
+otherwise return true.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.5.4.&nbsp;<a name="#id143738820">isResource</a></h4>
+<div>
+<pre>
+isResource([<i>value</i>])
+        
+</pre></div>
+<div>
+<p>Return true if the argument is a resource, or can be converted
+to a resource according to the determination of the underlying RDF
+model. If no argument is given, the context is used as the
+argument.</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h4>10.5.5.&nbsp;<a name="#id143739180">isLiteral</a></h4>
+<div>
+<pre>
+isLiteral([<i>value</i>])
+        
+</pre></div>
+<div>
+<p>Return true if the argument is not a resource, and can not be
+converted to a resource according to the determination of the
+underlying RDF model. If no argument is given, the context is used
+as the argument.</p>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>11.&nbsp;<a name="#id143739540">References and
+resources</a></h2>
+<div>
+<p><a href=
+"http://www.opengroup.org/onlinepubs/7908799/xbd/re.html">[PSRE]</a>:
+The Open Group UNIX Specification on Regular Expressions</p>
+</div>
+<div>
+<p><a href="http://www.ietf.org/rfc/rfc2119.txt">[RFC2119]</a>: RFC
+2119 - Key words for use in RFCs to Indicate Requirement Levels</p>
+</div>
+<div>
+<p><a href=
+"http://www.w3.org/TR/1999/REC-rdf-syntax-19990222/">[RDFMS]</a>:
+Resource Description Framework (RDF) Model and Syntax
+Specification</p>
+</div>
+<div>
+<p><a href="http://www.w3.org/TR/rdf-mt/">[RDFMT]</a>: RDF Model
+Theory</p>
+</div>
+<div>
+<p><a href=
+"http://www.w3.org/TR/2000/CR-rdf-schema-20000327/">[RDFS]</a>:
+Resource Description Framework (RDF) Schema Specification 1.0</p>
+</div>
+<div>
+<p><a href="">[]</a>:</p>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h2>12.&nbsp;<a name="#id143740548">Appendix A (non-normative): Use
+cases</a></h2>
+<div>
+<p>[<i>Editor's note:</i> Yes, this section is in woeful need of
+work.]</p>
+</div>
+<div>
+<p>In order to guide the development of Versa some use cases for
+RDF query have been developed. This section presents these use
+cases, as well as how they can be addressed using the current
+specification of Versa</p>
+</div>
+<div style="margin-left: 1em">
+<h3>12.1.&nbsp;<a name="#id1241735284">Get all resources of type
+"h:Person"</a></h3>
+<div>
+<p>Often one wants to simply check a model for all resources with a
+given RDF type</p>
+</div>
+<div style="margin-left: 1em" class="use-case-solution">
+<h4>12.1.1.&nbsp;<a name="#id1241735500"></a></h4>
+<div>
+<p>Versa provides the <samp>type</samp> function to deal with this
+common case conveniently:</p>
+</div>
+<div>
+<pre>
+type(h:Person)
+        
+</pre></div>
+<div>
+<p>returns</p>
+</div>
+<div>
+<pre>
+set(h:epound, h:teliot, h:wyeats)
+        
+</pre></div>
+<div>
+<p>Or the using traversal expressions (and giving the same
+result):</p>
+</div>
+<div>
+<pre>
+all() - rdf:type -&gt; h:Person
+        
+</pre></div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>12.2.&nbsp;<a name="#id1241736076">Get all people named "Ezra
+Pound"</a></h3>
+<div style="margin-left: 1em" class="use-case-solution">
+<h4>12.2.1.&nbsp;<a name="#id1241736292"></a></h4>
+<div>
+<pre>
+type(h:Person) - h:formattedName -&gt; eq("Ezra Pound")
+        
+</pre></div>
+<div>
+<p>which results in</p>
+</div>
+<div>
+<pre>
+set(h:epound)
+        
+</pre></div>
+<div>
+<p>There are alternative ways to express this. For instance, using
+abbreviated forward traversal and filters:</p>
+</div>
+<div>
+<pre>
+filter(h:formattedName(type(h:Person)), eq("Ezra Pound"))
+        
+</pre></div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>12.3.&nbsp;<a name="#id1241736796">Get one of the people who
+wrote a poem called "The Love Song of J Alfred Prufrock"</a></h3>
+<div>
+<p>Remember that we have provided no range constraint on the
+h:author predicate, so we must explicitly check that objects are of
+type person.</p>
+</div>
+<div style="margin-left: 1em" class="use-case-solution">
+<h4>12.3.1.&nbsp;<a name="#id1241737012"></a></h4>
+<div>
+<p>Note that we only want to get one of the people, so if we use a
+traversal expression, which results in a set, we must then extract
+one of the entries from the set. We shall use a backward traversal
+expression:</p>
+</div>
+<div>
+<pre>
+head(h:formattedName(type(h:Poem) - dc:title -&gt; eq("The Love Song of J Alfred Prufrock") - h:author -&gt; *))
+        
+</pre></div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>12.4.&nbsp;<a name="#id1241737228">The name and age of the
+oldest author</a></h3>
+<div style="margin-left: 1em" class="use-case-solution">
+<h4>12.4.1.&nbsp;<a name="#id1241737444"></a></h4>
+<div>
+<pre>
+distribute(max(all() - h:author -&gt; *, v:number, h:age()), q(h:age()), q(h:formattedName()))
+        
+</pre></div>
+<div>
+<pre>
+        
+</pre></div>
+</div>
+</div>
+<div style="margin-left: 1em">
+<h3>12.5.&nbsp;<a name="#id1241737804">The name of the second
+oldest ancestor of Joe</a></h3>
+<div>
+<p>A DAML-aware Versa implementation will allow easy querying of
+explicitly transitive properties, but often one needs to interpret
+properties tarnsitively without help from the schema.</p>
+</div>
+<div style="margin-left: 1em" class="use-case-solution">
+<h4>12.5.1.&nbsp;<a name="#id1241738020"></a></h4>
+<div>
+<pre>
+        
+</pre></div>
+<div>
+<pre>
+        
+</pre></div>
+</div>
+</div>
+</div>
+</body>
+</html>

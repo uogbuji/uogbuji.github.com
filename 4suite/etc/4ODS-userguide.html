@@ -1,0 +1,267 @@
+<HTML>
+  <HEAD>
+    <meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+    <META NAME='author' CONTENT='  '>
+    <META NAME='keywords' CONTENT=''>
+    <META NAME='description' CONTENT=''>
+    <TITLE>4ODS User"s Guide</TITLE>
+  </HEAD>
+  <BODY>
+    <H1>4ODS User"s Guide</H1>
+    <DIV>
+      <BR>
+    </DIV>
+    <HR>
+    <TABLE BORDER='0'>
+      <TR>
+        <TD WIDTH='5%'>1.</TD>
+        <TD>
+          <A HREF='#id141196360'>Introduction</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD></TD>
+        <TD></TD>
+      </TR>
+      <TR>
+        <TD WIDTH='5%'>2.</TD>
+        <TD>
+          <A HREF='#id141191752'>ODL datatypes</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD></TD>
+        <TD></TD>
+      </TR>
+      <TR>
+        <TD WIDTH='5%'>3.</TD>
+        <TD>
+          <A HREF='#id140243816'>Unimplemented portions of the ODMG specification</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD></TD>
+        <TD></TD>
+      </TR>
+      <TR>
+        <TD WIDTH='5%'>4.</TD>
+        <TD>
+          <A HREF='#id139820072'>4ODS tools</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD></TD>
+        <TD>
+          <TABLE BORDER='0'>
+            <TR>
+              <TD WIDTH='5%'>4.1.</TD>
+              <TD>
+                <A HREF='#id139939336'>How to change the storage adapter</A>
+              </TD>
+            </TR>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR>
+        <TD WIDTH='5%'>5.</TD>
+        <TD>
+          <A HREF='#id139822504'>How to use the system (a very basic walk through)</A>
+        </TD>
+      </TR>
+      <TR>
+        <TD></TD>
+        <TD></TD>
+      </TR>
+    </TABLE>
+    <HR>4ODS User's Guide
+  4ODS
+  Userguide
+  ODMG
+  User's Guide for 4ODS.
+
+
+  
+
+  <DIV>
+      <H3>
+        <A NAME='id141196360'>Introduction</A>
+      </H3>
+      <P>4ODS is am implementation of the ODMG Object Data Standard v 3.0 in  python.  4ODS currently implements a beta version of its own file storage, however it is not transactional, nor is it concurrent. 4ODS does support backends that are transactional and concurrent through SQL database for.  4ODS generates persistent stub classes from an ODL file.  These classes are used as any other python class is used, except when commit is called on the current transaction, changes are persisted into the database.  Objects can be fetched from the database using the ODS binding mechanisim, the ODS extent mechanisim, or simple OQL queries.  4ODS supports OIF for both input and output, for all meta data types supported by the backends.</P>
+    </DIV>
+    <DIV>
+      <H3>
+        <A NAME='id141191752'>ODL datatypes</A>
+      </H3>
+      <P>The following list is of supported datatypes defined by the ODMG</P>
+      <UL>
+        <LI>boolean</LI>
+        <LI>signed short</LI>
+        <LI>unsigned short</LI>
+        <LI>signed long</LI>
+        <LI>unsigned long</LI>
+        <LI>signed long long</LI>
+        <LI>string</LI>
+        <LI>float</LI>
+        <LI>double</LI>
+        <LI>Class</LI>
+        <LI>List</LI>
+        <LI>Set</LI>
+        <LI>Bag</LI>
+        <LI>Enumeration</LI>
+      </UL>
+      <P>The following list is of unsupported datatypes defined by the ODMG</P>
+      <UL>
+        <LI>interval</LI>
+        <LI>date</LI>
+        <LI>time</LI>
+        <LI>timestamp</LI>
+        <LI>Interface</LI>
+        <LI>Dictionary</LI>
+        <LI>Array</LI>
+        <LI>Structure</LI>
+        <LI>void</LI>
+        <LI>char</LI>
+        <LI>octet</LI>
+      </UL>
+      <P>The following list is of extended datatypes not defined by the ODMG but included in 4ODS</P>
+      <UL>
+        <LI>file</LI>
+      </UL>
+    </DIV>
+    <DIV>
+      <H3>
+        <A NAME='id140243816'>Unimplemented portions of the ODMG specification</A>
+      </H3>
+      <P>  Besides the above mentioned datatypes that are not supported, the following is a list of unsupported features defined by the ODMG specification.</P>
+      <UL>
+        <LI>typedefs</LI>
+        <LI>operations on interfaces</LI>
+        <LI>Most of the OQL language</LI>
+        <LI>keys</LI>
+      </UL>
+    </DIV>
+    <DIV>
+      <H3>
+        <A NAME='id139820072'>4ODS tools</A>
+      </H3>
+      <P>
+  Please see the <A HREF='ods/4odb-command-line.html'>4ODB command line documentation</A>
+  for command line help.
+    </P>
+      <DIV>
+        <H4>
+          <A NAME='id139939336'>How to change the storage adapter</A>
+        </H4>
+        <P>4ODS, except for the beta Dbm Adapter, relies on a SQL backend for the actual storage of objects.  By default, 4ODS uses the Postgres adapter.  In order to use the Postgres adapter, PyGreSQL must be installed on the machine, and the user of 4ODS must have access to a PostgreSQL database.  Other adapters include an Oracle Adapter (DCORacle and access to an Oracle Database required) and the Dbm adapter (no additional modules needed.  One note on the Dmb adapter, it is in beta stage with no support for proper transaction or concurrency.  If used in a muti-threaded or multi-process application, the application must take care of concurrency and transaction sysmantics.
+    </P>
+      </DIV>
+    </DIV>
+    <DIV>
+      <H3>
+        <A NAME='id139822504'>How to use the system (a very basic walk through)</A>
+      </H3>
+      <P>First create a ODL file that represents what you want to store in test.odl</P>
+      <DIV>
+        <PRE>module simple {
+  class person {
+    attribute string name;
+    attribute double weight;
+    relationship Person spouse inverse Person ::spouse_of;
+    relationship Person spouse_of inverse Person ::spouse;
+    relationship list&lt;Person> children  inverse Person ::child_of;
+    relationship Person child_of inverse Person ::children;
+  };
+  class employee (extends person) {
+    attribute string id;
+  };
+};
+</PRE>
+      </DIV>
+  <P>Now create a new database and initialize</P>
+      <DIV>
+        <PRE> #OdlParse -ifp test test.odl</PRE>
+      </DIV>
+  <P>Now write some python code to do stuff with these people</P>
+      <DIV>
+        <PRE>
+#!/usr/bin/python
+
+#Every thing that is persisten must be done inside a transaction and open database
+from Ft.Ods import Database
+db = Database.Database()
+db.open('test')
+
+tx = db.new()
+tx.begin()
+
+#Create a new instance of some objects
+import person
+import employee
+dad = employee.new(db)
+mom = person.new(db)
+son1 = person.new(db)
+son2 = person.new(db)
+daughter = person.new(db)
+
+#Set some attributes
+dad.name = "Pops"
+mom.name = "Ma"
+son1.name = "Joey"
+son2.name = "Bobby"
+daughter.name = "Betty"
+dad.weight = 240.50
+
+#We can set attributes not defined in the ODL but they will not persist
+mom.address = "1234 Error Way"
+
+
+#Set some relationships
+
+#First set a one to one relationship
+dad.spouse = mom
+
+#Or we could have done it via the ODMG spec
+#dad.form_spouse(mom)
+
+#Add some children to the dad (our data model does not let mom have children.  We'd need a family struct (left up to the reader)
+
+dad.add_children(son1)
+#We can create relationships both ways
+son2.form_child_of(dad)
+
+#Shortcut for adding
+dad.children = daughter
+
+#Now root the family to some top level object.
+db.bind(dad,"The Fam")
+
+#Make it so
+tx.commit()
+
+#Out side of a transaction we can still access the objects.
+#However, any changes we make will not persist.
+#NOTE, because 4ODS caches relationships, any relationships that were not traversed during the
+#transaction, cannot be traversed now because an object cannot be loaded from the db outside
+#of a transaction.
+print dad.name
+
+#Start a new tx to fetch
+
+tx = db.new()
+tx.begin()
+
+newDad = db.lookup("The Fam")
+
+print newDad.name
+print newDad.children[0].name
+print newDad.spouse
+
+#Discard this transaction
+tx.abort()
+</PRE>
+      </DIV>
+
+  <P>Ft/Ods/test_suite and Ft/Ods/demo are good places to look for more examples</P>
+    </DIV>
+  </BODY>
+</HTML>

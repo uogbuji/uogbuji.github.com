@@ -1,0 +1,5 @@
+<title>Uche Ogbuji: Scimitar</title>
+<![CDATA[
+Scimitar is a retired project and has been replaced by <a
+href="/tech/4suite/amara/">Amara XML Toolkit</a>
+]]>

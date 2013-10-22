@@ -1,0 +1,23 @@
+<title>Uche Ogbuji: Python: programming for the discriminating adult</title>
+
+[Python][41] is my favorite general-purpose programming language. In fact, I
+don't think I've seen a better language for the general purpose, though others
+may be better in particular niches. I ran into Python soon after discovering
+Red Hat and suffering a traceback in one of their Tk GUI tools. I was able to
+debug the problem, even though I had never seen this language before, and I
+was instantly hooked. Coming from my literary background, I value highly
+Python's readability, and even more the richness of expression it allows. 
+
+I've long tried to contribute to Python as I could. Two keys ways have been in
+writing extensively on Python topics (see below), and in working on Python's
+XML capabilities. I am active on the [Python XML SIG][42]. I am an elected
+member of the [Python Software Foundation][43]. Fourthought is a member of the
+[Python Business Forum][44].
+
+## Python Resources
+
+   [41]: http://python.org
+   [42]: 
+   [43]: http://www.python.org/psf/
+   [44]: http://www.python-in-business.org/
+

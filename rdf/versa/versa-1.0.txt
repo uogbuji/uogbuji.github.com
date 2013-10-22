@@ -1,0 +1,1136 @@
+# Versa
+
+[Mike Olson][1] ([Fourthought, Inc.][2]), [Uche Ogbuji][3] ([Fourthought, Inc.][2])   
+Revision (Initial release) [MO] 
+
+Versa is a specialized language for addressing and querying an RDF model. It allows traversal of arcs, processing of node contents, and general expression evaluation. 
+
+* * *
+
+1.  [Introduction][4]
+2.  [The domain of operation][5]
+3.  [Data model][6]   
+
+3.1.  [Data types][7]   
+
+3.1.1.  [Resource][8]
+3.1.2.  [String][9]
+3.1.3.  [Number][10]
+3.1.4.  [Boolean][11]
+3.2.  [Set][12]
+4.  [Conversions][13]
+5.  [Conversion functions][14]   
+
+5.1.  [list][15]
+5.2.  [set][16]
+5.3.  [boolean][17]
+5.4.  [string][18]
+5.5.  [number][19]
+6.  [Comparisons][20]   
+
+6.1.  [Comparison or relational Functions][21]   
+
+6.1.1.  [lt][22]
+6.1.2.  [gt][23]
+6.1.3.  [lte][24]
+6.1.4.  [gte][25]
+6.1.5.  [eq][26]
+6.1.6.  [neq][27]
+7.  [Versa Query Structure][28]   
+
+7.1.  [Query][29]
+7.2.  [Context][30]
+7.3.  [Traversal and filter expressions][31]   
+
+7.3.1.  [Forward traversal and filter expressions][32]
+7.3.2.  [Backward traversal expression][33]
+7.3.3.  [Aggregate functions][34]
+7.3.4.  [sortq][35]
+8.  [Variables][36]
+9.  [Formal Versa grammar][37]
+10.  [Functions][38]   
+
+10.1.  [Resource functions][39]   
+
+10.1.1.  [all][40]
+10.1.2.  [type][41]
+10.1.3.  [traverse][42]
+10.1.4.  [properties][43]
+10.2.  [Set and list functions][44]   
+
+10.2.1.  [member][45]
+10.2.2.  [distribute][46]
+10.2.3.  [map][47]
+10.2.4.  [filter][48]
+10.2.5.  [sort][49]
+10.2.6.  [max][50]
+10.2.7.  [min][51]
+10.2.8.  [union][52]
+10.2.9.  [intersection][53]
+10.2.10.  [difference][54]
+10.2.11.  [join][55]
+10.2.12.  [head][56]
+10.2.13.  [rest][57]
+10.2.14.  [tail][58]
+10.2.15.  [length][59]
+10.2.16.  [slice][60]
+10.3.  [Number Functions][61]
+10.4.  [String Functions][62]   
+
+10.4.1.  [concat][63]
+10.4.2.  [starts-with][64]
+10.4.3.  [contains][65]
+10.4.4.  [substring-before][66]
+10.4.5.  [substring-after][67]
+10.4.6.  [substring][68]
+10.4.7.  [string-length][69]
+10.4.8.  [find-regex][70]
+10.5.  [Boolean Functions][71]   
+
+10.5.1.  [and][72]
+10.5.2.  [or][73]
+10.5.3.  [not][74]
+10.5.4.  [isResource][75]
+10.5.5.  [isLiteral][76]
+11.  [References and resources][77]
+12.  [Appendix A (non-normative): Use cases][78]   
+
+12.1.  [Get all resources of type "h:Person"][79]   
+
+12.1.1.  [[No title]][80]
+12.2.  [Get all people named "Ezra Pound"][81]   
+
+12.2.1.  [[No title]][82]
+12.3.  [Get one of the people who wrote a poem called "The Love Song of J Alfred Prufrock"][83]   
+
+12.3.1.  [[No title]][84]
+12.4.  [The name and age of the oldest author][85]   
+
+12.4.1.  [[No title]][86]
+12.5.  [The name of the second oldest ancestor of Joe][87]   
+
+12.5.1.  [[No title]][88]
+
+* * *
+
+## 1. Introduction
+
+Versa is a specialized language for addressing and querying nodes and arcs in a Resource Description Framework (RDF) model. It uses a simple and expressive syntax, designed to be incorporated into other expression systems, including XML, where, for instance, Versa can be used in extension functions or attributes of extension elements that provide RDF-related capabilities. Versa operates on the abstract graph model of RDF, and not any particular serialization. 
+
+Where used in this document, the keywords "SHOULD", "MUST", and "MUST NOT" are to be interpreted as described in RFC 2119 [RFC2119]. However, for readability, these words do not appear in all uppercase letters in this specification. 
+
+Versa uses constructs from XML namespaces for convenient abbreviation of URIs. Within this document, in examples and other discussion, some prefixes are commonly used without being defined each time. In this document consider these prefixes to be bound to the following namespaces: 
+
+  * **versa**: http://rdfinference.org/versa/0/2/
+  * **vsort**: http://rdfinference.org/versa/0/2/sort/
+  * **vtrav**: http://rdfinference.org/versa/0/2/traverse/
+  * **h**: http://rdfinference.org/eg/versa/humanitas
+  * **dc**: http://purl.org/dc/elements/1.1
+  * **daml**: http://www.daml.org/2001/03/daml+oil#
+
+This is just a convenience for this document. There is no normative binding of these prefixes. 
+
+## 2. The domain of operation
+
+Versa queries operate on an RDF model. Any RDF model that follows the RDF Model defined in RDF 1.0 [RDFMS], or the most recent RDF Model Theory specification [RDFMT] is a valid processing space for Versa. There are some cases where the precise behavior of Versa is dependent on implementation details of the RDF model. 
+
+[DAML+OIL], while mostly based on RDF 1.0, does include some slight modifications and enhancements to RDF semantics. None of these changes appear to affect the abstract model, so Versa can also process DAML+OIL systems. 
+
+## 3. Data model
+
+Versa operates on the abstract graph model of RDF. As such it operates on labeled nodes and arcs. In support of this processing, Versa defines a small set of standard data types. 
+
+### 3.1. Data types
+
+#### 3.1.1. Resource
+
+A resource is a special string-like object that represents the URI of a resource in the model. Its literal expression can be in one of two forms. The first is as a simple QName (as defined in [XMLNS]), in which case the URI mapped to the prefix used in the QName is expanded to a string and concatenated to the local portion of the QName to derive the resource object's URI. Versa does not define a mechanism for mapping prefixes to URIs. Such a facility must be provided by a Versa implementation. For instance, when Versa is expresed within an XML document, prefixes might be mapped according to the namespace declarations in scope of the relevant element. A resource can also be expressed using the full URI in string form preceded by an "@" sign. This form is not a true literal: the @ is techically a conversion operator that take a string and return a resource object (See the section on conversions below.) 
+
+The following are examples of literal resources:
+
+_spam:eggs_ if the prefix _spam_ is mapped to the URI _http://python.org/_, the resulting resource has the URI _http://python.org/eggs_.
+_myobj:oute66_ if the prefix _myobj_ is mapped to the URI _urn:oid:this.is.not.really.a.valid.oid.r_, the resulting resource has the URI _urn:oid:this.is.not.really.a.valid.oid.route66_.
+_@"http://rdfinference.org"_ A resource with URI _http://rdfinference.org_
+
+Note that the lexical rules of XML QNames may limit the situations in they may be used in Versa. For instance, if the URIs are UUIDs in URN form. The full form can always be used to express any valid URI.
+
+#### 3.1.2. String
+
+A sequence of zero or more characters, as defined in the XML 1.0 recommendation. Versa strings are similar to XPath strings. The main difference is in quote escaping.
+
+Literal strings again are are expressed as in XPath: using either single or double quotes. The following are examples of literal strings:
+
+_"What thou lovest well remains, the rest is dross"_
+_'What thou lovest well remains, the rest is dross'_ Equivalent to the above
+_"Embedded'Apostrophe"_ If the string contains an apostrophe or quotaion mark, you would usually use the other to delimit the string.
+_"Embedded\"Apostrophe"_ You can also use "\" to escape quotes
+_"Doubly'Embedded\"Quote'and\'Apostrophe"_ Escaping allows you to express all variety of quote combinations within a string.
+
+#### 3.1.3. Number
+
+Versa numbers are the same as XPath numbers: positive or negative floating-point numbers, based on the rules and semantics for double precision, 64-bit numbers in IEEE 754.
+
+The following are examples of literal numbers:
+
+_2_ Note that this is neither stored nor processed as an integer, since it is actually a floating point number expressed in abbreviated form.
+_3.14_ pi to three decimal places
+_6.022e23_ Avogadro's number: an example of using scientific notation
+
+#### 3.1.4. Boolean
+
+Boolean types represent logical truth or falsehood. As such there are two boolean literals: true and false. * is provided as a synonym for true: a more readable form in such cases as traversal and filter expressions.
+
+There is strictly no list literal. Lists can be expressed most simply using the list() conversion function (see below) with simple values as the arguments. The following are examples of lists:
+
+_list("W. B. Yeats", "T. S. Eliot")_
+_list(2000, 2001, 2000)_
+_list(x:epound, x:tseliot, @"http://rdfinference.org/eg/versa/wyeats")_
+_list()_ An empty list
+
+### 3.2. Set
+
+An heterogeneous unordered collection of any data type (including other sets or lists), with no duplicate values.
+
+There is strictly no list literal. Lists can be expressed most simply using the set() conversion function (see below) with simple values as the arguments. The following are examples of sets:
+
+_set("J. Alfred Prufrock", "Hugh Selwyn Mauberley")_
+_set(4.7, "four point seven")_
+_set(4.7)_ Just one item
+
+## 4. Conversions
+
+When implicit conversions between data types are needed, the following matrix defines the operations applied.
+
+      
+      <table>
+
+        
+        <tbody><tr>
+
+          
+          <td><b>From/To</b></td>
+          
+          <td><b>Resource</b></td>
+          
+          <td><b>String</b></td>
+          
+          <td><b>Number</b></td>
+          
+          <td><b>Boolean</b></td>
+
+          
+          <td><b>List</b></td>
+          
+          <td><b>Set</b></td>
+        
+        </tr>
+        
+        <tr>
+          
+          <td><b>Resource</b></td>
+          
+          <td>Identity</td>
+          
+          <td>A
+resource with a URI as given by the string, using escaping as required
+[once a standard for RDF data literals emerges, using such would be the
+preferred approach]</td>
+
+          
+          <td>If the resource can be interpreted as a representation of a number by the implementation, this is used, otherwise NaN.<sup><small>*</small></sup></td>
+          
+          <td>If
+the resource can be interpreted as a representation of a boolean by the
+implementation, this is used, otherwise false [Editor's note: this is a
+dangerous conversion, as the "exception" value lies within the normal
+boolean value space].<sup><small>*</small></sup></td>
+          
+          <td>List of length one with the resource in it.</td>
+          
+          <td>Set of size one with the resource in it.</td>
+        
+        </tr>
+        
+        <tr>
+
+          
+          <td><b>String</b></td>
+          
+          <td>A resource with a URI as given by the string, using escaping as required</td>
+          
+          <td>Identity</td>
+          
+          <td>The number that is represented by the string, or NaN</td>
+          
+          <td>false if the string is empty, otherwise true</td>
+          
+          <td>List of length one with the string in it.</td>
+
+          
+          <td>Set of size one with the string in it.</td>
+        
+        </tr>
+        
+        <tr>
+          
+          <td><b>Number</b></td>
+          
+          <td>A conversion of the number to a literal in URI form, as determined by the implementation<sup><small>*</small></sup></td>
+          
+          <td>String representation of the number</td>
+
+          
+          <td>Identity</td>
+          
+          <td>false if the number is positive or negative 0, otherwise true</td>
+          
+          <td>List of length one with the number in it.</td>
+          
+          <td>Set of size one with the number in it.</td>
+        
+        </tr>
+        
+        <tr>
+          
+          <td><b>Boolean</b></td>
+
+          
+          <td>A conversion of the boolean to a literal in URI form, as determined by the implementation<sup><small>*</small></sup></td>
+          
+          <td>"true" or "false"</td>
+          
+          <td>0 if false, or 1 if true</td>
+          
+          <td>Identity</td>
+          
+          <td>List of length one with the boolean in it.</td>
+          
+          <td>Set of size one with the boolean in it.</td>
+
+        
+        </tr>
+        
+        <tr>
+          
+          <td><b>List</b></td>
+          
+          <td>The result of conversion to resource of the first item in the list, or versa:nil if the list is empty</td>
+          
+          <td>The result of conversion to string of the first item in the list, or "" if the list is empty</td>
+          
+          <td>The result of conversion to number of the first item in the list, or 0 if the list is empty</td>
+          
+          <td>false if the list is empty, otherwise true</td>
+
+          
+          <td>Identity</td>
+          
+          <td>A
+set with the same entries as the list, except that if there are
+duplicate values, any equivalent values following the first are omitted
+(e.g. set(list(1,2,1)) = set(1,2))</td>
+        
+        </tr>
+        
+        <tr>
+          
+          <td><b>Set</b></td>
+          
+          <td>The result of conversion to list and then conversion to resource</td>
+          
+          <td>The result of conversion to list and then conversion to string</td>
+
+          
+          <td>The result of conversion to list and then conversion to number</td>
+          
+          <td>The result of conversion to list and then conversion to boolean</td>
+          
+          <td>A list with the same entries as the set, in arbitrary order</td>
+          
+          <td>Identity</td>
+        
+        </tr>
+      
+      </tbody></table>
+      
+* Note that conversions from literals to URIs are especially subject to change as the RDFCore working group works on URI-based datatype literal representations 
+
+## 5. Conversion functions
+
+Conversion functions are special functions that convert their arguments to a particular data type, using the conversion rules described above. 
+
+### 5.1. list
+    
+    
+    list(_expression_[, _expression_, [...]])
+            
+
+Create a list comprising each of the arguments in order. 
+
+### 5.2. set
+    
+    
+    set(_expression_[, _expression_, [...]])
+            
+
+Create a set comprising each of the arguments with duplicate values removed. 
+
+### 5.3. boolean
+    
+    
+    boolean(_expression_)
+            
+
+Return the boolean value of the argument
+
+### 5.4. string
+    
+    
+    string(_expression_)
+            
+
+Return the string value of the argument
+
+### 5.5. number
+    
+    
+    number(_expression_)
+            
+
+Return the number value of the argument
+
+## 6. Comparisons
+
+Comparisons between values follow specific rules for each data type. In general if two values are being compared, A and B, B is first converted to the same type as A before the comparison is made.
+
+Comparisons can be explicitly applied in various operations, or can be explicitly made by invoking the relational functions (see below).
+
+The following are the comparison rules for the various types.
+
+_Resources_ Resources are converted to strings for comparisons.
+_Strings_ The strings are compared as are XPath strings.
+_Numbers_ The numbers are compared as are XPath numbers
+_Booleans_ true is evaluated as greater than false.
+_Lists_ Unspecified [Editor's note: suggestions are requested. On epossibility is the XPath approach of testing whether there is any intersection between the two lists. Or one could compare each list item in turn. Or one could compare the first items of each]
+_Sets_ Unspecified [Editor's note: suggestions are requested.]
+
+### 6.1. Comparison or relational Functions
+
+#### 6.1.1. lt
+    
+    
+    lt(_expression_ [ , _expression_ ])
+            
+
+If there is a single argument, return true if the context is less than the argument (after the argument has been converted to the same type as the context). If there are two arguments, return true if the first is less than the second (after the second argument has been converted to the same type as the first). Otherwise return false. 
+
+#### 6.1.2. gt
+    
+    
+    gt(_expression_ [ , _expression_ ])
+            
+
+If there is a single argument, return true if the context is greater than the argument (after the argument has been converted to the same type as the context). If there are two arguments, return true if the first is greater than the second (after the second argument has been converted to the same type as the first). Otherwise return false. 
+
+#### 6.1.3. lte
+    
+    
+    lte(_expression_ [ , _expression_ ])
+            
+
+If there is a single argument, return true if the context is less than or equal to the argument (after the argument has been converted to the same type as the context). If there are two arguments, return true if the first is less than or equal to the second (after the second argument has been converted to the same type as the first). Otherwise return false. 
+
+#### 6.1.4. gte
+    
+    
+    gte(_expression_ [ , _expression_ ])
+            
+
+If there is a single argument, return true if the context is greater than or equal to the argument (after the argument has been converted to the same type as the context). If there are two arguments, return true if the first is greater than or equal to the second (after the second argument has been converted to the same type as the first). Otherwise return false. 
+
+#### 6.1.5. eq
+    
+    
+    eq(_expression_ [ , _expression_ ])
+            
+
+If there is a single argument, return true if the context is equal to the argument (after the argument has been converted to the same type as the context). If there are two arguments, return true if the first is equal to the second (after the second argument has been converted to the same type as the first). Otherwise return false. 
+
+#### 6.1.6. neq
+    
+    
+    neq(_expression_ [ , _expression_ ])
+            
+
+If there is a single argument, return true if the context is unequal to the argument (after the argument has been converted to the same type as the context). If there are two arguments, return true if the first is unequal to the second (after the second argument has been converted to the same type as the first). Otherwise return false. 
+
+## 7. Versa Query Structure
+
+### 7.1. Query
+
+Versa defines expressions. An expression is a combination of literals, traversals and filters, variable references and function calls. Traversala and filters are expressions that matche patterns in the RDF model by selecting sets of starting resources and arc resources, and conditions for selecting end-points from the RDF model.
+
+### 7.2. Context
+
+Many Versa constructs are evaluated with regard to a context. The context is a value of any data type, and it can always be referred to explicitloy in an expression using the token "."
+
+### 7.3. Traversal and filter expressions
+
+Traversal and filter expressions are the core of Versa. They provide a system for matching patterns in an RDF model by specifying desired nodes and arcs in the graph representing the model. The traversal and filter operators are the bases of the respective expression, and result in a list.
+
+#### 7.3.1. Forward traversal and filter expressions
+
+The forward traversal operator matches patterns based on given sets of subjects and predicates. It returns a list of resulting objects. It takes the following form:
+    
+    
+    _list_ - _list_ -> _boolean_
+            
+
+The forward filter operator matches patterns based on given sets of subjects and predicates. In contrast to the forward traversal operator, it returns a list of the subjects that result from the patterns rather than the objects. It takes the following form:
+    
+    
+    _list_ |- _list_ -> _boolean_
+            
+
+In both cases the first _list_ is a evaluated to obtain list of resources which are the subjects of statements. Each of these resources is set as the context for evaluating the second _list_, which is treated as a list of predicate resources. All statements in the model with these subjects and objects are marked as candidate statements. The object of each of the candidate statements is evaluated as the context of the _boolean_. 
+
+In the case of forward traversal, if the result, after conversion to boolean type, of evaluating the _boolean_ is true, the object is added to the list of results. In the case of forward filtering, if the result, after conversion to boolean type, of evaluating the _boolean_ is true, the subject of the corresponding statement is added to the list of results. 
+
+Unless an ordering aggregate function (see below) is used, the order of the resulting elements in the list is undefined in Versa, and is determined by the underlying model. 
+
+[_Editor's note:_ When data types are formally incorporated into the Versa model, the treatment of object set expressions will certainly change]
+
+#### 7.3.2. Backward traversal expression
+
+The backward traversal operator is similar to the forward traversal operator, but it is used to match patterns using the inverses of predicates. A backward traversal expression takes the following form: 
+    
+    
+    _list_ <- _list_ - _boolean_
+            
+
+The first set is a set of resources which are the objects of statements, the predicates of which are given by the resources in the second set expression. This results in a list of matching statements, and the subject of each statement is evaluated as the context of the boolean expression. If the result, after conversion to boolean type, is true, the subject is added to the list of results. Conversions are automatically applied, as with forward traversal expressions. 
+
+_Editor's note:_ There is no backward filter expression yet, but [this post][89] points to a possible use case.
+
+#### 7.3.3. Aggregate functions
+
+Versa provides a set of special functions which are designed to be used within traversal operations to transform partial results within the context of the traversal.
+
+#### 7.3.4. sortq
+    
+    
+    sortq(_set_, _expression_ [, vsort:number | vsort:string [, vsort:ascending | vsort:descending ] ])
+            
+
+_Editor's note:_ Are there any others that cannot be expressed as operations on the result list? Grouping primitives, perhaps.
+
+_Editor's note:_ How to express multi-key sorting?
+
+## 8. Variables
+
+A variable reference evaluates to the value to which the variable name is bound in the set of variable bindings in the context. It is an error if the variable name is not bound to any value in the set of variable bindings in context.
+
+## 9. Formal Versa grammar
+    
+    
+    [1] query ::= expression
+    [2] expression ::= traversal filter | '(' expression ')' | function-call | literal | particle | arithmetic-operation | variable-reference
+    [3] traversal = forward-traversal | backward-traversal
+    [3] filter = forward-filter
+    [4] forward-traversal = set-expression "-" set-expression "->" boolean-expression
+    [4] forward-filter = set-expression "|-" set-expression "->" boolean-expression
+    [5] backward-traversal = expression "<-" expression "-" expression
+    [6] function-call ::= identifier '(' ( expression ( ',' expression ) * ) ? ')'
+    [7] literal = resource-literal | string-literal | number-literal | list-literal | boolean-literal
+    [8] resource-literal ::= '@' string-literal
+    [8] string-literal ::= 
+    [9] number-literal ::= 
+    [10] list-literal ::= '[' expression ( ',' expression ) * ) ?']'
+    [11] boolean-literal ::= 'true' | 'false'
+    [12] variable-reference ::= '$' identifier
+    [15] particle ::= '.' | '*'
+        
+
+## 10. Functions
+
+Versa defines a core function library. Extension functions can be defined using a similar mechanism to that provided by XPath.
+
+### 10.1. Resource functions
+
+Resource functions operate on or return resources.
+
+#### 10.1.1. all
+    
+    
+    all([_string_, [_string_, [...]]])
+            
+
+Without any arguments, all returns a list of all resources in the model. If there are arguments, they are treated as query objects, evaluated and the results converted to boolean such that , it is a short cut for " 
+    
+    
+    all(qo1, qo2, ..., qoN)
+            
+
+Is equivalent to 
+    
+    
+    filter(all(), qo1, qo2, ..., qoN)
+            
+
+#### 10.1.2. type
+    
+    
+    type(_resource_)
+            
+
+Returns a list of all resources of a specified type, as defined by RDFS and optionally DAML schema specifications. This function is essentially a short cut for: 
+    
+    
+    all() - rdf:type -> *
+            
+
+#### 10.1.3. traverse
+    
+    
+    traverse(_list_, _list_ [ , vtrav:forward | vtrav:inverse [ , vtrav:transitive ] ])
+            
+
+This is a function similar to the traversal operator. The first and second arguments are converted to sets of resources. A list is generated with the results of matching all statements in the model with the subject given by the first argument and the predicate given by the second. The return value is a set of subjects or objects of the matching statements according to whether forward or inverse traversal has been selected. The special resource vtrav:any acts as a wild-card and causes any value to be matched. 
+
+The optional third argument indicates the direction in which predicates are to be traversed. It must match one of the following resources: 
+
+  * _vtrav:forward_: return the objects of matching statements (the default)
+  * _vtrav:inverse_: return the subjects of matching statements
+
+The optional fourth argument, which must match vtrav:transitive, traverses predicates transitively, considering all nodes along the chain. If omitted, no transitivity is applied except any applied by the underlying model (e.g. if rdf:type statements are traversed, or statements marked as daml:transitiveProperty). 
+
+#### 10.1.4. properties
+    
+    
+    properties(_list_ [ , vtrav:inverse ])
+            
+
+The first argument is converted to a set of resources (the source set), and a set of resources is returned. If the optional second argument is present, the resources are all properties expressed on each resource in the source set. Otherwise the returned properties are all those which have one of the source resources as a value. 
+
+### 10.2. Set and list functions
+
+Set and list functions operate on or return sets and lists.
+
+#### 10.2.1. member
+    
+    
+    member(_list_ [ , _value_ ])
+            
+
+Return true if the list value of the first argument has an entry equal to the second. If only one argument is given, the context is used as the first. 
+
+#### 10.2.2. distribute
+    
+    
+    distribute(_list_, _string_, [_string_, [...]])
+            
+
+distribute converts the first argument into a list. The second and subsequent arguments (the query arguments) are strings that are interpreted as Versa queries. It uses each item in the list as the context for evaluating each of the query arguments. The result is a list of lists; each entry in the outer list is a list containing the results from evaluating each of the query arguments in order using the Nth list item as context. 
+
+For example, the query:
+    
+    
+    distribute(list(@"http://4suite.org", @"http://rdfinference.org"), q(.), q(string-length()), q(substring-after(., ":")))
+            
+
+returns
+    
+    
+    [[@"http://4suite.org", 17, "4suite.org"], [@"http://rdfinference.org", 23, "rdfinference.org"]]
+            
+
+The outer list is of length two because there are two items in the first argument. Each inner list has three items because there are so many query arguments.
+
+#### 10.2.3. map
+    
+    
+    map(_string_, _list_, [_list_, [...]])
+            
+
+map converts the first argument to string and dynamically evaluates this as a Versa query with one or more lists as the context. These lists are constructed as follows: The first item from each of the list expressions in the second and subsequent arguments are gathered into a list, as long as at least one list from the list expression arguments has an item. Then the second item if taken from each list expression, if at least one of them has two or more items, and so on, with as many iterations as the longest list from the list expression arguments. If the lists from the list expression arguments are of differing lengths, then all lists that are shorter than the longest are padded with nil resources (daml:nil). 
+
+The result is a list of values, as long as the longest item in the list from the list expression arguments. 
+
+As an example, the query:
+    
+    
+    map("concat()", ["A", "B", "C"], ["1", "2", "3"])
+            
+
+Will return a list of length 3:
+    
+    
+    ["A1", "B2", "C3"]
+            
+
+And the query:
+    
+    
+    map(".-h:formatted-name->*", h:principia-h:author->*)
+            
+
+Returns the formatted name of the author of the book identified as "h:principia", and thus in our sample model would return
+    
+    
+    ["Isaac Newton"]
+            
+
+This is equivalent to the chained traversal expression
+    
+    
+    h:principia - h:author -> * - h:formatted-name -> *
+            
+
+#### 10.2.4. filter
+    
+    
+    filter(_list_, _string_, [_string_, [...]])
+            
+
+filter converts the first argument into a list (the source list). The second and following arguments are strings that are dynamically evaluated as Versa queries. The context for these evaluations are the items from the source list taken in turn. If all these evaluations return true, then the resource is added to the result list. 
+
+#### 10.2.5. sort
+    
+    
+    sort(_list_[, _conversion-indicator_[, _direction-indicator_[, _string_ ]]])
+            
+
+The argument is converted to a list or a set. The result is the list obtained by sorting according to the given criteria. The second parameter indicates the conversion that should be applied to each item before sorting, and the style of the resulting sort. It must be a resource with one of the following URIs: 
+
+  * _vsort:string_: convert to string and sort according to unicode sorting conventions, as described in the XSLT specification's section on xsl:sort
+  * _vsort:number_: convert to number and sort according to the magnitude of the number
+
+The default is vsort:string. The third parameter indicates the direction of sorting. It is converted to resource and must have one of the following URIs: 
+
+  * _vsort:ascending_: sort in ascending order
+  * _vsort:descending_: sort in descending order
+
+The default is http://rdfinference.org/versa/sort/ascending. 
+
+#### 10.2.6. max
+    
+    
+    max(_list_[, _conversion-indicator_[, _string_ ]])
+            
+
+The argument is converted to a list or a set (the source list). The result is the maximum value in the source list according to the given criteria. The second parameter indicates the conversion that should be applied to each item before sorting, and the style of the resulting sort. It must be a resource with one of the following URIs: 
+
+  * _http://rdfinference.org/versa/sort/string_: convert to string and sort according to unicode sorting conventions [provide reference]
+  * _http://rdfinference.org/versa/sort/number_: convert to number and sort according to the magnitude of the number
+
+The default is http://rdfinference.org/versa/sort/string. 
+
+max($a, $b, $c) is equivalent to head(sort($a, $b, v:descending, $c)) 
+
+#### 10.2.7. min
+    
+    
+    min(_list_[, _conversion-indicator_[, _string_ ]])
+            
+
+The argument is converted to a list or a set (the source list). The result is the minimum value in the source list according to the given criteria. The second parameter indicates the conversion that should be applied to each item before sorting, and the style of the resulting sort. It must be a resource with one of the following URIs: 
+
+  * _http://rdfinference.org/versa/sort/string_: convert to string and sort according to unicode sorting conventions [provide reference]
+  * _http://rdfinference.org/versa/sort/number_: convert to number and sort according to the magnitude of the number
+
+The default is http://rdfinference.org/versa/sort/string. 
+
+min($a, $b, $c) is equivalent to head(sort($a, $b, v:ascending, $c)) 
+
+#### 10.2.8. union
+    
+    
+    union(_set_, _set_)
+            
+
+Both arguments are converted to sets, and the result is a set consisting of all items that are in either argument set. 
+
+#### 10.2.9. intersection
+    
+    
+    intersection(_set_, _set_)
+            
+
+Both arguments are converted to sets, and the result is a set consisting of all items that are in both argument sets. 
+
+#### 10.2.10. difference
+    
+    
+    difference(_set_, _set_)
+            
+
+Both arguments are converted to sets, and the result is a set consisting of all items that are in neither argument set. 
+
+#### 10.2.11. join
+    
+    
+    join(_list_[, _list_, [...]])
+            
+
+Each argument is converted to a list, and the result is a list which consists of the concatenation of all the argument lists in order. 
+
+#### 10.2.12. head
+    
+    
+    head(_list_, [_number_])
+            
+
+Converts the first argument to a list L, and the second to a number N. Returns a list consisting of the first N items in L. N defaults to 1. If N is negative, or exceeds the length of the list, the entire list is the result. 
+
+#### 10.2.13. rest
+    
+    
+    rest(_list_, [_number_])
+            
+
+Converts the first argument to a list L, and the second to a number N. Returns a list consisting of all items in L after position N. N defaults to 1. If N is negative, or exceeds the length of the list, an empty list is the result. The following expression returns the same list as L, regardless of the value of N: 
+    
+    
+    concat(first(L, N), rest(L, N))
+            
+
+#### 10.2.14. tail
+    
+    
+    tail(_list_, [_number_])
+            
+
+Converts the first argument to a list L, and the second to a number N. Returns a list consisting of the last N items in L. N defaults to 1. If N is negative, or exceeds the length of the list, an empty list is the result. 
+
+#### 10.2.15. length
+    
+    
+    length(_list_)
+            
+
+Converts the argument to a list and returns the number of items in the list. 
+
+#### 10.2.16. slice
+    
+    
+    slice(_list_, _number_ [, _number_])
+            
+
+The first expression is evaluated and converted to a list (the source list). The second argument is evaluated and converted to a number which is the starting index. If the third argument is present, it is evaluated and converted to a number which is the ending index. If not specified, the ending index is the length of the list. Return a new list comprising the elements in the source list from the starting index to the ending index, in order. 
+
+### 10.3. Number Functions
+
+Number Functions are functions that work with numbers. All return number types
+
+_Editor's note:_ the Versa number function library is identical to that of XPath. The details will be adde din the next draft.
+
+### 10.4. String Functions
+
+String functions work with strings.
+
+#### 10.4.1. concat
+    
+    
+    concat(_string_[, _string_, [...]])
+            
+
+Each argument is converted to a string, and the result is a string which consists of the concatenation of all the arguments in order. 
+
+#### 10.4.2. starts-with
+    
+    
+    starts-with(_string_ [ , _string_ ])
+            
+
+Return true if the string value of the first argument starts with the value of the second. If only one argument is given, the context is used as the first argument. 
+
+#### 10.4.3. contains
+    
+    
+    contains(_string_ [ , _string_ ] [ versa:ignore-case ])
+            
+
+Return true if the string value of the second argument is a substring value of the first. If only one argument is given, the context is used as the first. 
+
+#### 10.4.4. substring-before
+    
+    
+    substring-before(_string_ [ , _string_ ])
+            
+
+Convert all arguments to strings. Return the substring of the first argument that precedes the first occurrence of the second argument, or the empty string if the first argument does not contain the second. If only one argument is given, the context is used as the first argument. 
+
+#### 10.4.5. substring-after
+    
+    
+    substring-after(_string_ [ , _string_ ])
+            
+
+Convert all arguments to strings. Return the substring of the first argument that succeeds the first occurrence of the second argument, or the empty string if the first argument does not contain the second. If only one argument is given, the context is used as the first argument. 
+
+#### 10.4.6. substring
+    
+    
+    substring(_string-or-number_, _number_ [, _number_])
+            
+
+The first argument is the source string and the second is the starting index. If there is a third argument, it is the ending index, otherwise the ending index is the length of the string. The substring is returned comprising the characters in the source string from the starting index to the ending index. If the ending index exceeds the length of the string, the length of the string is substituted for its value. 
+
+#### 10.4.7. string-length
+    
+    
+    string-length([_string_])
+            
+
+If there is no argument, the context is converted to a string and used as the argument. The number of characters in the string is returned. 
+
+#### 10.4.8. find-regex
+    
+    
+    find-regex(_string_ [ , _string_ ] [ versa:ignore-case ])
+            
+
+If there are three arguments, then after conversions, the first is the outer string, the second the inner string and the last one must be the special flag resource versa:ignore-case. If there are two arguments and the second can be converted to the special flag resource versa:ignore-case, then the first one is the inner string and the context is the outer string. If there are two arguments and the second cannot be converted to the special flag resource versa:ignore-case, then the first one is the outer string and the second is the outer string. If there is only one argument, then it is the inner string and the context is the outer string. 
+
+The inner string is interpreted as a POSIX Simple Regular Expression [PSRE] and The return value is the first index at which it is matched in the outer string. If the versa:ignore-case flag is given, then the regular expression is matched without regard to the case of alphabetic characters. If there is no regular expression match at all, the return value is -1. [_Editor's note:_ is this a suitable flag for "not found"? NaN is another option, though perhaps a clumsy one.] 
+
+### 10.5. Boolean Functions
+
+Boolean Functions are functions that work with booleans. All return number types of 0 or 1
+
+#### 10.5.1. and
+    
+    
+    and(_boolean_[, _boolean_, [...]])
+            
+
+Return true if the boolean values of all the arguments are true. 
+
+#### 10.5.2. or
+    
+    
+    or(_boolean_[, _boolean_, [...]])
+            
+
+Return true if the boolean value of one or more arguments are true 
+
+#### 10.5.3. not
+    
+    
+    not(_boolean_)
+            
+
+If the boolean value of the argument is true, return false, otherwise return true. 
+
+#### 10.5.4. isResource
+    
+    
+    isResource([_value_])
+            
+
+Return true if the argument is a resource, or can be converted to a resource according to the determination of the underlying RDF model. If no argument is given, the context is used as the argument. 
+
+#### 10.5.5. isLiteral
+    
+    
+    isLiteral([_value_])
+            
+
+Return true if the argument is not a resource, and can not be converted to a resource according to the determination of the underlying RDF model. If no argument is given, the context is used as the argument. 
+
+## 11. References and resources
+
+[[PSRE]][90]: The Open Group UNIX Specification on Regular Expressions
+
+[[RFC2119]][91]: RFC 2119 - Key words for use in RFCs to Indicate Requirement Levels
+
+[[RDFMS]][92]: Resource Description Framework (RDF) Model and Syntax Specification
+
+[[RDFMT]][93]: RDF Model Theory
+
+[[RDFS]][94]: Resource Description Framework (RDF) Schema Specification 1.0
+
+[[]][95]: 
+
+## 12. Appendix A (non-normative): Use cases
+
+[_Editor's note:_ Yes, this section is in woeful need of work.]
+
+In order to guide the development of Versa some use cases for RDF query have been developed. This section presents these use cases, as well as how they can be addressed using the current specification of Versa
+
+### 12.1. Get all resources of type "h:Person"
+
+Often one wants to simply check a model for all resources with a given RDF type 
+
+#### 12.1.1. 
+
+Versa provides the type function to deal with this common case conveniently: 
+    
+    
+    type(h:Person)
+            
+
+returns 
+    
+    
+    set(h:epound, h:teliot, h:wyeats)
+            
+
+Or the using traversal expressions (and giving the same result): 
+    
+    
+    all() - rdf:type -> h:Person
+            
+
+### 12.2. Get all people named "Ezra Pound"
+
+#### 12.2.1. 
+    
+    
+    type(h:Person) - h:formattedName -> eq("Ezra Pound")
+            
+
+which results in 
+    
+    
+    set(h:epound)
+            
+
+There are alternative ways to express this. For instance, using abbreviated forward traversal and filters: 
+    
+    
+    filter(h:formattedName(type(h:Person)), eq("Ezra Pound"))
+            
+
+### 12.3. Get one of the people who wrote a poem called "The Love Song of J Alfred Prufrock"
+
+Remember that we have provided no range constraint on the h:author predicate, so we must explicitly check that objects are of type person. 
+
+#### 12.3.1. 
+
+Note that we only want to get one of the people, so if we use a traversal expression, which results in a set, we must then extract one of the entries from the set. We shall use a backward traversal expression: 
+    
+    
+    head(h:formattedName(type(h:Poem) - dc:title -> eq("The Love Song of J Alfred Prufrock") - h:author -> *))
+            
+
+### 12.4. The name and age of the oldest author
+
+#### 12.4.1. 
+    
+    
+    distribute(max(all() - h:author -> *, v:number, h:age()), q(h:age()), q(h:formattedName()))
+            
+    
+    
+            
+
+### 12.5. The name of the second oldest ancestor of Joe
+
+A DAML-aware Versa implementation will allow easy querying of explicitly transitive properties, but often one needs to interpret properties tarnsitively without help from the schema. 
+
+#### 12.5.1. 
+    
+    
+            
+    
+    
+            
+
+   [1]: mailto:mike.olson@fourthought.com
+   [2]: http://Fourthought.com
+   [3]: mailto:uche.ogbuji@fourthought.com
+   [4]: #id1123061668
+   [5]: #id1123058932
+   [6]: #id1096645268
+   [7]: #id1145640972
+   [8]: #id1145641332
+   [9]: #id1109038540
+   [10]: #id1109364356
+   [11]: #id139816220
+   [12]: #id1177096308
+   [13]: #id1243407892
+   [14]: #id1255209188
+   [15]: #id1255209404
+   [16]: #id1255209980
+   [17]: #id1255210340
+   [18]: #id1255210700
+   [19]: #id1255207820
+   [20]: #id1251423836
+   [21]: #id1251422252
+   [22]: #id1251424052
+   [23]: #id1251423116
+   [24]: #id1251423260
+   [25]: #id1251422468
+   [26]: #id166090692
+   [27]: #id1216895924
+   [28]: #id1216896356
+   [29]: #id1216896500
+   [30]: #id1216896716
+   [31]: #id1216896932
+   [32]: #id1255258916
+   [33]: #id1255256396
+   [34]: #id1239503540
+   [35]: #id1239503756
+   [36]: #id1239504476
+   [37]: #id1239504692
+   [38]: #id1239504908
+   [39]: #id1239505124
+   [40]: #id1239505340
+   [41]: #id1239505988
+   [42]: #id1269181436
+   [43]: #id1269179780
+   [44]: #id1269181508
+   [45]: #id1269180212
+   [46]: #id1269180932
+   [47]: #id1269182084
+   [48]: #id1085816596
+   [49]: #id1085816092
+   [50]: #id143599844
+   [51]: #id1147766076
+   [52]: #id1147494588
+   [53]: #id1147494876
+   [54]: #id1250378492
+   [55]: #id1250378924
+   [56]: #id1250379356
+   [57]: #id1250379788
+   [58]: #id1250380292
+   [59]: #id1272393564
+   [60]: #id1256284420
+   [61]: #id1256284924
+   [62]: #id1256285284
+   [63]: #id1256285500
+   [64]: #id1256285932
+   [65]: #id1256286364
+   [66]: #id1256286796
+   [67]: #id1256287228
+   [68]: #id1256287660
+   [69]: #id1256288164
+   [70]: #id166056268
+   [71]: #id166056844
+   [72]: #id166057060
+   [73]: #id166057492
+   [74]: #id166057924
+   [75]: #id166058284
+   [76]: #id166058644
+   [77]: #id166059004
+   [78]: #id1272373292
+   [79]: #id1272373724
+   [80]: #id1272373940
+   [81]: #id1272374516
+   [82]: #id1272374732
+   [83]: #id1272375236
+   [84]: #id1272375452
+   [85]: #id1272375668
+   [86]: #id1272375884
+   [87]: #id1272376244
+   [88]: #id1272376460
+   [89]: http://lists.fourthought.com/pipermail/ril/2002-May/000124.html
+   [90]: http://www.opengroup.org/onlinepubs/7908799/xbd/re.html
+   [91]: http://www.ietf.org/rfc/rfc2119.txt
+   [92]: http://www.w3.org/TR/1999/REC-rdf-syntax-19990222/
+   [93]: http://www.w3.org/TR/rdf-mt/
+   [94]: http://www.w3.org/TR/2000/CR-rdf-schema-20000327/
+   [95]: 
+
+

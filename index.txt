@@ -1,0 +1,48 @@
+<title>Uche Ogbuji: Technical projects</title>
+<![CDATA[
+Here are some of the technological efforts to which I contribute.
+
+## [Amara](/tech/4suite/amara/)
+
+Amara XML toolkit is a collection of Python tools for XML processing. Not just tools that happen to be written in Python, but tools built from the ground up to use Python idioms and take advantage of the many advantages of Python over other programming languages. [[more]](/tech/4suite/amara/)
+
+## [4Suite](/tech/4suite/)
+
+4Suite is a platform for XML processing and knowledge-management. It allows users to take advantage of standard XML technologies rapidly and to develop and integrate Web-based applications. [[more]](/tech/4suite/)
+
+## [WSGI.xml](/tech/4suite/wsgixml/)
+
+WSGI.xml contains some WSGI components of particular interest to those using XML in their Web applications in some way. [[more]](/tech/4suite/wsgixml/)
+
+## [Versa](/tech/rdf/versa)
+
+Versa is a query language for RDF, designed for simplicity and natural integrated into other programming languages and systems. It is inspired in many ways by XPath. [[more]](/tech/rdf/versa).
+
+<!--
+## [Akara][48]
+
+Akara is an extensible information gathering and presentation framework implemented in 4Suite. Part blog engine, part Wiki, knowledge management on the cheap. [[more]][48]
+-->
+
+## [Python](/tech/python/)
+
+Python is the best general-purpose programing language that has a critical mass of adoption. I have used Python preferentially since 1996, and I have been involved in the Python community since then. [[more]](/tech/python/)
+
+## [RDF](/tech/rdf/)
+
+Resource Description Framework (RDF) is a system for representing metadata for the Web. That is, it is a way of expressing the attributes relationships that help computers make sense of data on the Web. I first discovered RDF in 1999 and have co-developed an RDF implementation, and the specification and implementation of Versa, an RDF query language, among other efforts. [[more]](/tech/rdf/).
+
+<!--## [Presentations][52]
+
+I wander about quite a bit giving [presentations][52] on all these topics, and others.
+
+   [46]: 
+   [47]: /tech/rdf/versa
+   [48]: /tech/4suite/akara/
+   [49]: 
+   [50]: 
+   [51]: 
+   [52]: /tech/presentations/
+
+-->
+]]>

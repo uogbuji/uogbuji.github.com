@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+  <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+  <!ENTITY fam 'http://rdfinference.org/ril/eg/family/'>
+  <!ENTITY o 'http://rdfinference.org/ril/eg/family/ogbuji/'>
+]>
+<rdf:RDF
+  xmlns:rdfs='&rdfs;'
+  xmlns:rdf='&rdf;'
+  xmlns:fam='&fam;'
+  xml:base=''
+>
+
+  <!-- See family.rdfs for schema -->  
+
+  <!-- Instances -->
+
+  <fam:Male rdf:ID="uogbuji">
+    <fam:fname>Uche Ogbuji</fam:fname>
+    <fam:age>30</fam:age>
+    <fam:father rdf:resource="#logbuji"/>
+    <fam:mother rdf:resource="#mogbuji"/>
+  </fam:Male>
+
+  <fam:Male rdf:ID="cogbuji">
+    <fam:fname>Chimezie Ogbuji</fam:fname>
+    <fam:age>24</fam:age>
+    <fam:father rdf:resource="#logbuji"/>
+  </fam:Male>
+
+  <fam:Male rdf:ID="logbuji">
+    <fam:father rdf:resource="#togbuji"/>
+    <fam:fname>Linus Ogbuji</fam:fname>
+    <fam:age>56</fam:age>
+  </fam:Male>
+
+  <fam:Female rdf:ID="mogbuji">
+    <fam:fname>Margaret Ogbuji</fam:fname>
+    <fam:age>52</fam:age>
+  </fam:Female>
+
+  <fam:Female rdf:ID="logbuji1">
+    <fam:father rdf:resource="#jstubblefield"/>
+    <fam:mother rdf:resource="#lstubblefield"/>
+    <fam:fname>Lori Ogbuji</fam:fname>
+    <fam:age>29</fam:age>
+  </fam:Female>
+
+  <fam:Male rdf:ID="jstubblefield">
+    <fam:fname>Jerry Stubblefield</fam:fname>
+    <fam:age>55</fam:age>
+  </fam:Male>
+
+  <fam:Female rdf:ID="lstubblefield">
+    <fam:fname>Lola Stubblefield</fam:fname>
+    <fam:age>50</fam:age>
+  </fam:Female>
+
+  <fam:Male rdf:ID="oogbuji">
+    <fam:father rdf:resource="#uogbuji"/>
+    <fam:mother rdf:resource="#logbuji1"/>
+    <fam:fname>Osita Ogbuji</fam:fname>
+    <fam:age>1</fam:age>
+  </fam:Male>
+
+  <fam:Male rdf:ID="cogbuji1">
+    <fam:fname>Chidi Ogbuji</fam:fname>
+    <fam:age>2</fam:age>
+    <fam:father rdf:resource="#cogbuji"/>
+  </fam:Male>
+
+  <fam:Male rdf:ID="togbuji">
+    <fam:fname>Thomas Ogbuji</fam:fname>
+    <fam:age>100</fam:age>
+  </fam:Male>
+
+</rdf:RDF>

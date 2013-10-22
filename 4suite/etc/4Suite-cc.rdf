@@ -1,0 +1,18 @@
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:w="http://xmlns.com/wordnet/1.6/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://4Suite.org">
+  <dc:title>4Suite</dc:title>
+  <dc:creator><w:Company rdf:about="http://fourthought.com"><dc:title>Fourthought, Inc.</dc:title></w:Company></dc:creator>
+  <dc:format>Software</dc:format>
+  <license rdf:resource="http://4Suite.org/COPYRIGHT" />
+</Work>
+
+<License rdf:about="http://4Suite.org/COPYRIGHT">
+  <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+  <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+  <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+  <requires rdf:resource="http://web.resource.org/cc/Notice"/>
+</License>
+</rdf:RDF>

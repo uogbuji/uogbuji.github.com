@@ -1,0 +1,41 @@
+<title>Uche Ogbuji: WSGI.xml</title>
+<![CDATA[
+[This package](http://cheeseshop.python.org/pypi/wsgixml/) contains some WSGI components of particular interest to those using XML in their Web applications in some way.  The components included in this release are:
+
+* applyxslt - WSGI middleware for applying XSLT to an XML response body if needed (i.e. if the response is XML with a stylesheet PI and the browser is not known to support XSLT)
+
+* safexhtml - Middleware that checks for XHTML capability in the client and translates XHTML to HTML if the client can't handle it
+
+For more on WSGI middleware see: ["Mix and match Web components with Python WSGI"](http://www-128.ibm.com/developerworks/web/library/wa-wsgi/)
+
+## Example
+
+You use WSGI middleware by wrapping up your WSGI application implementation.  WSGI-aware frameworks such as [Pylons](http://pylonshq.com/) and [CherryPy](http://www.cherrypy.org/) make this easy, but in the following example I use the basic [wsgiref](http://cheeseshop.python.org/pypi/wsgiref) server implementation.
+
+    from wsgiref.simple_server import make_server
+    from wsgixml.safexhtml import safexhtml
+
+    def app(environ, start_response):
+        #... app logic here
+        return [XHTML]
+
+    httpd = make_server('', PORT, safexhtml(app))
+    print 'Starting up HTTP server on port %i...'%PORT
+
+    # Respond to requests until process is killed
+    httpd.serve_forever()
+
+
+## Installation
+
+WSGI.xml requires Python 2.4 or more recent and [4Suite-XML 1.0](/tech/4Suite/) or more recent.  The easiest way to install it is:
+
+    easy_install wsgixml
+
+If this doesn't work you're probably not set up for easy_install and I suggest you follow [these simple instructions](http://peak.telecommunity.com/DevCenter/EasyInstall).  easy_install will automatically take care of installing dependencies for you.
+
+## See also
+
+* [Wiki page](http://notes.4suite.org/WsgiXml)
+* [wsgixml in CVS](http://cvs.4suite.org/viewcvs/wsgixml/)
+]]>

@@ -1,0 +1,7 @@
+<title>Uche Ogbuji: Akara</title>
+
+The Akara project is undergoing a major transition.  So much so that I prefer
+to take down its page for now.  When it emerges from the process it will be
+largely an optional, separate server component for 
+[Amara XML Toolkit](/tech/4suite/amara/)
+

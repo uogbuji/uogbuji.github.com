@@ -1,0 +1,87 @@
+<title>Uche Ogbuji: Versa RDF Query Language</title>
+<![CDATA[
+
+# Uche Ogbuji: Versa, the RDF query language
+
+I am one of the developers of Versa, a query language for RDF. There are many other query languages for RDF, and probably will be at least until the community agrees to standardize. The Versa developers tried most of these and found them unsuitable for various practical reasons. In particular, Versa is designed to be integrated into other programming languages and systems. It is inspired in many ways by XPath, the very successful query language for XML.
+
+## Local Resources
+
+_[The Versa specification][44]_: This is the formal specification for Versa
+
+_[Versa by example][45]_: An introduction to Versa, by copious example
+
+## Other Resources
+
+_[The Versa mailing list][46]_: The mailing list for the RDF Inference Language (RIL) is the place to discuss or follow Versa, as Versa is the query portion of the larger RIL effort.
+
+_[Copia postings on Versa](http://copia.ogbuji.net/blog/keyword/versa)_
+
+_[Wikipedia article on Versa](http://en.wikipedia.org/wiki/Versa)_
+
+Also see the articles on Versa listed below
+
+## Why Versa?
+
+We designed Versa from a very different point of view than other RDF query languages, which are either based on SQL idioms or formal logic idioms. I think we gain some advantages from this fresh approach, including the following:
+
+* **Strong alignment with XML.** From the start we designed Versa for integration into other XML processing technologies. For example, we use Versa directly from XSLT, in which we can process query results in XML form.
+* **XPath-like idiom**. The Versa syntax is inspired by XPath. We did have to make some key deviations in order to accommodate the fact that RDF is a graph rather than a hierarchy, but Versa chained traversals should be familiar to those who have worked with XPath location paths. Other matters such as the emphasis on function borrow strengths from XPath.
+* **Extensibility**. Versa borrows XPath's extension mechanism, allowing users to add needed features to Versa in a standard way.
+* **Ease of learning**. Many users have reported that they become proficient very quickly with Versa. Some other RDF query languages have the advantage of similarity to the popular SQL, but this doesn't help those with no SQL background. Also, RDF differs enough from SQL that it is easy to run into model mismatches that the syntax doesn't make clear.
+* **Querying features**. Versa offers features that are unfortunately sparse in RDF query languages, such as a full complement of logical and string operations.
+
+Andrew Kuchling had some kind words in his [RDF scratch pad][51].
+
+> Versa is an RDF query language invented by Uche Ogbuji and Mike Olson. I like the look of it; the Versa specification is brief, about 16 pages or so, and the query language is simple and nicely orthogonal. This is a nice change from the elephantine bulk of most other RDF query languages that I've looked at.  
+
+Andreas Harth sent me the following note on Versa:
+
+> some folk on rdfig suggested to look into Versa for my problem with querying and extracting information out of my ontology. I am currently writing on my degree thesis and I was in need for a quick and easy way to extract some data out of the ontology to include it into the thesis document.  
+> Before that, I wrote some middleware using tomcat and Jena API which is okay. I considered for my problem the same approach but implementing it using Jena would take more time than I have. So I tried Versa, which looked familiar because of the similar syntax to xsl and bingo, it worked!  
+> _Many thanks for providing the 4versa query processor - and maybe even more important - the excellent documentation! I read some of your articles on developerworks and elsewhere, they are really cool. Again, thanks and keep up the good work!  
+
+In [Cataloging XML Vocabularies][49], Eric van der Vlist explains his choice of Versa as follows:
+
+> Some features of Versa, such as its ability to define aggregates, were missing from the RDF query languages which I have been using in the past and they are needed for this project.  
+
+More recently, in ["SPARQL Versus Versa"](http://eric.van-der-vlist.com/blog/568_SPARQL_Versus_Versa.item), Eric writes:
+
+> As far as I know, there is only one RDF query language that support these features: 4Suite's Versa query language.  
+> Versa is so different from SPARQL that these two languages are as difficult to compare as, let's say the W3C XML Schema's XML syntax and the RELAX NG's compact syntax.  
+> Instead of trying to bend the well known SQL syntax to make it work on triples, Versa has defined a totally new language for the purpose of traversing triples data stores.  
+> The result is surprising. You won't find anything that will remind you of SQL and, to take an example from "Versa by example", to get a list of people's first names sorted by their age, you'd write: `"sortq(all(), ".-o:age->*", vsort:number) - o:fname -> *"`  
+> If you insist and don't let the first surprise stop you, the second surprise is that this language is working incredibly well. During the (unfortunately too few) opportunities I have had to work with Versa, I have never been blocked by a limit of the language like I had been with rdfDB or would be with SPARQL.  
+
+## Articles on Versa
+
+[Thinking XML 10 [column]: Jump-starting knowledge management with RDF, part 6: RDF Query using Versa][52]
+
+2002-04   in [IBM developerWorks][53]
+
+["Versa: Path-Based RDF Query Language"](http://www.xml.com/pub/a/2005/07/20/versa.html)
+
+2005-07-20 in [XML.com](http://xml.com)
+
+## See also
+
+_["RDF transportable organization databases"](http://protege.stanford.edu/conference/2004/posters/Maycotte.pdf)_ [PDF], by Leonardo Maycotte, which describes a project where Versa was used to query RDF information authored in Protégé.  Here are local mirrors of [Maycotte's overview](etc/Maycotte-overview.pdf), [his poster](etc/Maycotte-rdfposter.pdf), [his poster in article form](etc/Maycotte-rdfarticle.pdf), and the [source code for the referenced application](etc/Maycotte-rdfapp.tar.gz).
+
+_[A survey of RDF query and storage systems][47]_: Published by researchers at several European universities, covers Versa in the section on query languages (but not the 4Suite repository in the section on storage systems). _[locally archived copy][48]_.
+
+_[Cataloging XML Vocabularies][49]_: In this article on surveying XML vocabularies on the Web, Eric describes how he used 4Suite to manage search results, and Versa to query them.
+
+_[RDF Query and Rule languages Use Cases and Examples survey][50]_: A project to compare various RDF query languages by use cases. There are Versa examples for most of the use cases.
+
+   [44]: etc/versa-1.0.xml
+   [45]: versa-by-example
+   [46]: http://lists.fourthought.com/mailman/listinfo/versa
+   [47]: http://139.91.183.30:9090/RDF/publications/tr308.pdf
+   [48]: /tech/pubs/tr308.pdf
+   [49]: http://www.xml.com/pub/a/2002/06/26/vocabularies.html
+   [50]: http://rdfstore.sourceforge.net/2002/06/24/rdf-query/
+   [51]: http://www.amk.ca/xml/rdf-notes.html
+   [52]: http://www-106.ibm.com/developerworks/xml/library/x-think10/index.html
+   [53]: http://www.ibm.com/developerworks
+]]>
+
