@@ -6,9 +6,26 @@
 .. slug: index
 .. template: slideuser.tmpl
 
-I'm excited to announce my collection of poetry, Ndewo, Colorado ([Kelsay Books](http://kelsaybooks.com/), due in November, 2013). You might as well just listen to me tell you about it, and of course that way learn about the meaning and pronunciation.
+<table>
+    <tr>
+        <td>
+          <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/"><img src="http://ecx.images-amazon.com/images/I/41ohghCnkxL._SY344_BO1,204,203,200_.jpg" title="Ndewo, Colorado"></a>
+        </td>
+        <td>
+          <p><u>Ndewo, Colorado</u> (<a href="http://kelsaybooks.com/">Aldrich Press</a>, 2013) is a collection of my poems, available on <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/">Amazon</a>.</p>
+          <dl>
+            <dt>ISBN-10</dt><dd>0615886086</dd>
+            <dt>ISBN-13</dt><dd>978-0615886084</dd>
+          </dl>
+          <p>You can listen to me tell you about it, and learn the meaning and pronunciation.</p>
+          <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F111975949"></iframe>
+        </td>
+    </tr>
+</table>
 
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F111975949"></iframe>
+<!--
+I'm excited to announce my collection of poetry, Ndewo, Colorado ([Kelsay Books](http://kelsaybooks.com/), 2013), now out on [Amazon](http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/). You might as well just listen to me tell you about it, and of course that way learn about the meaning and pronunciation.
+-->
 
 Some of the poems in this book have already been published elsewhere, so enjoy this preview I've compiled.
 

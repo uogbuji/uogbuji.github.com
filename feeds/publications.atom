@@ -1061,7 +1061,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XML"/>
     <category term="URI"/>
     <category term="HTML"/>
-    <category term="tech"/><updated>2006-02-17T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2006-02-17T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1080,7 +1081,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XML"/>
     <category term="Python"/>
     <category term="Web"/>
-    <category term="tech"/><updated>2006-01-25T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2006-01-25T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1102,7 +1104,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XSLT"/>
     <category term="Web"/>
     <category term="CherryPy"/>
-    <category term="tech"/><updated>2005-12-31T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-12-31T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1123,7 +1126,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XSLT"/>
     <category term="Atom"/>
     <category term="HTML"/>
-    <category term="tech"/><updated>2005-12-12T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-12-12T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1142,7 +1146,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XML"/>
     <category term="Atom"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2005-12-07T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-12-07T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1160,7 +1165,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="RELAX NG"/>
-    <category term="tech"/><updated>2005-11-02T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-11-02T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1179,7 +1185,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XML"/>
     <category term="Python"/>
     <category term="Web"/>
-    <category term="tech"/><updated>2005-10-26T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-10-26T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1201,7 +1208,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XSLT"/>
     <category term="Web"/>
     <category term="CherryPy"/>
-    <category term="tech"/><updated>2005-08-30T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-08-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1223,7 +1231,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="SVG"/>
     <category term="XForms"/>
     <category term="XHTML"/>
-    <category term="tech"/><updated>2005-08-20T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-08-20T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1243,7 +1252,8 @@ The future of the Web is: identifiers, relationships and services. Ever since th
     <category term="XSLT"/>
     <category term="EXSLT"/>
     <category term="UNIX"/>
-    <category term="tech"/><updated>2005-09-29T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-09-29T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1266,7 +1276,8 @@ XML is text and yet more than just text -- sometimes you want to work with just 
     <category term="data bindings"/>
     <category term="Universal feed parser"/>
     <category term="minidom"/>
-    <category term="tech"/><updated>2005-09-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-09-14T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1287,7 +1298,8 @@ XML is text and yet more than just text -- sometimes you want to work with just 
     <category term="XSLT"/>
     <category term="CSS"/>
     <category term="HTML"/>
-    <category term="tech"/><updated>2005-09-06T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-09-06T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1306,7 +1318,8 @@ XML is text and yet more than just text -- sometimes you want to work with just 
     <category term="XML"/>
     <category term="Python"/>
     <category term="Java"/>
-    <category term="tech"/><updated>2005-08-24T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-08-24T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1318,16 +1331,16 @@ XML is text and yet more than just text -- sometimes you want to work with just 
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=11393</id>
+    <id>http://adtmag.com/articles/2005/07/01/does-xml-give-away-the-keys-to-the-warehouse.aspx</id>
     <title>Perspective on XML: Does XML give away the keys to the data warehouse?</title>
-    <link href="http://www.adtmag.com/article.asp?id=11393"/>
+    <link href="http://adtmag.com/articles/2005/07/01/does-xml-give-away-the-keys-to-the-warehouse.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
+    <updated>2005-07-01T12:00:00Z</updated>
     <category term="XML"/>
     <category term="security"/>
     <category term="XPath injection"/>
     <category term="data warehouse"/>
     <category term="tech"/>
-    <updated>2005-08-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1348,7 +1361,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="Python"/>
     <category term="EaseXML"/>
     <category term="data bindings"/>
-    <category term="tech"/><updated>2005-07-27T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-07-27T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1368,7 +1382,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="modeling"/>
     <category term="Schematron"/>
     <category term="RELAX NG"/>
-    <category term="tech"/><updated>2005-07-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-07-14T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1387,7 +1402,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="XML"/>
     <category term="CSS"/>
     <category term="XSLT"/>
-    <category term="tech"/><updated>2005-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1405,7 +1421,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="CSS"/>
-    <category term="tech"/><updated>2005-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1422,7 +1439,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="CSS"/>
-    <category term="tech"/><updated>2004-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1440,7 +1458,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="XML"/>
     <category term="Python"/>
     <category term="Unicode"/>
-    <category term="tech"/><updated>2005-06-15T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-06-15T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1459,7 +1478,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="XML"/>
     <category term="Python"/>
     <category term="Unicode"/>
-    <category term="tech"/><updated>2005-05-18T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-05-18T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1479,7 +1499,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="elements"/>
     <category term="design"/>
     <category term="order"/>
-    <category term="tech"/><updated>2005-05-05T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-05-05T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1499,7 +1520,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="Python"/>
     <category term="Amara"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2005-04-20T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-04-20T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1517,7 +1539,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="modeling"/>
-    <category term="tech"/><updated>2005-04-08T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-04-08T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1536,7 +1559,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="XML"/>
     <category term="Python"/>
     <category term="XIST"/>
-    <category term="tech"/><updated>2005-03-16T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-03-16T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1555,7 +1579,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="XML"/>
     <category term="RELAX NG"/>
     <category term="modeling"/>
-    <category term="tech"/><updated>2005-03-11T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-03-11T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1574,7 +1599,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="XML"/>
     <category term="Python"/>
     <category term="PyXML"/>
-    <category term="tech"/><updated>2005-03-02T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-03-02T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1586,21 +1612,22 @@ Discussion of XPath injection attacks and what they teach us about the security 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think29.html</id>
+    <id>http://www.ibm.com/developerworks/library/x-think29/index.html</id>
     <title>Thinking XML 29 [column]: Querying WordNet as XML</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think29.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think29.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="WordNet"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2005-01-28T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-01-28T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
       <email>uche@ogbuji.net</email>
     </author>
     <summary type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"/>WordNet is a Princeton University project that aims to build a database of English words and lexical relationships between them. Such a tool is an excellent basis for semantic application in XML, like the synonym-aware searching example that Uche Ogbuji presented in an earlier installment of this column. Here, he takes a step back to first principles, showing code for querying WordNet 2.0 as XML documents as a first step toward building more general applications of WordNet in XML.
     </summary>
   </entry>
 
@@ -1636,7 +1663,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="Python"/>
     <category term="Amara"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2005-01-19T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2005-01-19T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1649,14 +1677,15 @@ Discussion of XPath injection attacks and what they teach us about the security 
   </entry>
 
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think28.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think28.html</id>
     <title>Thinking XML 28 [column]: UBL 1.0 (plus ebXML Core Components and more)</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think28.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think28.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="UBL"/>
     <category term="ebXML"/>
-    <category term="tech"/><updated>2004-12-09T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-12-09T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1675,7 +1704,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="XML"/>
     <category term="Python"/>
     <category term="search"/>
-    <category term="tech"/><updated>2004-12-08T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-12-08T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1697,7 +1727,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="DTD"/>
     <category term="Locator"/>
     <category term="DOM"/>
-    <category term="tech"/><updated>2004-10-13T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-10-13T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1715,7 +1746,8 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <link href="http://www.xml.com" rel="via" title="XML.com"/>
     <category term="XML"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2004-10-13T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-10-13T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1727,10 +1759,11 @@ Discussion of XPath injection attacks and what they teach us about the security 
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=10196</id>
+    <id>http://adtmag.com/articles/2004/11/01/xmls-growing-pains.aspx</id>
     <title>Perspective on XML: XML's growing pains</title>
-    <link href="http://www.adtmag.com/article.asp?id=10196"/>
+    <link href="http://adtmag.com/articles/2004/11/01/xmls-growing-pains.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
+    <updated>2004-11-01T12:00:00Z</updated>
     <category term="XML"/>
     <category term="XSLT"/>
     <category term="XPath"/>
@@ -1739,7 +1772,7 @@ Discussion of XPath injection attacks and what they teach us about the security 
     <category term="W3C XML Schema"/>
     <category term="WXS"/>
     <category term="RELAX NG"/>
-    <category term="tech"/><updated>2004-11-01T12:00:00Z</updated>
+    <category term="tech"/>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1766,7 +1799,8 @@ Discussion of the appropriate level of scale for data models.
     <category term="pipelines"/>
     <category term="Data Type Library Language"/>
     <category term="DTLL"/>
-    <category term="tech"/><updated>2004-10-29T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-10-29T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1779,9 +1813,9 @@ Columnist Uche Ogbuji reflects on several noteworthy presentations at the recent
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-stron.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-stron.html</id>
     <title>Discover the flexibility of Schematron abstract patterns</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-stron.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-stron.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Schematron"/>
@@ -1789,7 +1823,8 @@ Columnist Uche Ogbuji reflects on several noteworthy presentations at the recent
     <category term="ISO"/>
     <category term="abstract patterns"/>
     <category term="variables"/>
-    <category term="tech"/><updated>2004-10-08T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-10-08T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1802,13 +1837,14 @@ If you have the basics of an XML format in mind, but know that you will not be a
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think26.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think26.html</id>
     <title>Thinking XML 26 [column]: Hacking XML Hacks</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think26.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think26.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XML Hacks"/>
-    <category term="tech"/><updated>2004-09-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-09-14T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1829,7 +1865,8 @@ XML Hacks is a book of tips and tricks for XML users. This useful resource cover
     <category term="container elements"/>
     <category term="design"/>
     <category term="wrapper elements"/>
-    <category term="tech"/><updated>2004-09-24T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-09-24T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1842,15 +1879,16 @@ A critical issue in designing XML formats is figuring out how to arrange element
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think25.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think25.html</id>
     <title>Thinking XML 25 [column]: Harold's Effective XML</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think25.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think25.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Elliote Rusty Harold"/>
     <category term="Effective XML"/>
     <category term="design"/>
-    <category term="tech"/><updated>2004-07-16T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-07-16T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1872,7 +1910,8 @@ Noted XML expert Elliotte Rusty Harold's book Effective XML offers best practice
     <category term="schema"/>
     <category term="ISO"/>
     <category term="Scimitar"/>
-    <category term="tech"/><updated>2004-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1885,15 +1924,17 @@ Meet Schematron, a schema language that allows you to directly express rules wit
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=10061</id>
+    <id>http://adtmag.com/articles/2004/10/01/enterprise-data-goes-high-fashion.aspx</id>
     <title>Perspective on XML: Enterprise data goes high-fashion</title>
-    <link href="http://www.adtmag.com/article.asp?id=10061"/>
+    <link href="http://adtmag.com/articles/2004/10/01/enterprise-data-goes-high-fashion.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
+    <link rel="seealso" href="http://adtmag.com/articles/2004/09/01/perspective-on-xml-enterprise-data-goes-highfashion.aspx"/>
+    <updated>2004-10-01T12:00:00Z</updated>
     <category term="XML"/>
     <category term="UML"/>
     <category term="data model"/>
     <category term="outstanding!"/>
-    <category term="tech"/><updated>2004-10-01T12:00:00Z</updated>
+    <category term="tech"/>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1905,15 +1946,17 @@ Discussion of the appropriate level of scale for data models.
     </div>
     </summary>
   </entry>
+<!--
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=9924</id>
+    <id>http://adtmag.com/articles/2004/09/01/perspective-on-xml-enterprise-data-goes-highfashion.aspx</id>
     <title>Perspective on XML: Enterprise data goes high-fashion</title>
-    <link href="http://www.adtmag.com/article.asp?id=9924"/>
+    <link href="http://adtmag.com/articles/2004/09/01/perspective-on-xml-enterprise-data-goes-highfashion.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
+    <updated>2004-09-01T12:00:00Z</updated>
     <category term="XML"/>
     <category term="UML"/>
     <category term="data model"/>
-    <category term="tech"/><updated>2004-09-01T12:00:00Z</updated>
+    <category term="tech"/>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1925,6 +1968,7 @@ Discussion of the appropriate level of scale for data models.
     </div>
     </summary>
   </entry>
+-->
   <entry>
     <id>http://www.xml.com/pub/a/2004/09/08/pyxml.html</id>
     <title>Python &amp; XML [column]: Wrestling HTML</title>
@@ -1936,7 +1980,8 @@ Discussion of the appropriate level of scale for data models.
     <category term="XHTML"/>
     <category term="uTidyLib"/>
     <category term="libxml2"/>
-    <category term="tech"/><updated>2004-09-08T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-09-08T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1949,15 +1994,16 @@ This article focuses on Python APIs for converting good or bad HTML to XML.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-elemdes.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-elemdes.html</id>
     <title>Principles of XML design: Element structures for names and addresses</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-elemdes.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-elemdes.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="elements"/>
     <category term="names"/>
     <category term="addresses"/>
-    <category term="tech"/><updated>2004-08-06T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-08-06T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -1979,7 +2025,8 @@ Sharpen your understanding of elements, the most important structures in XML. Co
     <category term="XMLFilter"/>
     <category term="SAX"/>
     <category term="PyXML"/>
-    <category term="tech"/><updated>2004-08-11T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-08-11T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2000,7 +2047,8 @@ Uche Ogbuji follows up on some of the practical aspects and implications of his 
     <category term="Python"/>
     <category term="SAX"/>
     <category term="generators"/>
-    <category term="tech"/><updated>2004-07-28T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-07-28T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2013,15 +2061,16 @@ In Uche Ogbuji's latest Python and XML column he explores a pattern for handling
     </summary>
   </entry>
   <entry>
-    <id>http://www.javareport.com/article.asp?id=9797</id>
+    <id>http://adtmag.com/articles/2004/08/01/perspective-on-xml-xml-circles-the-globe.aspx</id>
     <title>Perspective on XML: XML circles the globe</title>
-    <link href="http://www.javareport.com/article.asp?id=9797"/>
+    <link href="http://adtmag.com/articles/2004/08/01/perspective-on-xml-xml-circles-the-globe.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
+    <updated>2004-08-01T12:00:00Z</updated>
     <category term="XML"/>
     <category term="Unicode"/>
     <category term="i18n"/>
     <category term="l10n"/>
-    <category term="tech"/><updated>2004-08-01T12:00:00Z</updated>
+    <category term="tech"/>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2034,14 +2083,15 @@ The importance of internationalization in XML
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=9663</id>
+    <id>http://adtmag.com/articles/2004/07/01/perspective-on-xml-steady-steps-spell-success-with-google.aspx</id>
     <title>Perspective on XML: Steady steps spell success with Google</title>
-    <link href="http://www.adtmag.com/article.asp?id=9663"/>
+    <link href="http://adtmag.com/articles/2004/07/01/perspective-on-xml-steady-steps-spell-success-with-google.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
+    <updated>2004-07-01T12:00:00Z</updated>
     <category term="XML"/>
     <category term="Web"/>
     <category term="google"/>
-    <category term="tech"/><updated>2004-07-01T12:00:00Z</updated>
+    <category term="tech"/>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2064,7 +2114,8 @@ Discussion of Google and development lessons from its success.
     <category term="ElementTree"/>
     <category term="PyRXPU"/>
     <category term="libxml"/>
-    <category term="tech"/><updated>2004-06-30T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-06-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2077,10 +2128,11 @@ In this month's Python and XML column Uche Ogbuji examines the namespace support
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=9090</id>
+    <id>http://adtmag.com/articles/2004/01/01/a-letter-to-the-editor-taking-issue.aspx</id>
     <title>Commentary on "Objects. Encapsulation. XML?,"</title>
-    <link href="http://www.adtmag.com/article.asp?id=9090"/>
+    <link href="http://adtmag.com/articles/2004/01/01/a-letter-to-the-editor-taking-issue.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
+    <updated>2004-01-01T12:00:00Z</updated>
     <category term="XML"/>
     <category term="RDF"/>
     <category term="Object oriented"/>
@@ -2089,7 +2141,7 @@ In this month's Python and XML column Uche Ogbuji examines the namespace support
     <category term="Java"/>
     <category term="Smalltalk"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2004-04-01T12:00:00Z</updated>
+    <category term="tech"/>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2102,16 +2154,17 @@ A letter taking issue with the article, and Ogbuji's response.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think24.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think24.html</id>
     <title>Thinking XML 24 [column]: Use the Atom format for syndicating news and more</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think24.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think24.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
     <category term="Learning Objects"/>
     <category term="Atom"/>
     <category term="RSS"/>
-    <category term="tech"/><updated>2004-05-25T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-05-25T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2132,7 +2185,8 @@ The Web has always included sites that present series of articles, events, and o
     <category term="OWL"/>
     <category term="WSDL"/>
     <category term="data dictionary"/>
-    <category term="tech"/><updated>2004-05-20T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-05-20T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2145,15 +2199,16 @@ When designing XML and Web services schemata you will often (and ideally) reuse 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-rddlns.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-rddlns.html</id>
     <title>Tip: Use RDDL with your XML and Web services namespaces</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-rddlns.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-rddlns.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="RDDL"/>
     <category term="resource gloss"/>
     <category term="XLink"/>
-    <category term="tech"/><updated>2004-05-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-05-14T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2176,7 +2231,8 @@ The spaghetti of namespaces in, say, a WSDL file can lead to a lot of confusion.
     <category term="4Suite"/>
     <category term="XPath"/>
     <category term="XUpdate"/>
-    <category term="tech"/><updated>2004-05-13T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-05-13T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2189,9 +2245,9 @@ In his latest Python and XML column, Uche Ogbuji continues his tour of XML names
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth17.html</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth17.html</id>
     <title>The Python Web services developer [column]: Python SOAP libraries, Part 5</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth17.html"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth17.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="XML"/>
@@ -2199,7 +2255,8 @@ In his latest Python and XML column, Uche Ogbuji continues his tour of XML names
     <category term="SOAPy"/>
     <category term="SOAP"/>
     <category term="WSDL"/>
-    <category term="tech"/><updated>2004-04-16T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-04-16T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2216,16 +2273,17 @@ As with its sister project ZSI, SOAPpy has enjoyed a recent increase in activity
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipcomp.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipcomp.html</id>
     <title>Tip: Compress XML files for efficient transmission</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipcomp.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipcomp.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="binary"/>
     <category term="gzip"/>
     <category term="pkzip"/>
     <category term="bzip"/>
-    <category term="tech"/><updated>2004-04-09T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-04-09T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2238,9 +2296,9 @@ Binary XML has generated a lot of talk, and one of the motivators is the need fo
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think23.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think23.html</id>
     <title>Thinking XML 23 [column]: Patent filings meet XML</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think23.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think23.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
@@ -2254,7 +2312,8 @@ Binary XML has generated a lot of talk, and one of the motivators is the need fo
     <category term="PASAT"/>
     <category term="ePave"/>
     <category term="PatXML"/>
-    <category term="tech"/><updated>2004-04-07T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-04-07T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2275,7 +2334,8 @@ The major patent organizations all have the dual goal of making electronic paten
     <category term="version"/>
     <category term="standalone"/>
     <category term="encoding"/>
-    <category term="tech"/><updated>2004-04-30T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-04-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2288,14 +2348,15 @@ The XML declaration is optional in XML files, and defaults determine most of the
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=9160</id>
+    <id>http://adtmag.com/articles/2004/04/01/managing-xml-libraries.aspx</id>
     <title>Managing XML libraries</title>
-    <link href="http://www.adtmag.com/article.asp?id=9160"/>
+    <link href="http://adtmag.com/articles/2004/04/01/managing-xml-libraries.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="RDF"/>
     <category term="OWL"/>
-    <category term="tech"/><updated>2004-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2308,14 +2369,15 @@ Discussion of Semantic Web technologies as simple library organization technolog
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=9012</id>
+    <id>http://adtmag.com/articles/2004/03/01/keep-your-xml-clean.aspx</id>
     <title>Keep your XML clean</title>
-    <link href="http://www.adtmag.com/article.asp?id=9012"/>
+    <link href="http://adtmag.com/articles/2004/03/01/keep-your-xml-clean.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="RDF"/>
     <category term="design"/>
-    <category term="tech"/><updated>2004-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2328,9 +2390,9 @@ Discussion of XML design, emphasizing the importance of form as well as function
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think22.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think22.html</id>
     <title>Thinking XML 22 [column]: A glimpse into XML in the financial services industry</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think22.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think22.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
@@ -2340,7 +2402,8 @@ Discussion of XML design, emphasizing the importance of form as well as function
     <category term="FpML"/>
     <category term="MDDL"/>
     <category term="XBRL"/>
-    <category term="tech"/><updated>2004-02-20T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-02-20T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2353,15 +2416,16 @@ A recent conference on XML in the financial services industry was an occasion fo
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-namcar.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-namcar.html</id>
     <title>Principles of XML design: Use XML namespaces with care</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-namcar.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-namcar.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="namespaces"/>
     <category term="local names"/>
     <category term="URI"/>
-    <category term="tech"/><updated>2004-04-06T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-04-06T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2374,15 +2438,16 @@ XML namespaces are an imperfect solution to a difficult problem. From basic info
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-eleatt.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-eleatt.html</id>
     <title>Principles of XML design: When to use elements versus attributes</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-eleatt.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-eleatt.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="elements"/>
     <category term="attributes"/>
     <category term="design"/>
-    <category term="tech"/><updated>2004-03-04T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-03-04T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2403,7 +2468,8 @@ The oldest question asked by adopters of XML is when to use elements and when to
     <category term="SOAP"/>
     <category term="proxy"/>
     <category term="connect.c"/>
-    <category term="tech"/><updated>2004-03-26T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-03-26T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2416,12 +2482,13 @@ If you are trying to access a SOAP service from behind a firewall and your SOAP 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-stand4/</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-stand4/</id>
     <title>A survey of XML standards: Part 4--Detailed cross-reference of the most important XML standards</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-stand4/"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-stand4/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML Topic Maps"/>
-    <category term="tech"/><updated>2004-03-02T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-03-02T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2434,9 +2501,9 @@ The world of XML is vast and growing, with a huge variety of standards and techn
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-stand3.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-stand3.html</id>
     <title>A survey of XML standards: Part 3--The most important vocabularies</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-stand3.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-stand3.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XHTML"/>
     <category term="Docbook"/>
@@ -2448,8 +2515,8 @@ The world of XML is vast and growing, with a huge variety of standards and techn
     <category term="SMIL"/>
     <category term="RDF"/>
     <category term="XML Topic Maps"/>
-    <category term=""/>
-    <category term="tech"/><updated>2004-02-17T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-02-17T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2462,9 +2529,9 @@ The world of XML is vast and growing, with a huge variety of standards and techn
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tiplang.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tiplang.html</id>
     <title>Tip: Use language-specific tools for XML processing</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tiplang.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tiplang.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="SAX"/>
@@ -2475,7 +2542,8 @@ The world of XML is vast and growing, with a huge variety of standards and techn
     <category term="Python"/>
     <category term="Java"/>
     <category term="Perl"/>
-    <category term="tech"/><updated>2004-01-30T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-01-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2488,15 +2556,16 @@ DOM and SAX are the two best known systems for XML processing, but they are real
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipxinc.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipxinc.html</id>
     <title>Tip: Use XInclude to synchronize WSDL with source schemata</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipxinc.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipxinc.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XInclude"/>
     <category term="WSDL"/>
     <category term="schema"/>
-    <category term="tech"/><updated>2004-01-22T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-01-22T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2509,16 +2578,17 @@ In the document/literal style of Web services, the schemas of the interchange fo
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tiphttp.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tiphttp.html</id>
     <title>Tip: Use XML directly over HTTP for Web services (where appropriate)</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tiphttp.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tiphttp.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="HTTP"/>
     <category term="Web services"/>
     <category term="SOAP"/>
     <category term="REST"/>
-    <category term="tech"/><updated>2004-01-15T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-01-15T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2540,7 +2610,8 @@ SOAP technologies usually exchange XML over HTTP, but SOAP has its pros and cons
     <category term="namespaces"/>
     <category term="SAX"/>
     <category term="DOM"/>
-    <category term="tech"/><updated>2004-03-10T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-03-10T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2563,7 +2634,8 @@ Uche Ogbuji provides a hands-on introduction to Python's facilities for processi
     <category term="PyRXPU"/>
     <category term="conformance"/>
     <category term="Unicode"/>
-    <category term="tech"/><updated>2004-02-11T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-02-11T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2576,9 +2648,9 @@ In Uche Ogbuji's latest Python and XML column he examines PyRXP, discovering tha
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-stand2.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-stand2.html</id>
     <title>A survey of XML standards: Part 2, XML processing standards</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-stand2.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-stand2.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XSLT"/>
     <category term="SAX"/>
@@ -2591,7 +2663,8 @@ In Uche Ogbuji's latest Python and XML column he examines PyRXP, discovering tha
     <category term="XForms"/>
     <category term="SOAP"/>
     <category term="WSDL"/>
-    <category term="tech"/><updated>2004-02-03T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-02-03T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2604,9 +2677,9 @@ In Uche Ogbuji's latest Python and XML column he examines PyRXP, discovering tha
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-stand1.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-stand1.html</id>
     <title>A survey of XML standards: Part 1: The core standards -- a foundation for the wide world of XML</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-stand1.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-stand1.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Catalog"/>
@@ -2622,7 +2695,8 @@ In Uche Ogbuji's latest Python and XML column he examines PyRXP, discovering tha
     <category term="DTD"/>
     <category term="Schematron"/>
     <category term="RDDL"/>
-    <category term="tech"/><updated>2003-12-20T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-12-20T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2635,9 +2709,9 @@ The world of XML is vast and growing, with a huge variety of standards and techn
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth16/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth16/</id>
     <title>The Python Web services developer [column]: The real world, Part 2</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth16/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth16/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="XML"/>
@@ -2645,7 +2719,8 @@ The world of XML is vast and growing, with a huge variety of standards and techn
     <category term="Amazon"/>
     <category term="SOAP"/>
     <category term="wxPython"/>
-    <category term="tech"/><updated>2004-01-21T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-01-21T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2670,7 +2745,8 @@ This column has covered the major Python APIs available for Web services process
     <category term="Python"/>
     <category term="SAX"/>
     <category term="dictionary"/>
-    <category term="tech"/><updated>2004-01-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2004-01-14T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2683,9 +2759,9 @@ In Uche Ogbuji's latest Python and XML column he describes an optimization techn
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth15.html</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth15.html</id>
     <title>The Python Web services developer [column]: Python SOAP libraries, Part 4</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth15.html"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth15.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="XML"/>
@@ -2693,7 +2769,8 @@ In Uche Ogbuji's latest Python and XML column he describes an optimization techn
     <category term="ZSI"/>
     <category term="SOAP"/>
     <category term="WSDL"/>
-    <category term="tech"/><updated>2003-12-30T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-12-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2710,14 +2787,15 @@ The last time ZSI was covered in this column, it was version 1.2. ZSI has enjoye
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=8596</id>
+    <id>http://adtmag.com/articles/2003/12/01/objects-encapsulation-xml.aspx</id>
     <title>Objects. Encapsulation. XML?</title>
-    <link href="http://www.adtmag.com/article.asp?id=8596"/>
+    <link href="http://adtmag.com/articles/2003/12/01/objects-encapsulation-xml.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="Object oriented"/>
     <category term="database"/>
-    <category term="tech"/><updated>2003-12-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-12-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2738,7 +2816,8 @@ Discussion of how XML fits into the scheme of Object Orientation.
     <category term="Python"/>
     <category term="xmtramp"/>
     <category term="pxdom"/>
-    <category term="tech"/><updated>2003-12-17T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-12-17T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2751,16 +2830,17 @@ Uche Ogbuji examines two different means of parsing XML documents in Python: xml
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think21.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think21.html</id>
     <title>Thinking XML 21 [column]: Learning Objects Metadata</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think21.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think21.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
     <category term="Learning Objects"/>
     <category term="LOM"/>
     <category term="RDF"/>
-    <category term="tech"/><updated>2003-12-02T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-12-02T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2781,7 +2861,8 @@ The education technology field is leading the way with some very interesting use
     <category term="Python"/>
     <category term="XL-SIG"/>
     <category term="DOM"/>
-    <category term="tech"/><updated>2003-11-12T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-11-12T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2805,7 +2886,8 @@ Uche Ogbuji presents new gems from the archives of the main Python-XML mailing l
     <category term="JAXML"/>
     <category term="xmlprint"/>
     <category term="output"/>
-    <category term="tech"/><updated>2003-10-15T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-10-15T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2818,16 +2900,17 @@ Uche Ogbuji presents three tools for creating XML in Python: 4XSLT's output hand
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth14/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth14/</id>
     <title>The Python Web services developer [column]: The real world, Part 1</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth14/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth14/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="XML"/>
     <category term="Google"/>
     <category term="SOAP"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2003-10-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-10-14T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2844,15 +2927,16 @@ This column has covered the major Python APIs available for Web services process
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think20.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think20.html</id>
     <title>Thinking XML 20 [column]: Semantic anchors for XML</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think20.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think20.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
     <category term="Topic Maps"/>
     <category term="UDEF"/>
-    <category term="tech"/><updated>2003-10-07T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-10-07T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2865,13 +2949,14 @@ XML syntax is just the foundation for data interoperability. The next step is se
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=8273</id>
+    <id>http://adtmag.com/articles/2003/09/29/whats-in-the-name-web-service.aspx8273</id>
     <title>What's in the name "Web service"?</title>
-    <link href="http://www.adtmag.com/article.asp?id=8273"/>
+    <link href="http://adtmag.com/articles/2003/09/29/whats-in-the-name-web-service.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="Web services"/>
-    <category term="tech"/><updated>2003-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-09-29T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2890,7 +2975,8 @@ A discussion of the name game surrounding the buzzword "Web services".
     <link href="http://www.xml.com" rel="via" title="XML.com"/>
     <category term="XML"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2003-09-10T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-09-10T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2903,16 +2989,17 @@ In this month's Python and XML column Uche Ogbuji updates his report on the stat
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth13/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth13/</id>
     <title>The Python Web services developer [column]: The power of three: Python, Web services, and XSLT</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth13/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth13/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="XML"/>
     <category term="XSLT"/>
     <category term="Kafka"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2003-06-24T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-06-24T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2937,7 +3024,8 @@ This column has covered the major Python APIs for Web services processing. These
     <category term="Python"/>
     <category term="4Suite"/>
     <category term="Anobind"/>
-    <category term="tech"/><updated>2003-08-13T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-08-13T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2950,15 +3038,16 @@ In his latest Python and XML column Uche Ogbuji introduces anobind, a Python-XML
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=8004</id>
+    <id>http://adtmag.com/articles/2003/07/31/perspective-on-xml-what-is-this-agility.aspx</id>
     <title>What is this 'agility'?</title>
-    <link href="http://www.adtmag.com/article.asp?id=8004"/>
+    <link href="http://adtmag.com/articles/2003/07/31/perspective-on-xml-what-is-this-agility.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="agile"/>
     <category term="python"/>
     <category term="Extreme Programming"/>
-    <category term="tech"/><updated>2003-08-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-07-31T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -2971,14 +3060,15 @@ A discussion of 'agile' technologies.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think19.html </id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think19.html </id>
     <title>Thinking XML 19 [column]: XML Topic Maps by the book</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think19.html "/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think19.html "/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
     <category term="Topic Maps"/>
-    <category term="tech"/><updated>2003-07-30T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-07-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3000,7 +3090,8 @@ Topic Maps provide a system for organizing information, and XML Topic Maps bring
     <category term="gnosis"/>
     <category term="objectify"/>
     <category term="data bindings"/>
-    <category term="tech"/><updated>2003-07-02T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-07-02T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3013,14 +3104,15 @@ In the second part of Uche Ogbuji's series on XML data binding tools in Python, 
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=7744</id>
+    <id>http://adtmag.com/articles/2003/05/31/perspective-on-xml-a-customfit-career-in-app-development.aspx7744</id>
     <title>A custom-fit career in app development</title>
-    <link href="http://www.adtmag.com/article.asp?id=7744"/>
+    <link href="http://adtmag.com/articles/2003/05/31/perspective-on-xml-a-customfit-career-in-app-development.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="XQuery"/>
     <category term="XPath"/>
-    <category term="tech"/><updated>2003-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-05-31T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3041,7 +3133,8 @@ Encouragment for developers to break out of recruiters' neat boxes and build a m
     <category term="Python"/>
     <category term="generateDS.py"/>
     <category term="data bindings"/>
-    <category term="tech"/><updated>2003-06-11T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-06-11T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3056,16 +3149,17 @@ for Python.  Uche starts with a tool called generateDS.py.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-xmptron/</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-xmptron/</id>
     <title>Introducing Examplotron</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-xmptron/"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-xmptron/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Examplotron"/>
     <category term="RELAX NG"/>
     <category term="schema"/>
     <category term="XSLT"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2003-06-09T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-06-09T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3078,14 +3172,15 @@ for Python.  Uche starts with a tool called generateDS.py.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/java/library/j-jython.html</id>
+    <id>http://www.ibm.com/developerworks/java/library/j-jython.html</id>
     <title>Charming Jython</title>
-    <link href="http://www-106.ibm.com/developerworks/java/library/j-jython.html"/>
+    <link href="http://www.ibm.com/developerworks/java/library/j-jython.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Jython"/>
     <category term="Java"/>
-    <category term="tech"/><updated>2003-05-06T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-05-06T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3098,9 +3193,9 @@ Jython, the 100% Pure Java implementation of the Python programming language, co
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think18/index.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think18/index.html</id>
     <title>Thinking XML 18 [column]: The commons of creativity</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think18/index.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think18/index.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
@@ -3108,7 +3203,8 @@ Jython, the 100% Pure Java implementation of the Python programming language, co
     <category term="creative commons"/>
     <category term="licenses"/>
     <category term="policy"/>
-    <category term="tech"/><updated>2003-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3129,7 +3225,8 @@ Many artists independent of big media concerns seek to collaborate with others a
     <category term="Python"/>
     <category term="libxml"/>
     <category term="XmlTextReader"/>
-    <category term="tech"/><updated>2003-05-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-05-14T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3150,7 +3247,8 @@ Covers the Python bindings to the fast and many-featured libxml
     <category term="Python"/>
     <category term="output"/>
     <category term="SAX"/>
-    <category term="tech"/><updated>2003-03-12T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-03-12T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3163,14 +3261,15 @@ How to use SAX to generate proper XML output from Python programs.
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=7620</id>
+    <id>http://adtmag.com/articles/2003/05/01/is-xquery-an-omnitool.aspx7620</id>
     <title>Is XQuery an omni-tool?</title>
-    <link href="http://www.adtmag.com/article.asp?id=7620"/>
+    <link href="http://adtmag.com/articles/2003/05/01/is-xquery-an-omnitool.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="XQuery"/>
     <category term="XPath"/>
-    <category term="tech"/><updated>2003-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3192,7 +3291,8 @@ An argument that XQuery does too much, and standardizes too early.
     <category term="output"/>
     <category term="wxPython"/>
     <category term="Tree Widget"/>
-    <category term="tech"/><updated>2003-04-09T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-04-09T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3209,15 +3309,16 @@ conventions in order to make it immediately useful to readers.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think17/index.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think17/index.html</id>
     <title>Thinking XML 17 [column]: Introducing N-Triples</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think17/index.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think17/index.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
     <category term="RDF"/>
     <category term="N-Triples"/>
-    <category term="tech"/><updated>2003-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3230,15 +3331,16 @@ RDF/XML isn't the only representation of an RDF model. The W3C developed N-Tripl
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipvocab.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipvocab.html</id>
     <title>Tip: Use internal references in XML vocabularies</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipvocab.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipvocab.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XPath"/>
     <category term="DTD"/>
     <category term="ID"/>
-    <category term="tech"/><updated>2003-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3251,15 +3353,16 @@ In some cases, you can avoid repeating identical data fields by using internal r
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipsaxflex.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipsaxflex.html</id>
     <title>Tip: SAX filters for flexible processing</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipsaxflex.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipsaxflex.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="XML"/>
     <category term="SAX"/>
     <category term="filters"/>
-    <category term="tech"/><updated>2003-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3272,15 +3375,16 @@ SAX filters allow you to construct complex XML processing behaviors from simple,
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pythcol.html</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pythcol.html</id>
     <title>The Python Web services developer [column]: SOAP requests using SMTP</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pythcol.html"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pythcol.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="SMTP"/>
     <category term="e-mail"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2003-01-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-01-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3297,15 +3401,16 @@ When most people think of SOAP, they think of sending XML requests, and getting 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tiprdfai.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tiprdfai.html</id>
     <title>Tip: Use rdf:about and rdf:ID effectively in RDF/XML.</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tiprdfai.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tiprdfai.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="XML"/>
     <category term="rdf:about"/>
     <category term="rdf:ID"/>
-    <category term="tech"/><updated>2003-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3318,15 +3423,16 @@ The combination of RDF and XML allows for several different approaches to specif
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think16.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think16.html</id>
     <title>Thinking XML 16 [column]: Universal Business Language (UBL)</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think16.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think16.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
     <category term="Universal Business Language (UBL)"/>
     <category term="OASIS"/>
-    <category term="tech"/><updated>2003-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3347,7 +3453,8 @@ Universal Business Language (UBL) is an ambitious effort to unify the chaotic wo
     <category term="Python"/>
     <category term="DOM"/>
     <category term="elementtree"/>
-    <category term="tech"/><updated>2003-02-12T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-02-12T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3360,15 +3467,16 @@ Exploring Fredrik Lundh's spare, fast and pythonic XML processing library.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/x-exslt.html</id>
+    <id>http://www.ibm.com/developerworks/library/x-exslt.html</id>
     <title>EXSLT by example</title>
-    <link href="http://www-106.ibm.com/developerworks/library/x-exslt.html"/>
+    <link href="http://www.ibm.com/developerworks/library/x-exslt.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XSLT"/>
     <category term="EXSLT"/>
     <category term="dates and times"/>
     <category term="evaluate"/>
-    <category term="tech"/><updated>2003-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3381,15 +3489,16 @@ EXSLT is an important community standard for XSLT. Author/consultant Uche Ogbuji
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipcurrent.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipcurrent.html</id>
     <title>Tip:  Keep context straight in XSLT</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipcurrent.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipcurrent.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XSLT"/>
     <category term="current"/>
     <category term="context"/>
-    <category term="tech"/><updated>2003-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3402,14 +3511,15 @@ Developers frequently forget where context changes in XPath. XSLT provides an an
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=7238</id>
+    <id>http://adtmag.com/articles/2003/01/31/the-worry-about-program-wizards.aspx7238</id>
     <title>The worry about program wizards</title>
-    <link href="http://www.adtmag.com/article.asp?id=7238"/>
+    <link href="http://adtmag.com/articles/2003/01/31/the-worry-about-program-wizards.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="Web services"/>
     <category term="Wizards"/>
-    <category term="tech"/><updated>2003-02-05T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-01-31T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3422,15 +3532,16 @@ A warning against efforts to conjure systems for XML and Web services programmin
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think15/</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think15/</id>
     <title>Thinking XML 15 [column]: The open office file format</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think15/"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think15/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
     <category term="Openoffice"/>
     <category term="OASIS"/>
-    <category term="tech"/><updated>2003-01-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-01-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3453,7 +3564,8 @@ OpenOffice.org is a mature, open source, front office applications suite with th
     <category term="generators"/>
     <category term="python"/>
     <category term="XPath"/>
-    <category term="tech"/><updated>2003-01-08T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-01-08T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3467,9 +3579,9 @@ processing.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite5-i.html</id>
+    <id>http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite5-i.html</id>
     <title>Develop Python/XML with 4Suite, Part 5: The Repository Features [tutorial]</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite5-i.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite5-i.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="4Suite"/>
     <category term="Python"/>
@@ -3478,7 +3590,8 @@ processing.
     <category term="XML"/>
     <category term="RDF"/>
     <category term="XSA"/>
-    <category term="tech"/><updated>2003-01-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2003-01-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3512,7 +3625,8 @@ descriptions and related vendors using a standard XML format.
     <category term="XSLT"/>
     <category term="XPath"/>
     <category term="minidom"/>
-    <category term="tech"/><updated>2002-12-11T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-12-11T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3525,16 +3639,17 @@ Updates and notes on the book _Python &amp; XML_, by Fred Jones and Christopher 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think14.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think14.html</id>
     <title>Thinking XML 14 [column]: Manage music metadata with MusicBrainz</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think14.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think14.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="Knowledge Management"/>
     <category term="MusicBrainz"/>
     <category term="cddb"/>
     <category term="mp3"/>
-    <category term="tech"/><updated>2002-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3547,16 +3662,16 @@ Tune in to MusicBrainz, a project for managing digital media metadata that uses 
     </summary>
   </entry>
   <entry>
-    <id>http://www.adtmag.com/article.asp?id=6965</id>
+    <id>http://adtmag.com/articles/2002/12/01/xml-class-warfare.aspx6965</id>
     <title>XML class warfare</title>
-    <link href="http://www.adtmag.com/article.asp?id=6965"/>
+    <link href="http://adtmag.com/articles/2002/12/01/xml-class-warfare.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="XPath"/>
     <category term="XML Schema"/>
     <category term="tech"/>
     <category term="outstanding!"/>
-    <updated>2002-12-04T12:00:00Z</updated>
+    <updated>2002-12-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3569,15 +3684,16 @@ Of the conflict between those who prefer to see XML primarily in textual terms a
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-debugxs.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-debugxs.html</id>
     <title>Debug XSLT on the fly</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-debugxs.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-debugxs.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XSLT"/>
     <category term="EXSLT"/>
     <category term="xsl:message"/>
     <category term="debugging"/>
-    <category term="tech"/><updated>2002-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3590,15 +3706,16 @@ Debuggers are very handy in programming, but they can also be complex pieces of 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth11.html</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth11.html</id>
     <title>The Python Web services developer [column]: RSS for Python</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth11.html"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth11.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="RSS"/>
     <category term="RDF"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2002-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3624,7 +3741,8 @@ RSS is one of the most successful XML services ever. Despite its chaotic roots, 
     <category term="4Suite"/>
     <category term="unicode"/>
     <category term="parsing"/>
-    <category term="tech"/><updated>2002-11-13T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-11-13T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3649,7 +3767,8 @@ In this article, I methodically thrash out the issues with producing XML output 
     <category term="RELAX NG"/>
     <category term="XPath"/>
     <category term="XPattern"/>
-    <category term="tech"/><updated>2002-10-16T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-10-16T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3663,16 +3782,17 @@ code examples.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think13.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think13.html</id>
     <title>Thinking XML 13 [column]: Shedding light on PRISM</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think13.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think13.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="Knowledge Management"/>
     <category term="PRISM"/>
     <category term="Dublin core"/>
     <category term="publishing"/>
-    <category term="tech"/><updated>2002-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-10-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3685,9 +3805,9 @@ PRISM is a standard for metadata related to publishing. It allows the formal des
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite4-i.html</id>
+    <id>http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite4-i.html</id>
     <title>Develop Python/XML with 4Suite, Part 4: Composition and updates [tutorial]</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite4-i.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite4-i.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="4Suite"/>
     <category term="Python"/>
@@ -3695,7 +3815,8 @@ PRISM is a standard for metadata related to publishing. It allows the formal des
     <category term="XPointer"/>
     <category term="XUpdate"/>
     <category term="XML Base"/>
-    <category term="tech"/><updated>2002-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-10-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3713,15 +3834,16 @@ XInclude/XPointer and XUpdate themselves than how to use them in 4Suite.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipgenr.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipgenr.html</id>
     <title>Tip: Using generators</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipgenr.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipgenr.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="DOM"/>
     <category term="Python"/>
     <category term="generators"/>
-    <category term="tech"/><updated>2002-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-10-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3734,13 +3856,14 @@ Generators are a very powerful new language feature of Python 2.2. In this tip, 
     </summary>
   </entry>
   <entry>
-    <id>http://adtmag.com/article.asp?id=6758</id>
+    <id>http://adtmag.com/articles/2002/09/30/serenity-through-markup.aspx6758</id>
     <title>Serenity through markup</title>
-    <link href="http://adtmag.com/article.asp?id=6758"/>
+    <link href="http://adtmag.com/articles/2002/09/30/serenity-through-markup.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="Web services"/>
-    <category term="tech"/><updated>2002-10-03T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3760,7 +3883,8 @@ How to achieve interoperability in XML by not striving too hard for interoperabi
     <category term="XML"/>
     <category term="Python"/>
     <category term="PyXML"/>
-    <category term="tech"/><updated>2002-09-25T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-25T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3774,15 +3898,16 @@ code examples.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipxsltmp.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipxsltmp.html</id>
     <title>Tip: Multi-pass XSLT</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipxsltmp.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipxsltmp.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XSLT"/>
     <category term="EXSLT"/>
     <category term="node set"/>
-    <category term="tech"/><updated>2002-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-10-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3806,7 +3931,8 @@ Use the node-set extension to break down the XSLT operation into two or more pas
     <category term="UDDI"/>
     <category term="CORBA"/>
     <category term="DCOM"/>
-    <category term="tech"/><updated>2002-09-28T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-28T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3829,7 +3955,8 @@ Those who find success using Web services will be those who understand the techn
     <category term="XQuery"/>
     <category term="XSLT"/>
     <category term="XPath"/>
-    <category term="tech"/><updated>2002-09-06T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-06T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3853,7 +3980,8 @@ The many people and organizations who came to the XML industry from the database
     <category term="WXS"/>
     <category term="XSDL"/>
     <category term="RELAX NG"/>
-    <category term="tech"/><updated>2002-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3872,7 +4000,8 @@ This article introduces more XML technologies that you might find quite useful: 
     <link href="http://www.xml.com" rel="via" title="XML.com"/>
     <category term="XML"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2002-09-18T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-18T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3885,14 +4014,15 @@ xml.com has launched a new column covering Python and XML. In the first article,
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tiplocal.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tiplocal.html</id>
     <title>Tip: Localization within a document format</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tiplocal.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tiplocal.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="localization"/>
     <category term="ISO 8601"/>
-    <category term="tech"/><updated>2002-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3905,14 +4035,15 @@ Internationalization support is one of XML's key strengths. Unfortunately, too f
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipfxatt.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipfxatt.html</id>
     <title>Tip: Using fixed attributes in XML vocabularies</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipfxatt.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipfxatt.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="fixed attributes"/>
     <category term="DTD"/>
-    <category term="tech"/><updated>2002-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3925,14 +4056,15 @@ Fixed attributes are not the most common feature in XML, but they can sometimes 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/ws-pyth10/</id>
+    <id>http://www.ibm.com/developerworks/library/ws-pyth10/</id>
     <title>The Python Web services developer [column]: XML-RPC for Python</title>
-    <link href="http://www-106.ibm.com/developerworks/library/ws-pyth10/"/>
+    <link href="http://www.ibm.com/developerworks/library/ws-pyth10/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="XML-RPC"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2002-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3949,15 +4081,16 @@ XML-RPC is a simple, lightweight Web services technology that predates SOAP. Thi
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/linux/library/l-apache/</id>
+    <id>http://www.ibm.com/developerworks/linux/library/l-apache/</id>
     <title>Connecting middleware to Apache 2.0</title>
-    <link href="http://www-106.ibm.com/developerworks/linux/library/l-apache/"/>
+    <link href="http://www.ibm.com/developerworks/linux/library/l-apache/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Apache 2.0"/>
     <category term="module"/>
     <category term="filter"/>
     <category term="pulldom"/>
-    <category term="tech"/><updated>2002-08-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-08-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3970,16 +4103,17 @@ Apache 2.0 has provided many API improvements. Uche Ogbuji gives an example of a
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-jclark.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-jclark.html</id>
     <title>Keeping pace with James Clark: An interview (and analysis) with the leading authority on markup languages</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-jclark.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-jclark.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="James Clark"/>
     <category term="XML"/>
     <category term="SAX"/>
     <category term="DOM"/>
     <category term="pulldom"/>
-    <category term="tech"/><updated>2002-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -3992,16 +4126,17 @@ James Clark is arguably the most accomplished developer in the world of markup l
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think12.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think12.html</id>
     <title>Thinking XML 12 [column]: Basic XML and RDF techniques for knowledge management, Part 7</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think12.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think12.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="Knowledge Management"/>
     <category term="OMG"/>
     <category term="MDA"/>
     <category term="UML"/>
-    <category term="tech"/><updated>2002-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4014,9 +4149,9 @@ Uche Ogbuji takes a moment to review in a broader context the relevance of the X
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/ws-pyth9/</id>
+    <id>http://www.ibm.com/developerworks/library/ws-pyth9/</id>
     <title>The Python Web services developer [column]: Messaging technologies compared</title>
-    <link href="http://www-106.ibm.com/developerworks/library/ws-pyth9/"/>
+    <link href="http://www.ibm.com/developerworks/library/ws-pyth9/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="SOAP"/>
@@ -4024,7 +4159,8 @@ Uche Ogbuji takes a moment to review in a broader context the relevance of the X
     <category term="sockets"/>
     <category term="CORBA"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2002-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4041,9 +4177,9 @@ Choosing between technologies always involves trade-offs; often you sacrifice pe
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/ws-pyth8.html</id>
+    <id>http://www.ibm.com/developerworks/library/ws-pyth8.html</id>
     <title>The Python Web services developer [column]: SOAP.py and ZSI can swap roles and prove Python's versatility</title>
-    <link href="http://www-106.ibm.com/developerworks/library/ws-pyth8.html"/>
+    <link href="http://www.ibm.com/developerworks/library/ws-pyth8.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Web services"/>
@@ -4051,7 +4187,8 @@ Choosing between technologies always involves trade-offs; often you sacrifice pe
     <category term="SOAP.py"/>
     <category term="ZSI"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2002-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4068,14 +4205,15 @@ In this installment of The Python Web services developer, Mike Olson gets back t
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite3-i.html</id>
+    <id>http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite3-i.html</id>
     <title>Python and XML development using 4Suite, Part 3: 4RDF [tutorial]</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite3-i.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite3-i.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="4Suite"/>
     <category term="Python"/>
     <category term="RDF"/>
-    <category term="tech"/><updated>2002-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4092,16 +4230,17 @@ In this installment of The Python Web services developer, Mike Olson gets back t
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suit2-i.html</id>
+    <id>http://www.ibm.com/developerworks/xml/edu/x-dw-x4suit2-i.html</id>
     <title>Python and XML development using 4Suite, Part 2: 4XPath and 4XSLT [tutorial]</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suit2-i.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/edu/x-dw-x4suit2-i.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="4Suite"/>
     <category term="Python"/>
     <category term="XML"/>
     <category term="XPath"/>
     <category term="XSLT"/>
-    <category term="tech"/><updated>2002-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4118,16 +4257,17 @@ This tutorial introduces 4XPath and 4XSLT, open-source XPath and XSLT implementa
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite-i.html</id>
+    <id>http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite-i.html</id>
     <title>Python and XML development using 4Suite, Part 1: PyXml [tutorial]</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/edu/x-dw-x4suite-i.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/edu/x-dw-x4suite-i.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="4Suite"/>
     <category term="Python"/>
     <category term="XML"/>
     <category term="DOM"/>
     <category term="PyXML"/>
-    <category term="tech"/><updated>2002-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4144,17 +4284,17 @@ Many XML-related technologies are no more than specifications for a standard way
     </summary>
   </entry>
   <entry>
-    <id>http://www.ddj.com/architect/184414544</id>
+    <id>http://www.drdobbs.com/the-languages-of-the-semantic-web/184414544</id>
     <title>The Languages of the Semantic Web</title>
-    <link href="http://www.ddj.com/architect/184414544"/>
+    <link href="http://www.drdobbs.com/the-languages-of-the-semantic-web/184414544"/>
     <link rel="seealso" href="http://www.newarchitectmag.com/documents/s=2453/new1020218556549/index.html"/>
-    <link rel="seealso" href="http://www.drdobbs.com/architecture-and-design/184414544"/>
     <link href="http://www.newarchitectmag.com/" rel="via" title="New Architect Magazine"/>
     <category term="XML"/>
     <category term="RDF"/>
     <category term="DAML"/>
     <category term="Semantic Web"/>
-    <category term="tech"/><updated>2002-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4176,7 +4316,8 @@ Aimed at general Web professionals, this article discusses the ambitions behind 
     <category term="WSDL"/>
     <category term="SOAP"/>
     <category term="UDDI"/>
-    <category term="tech"/><updated>2001-12-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-12-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4189,9 +4330,9 @@ The many factors that make RDF an excellent tool for knowledge management also m
     </summary>
   </entry>
   <entry>
-    <id>http://adtmag.com/article.asp?id=6393</id>
+    <id>http://adtmag.com/articles/2002/06/03/the-many-heads-of-xml-modeling.aspx6393</id>
     <title>The many heads of XML modeling</title>
-    <link href="http://adtmag.com/article.asp?id=6393"/>
+    <link href="http://adtmag.com/articles/2002/06/03/the-many-heads-of-xml-modeling.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="XML"/>
     <category term="MOF"/>
@@ -4199,7 +4340,8 @@ The many factors that make RDF an excellent tool for knowledge management also m
     <category term="XMI"/>
     <category term="modeling"/>
     <category term="MDA"/>
-    <category term="tech"/><updated>2002-06-14T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-06-03T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4212,14 +4354,15 @@ XML, MDA, UML, MOF, XML, etc.  This menagerie is the future of modeling.  But fi
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipnamsp.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipnamsp.html</id>
     <title>Tip: Namespaces and versioning</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipnamsp.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipnamsp.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="namespaces"/>
     <category term="versioning"/>
-    <category term="tech"/><updated>2002-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4232,9 +4375,9 @@ You can use several techniques for versioning XML schemas, such as defining spec
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/l-ai/</id>
+    <id>http://www.ibm.com/developerworks/library/l-ai/</id>
     <title>Introduction to Narval</title>
-    <link href="http://www-106.ibm.com/developerworks/library/l-ai/"/>
+    <link href="http://www.ibm.com/developerworks/library/l-ai/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Python"/>
@@ -4242,7 +4385,8 @@ You can use several techniques for versioning XML schemas, such as defining spec
     <category term="artificial intelligence"/>
     <category term="narval"/>
     <category term="logilabs"/>
-    <category term="tech"/><updated>2002-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4255,15 +4399,16 @@ Uche Ogbuji introduces Narval, an open source application that allows users to h
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think11.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think11.html</id>
     <title>Thinking XML 11 [column]: XML meets semantics - Will XML live up to its promise?</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think11.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think11.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="OAG"/>
     <category term="Knowledge Management"/>
     <category term="DISA"/>
     <category term="government"/>
-    <category term="tech"/><updated>2002-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4276,14 +4421,15 @@ The success of XML as a basic data format is unquestioned. But much of the promi
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipulldom.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipulldom.html</id>
     <title>Tip: Using pull-based DOMs</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipulldom.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipulldom.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="DOM"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2002-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4306,7 +4452,8 @@ XML application developers usually have to contend with the complexities of SAX 
     <category term="XMI"/>
     <category term="RDF"/>
     <category term="UML"/>
-    <category term="tech"/><updated>2002-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4319,13 +4466,14 @@ This paper discuss how XML, RDF and MDA technologies come together to provide po
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-tipnodst.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipnodst.html</id>
     <title>Tip: Counting with node sets</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-tipnodst.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipnodst.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XSLT"/>
-    <category term="tech"/><updated>2002-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4343,7 +4491,8 @@ Many common XSLT tasks, including simple loops, can be made easier by using spec
     <link href="http://uche.ogbuji.net/etc/tech/articles/whatarews.html"/>
     <link href="http://www.isgmlug.org/" rel="via" title="Interchange, newsletter of the International SGML/XML Users' Group (ISUG)"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2001-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4356,9 +4505,9 @@ Many companies involved in electronic business transactions have been working on
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/ws-pyth7.html</id>
+    <id>http://www.ibm.com/developerworks/library/ws-pyth7.html</id>
     <title>The Python Web services developer [column]: 10th International Python Conference</title>
-    <link href="http://www-106.ibm.com/developerworks/library/ws-pyth7.html"/>
+    <link href="http://www.ibm.com/developerworks/library/ws-pyth7.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Web services"/>
@@ -4367,7 +4516,8 @@ Many companies involved in electronic business transactions have been working on
     <category term="conference"/>
     <category term="4Suite"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2002-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4390,7 +4540,8 @@ In this article we take a short break from writing code and talk about some of t
     <link href="http://www.xml.com" rel="via" title="XML.com"/>
     <category term="RDF"/>
     <category term="DAML+OIL"/>
-    <category term="tech"/><updated>2002-01-30T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-01-30T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4413,7 +4564,8 @@ This article series introduces DAML, including practical examples and basic desi
     <link href="http://www.xml.com" rel="via" title="XML.com"/>
     <category term="RDF"/>
     <category term="DAML+OIL"/>
-    <category term="tech"/><updated>2002-03-13T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-03-13T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4436,7 +4588,8 @@ This article series introduces DAML, including practical examples and basic desi
     <link href="http://www.xml.com" rel="via" title="XML.com"/>
     <category term="RDF"/>
     <category term="DAML+OIL"/>
-    <category term="tech"/><updated>2002-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4453,14 +4606,15 @@ This third installment of our series looking at the DARPA Agent Markup Language 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think10/index.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think10/index.html</id>
     <title>Thinking XML 10 [column]: Jump-starting knowledge management with RDF, part 6: RDF Query using Versa</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think10/index.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think10/index.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="Knowledge Management"/>
     <category term="Versa"/>
-    <category term="tech"/><updated>2002-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4482,7 +4636,8 @@ Uche Ogbuji moves on to a discussion of a far more sophisticated RDF query langu
     <category term="SOAP"/>
     <category term="WSDL"/>
     <category term="UDDI"/>
-    <category term="tech"/><updated>2002-02-28T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-02-28T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4505,7 +4660,8 @@ These data formats define a vocabulary for service descriptions, automation, rul
     <category term="XML"/>
     <category term="RDF"/>
     <category term="RSS"/>
-    <category term="tech"/><updated>2002-04-08T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-04-08T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4526,7 +4682,8 @@ This article discusses a key companion technology to XML toward the goal of know
     <category term="XML"/>
     <category term="SAX"/>
     <category term="DOM"/>
-    <category term="tech"/><updated>2002-02-28T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-02-28T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4547,7 +4704,8 @@ One of the most important areas is in Application Programming Interfaces (APIs) 
     <category term="XML"/>
     <category term="XPath"/>
     <category term="XSLT"/>
-    <category term="tech"/><updated>2002-03-22T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-03-22T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4567,7 +4725,8 @@ Mr. Ogbuji introduces a new tool into the XML developer's pouch: Extensible Styl
     <link rel="alternate" href="http://software.intel.com/en-us/articles/taking-applications-to-the-next-level-with-xml-part-2/"/>
     <category term="XML"/>
     <category term="Application development"/>
-    <category term="tech"/><updated>2002-01-17T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-01-17T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4587,7 +4746,8 @@ Uche Ogbuji discusses some of the basic characteristics of XML as a format for i
     <link href="http://developer.intel.com/" rel="via" title="Intel Developer Services"/>
     <link rel="alternate" href="http://software.intel.com/en-us/articles/taking-applications-to-the-next-level-with-xml-part-1/"/>
     <category term="XML"/>
-    <category term="tech"/><updated>2001-12-07T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-12-07T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4600,15 +4760,16 @@ In this five-part series I shall look at some of this new thinking. Primarily, I
     </summary>
   </entry>
   <entry>
-    <id>http://adtmag.com/article.asp?id=6004</id>
+    <id>http://adtmag.com/articles/2002/02/01/wsdl-and-the-wild-wild-west.aspx6004</id>
     <title>WSDL and the Wild, Wild West</title>
-    <link href="http://adtmag.com/article.asp?id=6004"/>
+    <link href="http://adtmag.com/articles/2002/02/01/wsdl-and-the-wild-wild-west.aspx"/>
     <link href="http://adtmag.com" rel="via" title="Application Development Trends"/>
     <category term="RDF"/>
     <category term="MDA"/>
     <category term="WSDL"/>
     <category term="Web services"/>
-    <category term="tech"/><updated>2002-04-06T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4621,14 +4782,15 @@ In this five-part series I shall look at some of this new thinking. Primarily, I
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-soaprdf/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-soaprdf/</id>
     <title>Using RDF with SOAP</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-soaprdf/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-soaprdf/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="SOAP"/>
     <category term="Web services"/>
-    <category term="tech"/><updated>2002-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4641,14 +4803,15 @@ This article examines ways that SOAP can be used to communicate information in R
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-wsdlrdf/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-wsdlrdf/</id>
     <title>Managing structured Web service metadata</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-wsdlrdf/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-wsdlrdf/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="WSDL"/>
     <category term="Web services"/>
-    <category term="tech"/><updated>2002-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4661,14 +4824,15 @@ This article builds on an earlier developerWorks article on using the Resource D
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think9.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think9.html</id>
     <title>Thinking XML 9 [column]: Basic XML and RDF techniques for knowledge management</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think9.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think9.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="Knowledge Management"/>
     <category term="DAML+OIL"/>
-    <category term="tech"/><updated>2002-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4681,14 +4845,15 @@ Uche Ogbuji moves on to define RDF and DAML+OIL schemata for the issue tracker a
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think8.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think8.html</id>
     <title>Thinking XML 8 [column]: Basic XML and RDF techniques for knowledge management</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think8.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think8.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="Knowledge Management"/>
     <category term="XML"/>
-    <category term="tech"/><updated>2002-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4701,9 +4866,9 @@ Uche Ogbuji continues his exploration of how RDF combines with XML to enable kno
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think7.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think7.html</id>
     <title>Thinking XML 7 [column]: Once again round the block (An updated survey of semantic transparency in XML)</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think7.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think7.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="UBL"/>
@@ -4711,7 +4876,8 @@ Uche Ogbuji continues his exploration of how RDF combines with XML to enable kno
     <category term="cXML"/>
     <category term="Knowledge Management"/>
     <category term="XML"/>
-    <category term="tech"/><updated>2002-01-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-01-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4724,13 +4890,14 @@ Once again, this column takes a break to look at what's new and what has been ne
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think6.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think6.html</id>
     <title>Thinking XML 6 [column]: Basic XML and RDF techniques for knowledge management</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think6.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think6.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="Knowledge Management"/>
-    <category term="tech"/><updated>2001-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4743,14 +4910,15 @@ This column, the third in a series, shows how to add semantic knowledge to an RD
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think5/index.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think5/index.html</id>
     <title>Thinking XML 5 [column]: Basic XML and RDF techniques for knowledge management</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think5/index.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think5/index.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
-    <category term="tech"/><updated>2001-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4763,14 +4931,15 @@ This Thinking XML column shows how to combine metadata collected from multiple X
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think4/index.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think4/index.html</id>
     <title>Thinking XML 4 [column]: Basic XML and RDF techniques for knowledge management</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think4/index.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think4/index.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
-    <category term="tech"/><updated>2001-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4783,14 +4952,15 @@ Columnist Uche Ogbuji begins his practical exploration of knowledge management w
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/ws-pyth6/</id>
+    <id>http://www.ibm.com/developerworks/library/ws-pyth6/</id>
     <title>The Python Web services developer [column]: Python SOAP libraries part 2</title>
-    <link href="http://www-106.ibm.com/developerworks/library/ws-pyth6/"/>
+    <link href="http://www.ibm.com/developerworks/library/ws-pyth6/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Web services"/>
     <category term="SOAP"/>
-    <category term="tech"/><updated>2002-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2002-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4807,14 +4977,15 @@ Continuing their look at Python SOAP implementations, Mike Olson and Uche Ogbuji
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/ws-pyth5/</id>
+    <id>http://www.ibm.com/developerworks/library/ws-pyth5/</id>
     <title>The Python Web services developer [column]: Python SOAP libraries part 1</title>
-    <link href="http://www-106.ibm.com/developerworks/library/ws-pyth5/"/>
+    <link href="http://www.ibm.com/developerworks/library/ws-pyth5/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Web services"/>
     <category term="SOAP"/>
-    <category term="tech"/><updated>2001-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4831,15 +5002,16 @@ In this first of a two-part series, Web services columnists Mike Olson and Uche 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/co-pyxp3/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/co-pyxp3/</id>
     <title>Getting started with PyXPCOM, part 3</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/co-pyxp3/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/co-pyxp3/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Mozilla"/>
     <category term="XPCOM"/>
     <category term="Components"/>
-    <category term="tech"/><updated>2001-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4852,15 +5024,16 @@ Cross-platform component object model (XPCOM) is the component system developed 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/co-pyxp2.html</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/co-pyxp2.html</id>
     <title>Getting started with PyXPCOM, part 2</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/co-pyxp2.html"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/co-pyxp2.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Mozilla"/>
     <category term="XPCOM"/>
     <category term="Components"/>
-    <category term="tech"/><updated>2001-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4873,15 +5046,16 @@ Cross-platform component object model (XPCOM) is the component system developed 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/components/library/co-pyxp1.html</id>
+    <id>http://www.ibm.com/developerworks/components/library/co-pyxp1.html</id>
     <title>Getting started with PyXPCOM, part 1</title>
-    <link href="http://www-106.ibm.com/developerworks/components/library/co-pyxp1.html"/>
+    <link href="http://www.ibm.com/developerworks/components/library/co-pyxp1.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Mozilla"/>
     <category term="XPCOM"/>
     <category term="Components"/>
-    <category term="tech"/><updated>2001-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4894,9 +5068,9 @@ Cross-platform component object model (XPCOM) is the component system developed 
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth4/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth4/</id>
     <title>The Python Web services developer [column]: Web services software repository, Part 3</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth4/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth4/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Web services"/>
@@ -4904,7 +5078,8 @@ Cross-platform component object model (XPCOM) is the component system developed 
     <category term="WSDL"/>
     <category term="4Suite"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2001-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4921,9 +5096,9 @@ In this third and final article about building a software repository implemented
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth3/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth3/</id>
     <title>The Python Web services developer [column]: Web services software repository, Part 2</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth3/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth3/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Web services"/>
@@ -4931,7 +5106,8 @@ In this third and final article about building a software repository implemented
     <category term="WSDL"/>
     <category term="4Suite"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2001-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4959,7 +5135,8 @@ Continuing their example of a Web service for storing and managing software, Uch
     <category term="Buxom"/>
     <category term="CORBA"/>
     <category term="COM"/>
-    <category term="tech"/><updated>2001-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4984,7 +5161,8 @@ This dW-exclusive tutorial introduces Buxom, an XPCOM/Bonobo bridge. This is the
     <category term="Buxom"/>
     <category term="CORBA"/>
     <category term="COM"/>
-    <category term="tech"/><updated>2001-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -4999,9 +5177,9 @@ This dW-exclusive tutorial introduces the concepts and techniques required for b
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think3.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think3.html</id>
     <title>Thinking XML 3 [column]: XML meets semantics: The reality (part 3)</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think3.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think3.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
@@ -5009,7 +5187,8 @@ This dW-exclusive tutorial introduces the concepts and techniques required for b
     <category term="ebXML"/>
     <category term="RosettaNet"/>
     <category term="metadata"/>
-    <category term="tech"/><updated>2001-05-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-05-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5023,9 +5202,9 @@ Uche Ogbuji discusses several recent events in XML semantic transparency and XML
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think2.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think2.html</id>
     <title>Thinking XML 2 [column]: XML meets semantics: The reality</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think2.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think2.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
@@ -5034,7 +5213,8 @@ Uche Ogbuji discusses several recent events in XML semantic transparency and XML
     <category term="EDI"/>
     <category term="RosettaNet"/>
     <category term="metadata"/>
-    <category term="tech"/><updated>2001-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5050,16 +5230,17 @@ In this column, Uche Ogbuji completes his introduction to XML and semantics, set
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/components/library/co-devcn.html</id>
+    <id>http://www.ibm.com/developerworks/components/library/co-devcn.html</id>
     <title>Where components fit into the picture at XML DevCon</title>
-    <link href="http://www-106.ibm.com/developerworks/components/library/co-devcn.html"/>
+    <link href="http://www.ibm.com/developerworks/components/library/co-devcn.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Components"/>
     <category term="COM"/>
     <category term="CORBA"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2001-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5072,9 +5253,9 @@ XML DevCon is, of course, all about XML. But since it's geared towards developer
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/webservices/library/ws-pyth2/</id>
+    <id>http://www.ibm.com/developerworks/webservices/library/ws-pyth2/</id>
     <title>The Python Web services developer [column]: Web Services Software Repository, Part 1</title>
-    <link href="http://www-106.ibm.com/developerworks/webservices/library/ws-pyth2/"/>
+    <link href="http://www.ibm.com/developerworks/webservices/library/ws-pyth2/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Python"/>
     <category term="Web services"/>
@@ -5082,7 +5263,8 @@ XML DevCon is, of course, all about XML. But since it's geared towards developer
     <category term="WSDL"/>
     <category term="4Suite"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2001-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5110,7 +5292,8 @@ This is the beginning of a short series on creating a software repository system
     <category term="XSLT"/>
     <category term="RDF"/>
     <category term="Web"/>
-    <category term="tech"/><updated>2001-03-05T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-03-05T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5123,9 +5306,9 @@ Over the last few months, Uche Ogbuji has covered XML and its applicability to U
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/x-think1.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-think1.html</id>
     <title>Thinking XML 1 [column]: XML meets semantics: The reality</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/x-think1.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-think1.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="Knowledge Management"/>
@@ -5135,7 +5318,8 @@ Over the last few months, Uche Ogbuji has covered XML and its applicability to U
     <category term="BizTalk"/>
     <category term="ebXML"/>
     <category term="metadata"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5158,7 +5342,8 @@ This discussion of XML and semantics kicks off a column by Uche Ogbuji on knowle
     <category term="Components"/>
     <category term="Python"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5180,7 +5365,8 @@ The previous tutorial in this series showed how to use custom XML messages for c
     <category term="DBMS"/>
     <category term="Database"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2001-02-08T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-08T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5195,13 +5381,14 @@ available for storing and managing XML data stores.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/x-xsltip.html</id>
+    <id>http://www.ibm.com/developerworks/library/x-xsltip.html</id>
     <title>Tip: XSLT lookup tables</title>
-    <link href="http://www-106.ibm.com/developerworks/library/x-xsltip.html"/>
+    <link href="http://www.ibm.com/developerworks/library/x-xsltip.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XSLT"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5216,14 +5403,15 @@ understanding of XSLT is required.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/x-tipxslt.html</id>
+    <id>http://www.ibm.com/developerworks/library/x-tipxslt.html</id>
     <title>Tip: Generating internal HTML links with XSLT</title>
-    <link href="http://www-106.ibm.com/developerworks/library/x-tipxslt.html"/>
+    <link href="http://www.ibm.com/developerworks/library/x-tipxslt.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="XML"/>
     <category term="XSLT"/>
     <category term="HTML"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5240,13 +5428,14 @@ sample code, clearly spells out two approaches for the process.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/x-tipxrdf.html</id>
+    <id>http://www.ibm.com/developerworks/xml/library/x-tipxrdf/index.html</id>
     <title>Tip: Documenting style sheets using RDF</title>
-    <link href="http://www-106.ibm.com/developerworks/library/x-tipxrdf.html"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/x-tipxrdf/index.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="XSLT"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5259,9 +5448,9 @@ Uche Ogbuji shows how to use Resource Description Framework (RDF) to document yo
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/co-tutintro.html</id>
+    <id>http://www.ibm.com/developerworks/library/co-tutintro.html</id>
     <title>Introduction to XML messaging</title>
-    <link href="http://www-106.ibm.com/developerworks/library/co-tutintro.html"/>
+    <link href="http://www.ibm.com/developerworks/library/co-tutintro.html"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Messaging"/>
     <category term="XML"/>
@@ -5272,7 +5461,8 @@ Uche Ogbuji shows how to use Resource Description Framework (RDF) to document yo
     <category term="SOAP"/>
     <category term="DOM"/>
     <category term="IDL"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5300,7 +5490,8 @@ component technology.
     <category term="Python"/>
     <category term="CORBA"/>
     <category term="DOM"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5327,7 +5518,8 @@ the techniques of component programming.
     <category term="Components"/>
     <category term="HTTP"/>
     <category term="Python"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5352,7 +5544,8 @@ development, this introduction will be useful.
     <category term="Components"/>
     <category term="Python"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5370,9 +5563,9 @@ protocols.
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/library/ws-pyth1.html?dwzone=ws</id>
+    <id>http://www.ibm.com/developerworks/library/ws-pyth1.html?dwzone=ws</id>
     <title>The Python Web services developer [column]: The world of Python Web services</title>
-    <link href="http://www-106.ibm.com/developerworks/library/ws-pyth1.html?dwzone=ws"/>
+    <link href="http://www.ibm.com/developerworks/library/ws-pyth1.html?dwzone=ws"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="Mike Olson"/>
     <category term="Python"/>
@@ -5381,7 +5574,8 @@ protocols.
     <category term="WSDL"/>
     <category term="4Suite"/>
     <category term="Web Services"/>
-    <category term="tech"/><updated>2001-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2001-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5412,7 +5606,8 @@ built-in Python features and third-party open-source tools.
     <category term="XSLT"/>
     <category term="RDF"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2000-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5434,7 +5629,8 @@ Building on earlier articles introducing Web Services Description Language (WSDL
     <category term="SOAP"/>
     <category term="RDF"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2000-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5454,7 +5650,8 @@ The Resource Description Framework is the World Wide Web Consortium's official f
     <category term="WSDL"/>
     <category term="Web services"/>
     <category term="SOAP"/>
-    <category term="tech"/><updated>2000-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5467,14 +5664,15 @@ Web Services Description Language (WDSL) is a new specification to describe netw
     </summary>
   </entry>
   <entry>
-    <id>http://www-106.ibm.com/developerworks/xml/library/w-rdf/</id>
+    <id>http://www.ibm.com/developerworks/xml/library/w-rdf/</id>
     <title>An introduction to RDF</title>
-    <link href="http://www-106.ibm.com/developerworks/xml/library/w-rdf/"/>
+    <link href="http://www.ibm.com/developerworks/xml/library/w-rdf/"/>
     <link href="http://www.ibm.com/developerworks" rel="via" title="IBM developerWorks"/>
     <category term="RDF"/>
     <category term="XML"/>
     <category term="metadata"/>
-    <category term="tech"/><updated>2000-12-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-12-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5496,7 +5694,8 @@ Web Services Description Language (WDSL) is a new specification to describe netw
     <category term="UNIX"/>
     <category term="presentation"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2000-10-23T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-10-23T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5518,7 +5717,8 @@ Are PowerPoint's days numbered? Author Uche Ogbuji introduces Scalable Vector Gr
     <category term="Python"/>
     <category term="XML"/>
     <category term="4Suite"/>
-    <category term="tech"/><updated>2000-10-11T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-10-11T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5541,7 +5741,8 @@ One of the jewels in the crown of Python's XML support is the 4Suite collection 
     <category term="XML"/>
     <category term="4Suite"/>
     <category term="validation"/>
-    <category term="tech"/><updated>2000-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5561,7 +5762,8 @@ Judging from the ongoing developments and debates rdf:about XML document validat
     <category term="Linux"/>
     <category term="DBMS"/>
     <category term="DB2"/>
-    <category term="tech"/><updated>2000-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5580,7 +5782,8 @@ A few installation kinks aside, IBM's DB2 Universal Database 7.1 for Linux impre
     <link href="http://www.linuxworld.com" rel="via" title="LinuxWorld"/>
     <category term="Linux"/>
     <category term="XML"/>
-    <category term="tech"/><updated>2000-08-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-08-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5602,7 +5805,8 @@ tools available for creating and serving XML documents. (3,100 words)
     <category term="Linux"/>
     <category term="DBMS"/>
     <category term="Oracle"/>
-    <category term="tech"/><updated>2000-04-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-04-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5625,7 +5829,8 @@ If you've been having trouble installing Oracle8i, be bewildered no longer. Uche
     <category term="CORBA"/>
     <category term="Linux"/>
     <category term="Components"/>
-    <category term="tech"/><updated>2000-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>2000-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5650,7 +5855,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="Linux"/>
     <category term="DBMS"/>
     <category term="Sybase"/>
-    <category term="tech"/><updated>1999-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-10-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5675,7 +5881,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <link href="http://www.cnnstudentnews.cnn.com/TECH/computing/9910/01/practical.xml.idg/index.html" rel="seealso"/>
     <category term="XML"/>
     <category term="Linux"/>
-    <category term="tech"/><updated>1999-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5697,7 +5904,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="CORBA"/>
     <category term="Linux"/>
     <category term="Components"/>
-    <category term="tech"/><updated>1999-09-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-09-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5715,7 +5923,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <link href="http://www.linuxworld.com/linuxworld/lw-1999-08/lw-08-business.html"/>
     <link href="http://www.linuxworld.com" rel="via" title="LinuxWorld"/>
     <category term="Linux"/>
-    <category term="tech"/><updated>1999-08-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-08-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5739,7 +5948,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="Python"/>
     <category term="Web"/>
     <category term="Intranet"/>
-    <category term="tech"/><updated>1999-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5760,7 +5970,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="HTML"/>
     <category term="4DOM"/>
     <category term="Web"/>
-    <category term="tech"/><updated>1999-07-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-07-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5785,7 +5996,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="Linux"/>
     <category term="ERP"/>
     <category term="Enterprise"/>
-    <category term="tech"/><updated>1999-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5807,7 +6019,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="Oracle"/>
     <category term="DBMS"/>
     <category term="Database"/>
-    <category term="tech"/><updated>1999-06-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-06-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5832,7 +6045,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <link href="http://www.linuxworld.com" rel="via" title="LinuxWorld"/>
     <category term="Linux"/>
     <category term="XML"/>
-    <category term="tech"/><updated>1999-03-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-03-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5857,7 +6071,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="XML"/>
     <category term="UNIX"/>
     <category term="E-commerce"/>
-    <category term="tech"/><updated>1999-02-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1999-02-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5883,7 +6098,8 @@ CORBA encompasses a series of standards and protocols for interprocess communica
     <category term="Intranet"/>
     <category term="Internet"/>
     <category term="Linux"/>
-    <category term="tech"/><updated>1998-11-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1998-11-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5902,7 +6118,8 @@ Experiences putting together an Internet and Intranet for a medium-sized call-ce
     <link href="http://www.linuxjournal.com" rel="via" title="Linux Journal"/>
     <category term="Y2K"/>
     <category term="Linux"/>
-    <category term="tech"/><updated>1998-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1998-10-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
@@ -5922,7 +6139,8 @@ How the infamous year-2000 bug affects Linux professionals.
     <category term="object oriented"/>
     <category term="C++"/>
     <category term="parser"/>
-    <category term="tech"/><updated>1995-10-01T12:00:00Z</updated>
+    <category term="tech"/>
+    <updated>1995-10-01T12:00:00Z</updated>
     <author>
       <name>Uche Ogbuji</name>
       <uri>http://uche.ogbuji.net</uri>
