@@ -15,13 +15,13 @@
         <!--
           <p><u>Ndewo, Colorado</u> (<a href="http://kelsaybooks.com/">Aldrich Press</a>, 2013) is a collection of my poems, available on <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/">Amazon</a>.</p>
         -->
-          <p>Published by <a href="http://kelsaybooks.com/">Aldrich Press</a> and available on <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/">Amazon</a>, here's my collection of poems.</p>
+          <p>A collection of my poems, published by <a href="http://kelsaybooks.com/">Aldrich Press</a> and available on <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/">Amazon</a>.</p>
           <dl>
             <dt>ISBN-10</dt><dd>0615886086</dd>
             <dt>ISBN-13</dt><dd>978-0615886084</dd>
           </dl>
           <p>You can listen to me tell you about it, and learn the meaning and pronunciation.</p>
-          <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F111975949"></iframe>
+          <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/117944907&amp;color=04533c&amp;auto_play=true&amp;show_artwork=false"></iframe>
         </td>
     </tr>
 </table>
@@ -62,7 +62,7 @@ I'm excited to announce my collection of poetry, Ndewo, Colorado ([Kelsay Books]
 
 ----
 
-Some of the poems in this book have already been published elsewhere, so enjoy this preview I've compiled.
+Some of the poems in this book have already been published elsewhere, so enjoy this preview I've compiled. The book versions of many of these poems are edited somewhat, so buy the book for the latest.
 
 <!---->
 <div  class="cycle-slideshow slide-right"
@@ -224,7 +224,7 @@ Science and history are the idle chatter here:&hellip;
         	<h3>About the author</h3>
         	<p><a href="http://uche.ogbuji.net/">Uche Ogbuji</a> (<a href="http://twitter.com/uogbuji">@uogbuji</a>) born in Calabar, Nigeria, had lived, among other places, in Egypt and England, but never anywhere longer than 3 years in his life until he came to Colorado. Here he was instantly smitten by the mountain landscape and cultural flavor and has now settled near Boulder with his wife and four children. Educated mostly in Nigeria, Uche is a computer engineer and entrepreneur whose abiding passion is poetry.</p>
         	<p>Uche's poems, fusing Igbo culture, European Classicism, U.S. Mountain West setting, and Hip-Hop influences, have appeared widely in journals and anthologies. His poems, fusing Igbo culture, European Classicism, U.S. Mountain West setting, and Hip-Hop influences, have appeared widely, most recently in <em>IthacaLit, String Poet, The Raintown Review, Featherlit, Outside In Journal, Don't Just Sit There, Qarrtsiluni</em>, and <em>Leveler</em>.</p>
-        	<p>Uche is editor at <em><a href="http://wearekin.org/">Kin Poetry Journal</a></em> and <em><a href="http://www.thenervousbreakdown.com/">The Nervous breakdown</a></em>, founder and curator at the <a href="http://twitter.com/ColoradoPoetry">@ColoradoPoetry</a> Twitter project.</p>
+        	<p><a href="https://www.amazon.com/author/uogbuji">Uche</a> is editor at <em><a href="http://wearekin.org/">Kin Poetry Journal</a></em> and <em><a href="http://www.thenervousbreakdown.com/">The Nervous breakdown</a></em>, founder and curator at the <a href="http://twitter.com/ColoradoPoetry">@ColoradoPoetry</a> Twitter project.</p>
         </td>
     </tr>
 </table>
