@@ -6,87 +6,62 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://uche.ogbuji.net/</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/archive.html</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/blog/</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/categories/</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/4ODS-userguide.html</loc>
-  <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/CoreManual.html</loc>
   <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/amara-manual.html</loc>
   <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://uche.ogbuji.net/etc/tech/articles/FtSuiteWiki_2fUserNotes.html</loc>
-  <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://uche.ogbuji.net/etc/tech/articles/bulging-std.html</loc>
-  <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/articles/schematron.html</loc>
   <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/articles/svgpres.html</loc>
   <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
-  <loc>http://uche.ogbuji.net/etc/tech/articles/ws-metadata.html</loc>
-  <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/articles/xmledi.html</loc>
   <lastmod>2011-05-23</lastmod>
-  <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/galleries/</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/galleries/rss.xml</loc>
+  <lastmod>2014-03-22</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/listings/</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/lit/</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/ndewo/</loc>
-  <lastmod>2013-11-01</lastmod>
-  <priority>0.5000</priority>
+  <lastmod>2014-03-22</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/rss.xml</loc>
+  <lastmod>2014-03-22</lastmod>
  </url>
 </urlset>
