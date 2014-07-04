@@ -15,7 +15,7 @@
         <!--
           <p><u>Ndewo, Colorado</u> (<a href="http://kelsaybooks.com/">Aldrich Press</a>, 2013) is a collection of my poems, available on <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/">Amazon</a>.</p>
         -->
-          <p>Collection of my poems, <a href="http://astore.amazon.com/kelsbook-20/detail/0615886086">2013 Aldrich Press</a>, available on <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/">Amazon</a>. <a href="http://coloradohumanities.org/content/2014-colorado-book-awards">2014 Colorado Book Award winner.</a></p>
+          <p>My first chapbook of poems, <a href="http://astore.amazon.com/kelsbook-20/detail/0615886086">2013 Aldrich Press</a>, available on <a href="http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/">Amazon</a>, or directly from me (send me e-mail). <a href="http://coloradohumanities.org/content/2014-colorado-book-awards">2014 Colorado Book Award winner.</a></p>
           <dl>
             <dt>ISBN-10</dt><dd>0615886086</dd>
             <dt>ISBN-13</dt><dd>978-0615886084</dd>
@@ -28,10 +28,6 @@
         </td>
     </tr>
 </table>
-
-<!--
-I'm excited to announce my collection of poetry, Ndewo, Colorado ([Kelsay Books](http://kelsaybooks.com/), 2013), now out on [Amazon](http://www.amazon.com/Ndewo-Colorado-Uche-Ogbuji/dp/0615886086/). You might as well just listen to me tell you about it, and of course that way learn about the meaning and pronunciation.
--->
 
 ----
 
@@ -65,7 +61,7 @@ I'm excited to announce my collection of poetry, Ndewo, Colorado ([Kelsay Books]
 
 ----
 
-Some poems in this book have already been published elsewhere, so enjoy this preview. In some cases there are updated versionsin the book.
+Some poems in this book have already been published elsewhere, so enjoy this preview. In some cases the book versions are updated.
 
 <!---->
 <div  class="cycle-slideshow slide-right"
@@ -226,9 +222,9 @@ Science and history are the idle chatter here:&hellip;
         </td>
         <td>
         	<h3>About the author</h3>
-        	<p><a href="http://uche.ogbuji.net/">Uche Ogbuji</a> (<a href="http://twitter.com/uogbuji">@uogbuji</a>) born in Calabar, Nigeria, had lived, among other places, in Egypt and England, but never anywhere longer than 3 years in his life until he came to Colorado. Here he was instantly smitten by the mountain landscape and cultural flavor and has now settled near Boulder with his wife and four children. Educated mostly in Nigeria, Uche is a computer engineer and entrepreneur whose abiding passion is poetry.</p>
-        	<p>Uche's poems, fusing Igbo culture, European Classicism, U.S. Mountain West setting, and Hip-Hop influences, have appeared widely in journals and anthologies. His poems, fusing Igbo culture, European Classicism, U.S. Mountain West setting, and Hip-Hop influences, have appeared widely, most recently in <em>IthacaLit, String Poet, The Raintown Review, Featherlit, Outside In Journal, Don't Just Sit There, Qarrtsiluni</em>, and <em>Leveler</em>.</p>
-        	<p><a href="https://www.amazon.com/author/uogbuji">Uche</a> is editor at <em><a href="http://wearekin.org/">Kin Poetry Journal</a></em> and <em><a href="http://www.thenervousbreakdown.com/">The Nervous breakdown</a></em>, founder and curator at the <a href="http://twitter.com/ColoradoPoetry">@ColoradoPoetry</a> Twitter project.</p>
+        	<p><a href="http://uche.ogbuji.net/">Uche Ogbuji</a> (<a href="http://twitter.com/uogbuji">@uogbuji</a>) born in Calabar, Nigeria, had lived, among other places, in Egypt and England, but never anywhere longer than 3 years in his life until he came to Colorado. Here he was instantly smitten by the mountain landscape and cultural flavor, and is settled near Boulder with his wife and four children. Educated mostly in Nigeria, Uche is a computer engineer and <a href="http://zepheira.com/">entrepreneur</a>  whose abiding passion is poetry.</p>
+        	<p>Uche's poems, fusing Igbo culture, European Classicism, U.S. Mountain West setting, and Hip-Hop influences, have appeared widely in journals and anthologies.</p>
+        	<p><a href="https://www.amazon.com/author/uogbuji">Uche</a> is editor at <em><a href="http://wearekin.org/">Kin Poetry Journal</a></em>, founder and curator at the <a href="http://twitter.com/ColoradoPoetry">@ColoradoPoetry</a> Twitter project. He was a founding editor of <em><a href="http://www.thenervousbreakdown.com/">The Nervous breakdown</a></em>'s poetry section.</p>
         </td>
     </tr>
 </table>

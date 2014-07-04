@@ -233,7 +233,7 @@ I'm a poet, essayist and editor. Though my degree is in electrical and computer 
     <tr>
         <td><a href="http://wearekin.org/"><img src="http://wearekin.org/media/images/KinLogo-white-x1.5.png" title="Kin Poetry Journal"></a></td>
         <td><a href="http://www.thenervousbreakdown.com/"><img src="http://www.thenervousbreakdown.com/wp-content/themes/tnb-aquarius/images/tnb-pill.png" title="The Nervous Breakdown"></a></td>
-        <td><a href="https://twitter.com/ColoradoPoetry"><img src="https://si0.twimg.com/profile_images/378800000126143099/1a25025a75eafcf6da69e7f4ab2e7aad.png" title="Colorado Poetry" style="height: 110px;"></a></td>
+        <td><a href="https://twitter.com/ColoradoPoetry"><img src="/img/ColoradoPoetrySquarish-tiny.png" title="Colorado Poetry" style="height: 110px;"></a></td>
     </tr>
 </table>
 
