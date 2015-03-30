@@ -22,15 +22,6 @@
           </dl>
           <p>Listen for more on the title's meaning and pronunciation.</p>
           <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/117944907&amp;color=04533c&amp;auto_play=false&amp;show_artwork=false"></iframe>
-		  <p>
-	        <!--
-				See also: http://www.westword.com/best-of/2015/arts-and-entertainment
-	        -->
-				<a href="http://www.westword.com/best-of/2015/arts-and-entertainment/best-environmental-poetry-6611142">In his poetry, he blends his love for the environment and the Rocky Mountain region, his scientific know-how and his passion for language, telling concise stories that delight both the left and right sides of the brain."</a>—Westword 2015 Award Winner, "Best Environmental Poetry"
-			</p>
-			<p>
-				<a href="http://www.flatironsliteraryreview.com/2014/06/24/congratulations-2014-colorado-book-award-winners/">His experimentation with form and language are both challenging and fascinating."</a>—Flatirons Literary Review
-		  </p>
         </td>
         <td>
           <a href="http://coloradohumanities.org/content/2014-colorado-book-awards"><img src="/img/cba2014logo_transparent.png" title="2014 Colorado Book Award winner"></a>
@@ -39,6 +30,16 @@
 </table>
 
 ----
+
+<p>
+<!--
+	See also: http://www.westword.com/best-of/2015/arts-and-entertainment
+-->
+	<a href="http://www.westword.com/best-of/2015/arts-and-entertainment/best-environmental-poetry-6611142">In his poetry, he blends his love for the environment and the Rocky Mountain region, his scientific know-how and his passion for language, telling concise stories that delight both the left and right sides of the brain."</a>—Westword 2015 Award Winner, "Best Environmental Poetry"
+</p>
+<p>
+	<a href="http://www.flatironsliteraryreview.com/2014/06/24/congratulations-2014-colorado-book-award-winners/">His experimentation with form and language are both challenging and fascinating."</a>—Flatirons Literary Review
+</p>
 
 <table>
     <tr>
