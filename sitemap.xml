@@ -6,62 +6,82 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://uche.ogbuji.net/</loc>
-  <lastmod>2014-03-22</lastmod>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/2014/</loc>
+  <lastmod>2014-07-12</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/archive.html</loc>
-  <lastmod>2014-03-22</lastmod>
+  <lastmod>2014-07-12</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/blog/</loc>
-  <lastmod>2014-03-22</lastmod>
+  <lastmod>2014-07-12</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/categories/</loc>
-  <lastmod>2014-03-22</lastmod>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/categories/colorado/</loc>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/categories/family/</loc>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/categories/igbo/</loc>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/categories/language/</loc>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/categories/meta/</loc>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/categories/poetry/</loc>
+  <lastmod>2014-07-12</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/categories/web/</loc>
+  <lastmod>2014-07-12</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/CoreManual.html</loc>
-  <lastmod>2011-05-23</lastmod>
+  <lastmod>2014-07-06</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/amara-manual.html</loc>
-  <lastmod>2011-05-23</lastmod>
+  <lastmod>2014-07-06</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/articles/schematron.html</loc>
-  <lastmod>2011-05-23</lastmod>
+  <lastmod>2014-07-06</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/articles/svgpres.html</loc>
-  <lastmod>2011-05-23</lastmod>
+  <lastmod>2014-07-06</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/articles/xmledi.html</loc>
-  <lastmod>2011-05-23</lastmod>
- </url>
- <url>
-  <loc>http://uche.ogbuji.net/galleries/</loc>
-  <lastmod>2014-03-22</lastmod>
- </url>
- <url>
-  <loc>http://uche.ogbuji.net/galleries/rss.xml</loc>
-  <lastmod>2014-03-22</lastmod>
- </url>
- <url>
-  <loc>http://uche.ogbuji.net/listings/</loc>
-  <lastmod>2014-03-22</lastmod>
+  <lastmod>2014-07-06</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/lit/</loc>
-  <lastmod>2014-03-22</lastmod>
+  <lastmod>2014-07-12</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/ndewo/</loc>
-  <lastmod>2014-03-22</lastmod>
+  <lastmod>2014-07-12</lastmod>
  </url>
  <url>
-  <loc>http://uche.ogbuji.net/rss.xml</loc>
-  <lastmod>2014-03-22</lastmod>
+  <loc>http://uche.ogbuji.net/tech/</loc>
+  <lastmod>2014-07-12</lastmod>
  </url>
 </urlset>
