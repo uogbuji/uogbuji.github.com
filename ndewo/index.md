@@ -1,7 +1,7 @@
 .. link: 
 .. description: 
 .. tags: 
-.. date: 2015/03/29 23:40:00
+.. date: 2017/02/08 18:00:00
 .. title: Ndewo, Colorado
 .. slug: index
 .. template: slideuser.tmpl
@@ -38,42 +38,25 @@
 	<a href="http://www.westword.com/best-of/2015/arts-and-entertainment/best-environmental-poetry-6611142">In his poetry, he blends his love for the environment and the Rocky Mountain region, his scientific know-how and his passion for language, telling concise stories that delight both the left and right sides of the brain."</a>—Westword 2015 Award Winner, "Best Environmental Poetry"
 </p>
 <p>
-	<a href="http://www.flatironsliteraryreview.com/2014/06/24/congratulations-2014-colorado-book-award-winners/">His experimentation with form and language are both challenging and fascinating."</a>—Flatirons Literary Review
+	<a href="http://www.flatironsliteraryreview.com/2014/06/24/congratulations-2014-colorado-book-award-winners/">"His experimentation with form and language are both challenging and fascinating."</a>—Flatirons Literary Review
 </p>
-
-<table>
-    <tr>
-        <td style="width: 40%; padding: 5px;">I've joined forces with some colleagues to promote our books jointly as <a href="http://stanzamassive.tumblr.com/">The Stanza Massive</a>. We'll be collaborating in many ways, including through multimedia where possible. Do subscribe to our low-volume mailing list.
-        </td>
-        <td style="padding: 5px;">
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="http://tumblr.us3.list-manage1.com/subscribe/post?u=5c731e3eac6f69dd06cc96f4c&amp;id=76abcb093f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<div class="mc-field-group">
-  <label for="mce-EMAIL">Email Address</label>
-  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-</form>
-</div>
-        </td>
-    </tr>
-</table>
-
+  
 ----
 
 Some poems in this book have already been published elsewhere, so enjoy this preview. In some cases the book versions are updated.
 
-<!---->
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px; height: 500px;">
+    <!-- Slides Container -->
+    <div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 800px; height: 500px;">
+        <div><a href="http://www.levelerpoetry.com/catamount-levelheaded/"><img data-u="image" src="/img/ndewogallery/catamount.jpg" /></a></div>
+        <div><a href="http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/"><img data-u="image" src="/img/ndewogallery/endo.png" /></a></div>
+        <div><img data-u="image" src="/img/ndewogallery/unsprung.png" /></div>
+    </div>
+</div>
+
+
+<!-- see: http://jquery.malsup.com/cycle2/demo/non-image.php
+
 <div  class="cycle-slideshow slide-right"
       data-cycle-slides="> section"
       data-cycle-fx="scrollHorz"
@@ -84,7 +67,6 @@ Some poems in this book have already been published elsewhere, so enjoy this pre
       data-cycle-prev="#prev"
       data-cycle-next="#next"
   >
-  <!-- see: http://jquery.malsup.com/cycle2/demo/non-image.php -->
     <section>
       <a href="http://www.mountaingazette.com/mountain-culture/poetry/way-of-the-mountain-185/">
       <h2>Endo (from "Mountain Tanka")</h2>
@@ -209,15 +191,14 @@ Science and history are the idle chatter here:&hellip;
       </p>
       </a>
     </section>
-<!--
-…-->
-</div>
+  </div>
 
 <div class="center cycle-prevnext">
     <a href=# id="prev">Prev</a> 
     <a href=# id="next">Next</a>
 </div>
 <div class="cycle-pager"></div>
+-->
 
 <!-- 
  style="max-width: 150%;"
@@ -233,8 +214,8 @@ Science and history are the idle chatter here:&hellip;
         <td>
         	<h3>About the author</h3>
         	<p><a href="http://uche.ogbuji.net/">Uche Ogbuji</a> (<a href="http://twitter.com/uogbuji">@uogbuji</a>) born in Calabar, Nigeria, had lived, among other places, in Egypt and England, but never anywhere longer than 3 years in his life until he came to Colorado. Here he was instantly smitten by the mountain landscape and cultural flavor, and is settled near Boulder with his wife and four children. Educated mostly in Nigeria, Uche is a computer engineer and <a href="http://zepheira.com/">entrepreneur</a>  whose abiding passion is poetry.</p>
-        	<p>Uche's poems, fusing Igbo culture, European Classicism, U.S. Mountain West setting, and Hip-Hop influences, have appeared widely in journals and anthologies.</p>
-        	<p><a href="https://www.amazon.com/author/uogbuji">Uche</a> is editor at <em><a href="http://wearekin.org/">Kin Poetry Journal</a></em>, founder and curator at the <a href="http://twitter.com/ColoradoPoetry">@ColoradoPoetry</a> Twitter project. He was a founding editor of <em><a href="http://www.thenervousbreakdown.com/">The Nervous breakdown</a></em>'s poetry section.</p>
+        	<p>Uche's poems, fusing Igbo culture, European Classicism, U.S. Mountain West setting, and Hip-Hop, have appeared widely, mostly online, matching his professional interest in the Web.</p>
+        	<p><a href="https://www.amazon.com/author/uogbuji">Uche</a> was a founding poetry editor at <em><a href="http://wearekin.org/">Kin Poetry Journal</a></em> and <em><a href="http://www.thenervousbreakdown.com/">The Nervous breakdown</a></em>. He is co-host, with Kierstin Bridger, of the <a href="http://bit.ly/poetryvoice">Poetry Voice Podcast.</a><!--<a href="http://twitter.com/ColoradoPoetry">@ColoradoPoetry</a> Twitter project. He was a founding editor.--></p>
         </td>
     </tr>
 </table>
@@ -245,204 +226,3 @@ Science and history are the idle chatter here:&hellip;
 
 <img class="center" src="/img/NdewoColoradoPlate.jpg" title="Ndewo, Colorado">
 
-
-<!-- Script from MailChimp Signup Form -->
-<script type="text/javascript">
-var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
-try {
-    var jqueryLoaded=jQuery;
-    jqueryLoaded=true;
-} catch(err) {
-    var jqueryLoaded=false;
-}
-var head= document.getElementsByTagName('head')[0];
-if (!jqueryLoaded) {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
-    head.appendChild(script);
-    if (script.readyState && script.onload!==null){
-        script.onreadystatechange= function () {
-              if (this.readyState == 'complete') mce_preload_check();
-        }    
-    }
-}
-
-var err_style = '';
-try{
-    err_style = mc_custom_error_style;
-} catch(e){
-    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
-}
-var head= document.getElementsByTagName('head')[0];
-var style= document.createElement('style');
-style.type= 'text/css';
-if (style.styleSheet) {
-  style.styleSheet.cssText = err_style;
-} else {
-  style.appendChild(document.createTextNode(err_style));
-}
-head.appendChild(style);
-setTimeout('mce_preload_check();', 250);
-
-var mce_preload_checks = 0;
-function mce_preload_check(){
-    if (mce_preload_checks>40) return;
-    mce_preload_checks++;
-    try {
-        var jqueryLoaded=jQuery;
-    } catch(err) {
-        setTimeout('mce_preload_check();', 250);
-        return;
-    }
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
-    head.appendChild(script);
-    try {
-        var validatorLoaded=jQuery("#fake-form").validate({});
-    } catch(err) {
-        setTimeout('mce_preload_check();', 250);
-        return;
-    }
-    mce_init_form();
-}
-function mce_init_form(){
-    jQuery(document).ready( function($) {
-      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://tumblr.us3.list-manage1.com/subscribe/post-json?u=5c731e3eac6f69dd06cc96f4c&id=76abcb093f&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-                    beforeSubmit: function(){
-                        $('#mce_tmp_error_msg').remove();
-                        $('.datefield','#mc_embed_signup').each(
-                            function(){
-                                var txt = 'filled';
-                                var fields = new Array();
-                                var i = 0;
-                                $(':text', this).each(
-                                    function(){
-                                        fields[i] = this;
-                                        i++;
-                                    });
-                                $(':hidden', this).each(
-                                    function(){
-                                        var bday = false;
-                                        if (fields.length == 2){
-                                            bday = true;
-                                            fields[2] = {'value':1970};//trick birthdays into having years
-                                        }
-                                      if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                        this.value = '';
-                      } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                        this.value = '';
-                      } else {
-                          if (/\[day\]/.test(fields[0].name)){
-                                              this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                         
-                          } else {
-                                              this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-                                          }
-                                      }
-                                    });
-                            });
-                        $('.phonefield-us','#mc_embed_signup').each(
-                            function(){
-                                var fields = new Array();
-                                var i = 0;
-                                $(':text', this).each(
-                                    function(){
-                                        fields[i] = this;
-                                        i++;
-                                    });
-                                $(':hidden', this).each(
-                                    function(){
-                                        if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                        this.value = '';
-                      } else {
-                          this.value = 'filled';
-                                      }
-                                    });
-                            });
-                        return mce_validator.form();
-                    }, 
-                    success: mce_success_cb
-                };
-      $('#mc-embedded-subscribe-form').ajaxForm(options);
-      
-      
-    });
-}
-function mce_success_cb(resp){
-    $('#mce-success-response').hide();
-    $('#mce-error-response').hide();
-    if (resp.result=="success"){
-        $('#mce-'+resp.result+'-response').show();
-        $('#mce-'+resp.result+'-response').html(resp.msg);
-        $('#mc-embedded-subscribe-form').each(function(){
-            this.reset();
-      });
-    } else {
-        var index = -1;
-        var msg;
-        try {
-            var parts = resp.msg.split(' - ',2);
-            if (parts[1]==undefined){
-                msg = resp.msg;
-            } else {
-                i = parseInt(parts[0]);
-                if (i.toString() == parts[0]){
-                    index = parts[0];
-                    msg = parts[1];
-                } else {
-                    index = -1;
-                    msg = resp.msg;
-                }
-            }
-        } catch(e){
-            index = -1;
-            msg = resp.msg;
-        }
-        try{
-            if (index== -1){
-                $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);            
-            } else {
-                err_id = 'mce_tmp_error_msg';
-                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                
-                var input_id = '#mc_embed_signup';
-                var f = $(input_id);
-                if (ftypes[index]=='address'){
-                    input_id = '#mce-'+fnames[index]+'-addr1';
-                    f = $(input_id).parent().parent().get(0);
-                } else if (ftypes[index]=='date'){
-                    input_id = '#mce-'+fnames[index]+'-month';
-                    f = $(input_id).parent().parent().get(0);
-                } else {
-                    input_id = '#mce-'+fnames[index];
-                    f = $().parent(input_id).get(0);
-                }
-                if (f){
-                    $(f).append(html);
-                    $(input_id).focus();
-                } else {
-                    $('#mce-'+resp.result+'-response').show();
-                    $('#mce-'+resp.result+'-response').html(msg);
-                }
-            }
-        } catch(e){
-            $('#mce-'+resp.result+'-response').show();
-            $('#mce-'+resp.result+'-response').html(msg);
-        }
-    }
-}
-
-</script>
-<!--End mc_embed_signup-->
-
----
-
-<!-- é = &eacute; -->
-
-<!--         <td><a href=""><img src="" title=""></a></td>
- -->

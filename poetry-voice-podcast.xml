@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
+	<channel>
+		<link>http://poetryvoice.tumblr.com/</link>
+		<language>en-us</language>
+		<copyright>&#xA9;2016</copyright>
+		<webMaster>poetryvoicepod@gmail.com (The Poetry Voice Team)</webMaster>
+		<managingEditor>poetryvoicepod@gmail.com (The Poetry Voice Team)</managingEditor>
+		<image>
+			<url>http://gonzaga.ogbuji.net/~uche/poetryvoice/cover1.jpg</url>
+			<title>Poetry Voice hosts Kierstin Bridger and Uche Ogbuji</title>
+			<link>http://poetryvoice.tumblr.com/</link>
+		</image>
+		<itunes:owner>
+			<itunes:name>The Poetry Voice Team</itunes:name>
+			<itunes:email>poetryvoicepod@gmail.com</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Arts">
+			<itunes:category text="Literature" />
+		</itunes:category>
+		<!--itunes:category text="Colorado"/-->
+		<itunes:keywords>Poetry, Spoken Word, Hip-Hop, Colorado, US West, Kierstin Bridger, Uche Ogbuji</itunes:keywords>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:image href="http://gonzaga.ogbuji.net/~uche/poetryvoice/cover1.jpg" />
+		<atom:link href="http://gonzaga.ogbuji.net/~uche/poetryvoice/podcast.xml" rel="self" type="application/rss+xml" /> <!-- The URL of this file -->
+		<pubDate>Mon, 22 January 2017 00:00:00 MDT</pubDate> <!-- http://www.timeanddate.com/worldclock/city.html?n=805 - Use 24 hour clock -->
+		<title>Poetry Voice, with Kierstin Bridger and Uche Ogbuji</title>
+		<itunes:author>Kierstin Bridger and Uche Ogbuji</itunes:author>
+		<description>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</description>
+		<itunes:summary>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</itunes:summary>
+		<itunes:subtitle>From the Western Slope to the world</itunes:subtitle>
+
+		<lastBuildDate>Mon, 22 January 2017 22:00:00 MDT</lastBuildDate>
+
+<!-- Always add the newest ITEM to the top of the list -->
+		<item>
+			<title>Episode 5: Abundance</title>
+			<description>Kierstin and Uche are together again at Ridgway Global tuning into  Kierstin's interview with poet and radio personality Lauren Camp. Also: MORE OUD!</description>
+			<itunes:summary>Kierstin and Uche are together again at Ridgway Global tuning into  Kierstin's interview with poet and radio personality Lauren Camp. Also: MORE OUD!</itunes:summary>
+			<itunes:subtitle>"Under the loose-tooth shards of the Cimmaron range."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
+      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
+      * 
+http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
+     -->
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep5.mp3" type="audio/mpeg" length="94974664" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep5.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>1:04</itunes:duration>
+			<pubDate>Mon, 22 January 2017 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 4: Winter Dark/Winter Light</title>
+			<description>Kierstin and Uche get together at the Lithic Press Bookstore &amp; Gallery with owner and Colorado Poet Danny Rosen.</description>
+			<itunes:summary>Kierstin and Uche get together at the Lithic Press Bookstore &amp; Gallery with owner and Colorado Poet Danny Rosen.</itunes:summary>
+			<itunes:subtitle>"At the Lithic, feeling mythic."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
+      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
+      * 
+http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
+     -->
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep4.mp3" type="audio/mpeg" length="81030918" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep4.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>0:56</itunes:duration>
+			<pubDate>Mon, 2 January 2017 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 3: Coming Home</title>
+			<description>Kierstin interviews and teases song out of poet Kyle Harvey, woven in with her joining Uche to discuss Sharon Olds, Derek Walcott and more.</description>
+			<itunes:summary>Kierstin interviews and teases song out of poet Kyle Harvey, woven in with her joining Uche to discuss Sharon Olds, Derek Walcott and more.</itunes:summary>
+			<itunes:subtitle>"Chilling in the glow of the year's first snow, right outside my window."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
+      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
+      * 
+http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
+     -->
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep3.mp3" type="audio/mpeg" length="82988848" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep3.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>0:56</itunes:duration>
+			<pubDate>Sun, 27 November 2016 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 2: Day of the Dead</title>
+			<description>Jennifer Hancock joins Kierstin and Uche in discussion ranging from hurricanes to the awful uses of belts.</description>
+			<itunes:summary>Jennifer Hancock joins Kierstin and Uche in discussion ranging from hurricanes to the awful uses of belts.</itunes:summary>
+			<itunes:subtitle>"We'll show the world the Day of the Dead edible skull on my head."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
+      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
+      * 
+http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
+     -->
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep2.mp3" type="audio/mpeg" length="65655872" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep2.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>0:45</itunes:duration>
+			<pubDate>Sun, 13 November 2016 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 1: Beginnings</title>
+			<description>Kierstin and Uche launch Poetry Voice in the heart of Denver RiNo.</description>
+			<itunes:summary>Kierstin and Uche launch Poetry Voice in the heart of Denver RiNo.</itunes:summary>
+			<itunes:subtitle>"Speaking of energy pouring in…"</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
+      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
+      * 
+http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
+     -->
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep1.mp3" type="audio/mpeg" length="58071932" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep1.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>0:60</itunes:duration>
+			<pubDate>Fri, 28 October 2016 00:00:00 MDT</pubDate>
+		</item>
+
+	</channel>
+</rss>

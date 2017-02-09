@@ -1,27 +1,27 @@
 .. link: 
 .. description: 
 .. tags: 
-.. date: 2013/09/28 09:28:39
+.. date: 2017/02/08 18:00:00
 .. title: Literature
 .. slug: index
 .. template: slideuser.tmpl
 
-I'm a poet, essayist and editor. Though my degree is in electrical and computer engineering, my true passion is literature, and poetry in particular. I'd have striven towards a writing career if my parents hadn't compelled me with the usual parental sense to secure a more economically assured profession first.  I'm lucky enough to engage in literary projects purely for pleasure, though it can be hard to scrape up time for them.
+Poet, essayist and editor. Though my degree is in electrical and computer engineering, my true passion is literature, and poetry in particular.  I'm lucky enough to engage in literary projects purely for pleasure, though it can be hard to scrape up time for them.
 
-## Selected poems
+## Selected poems and projects
 
-<!---->
-<div  class="cycle-slideshow slide-right"
-      data-cycle-slides="> section"
-      data-cycle-fx="scrollHorz"
-      data-cycle-pause-on-hover="true"
-      data-cycle-speed="2500"
-      data-cycle-auto-height="calc"
-      data-cycle-pager=".cycle-pager"
-      data-cycle-prev="#prev"
-      data-cycle-next="#next"
-  >
-  <!-- see: http://jquery.malsup.com/cycle2/demo/non-image.php -->
+
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px; height: 500px;">
+    <!-- Slides Container -->
+    <div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 800px; height: 500px;">
+        <div><a href="http://bit.ly/poetryvoice"><img data-u="image" src="/img/litgallery/poetryvoice-dayofthedead.png" /></a></div>
+        <div><a href="http://www.stringpoet.com/2011/12/translation-uche-ogbuji/"><img data-u="image" src="/img/litgallery/follybetween.jpg" /></a></div>
+        <div><a href="http://interfictions.com/the-furies-of-mad-max-uche-ogbuji/"><img data-u="image" src="/img/litgallery/furiesofmadmax.png" /></a></div>
+        <div><a href="https://squareup.com/store/opossum-magazine/item/opossum-fall-1"><img data-u="image" src="/img/litgallery/twovoicedflute.png" /></a></div>
+    </div>
+</div>
+
+<!-- 
   <div class="cycle-pager"></div>
   <section>
     <a href="http://www.musepiepress.com/shotglass/uche_ogbuji1.html">
@@ -220,20 +220,16 @@ I'm a poet, essayist and editor. Though my degree is in electrical and computer 
       </a>
   </section>
 </div>
+-->
 
-<div class="center cycle-prevnext">
-    <a href=# id="prev">Prev</a> 
-    <a href=# id="next">Next</a>
-</div>
-<div class="cycle-pager"></div>
-
-## Literary projects
 
 <table>
     <tr>
+      <!--
         <td><a href="http://wearekin.org/"><img src="http://wearekin.org/media/images/KinLogo-white-x1.5.png" title="Kin Poetry Journal"></a></td>
         <td><a href="http://www.thenervousbreakdown.com/"><img src="http://www.thenervousbreakdown.com/wp-content/themes/tnb-aquarius/images/tnb-pill.png" title="The Nervous Breakdown"></a></td>
         <td><a href="https://twitter.com/ColoradoPoetry"><img src="/img/ColoradoPoetrySquarish-tiny.png" title="Colorado Poetry" style="height: 110px;"></a></td>
+        -->
     </tr>
 </table>
 

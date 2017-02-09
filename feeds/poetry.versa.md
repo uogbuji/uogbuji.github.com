@@ -23,15 +23,794 @@
 
 # [poem]
 
-* updated: 
-* link: 
+* updated: 2017-01-26
+* link:
 * title: ""
-* source: 
-    * title: 
+* source:
+    * title:
 * author: uogbuji
-* summary: 
+* summary:
+
+# [poem]
+
+* updated: 2017-01-26
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-february.html
+* title: "Dictate"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary:
+
+http://gonzaga.ogbuji.net/~uche/lit/2015/chanson.html
+http://uogbuji.tumblr.com/post/142086453376/words-unsprung-from-p-38-of-ndewo-colorado
 
 -->
+
+# [poem]
+
+* updated: 2017-01-31
+* link: http://quatrain.fish/post/156586277544/uche-ogbuji
+* title: "Tally"
+* source: http://quatrain.fish/
+    * title: Quatrain Fish
+* author: uogbuji
+* summary: Once for touble, twice,
+Time.
+
+
+# [poem]
+
+* updated: 2017-01-31
+* link: http://www.verse-virtual.com/uche-ogbuji-2017-february.html
+* title: "Januarial"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: A second head is retrograde
+Wherein the hearth's already made,
+And mind, and memory, good or ill
+Gives comfort having been fulfilled.
+
+
+# [poem]
+
+* updated: 2016-01-24
+* link: https://issuu.com/trishaventker/docs/elife_winter_issue_2017_-_pdf_best?e=3021716/43480091
+* title: "Julian’s Blood Moon"
+* source: http://www.elifemagazine.org/
+    * title: ELIFE Magazine
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: For the boy the first words of whose employ
+Made a song and a sway for the sight of the moon
+
+
+# [poem]
+
+* updated: 2017-01-16
+* link: http://quatrain.fish/post/155677269220/uche-ogbuji
+* title: "Ars"
+* source: http://quatrain.fish/
+    * title: Quatrain Fish
+* author: uogbuji
+* summary: Bless us the poem's perfect hue:
+
+
+# [poem]
+
+* updated: 2017-01-21
+* link: http://www.rigorous-mag.com/v1i1/uche-ogbuji.html
+* title: "Ḿmádụ́ Si Àlà Pụ̀tá", "Red Rapture", "Light Pollution", "Phenomenon of Time to a Gálapagos Gálapago", "Boldly Go", "Epignomics"
+* source: http://www.rigorous-mag.com
+    * title: Rigorous Magazibe
+* author: uogbuji
+* summary: The one yellow our perspective's peaked arc
+Enfolds is not a yoke to cuff our necks
+Hard to the field. This food is massive enough
+To burn an hour or two in supine sloth;
+
+
+# [poem]
+
+* updated: 2017-01-19
+* link: http://classicalpoets.org/walked-the-mountain-and-other-poetry-by-uche-ogbuji/
+* title: "Walked the Mountain" & "Buena Vista, Colorado"
+* source: http://classicalpoets.org
+    * title: The Society of Classical Poets
+* author: uogbuji
+* summary: Where the mountains make their point,
+Grey head stone over tunic green,
+There’s enough sunshine to anoint
+Your sense with gist sprung from the scene.
+
+
+# [poem]
+
+* updated: 2017-01-13
+* link: http://www.gjsentinel.com/entertainment/articles/lines-west-jan-13
+* title: "Nighty Alpine"
+* source: http://www.gjsentinel.com/
+    * title: Grand Junction Daily Sentinel (Out and About section)
+* author: uogbuji
+* summary: What a pop-rock stream,
+This ribbon of Milky Way
+
+
+# [poem]
+
+* updated: 2016-11-25
+* link: http://www.gjsentinel.com/...
+* title: "Buena Vista, Colorado"
+* source: http://www.gjsentinel.com/
+    * title: Grand Junction Daily Sentinel (Out and About section)
+* author: uogbuji
+* summary: Where the mountains make their point,
+Grey head stone over tunic green,
+There’s enough sunshine to anoint
+Your sense with gist sprung from the scene.
+
+
+# [poem]
+
+* updated: 2017-01-08
+* link: https://static1.squarespace.com/static/566e657edf40f3a7318d653e/t/5872a512f7e0ab8a674d7298/1483908372599/Chantwood+Magazine_November_Issue+5.pdf
+* title: "Mysteries of Harvest III"
+* source: http://chantwoodmagazine.com/
+    * title: Chantwood 
+* author: uogbuji
+* summary: These carve wind-wash on waves, eyes in hard faces
+ Up coring airmass judder for conning stars,
+ Straight scanning past sands for fruit after wars,
+Or past provender at rune-posted places.
+
+
+# [poem]
+
+* updated: 2016-12-26
+* link: http://www.thetribejournal.com/2016/12/four-poems-uche-ogbuji.html
+* title: "Anaphage", "Mysteries of Harvest I", "Hookah Parlor" & "To Move Mountains"
+* source: http://www.thetribejournal.com
+    * title: The Tribe Journal
+* author: uogbuji
+* summary: Never their style articulating scorn,
+These say-nothing mountains, but you can tell,
+Their having refused the slightest wobble
+When every other sight shakes swoon to swell.
+
+
+# [poem]
+
+* updated: 2016-11-30
+* link: https://www.joomag.com/magazine/light-a-journal-of-photography-poetry-1/0485364001479625928#
+* title: "Dear Mourner" (p. 67)
+* source: http://www.light-journal.com/
+    * title: Light - A Journal of Photography & Poetry
+* author: uogbuji
+* summary: My death is but the breaking of a cup,
+And don't mistake me I speak of the perceived
+World only, not one some old fool made up.
+
+
+# [poem]
+
+* updated: 2016-11-30
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-december.html
+* title: "Playing Grace" & "Rocky Weather Song"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Give me of toast and for threnody,
+And a kiss for the morning at half-past three.
+
+# [poem]
+
+* updated: 2016-11-10
+* link: https://squareup.com/store/opossum-magazine/item/opossum-fall-1
+* title: "Two-Voiced Flute"
+* author: uogbuji
+* source: http://opossumlit.com
+    * title: Opossum
+* see-also: http://opossumlit.com/two-voiced-flute-a-poem-by-uche-ogbuji/
+* See also: http://opossumlit.com/category/fall-2016-issue/
+* See also: http://opossumlit.com/
+* summary: Garrulous double,
+		Taiwo of tall echo
+		With a full hand's collection
+			Of tones,
+		Translator for the sacred bush of ghosts.
+
+
+# [poem]
+
+* updated: 2016-09-27
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-october.html
+* title: "À la Recherche"
+* author: uogbuji
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* summary: *His brain's bare purchase*
+From the top:
+He's homeward bound.
+He's left the shop.
+
+
+# [poem]
+
+* updated: 2016-09-15
+* link: http://featuredpoet.com/featured-poet-uche-ogbuji
+* title: "Pas de Deux"
+* source: http://featuredpoet.com
+    * title: Featured Poet
+* author: uogbuji
+* summary: Though I've been slung from other duets,
+Accused of tone deafness such that
+I shrink to fever and frog-sweats
+Whenever whispered, coy-eyed chat
+Suggests a swinging through the scales
+Might be toward;
+
+# [poem]
+
+* updated: 2016-08-17
+* link: https://www.etsy.com/listing/459491878/fable-by-uche-ogbuji-app-10?ref=shop_home_active_1
+* title: "Fable"
+* source: https://www.facebook.com/atelierpoesiepress/
+    * title: Atelier Poesie Press
+* author: uogbuji
+* seealso: https://soundcloud.com/uche-1/fable
+* summary: I've known friar cobra for cold sanguine eyes
+Spiral-bound in that oval cowl, blocking sun
+To pronounce lightning of a cloven ribbon tongue
+
+# [poem]
+
+* updated: 2016-08-26
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-september.html
+* title: "What Belief"
+* author: uogbuji
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* summary: I've stroked it while it gently weeps,
+Caressed each trembling string,
+Cranked up to weapons grade at times
+I undertake to sing.
+And yet I disappoint, I rip,
+I charm a wicked scar;
+Hot venom as the scorpion bows
+To cantor de Ronsard.
+
+# [poem]
+
+* updated: 2016-08-18
+* link: http://visualverse.org/submissions/lay-lady-lipstick/
+* title: "Lay of the Lady Lipstick"
+* source: http://visualverse.org
+    * title: Visual Verse
+* author: uogbuji
+* summary: It's a yum advertisement, a rum enticement,
+Win a trip on the good ship, the Lady Lipstick.
+He dare not blow skew the tidy tableau
+With his tremble inland of her steady hand.
+
+# [poem]
+
+* updated: 2016-08-02
+* link: https://www.topologymagazine.org/poetry/pale-blue-dot/
+* title: "Pale Blue Dot"
+* source: https://www.topologymagazine.org
+    * title: Topology Magazine
+* author: uogbuji
+* summary: The hierarchy of round things roots in eyes
+Held close, so close that blinking heaves a gale;
+Therefrom to lips and hips and on in scale
+To full frame of embrace through drawn goodbyes.
+
+# [poem]
+
+* updated: 2016-08-01
+* link: http://impakter.com/poem-uche-ogbuji/
+* title: "In Loco"
+* source: http://impakter.com
+    * title: Impakter
+* author: uogbuji
+* summary: Down the lanterns, repent in retirement–
+Truss-up for children with frayed string.
+
+# [poem]
+
+* updated: 2016-07-26
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-august.html
+* title: "Lazy Crazy Hazy"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Sandwiches and sausages and chips
+Brim checkered hampers laid out on the bench
+With veg, exotic condiments and dips.
+
+<!--
+# [poem]
+
+* updated: 2016-07-21
+* link: http://reallysystem.org/issues/eleven/pinout/
+* title: "Pinout"
+* source: http://reallysystem.org
+    * title: Really System
+* author: uogbuji
+* summary: Neat clip of black leads
+Between white that mocks green,
+Industrial green conductors from afar;
+-->
+
+# [poem]
+
+* updated: 2016-07-19
+* link: http://www.crowhollowbooks.com/m3-1-uche-ogbuji.html
+* title: "Eat Me Alice" & "Suited Pair"
+* source: http://www.crowhollowbooks.com
+    * title: Crow Hollow Books
+* author: uogbuji
+* summary: Black magic woman
+With holy ghost hair
+You paint me a devil—
+We make quite a pair.
+
+# [poem]
+
+* updated: 2016-07-08
+* link: http://www.alebrijeslit.org/current-issue/
+* title: "Riddle: Crawdad Brack Passage"
+* source: http://www.alebrijeslit.org/
+    * title: Alebrijes
+* author: uogbuji
+* summary: Sensation of crawdad dragged across the quick,
+Swallowed boiled but whole, and cold, oppressing, thick
+Within the sheaf's feeble rippling, crippled grip
+Of gout-gnarled knuckles
+
+# [poem]
+
+* updated: 2016-06-01
+* link: https://issuu.com/whirlwindreview/docs/whirldwind_issue_08_digital__1_
+* title: "Millennium Parent Prayer" & "Mysteries of Harvest II"
+* source: 
+    * title: Whirlwind Review
+* author: uogbuji
+* summary: Beloved Àlà bless us with your crown graces:
+Children plus their yam and palm oil for feed,
+Then grant us leave to settle other places.
+
+
+# [poem]
+
+* updated: 2016-07-02
+* link: https://foragepoetry.com/2016/07/02/three-poems-by-uche-ogbuji/
+* title: "Night under Sopris", "Thief Valley Echo" & "Pourallé Lieu"
+* source: https://foragepoetry.com
+    * title: Forage
+* author: uogbuji
+* summary: I see her offer–miracle aubade
+But I've made of kisses promises
+Which never had been mine to keep.
+
+# [poem]
+
+* updated: 2016-06-30
+* link: http://reallysystem.org/issues/eleven/pinout/
+* title: "Pinout"
+* source: http://reallysystem.org
+    * title: Really System
+* author: uogbuji
+* summary: But this is spark-jump-off-point,
+Split potential mid-midwest;
+The volt rail lazy with its creep
+With grey, ghost-chromed cars.
+
+# [poem]
+
+* updated: 2016-06-26
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-july.html
+* title: "Mountain Summer"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Mountain winter defies the order,
+Denies the bonding of elements.
+Wooded snow and falling wind
+Force repentance through birdsong.
+
+# [poem]
+
+* updated: 2016-05-26
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-june.html
+* title: "Crow-Ink Weathergram", "Hanger" & "Ginger Pickle"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Lime upon honey,
+With Himalayan rock salt
+Over spooned ginger
+
+# [poem]
+
+* updated: 2016-05-17
+* link: https://www.topologymagazine.org/poetry/hungered-echo/
+* title: "Hungered Echo"
+* source: https://www.topologymagazine.org
+    * title: Topology Magazine
+* author: uogbuji
+* summary: I remember taking bird form,
+Nature’s ultimate design
+Of hungry thief
+Times when I got caught, plucked and roasted,
+Times when I flew off with a prized
+Handful of relief.
+
+# [poem]
+
+* updated: 2016-05-06
+* link: https://panoplyzine.com/prometheus-beyond-uchi-ogbuji/
+* title: "Prometheus Beyond"
+* source: https://panoplyzine.com/
+    * title: Panoply Zine
+* author: uogbuji
+* summary: My buttery is bare;
+I’ve stripped trade in your body;
+Leave me parchment skin.
+Where my hands once spread, sizzling,
+I labor to trace, scribbling.
+
+# [poem]
+
+* updated: 2016-05-03
+* link: http://www.topologymagazine.org/poetry/never-enough/
+* title: "Never Enough"
+* source: https://www.topologymagazine.org
+    * title: Topology Magazine
+* author: uogbuji
+* summary: There’re birthday parties coming up to supply
+And grocery receipts to fatten the file;
+The building startles our wallet with creaks
+And petrol tanks begrudge every mile.
+
+# [poem]
+
+* updated: 2016-05-02
+* link: http://www.southfloridapoetryjournal.com/poetry.html
+* title: "Hothouse Grapes"
+* source: http://www.southfloridapoetryjournal.com/
+    * title: South Florida Poetry Journal
+* author: uogbuji
+* summary: Might I borrow some grapes, my love
+Those hothouse grapes, no other sort;
+I spied them when he brought them in
+Your icebox door still gives report.
+
+# [poem]
+
+* updated: 2016-05-03
+* link: http://www.topologymagazine.org/poetry/never-enough/
+* title: "Never Enough"
+* source: http://www.topologymagazine.org/
+    * title: Topology Magazine
+* author: uogbuji
+* summary: There’re birthday parties coming up to supply
+And grocery receipts to fatten the file;
+The building startles our wallet with creaks
+And petrol tanks begrudge every mile.
+
+# [poem]
+
+* updated: 2016-04-30
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-may.html
+* title: "Califlower"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: "I owe my eye for bursts of purple hue
+In painted scenes to love's inductive force;
+My native eye is green, remarking blue
+And gold"
+
+# [poem]
+
+* updated: 2016-03-18
+* link: http://spinepress.com/spine-poetry/high-whole-quicksilver-uche-ogbuji/
+* title: "High Whole Quicksilver"
+* source: http://spinepress.com
+    * title: Spine Press
+* author: uogbuji
+* see-also: http://uogbuji.tumblr.com/post/143742297791/spine-press-published-high-whole-quicksilver-a
+* summary: The dragon in the moon recognizes me
+Recognizing…Sylph seen through sheeting;
+Griot right when his tale requires a mask;
+
+# [poem]
+
+* updated: 2016-03-26
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-april.html
+* title: "​​Cosmonaut Brief"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Cosmos binds us in the people's kismet
+The glory of our cause is full of stars
+Go forth, hail all these worlds, comrade. Privet!
+
+# [poem]
+
+* updated: 2016-03-17
+* link: http://www.telluridenews.com/the_watch/article_fc8a6132-ec66-11e5-ab49-37ef65c8e211.html
+* title: "Thank-ah"
+* source: http://www.telluridenews.com
+    * title: Daily Planet
+* author: uogbuji
+* summary: Oh you mile of eyes!
+Sweet-booted lass from the grange
+
+# [poem]
+
+* updated: 2016-02-28
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-march.html
+* title: "Vinum Znojmo"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: The green crown on green grapes etched
+On the neighboring building's glass façade
+Warps the reflection of an early morning passerby
+All in white robe, braced against the brisk morning.
+
+# [poem]
+
+* updated: 2016-01-26
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-february.html
+* title: "Dictate"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: To search out from one's thoughts the shadows of dreams,
+To search out in the dream a jot of the real,
+In such fleeting minutes run mad at the seams
+            To search out eternity
+And upon a dame's bod a note of appeal.
+
+# [poem]
+
+* updated: 2016-02-20
+* link: https://issuu.com/lucyjohnsonmcdowall/docs/corr_imbolc_quarterday_feb2016
+* title: "Sea-Marge"
+* source: http://www.quarterday.org/
+    * title: The Quarterday Review
+* author: uogbuji
+* summary: The surging monster waves at Teahupo'o
+Stir up my store of fictions as they go
+Coloring my visions of that reef,
+That far-off legend archipelago.
+
+# [poem]
+
+* updated: 2016-01-07
+* link: http://www.nicholls.edu/gris-gris/uncategorized/julians-blood-moon/
+* title: "Julian’s Blood Moon"
+* source: http://www.nicholls.edu/gris-gris/
+    * title: Gris-Gris
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: For the boy the first words of whose employ
+Made a song and a sway for the sight of the moon
+
+# [poem]
+
+* updated: 2016-01-06
+* link: http://www.caraveljournal.org/#!savage-harvest/dynox
+* title: "Savage Harvest"
+* source: http://bestnewafricanpoets.blogspot.com/
+    * title: Caravel Journal
+* author: uogbuji
+* summary: How far can we say our hands extended
+When we've measured the clan-cull from starvation
+Whom the gather and hunt left unbefriended.
+How far can we say our hands extended?
+
+# [poem]
+
+* updated: 2015-12-15
+* link: http://smile.amazon.com/Best-African-Poets-2015-Anthology/dp/9956763489
+* title: "Rheotype", "Millennium Parent Prayer" & "March Out As the Lion"
+* source: http://bestnewafricanpoets.blogspot.com/
+    * title: Best New African Poets 2015 Anthology
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: My voice come to you
+Cold calling your presumptions,
+Nothing in it
+But my native contradictions.
+I massive in my multitudes;
+I round Mount Zion Zambian
+And zig-zig-ur-rat-a-tat
+Built up from that view;
+
+# [poem]
+
+* updated: 2015-11-12
+* link: http://www.delugejournal.com/issues.html
+* title: "If You Forget Me"
+* source: http://www.delugejournal.com
+    * title: Deluge Journal
+* author: uogbuji
+* summary: The cell is ten dreams by ten nights;
+I've paced forever to its zero
+*Si tú me olvidas, quiero
+Que tú sepas una cosa*: my light
+
+# [poem]
+
+* updated: 2015-11-07
+* link: http://interfictions.com/the-furies-of-mad-max-uche-ogbuji/
+* title: "The Furies of Mad Max"
+* source: http://interfictions.com
+    * title: Interfictions
+* author: uogbuji
+* summary: Ghost Girl
+She does not exist
+But to staff torment
+She is vengeful earth
+Unsleeping with foment,
+Infernal glass eyes:
+Inverted sunrise.
+
+# [poem]
+
+* updated: 2015-11-06
+* link: http://www.scribd.com/doc/287079906/Bloodstone-Review-Volume-1-Issue-2
+* title: "Let the Music Stray"
+* source: http://www.bloodstonereview.net/
+    * title: Bloodstone
+* author: uogbuji
+* summary:
+
+# [poem]
+
+* updated: 2015-10-11
+* link: http://issuu.com/zoomoozophone_review/docs/zr7
+    * comment: page 56
+* title: '"Lone Star Dub" & "First Rains"'
+* source: https://www.facebook.com/zoomoozophonereview/
+    * title: Zoomoozophone
+* author: uogbuji
+* summary:
+
+# [poem]
+
+* updated: 2015-09-17
+* link: http://expoundmagazine.com/wp-content/uploads/2015/09/EXPOUND-33.pdf
+    * comment: page 43
+* title: "Road from Calabar to Abuja"
+* source: http://expoundmagazine.com
+    * title: Expound Magazine
+* author: uogbuji
+* summary:
+
+# [poem]
+
+* updated: 2015-08-16
+* link: http://gonzaga.ogbuji.net/~uche/lit/2015/chanson.html
+    * comment: Balisage poet laureate winner
+* title: "Chanson Balisage"
+* source: http://www.balisage.net/Proceedings/vol15/cover.html
+    * title: Balisage Symposium on Cultural Heritage Markup, 2015
+* author: uogbuji
+* summary: Bar ‘Ebroyo¹ cursed CSS, he cursed
+And cursed XForms, he smote his XML
+Localizations cursing where they fell.
+
+# [poem]
+
+* updated: 2015-12-28
+* link: http://www.verse-virtual.com/uche-ogbuji-2016-january.html
+* title: "Devil's Backbone"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Hoarding blown-up memories of
+Having been taken for a chump
+He's filed in small claims for order:
+Sawed-off shotgun, hand on the pump.
+
+# [poem]
+
+* updated: 2015-10-25
+* link: http://www.verse-virtual.com/uche-ogbuji-2015-november.html
+* title: "When We Called Their Name"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: No voices over ordered rows of stone,
+Visitors silent over silent hosts,
+While, nationwide at work or recreation,
+A quiet few stand medium to comrade ghosts.
+
+# [poem]
+
+* updated: 2015-09-25
+* link: http://www.verse-virtual.com/uche-ogbuji-2015-october.html
+* title: "Troll Foot"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Trunkless legs all shank,
+Calf in trouser rags of bark.
+
+# [poem]
+
+* updated: 2015-08-25
+* link: http://www.verse-virtual.com/uche-ogbuji-2015-september.html
+* title: "Photogeny"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: Because we're meant to define familiar,
+Because neurons confirm their own pathways,
+Because home is the truth told, eyes closed,
+Because the obvious embarrasses me,
+Because embarrassed, I've stinted my balm…
+
+# [poem]
+
+* updated: 2015-07-25
+* link: http://www.verse-virtual.com/uche-ogbuji-2015-august.html
+* title: "Stark Days"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: We long for that escape
+When pretty blurs the real:
+And arcs a whip-snapped cape.
+
+# [poem]
+
+* updated: 2015-06-25
+* link: http://www.verse-virtual.com/uche-ogbuji-2015-july.html
+* title: "Savour Salt"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: A poem born within a village
+Of poets is a casserole;
+It gathers up its legs of taste,
+And tasted, magicks back to whole.
+
+# [poem]
+
+* updated: 2015-05-25
+* link: http://www.verse-virtual.com/uche-ogbuji-2015-june.html
+* title: "Tropospherian"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* summary: We are in the morning
+       And all of us together
+In dread of the long and lurching day
+       in grey and gritted weather.
+
+# [poem]
+
+* updated: 2015-04-25
+* link: http://www.verse-virtual.com/uche-ogbuji-2015-may.html
+* title: "After the Music Box"
+* source: http://www.verse-virtual.com
+    * title: Verse Virtual
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: Turning around on a perfect rock
+That's wound on a spindle far,
+What do we see from the gyre of the gears
+Under spell of the parent star.
 
 # [poem]
 
@@ -171,7 +950,7 @@ And fourth child! Even luckier.
     * title: Calliope Magazine
 * author: uogbuji
 * summary: The world river's edge: Hieratic blood
-From the priest-king's [cunning priest's] ritual bowl implores
+From the priest-king's ritual bowl implores
 Delta benediction through earthen pores
 By capillarity to swell crop mud.
 
@@ -322,6 +1101,10 @@ Presume more pride than yours by right.
 * source: http://www.theraintownreview.com/
     * title: The Raintown Review
 * author: uogbuji
+* summary: Athena Nike—
+Ten meters point seven—
+Gilt-sweat freckled—
+Calling down heaven.
 
 # [poem]
 
@@ -455,7 +1238,7 @@ And rigged it to the doomsday clock's last chime.
 They sing: 'God gave Noah the rainbow sign,
 Warning: No more water, but fire next time!'
 <!-- Test comment -->
-  
+
 # [poem]
 
 * updated: 2013-10-13
@@ -475,7 +1258,7 @@ We are all cowards in this village?
 
 * updated: 2013-10-05
 * link: http://www.musepiepress.com/shotglass/uche_ogbuji3.html
-* title: "Ndu M"
+* title: "Ndu m"
 * author: uogbuji
 * source: http://www.musepiepress.com/shotglass
     * title: Shot Glass
@@ -536,7 +1319,7 @@ Somehow he’d missed.
 
 * updated: 2013-09-12
 * link: http://anglepoetry.co.uk/wp-content/uploads/pdf/Angle%20Issue%204.pdf
-    * type: appication/pdf
+    * type: application/pdf
 * title: '"Ad Astra per Tacta & Satura Lanx"'
 * author: uogbuji
 * category: @choice
@@ -596,7 +1379,7 @@ Loam supplied, as did my mother's spice board.
 
 * updated: 2013-06-18
 * link: http://www.coriummagazine.com/?page_id=3324
-* title: "Spark Plug to Nova\""
+* title: "Spark Plug to Nova"
 * author: uogbuji
 * source: http://www.coriummagazine.com
     * title: Corium Magazine
@@ -696,6 +1479,21 @@ And over the möbius loop to Lomé, Yaoundé and Calabar.
 
 # [poem]
 
+* updated: 2013-10-01
+* link: http://storiesforjapan.blogspot.com.au/2012/08/yamato-nadeshiko.html
+* title: "Yamato Nadeshiko"
+* author: uogbuji
+* source: http://storiesforjapan.blogspot.com.au
+    * title: New Sun Rising: Stories for Japan
+* summary: Nippon, land and lore
+Invokes such fascination,
+All to be admired…
+No! Not all to be admired…
+Such bold type of shy contrasts.
+
+
+# [poem]
+
 * updated: 2013-04-04
 * link: http://outsideinmagazine.com/issue-twelve/poetry/piazza-dei-miracoli-uche-ogbuji/
 * title: "Piazza dei Miracoli"
@@ -717,7 +1515,7 @@ Spread with trinkets.
 # [poem]
 
 * updated: 2013-03-22
-* link: http://ithacalit.com/uche-ogbuji1.html
+* link: http://ithacalit.com/uche-ogbuji.html
 * title: '"Above Left Hand Canyon" & "How Close?"'
 * author: uogbuji
 * category: @choice
@@ -737,6 +1535,7 @@ And ash and ash we've smudged where they meet from this view;
 
 * updated: 2013-02-14
 * link: http://featherlit.com/the-lovebird-issue/sampled-by-uche-ogbuji/
+    * status: defunct
 * title: '"Sampled" & "Emissus"'
 * author: uogbuji
 * source: http://featherlit.com
@@ -766,7 +1565,7 @@ Ibn Al Ajami's release.
 # [poem]
 
 * updated: 2012-12-03
-* link: http://lavrev.net/muse/ogbuji.html
+* link: http://www.lavrev.net/2012/12/uche-ogbuji.html
 * title: "Obscured Sunshine"
 * author: uogbuji
 * source: http://lavrev.net
@@ -889,12 +1688,13 @@ Call "drop" and wend down the funneling track.
 # [poem]
 
 * updated: 2012-10-01
-* link: http://www.ofzoos.tk/1.2=16ucheogbuji.html
+* link: http://www.ofzoos.com/1.2=16ucheogbuji.html
+* seealso:  http://web.archive.org/web/20121114044740/http://ofzoos.tk/1.2=16ucheogbuji.html
 * title: "À la Recherche"
 * author: uogbuji
-* source: http://www.ofzoos.tk/1.2=16ucheogbuji.html
+* source: http://www.ofzoos.tk/
     * title: OF ZOOS
-* summary: His brain's bare purchase 
+* summary: His brain's bare purchase
 From the top:
 He's homeward bound.
 He's left the shop.
@@ -942,21 +1742,6 @@ For these strobed winks!
 I stand my writing, my loving,
 My yearnings on their tip-toes
 As Luna shrinks.
-
-
-# [poem]
-
-* updated: 2013-10-01
-* link: http://storiesforjapan.blogspot.com.au/2012/08/yamato-nadeshiko.html
-* title: "Yamato Nadeshiko"
-* author: uogbuji
-* source: http://storiesforjapan.blogspot.com.au
-    * title: New Sun Rising: Stories for Japan
-* summary: Nippon, land and lore
-Invokes such fascination,
-All to be admired…
-No! Not all to be admired…
-Such bold type of shy contrasts.
 
 
 # [poem]
@@ -1063,7 +1848,7 @@ To serve each tasty other.
 # [poem]
 
 * updated: 2011-09-22
-* link: http://ithacalit.com/uche-ogbuji.html
+* link: http://ithacalit.com/uche-ogbuji1.html
 * title: '"Devil's Backbone" & "Word Wounds in Time"'
 * author: uogbuji
 * category: @choice
@@ -1158,7 +1943,7 @@ I am perfected fortune of my chi.
 * link: http://www.the-flea.com/Issue16/VillonaudoftheBarfleaBard.html
 * title: "Villonaud of the Barflea Bard"
 * author: uogbuji
-* source: http://www.the-flea.com/Issue16/VillonaudoftheBarfleaBard.html
+* source: http://www.the-flea.com/
     * title: The Flea (unframed link)
 * summary: Maenads are snarling their decree:
 “So who d'you think you are,” they howl
@@ -1229,6 +2014,10 @@ Scribble ass, scramble ass, punk ass squirrel?
     * scheme: http://uche.ogbuji.net
 * source: http://www.coriummagazine.com
     * title: Corium Magazine
+* see-also: http://keeppoemsalive.com/2015/10/01/keep-poems-alive-international/
+    * source: http://keeppoemsalive.com
+    * source-title: Keep Poems Alive
+    * updated: 2015-10-01
 * summary: Every bush has its berry
 With soft fingers and a long tongue,
 Slow, wide open like a Sunday afternoon.
@@ -1262,5 +2051,3 @@ These rub away their corners into the circle
           of the whole.  They don't match,
 They mate; their seed elaborates the daisy chain,
           fit and unfit bait and switch.
-
-
