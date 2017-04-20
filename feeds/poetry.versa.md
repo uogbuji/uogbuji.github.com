@@ -31,20 +31,39 @@
 * author: uogbuji
 * summary:
 
-# [poem]
-
-* updated: 2017-01-26
-* link: http://www.verse-virtual.com/uche-ogbuji-2016-february.html
-* title: "Dictate"
-* source: http://www.verse-virtual.com
-    * title: Verse Virtual
-* author: uogbuji
-* summary:
-
 http://gonzaga.ogbuji.net/~uche/lit/2015/chanson.html
 http://uogbuji.tumblr.com/post/142086453376/words-unsprung-from-p-38-of-ndewo-colorado
 
 -->
+
+# [poem]
+
+* updated: 2017-04-01
+* link: http://www.rogueagentjournal.com/uogbuji
+* title: Illegal Me
+* source: http://www.rogueagentjournal.com
+    * title: Rogue Agent Journal
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* seealso: http://www.rogueagentjournal.com/nowalls/
+* summary: Always winging, immigrants know for hard flap;
+Flap made news when nationals cruise for scapegoats:
+
+
+# [poem]
+
+* updated: 2017-03-12
+* link: http://scoundreltime.com/incident-at-the-western-border/
+* title: Incident at the Western Border
+* source: http://scoundreltime.com
+    * title: Scoundrel Time
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: She vanished before they could shoot her:
+left only an atmosphere of mist, brume of body
+
 
 # [poem]
 
@@ -76,7 +95,7 @@ Gives comfort having been fulfilled.
 
 * updated: 2016-01-24
 * link: https://issuu.com/trishaventker/docs/elife_winter_issue_2017_-_pdf_best?e=3021716/43480091
-* title: "Julian’s Blood Moon"
+* title: "Julian’s Blood Moon" p. 58
 * source: http://www.elifemagazine.org/
     * title: ELIFE Magazine
 * author: uogbuji
@@ -177,6 +196,39 @@ Or past provender at rune-posted places.
 These say-nothing mountains, but you can tell,
 Their having refused the slightest wobble
 When every other sight shakes swoon to swell.
+
+
+# [poem]
+
+* updated: 2016-12-19
+* link: http://kairoslit.com/uo_missedconnection
+* title: Missed Connection
+* source: http://kairoslit.com
+    * title: Kairos
+* author: uogbuji
+* summary: Where are her eyes?
+Say, artist, what did she say to you
+at that moment the pencil’s shedding 
+verged on blue, water-bottomed
+graphite stalagmite?
+
+
+# [poem]
+
+* updated: 2016-12-19
+* link: http://kairoslit.com/uo_carotid
+* title: Carotid
+* source: http://kairoslit.com
+    * title: Kairos
+* author: uogbuji
+* summary: Soft Rhythm
+Through your neck’s shallow arc,
+Down radius after clavicle,
+Through your warm fingertips
+Through my hair’s trip-roots–
+You play knock-occiput
+To splay of muscles
+At my unguarded nape.
 
 
 # [poem]

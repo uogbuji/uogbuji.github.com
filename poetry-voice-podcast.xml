@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- http://bit.ly/poetryvoice -->
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
 	<channel>
 		<link>http://poetryvoice.tumblr.com/</link>
@@ -23,30 +24,62 @@
 		<itunes:explicit>no</itunes:explicit>
 		<itunes:image href="http://gonzaga.ogbuji.net/~uche/poetryvoice/cover1.jpg" />
 		<atom:link href="http://gonzaga.ogbuji.net/~uche/poetryvoice/podcast.xml" rel="self" type="application/rss+xml" /> <!-- The URL of this file -->
-		<pubDate>Mon, 22 January 2017 00:00:00 MDT</pubDate> <!-- http://www.timeanddate.com/worldclock/city.html?n=805 - Use 24 hour clock -->
+		<pubDate>Mon, 10 April 2017 00:00:00 MDT</pubDate> <!-- http://www.timeanddate.com/worldclock/city.html?n=805 - Use 24 hour clock -->
 		<title>Poetry Voice, with Kierstin Bridger and Uche Ogbuji</title>
 		<itunes:author>Kierstin Bridger and Uche Ogbuji</itunes:author>
-		<description>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</description>
-		<itunes:summary>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</itunes:summary>
+		<description>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine, keeping it lit. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</description>
+		<itunes:summary>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine, keeping it lit. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</itunes:summary>
 		<itunes:subtitle>From the Western Slope to the world</itunes:subtitle>
 
-		<lastBuildDate>Mon, 22 January 2017 22:00:00 MDT</lastBuildDate>
+		<lastBuildDate>Mon, 10 April 2017 00:00:00 MDT</lastBuildDate>
 
 <!-- Always add the newest ITEM to the top of the list -->
+		<item>
+			<title>Episode 8: Just Deserts</title>
+			<description>Kierstin interviews Joni Wallace In Tucson, Arizona in a set that brings poetry and sound together with much discussion of the genesis and threat of The Bomb. Uche and Kierstin bookend the interviews with the usual hijinks.</description>
+			<itunes:summary>Kierstin interviews Joni Wallace In Tucson, Arizona in a set that brings poetry and sound together with much discussion of the genesis and threat of The Bomb. Uche and Kierstin bookend the interviews with the usual hijinks.</itunes:summary>
+			<itunes:subtitle>"So it's going to be loud."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep8.mp3" type="audio/mpeg" length="87096551" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep8.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>1:00</itunes:duration>
+			<pubDate>Mon, 10 April 2017 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 7: Fourteener</title>
+			<description>Uche interviews poet, professor and mountain man David J. Rothman at Louisville Public Library, later joining Kierstin in downtown Denver for discussion of many mountainous things.</description>
+			<itunes:summary>Uche interviews poet, professor and mountain man David J. Rothman at Louisville Public Library, later joining Kierstin in downtown Denver for discussion of many mountainous things.</itunes:summary>
+			<itunes:subtitle>"I wonder whom Donald Trump's mother slept with."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep7.mp3" type="audio/mpeg" length="65940263" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep7.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>1:08</itunes:duration>
+			<pubDate>Sun, 12 March 2017 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 6: Sirens and All That Can Seduce</title>
+			<description>Kierstin and Uche are joined by Denver poets Nicky Beer and Brian Barker in downtown Denver for wide-ranging conversation, peppered with the usual fun bits.</description>
+			<itunes:summary>Kierstin and Uche are joined by Denver poets Nicky Beer and Brian Barker in downtown Denver for wide-ranging conversation, peppered with the usual fun bits.</itunes:summary>
+			<itunes:subtitle>"Looking forward to this, this is our first foursome."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep6.mp3" type="audio/mpeg" length="82689798" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep6.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>:57</itunes:duration>
+			<pubDate>Sun, 12 February 2017 00:00:00 MDT</pubDate>
+		</item>
+
 		<item>
 			<title>Episode 5: Abundance</title>
 			<description>Kierstin and Uche are together again at Ridgway Global tuning into  Kierstin's interview with poet and radio personality Lauren Camp. Also: MORE OUD!</description>
 			<itunes:summary>Kierstin and Uche are together again at Ridgway Global tuning into  Kierstin's interview with poet and radio personality Lauren Camp. Also: MORE OUD!</itunes:summary>
 			<itunes:subtitle>"Under the loose-tooth shards of the Cimmaron range."</itunes:subtitle>
-			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
-      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
-      * 
-http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
-     -->
+			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep5.mp3" type="audio/mpeg" length="94974664" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep5.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
 			<itunes:duration>1:04</itunes:duration>
-			<pubDate>Mon, 22 January 2017 00:00:00 MDT</pubDate>
+			<pubDate>Sun, 22 January 2017 00:00:00 MDT</pubDate>
 		</item>
 
 		<item>
@@ -54,11 +87,7 @@ http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPage
 			<description>Kierstin and Uche get together at the Lithic Press Bookstore &amp; Gallery with owner and Colorado Poet Danny Rosen.</description>
 			<itunes:summary>Kierstin and Uche get together at the Lithic Press Bookstore &amp; Gallery with owner and Colorado Poet Danny Rosen.</itunes:summary>
 			<itunes:subtitle>"At the Lithic, feeling mythic."</itunes:subtitle>
-			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
-      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
-      * 
-http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
-     -->
+			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep4.mp3" type="audio/mpeg" length="81030918" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep4.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
 			<itunes:duration>0:56</itunes:duration>
@@ -70,11 +99,7 @@ http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPage
 			<description>Kierstin interviews and teases song out of poet Kyle Harvey, woven in with her joining Uche to discuss Sharon Olds, Derek Walcott and more.</description>
 			<itunes:summary>Kierstin interviews and teases song out of poet Kyle Harvey, woven in with her joining Uche to discuss Sharon Olds, Derek Walcott and more.</itunes:summary>
 			<itunes:subtitle>"Chilling in the glow of the year's first snow, right outside my window."</itunes:subtitle>
-			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
-      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
-      * 
-http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
-     -->
+			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep3.mp3" type="audio/mpeg" length="82988848" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep3.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
 			<itunes:duration>0:56</itunes:duration>
@@ -86,11 +111,7 @@ http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPage
 			<description>Jennifer Hancock joins Kierstin and Uche in discussion ranging from hurricanes to the awful uses of belts.</description>
 			<itunes:summary>Jennifer Hancock joins Kierstin and Uche in discussion ranging from hurricanes to the awful uses of belts.</itunes:summary>
 			<itunes:subtitle>"We'll show the world the Day of the Dead edible skull on my head."</itunes:subtitle>
-			<itunesu:category itunesu:code="107105" /> <!-- Literature. See:
-      * http://www.gla.ac.uk/myglasgow/staff/brandguidelines/toolkit/digitalcontentanditunesnbspu/downloadsandresources/itunesucategorycodes/
-      * 
-http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPages/chapter_8_section_3.html
-     -->
+			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep2.mp3" type="audio/mpeg" length="65655872" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep2.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
 			<itunes:duration>0:45</itunes:duration>

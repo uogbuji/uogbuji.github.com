@@ -33,7 +33,36 @@
     * scheme: http://uche.ogbuji.net
 * summary:  
 
+
+Queue:
+    
+    https://www.xml.com/pub/a/2005/01/05/tr-xml.html
+    https://www.infoq.com/news/2006/12/json-vs-xml-debate
+
 -->
+
+# [event]
+
+* updated: 2017-04-10
+* link: http://www.breckcreate.org/event/range10-01/?instance_id=26234
+* title: Breckenridge Creative Arts celebrates National Poetry Month
+* source: http://www.breckcreate.org
+    * title: Breckenridge Creative Arts
+* when: 2017-04-21
+* where: Breckenridge, CO
+* summary: For the April 21 program, BCA celebrates National Poetry Month with Colorado poets David Rothman, Rosemerry Wahtola Trommer, Wendy Videlock, and Uche Ogbuji. The evening will feature readings from each artists’ own take on Colorado mountain life as well as selected works from poet and forty year Breckenridge resident Belle Turnbull whose poems and sonnets capture the unique character of life during the receding decades of Summit County’s mining boom.
+
+
+# [article]
+
+* updated: 2017-02-23
+* link: http://www.telluridenews.com/the_watch/watch_listen_show/article_89635c50-f9e3-11e6-ae4e-277fbaa46ee4.html
+* title: From an artistic spark to “Ember”
+* source: http://telluridenews.com
+    * title: The Telluride Watch
+* author: Leslie Vreeland
+* summary: She recently launched “Poetry Voice,” a podcast “from Colorado’s Western Slope and beyond,” with poet Uche Ogbuji. The series is typically taped in Denver’s RiNo art district, and features writers from this region (Danny Rosen, Kyle Harvey) and the Front Range (Nicky Beer, Brian Barker). (“We don’t take ourselves seriously, but we take the work very seriously,” Bridger says of the broadcast, which has gotten five-star reviews on iTunes).
+
 
 # [event]
 
@@ -139,6 +168,21 @@
 * summary: "The holiday got me thinking of what it means to me to be a Nigerian, born in Nigeria, educated in Nigeria and abroad, living (and naturalized) in the USA, but with a very strong sense of rootedness off the Bight of Bonny."
 * see-also: http://www.thenervousbreakdown.com/uogbuji/2010/10/50-observations-on-50-years-of-nigeria-part-2/
 * see-also: http://www.thenervousbreakdown.com/uogbuji/2010/11/50-observations-on-50-years-of-nigeria-part-3/
+
+
+# [article]
+
+* updated: 2014-06-16
+* link: http://www.denverpost.com/2014/06/16/colorado-book-awards-honor-authors-in-16-categories/
+* title: Colorado Book Awards honor authors in 16 categories
+* source: http://www.denverpost.com
+    * title: Denver Post
+* author: Sean Fitz-Gerald
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: This year’s prizes in 16 categories including literary fiction, nonfiction and young adult literature represented a new level of diversity for the honors, one of the oldest state award programs in the country.
+* see-also: http://www.aspentimes.com/news/linda-lafferty-wins-colorado-book-award/
+
 
 # [article]
 

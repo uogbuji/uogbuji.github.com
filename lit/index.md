@@ -14,10 +14,11 @@ Poet, essayist and editor. Though my degree is in electrical and computer engine
 <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px; height: 500px;">
     <!-- Slides Container -->
     <div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 800px; height: 500px;">
-        <div><a href="http://bit.ly/poetryvoice"><img data-u="image" src="/img/litgallery/poetryvoice-dayofthedead.png" /></a></div>
-        <div><a href="http://www.stringpoet.com/2011/12/translation-uche-ogbuji/"><img data-u="image" src="/img/litgallery/follybetween.jpg" /></a></div>
-        <div><a href="http://interfictions.com/the-furies-of-mad-max-uche-ogbuji/"><img data-u="image" src="/img/litgallery/furiesofmadmax.png" /></a></div>
-        <div><a href="https://squareup.com/store/opossum-magazine/item/opossum-fall-1"><img data-u="image" src="/img/litgallery/twovoicedflute.png" /></a></div>
+        <div><a href="http://bit.ly/poetryvoice"><img data-u="image" src="/img/litgallery/poetryvoice-dayofthedead-opt.png" /></a></div>
+        <div><a href="http://scoundreltime.com/incident-at-the-western-border/"><img data-u="image" src="/img/litgallery/westernborderincident-opt.jpg" /></a></div>
+        <div><a href="http://www.stringpoet.com/2011/12/translation-uche-ogbuji/"><img data-u="image" src="/img/litgallery/follybetween-opt.jpg" /></a></div>
+        <div><a href="http://interfictions.com/the-furies-of-mad-max-uche-ogbuji/"><img data-u="image" src="/img/litgallery/furiesofmadmax-opt.png" /></a></div>
+        <div><a href="https://squareup.com/store/opossum-magazine/item/opossum-fall-1"><img data-u="image" src="/img/litgallery/twovoicedflute-opt.png" /></a></div>
     </div>
 </div>
 
