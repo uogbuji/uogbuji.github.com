@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://uche.ogbuji.net/</loc>
-  <lastmod>2017-04-20T13:43:00Z</lastmod>
+  <lastmod>2018-02-08T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/2014/</loc>
@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>http://uche.ogbuji.net/archive.html</loc>
-  <lastmod>2017-04-20T14:38:00Z</lastmod>
+  <lastmod>2018-10-13T04:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/blog/</loc>
@@ -75,11 +75,19 @@
  </url>
  <url>
   <loc>http://uche.ogbuji.net/lit/</loc>
-  <lastmod>2014-07-12T19:59:00Z</lastmod>
+  <lastmod>2017-07-07T03:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/lit/rhymefriendly/rhymefriendly/</loc>
+  <lastmod>2017-07-07T03:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/ndewo/</loc>
   <lastmod>2014-07-12T19:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/poetryvoice/</loc>
+  <lastmod>2017-04-20T13:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/tech/</loc>

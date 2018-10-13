@@ -23,7 +23,7 @@
 
 # [article]
 
-* updated: 2016-XX-XX
+* updated: 2018-XX-XX
 * link:
 * title:
 * source:
@@ -39,7 +39,102 @@ Queue:
     https://www.xml.com/pub/a/2005/01/05/tr-xml.html
     https://www.infoq.com/news/2006/12/json-vs-xml-debate
 
+Quick links:
+    
+* http://www.tatteredcover.com/new-event-calendar#event-id-138026
+
 -->
+
+
+# [citation]
+
+COntinue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&sa=X&ved=0ahUKEwi_3eKr_JncAhUprlQKHReOAGYQ_AUIECgB&biw=1153&bih=906
+
+* https://books.google.com/books?id=22fOBQAAQBAJ&pg=PA521&dq=uche+ogbuji&hl=en&sa=X&ved=0ahUKEwihrIux_JncAhXnj1QKHXnFC3UQ6AEIKzAB#v=onepage&q=uche%20ogbuji&f=false
+* [Computer Networks & Communications (NetCom): Proceedings of the Fourth International Conference on Networks & Communications by edited by Nabendu Chaki, Natarajan Meghanathan, Dhinaharan Nagamalai](https://books.google.com/books?id=yZtGAAAAQBAJ&pg=PA633&dq=uche+ogbuji&hl=en&sa=X&ved=0ahUKEwjBzfDb2JrcAhWEilQKHbcPC0EQ6AEIMDAC#v=onepage&q=uche%20ogbuji&f=false)
+* 
+
+# [article]
+
+* updated: 2018-XX-XX
+* link:
+* title:
+* source:
+    * title:
+* author:
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary:  
+
+
+# [article]
+
+* updated: 2018-01-20
+* link: http://worldigbocongress.com/restructuring-imperative/
+* title: The Imperatives of Restructuring Nigeria: The Position of World Igbo Congress on the Panacea for Stability, Equity and Justice
+* source: http://worldigbocongress.com/
+    * title: World Igbo Congress
+* author:
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: "Regionalism worked in the Eastern region, producing distinguished pace setters for Nigeria, most of whom Nigeria denied the self-set goals of making Nigeria a giant of Africa and a model new world country that would successfully compare with the developed nations. Some of the success stories of Regional Federalism in Nigeria are Prof. Kenneth Dike, first Nigerian V.C of University of Ibadan, Prof. Eni Njoku, first Nigerian V. C of University of Lagos, Prof. Chike Obi, first Nigerian professor of Mathematics, Prof. Austin Esogbue, first black professor at Georgia Institute of Technology, Prof. Linus Ogbuji whose applied mineralogy expertise assisted NASA in bringing back to Orbit, the Astronaut vessel that went into flames in 1986. There are thousands more; there just is not enough space to list them here."
+
+
+# [article]
+
+* updated: 2018-02-26
+* link: https://www.gunnisoncountylibraries.org/event-directory/colorado-in-black-and-white/
+* title: Colorado in Black and White
+* source: https://www.gunnisoncountylibraries.org/
+    * title: Crested Butte Library
+* author: DJ Rothman
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: Join Western Slope Poet Laureate and long-time Crested Butte resident David J. Rothman for four sessions in which we consider the poetry…[including of] some diverse contemporary poets such as Mary Crow, Wendy Videlock, Aaron Abeyta, Rosemerry Trommer, Jim Tipton, Art Goodtimes, Uche Ogbuji, Dave Mason, Joe Hutchison and more.
+
+# [article]
+
+* updated: 2017-11-17
+* link: http://www.denverpost.com/2017/11/17/forgetting-then-remembering-colorados-great-belle-turnbull/
+* title: Forgetting, then remembering, Colorado’s great Belle Turnbull
+* source: http://www.denverpost.com
+    * title: Denver Post
+* author: http://www.denverpost.com/author/patty-limerick/
+* summary: Taking the question to heart and seeking out Turnbull’s poetry, Rothman was overwhelmed with admiration. So he assembled a team of Colorado literary figures — George Sibley, Susan Spear, Uche Ogbuji and David Mason — to share in this joyful rediscovery and to write essays to accompany a new collection of her poems.
+
+
+# [event]
+
+* updated: 2017-07-09
+* link: https://cubecomps.cubing.net/live.php?cid=2323&compid=355
+* title: Jide at CubingUSA Nationals 2017, Fort Wayne, Indiana
+* source: http://cubecomps.com
+    * title: Cube Comps
+* author: 
+* category: jideogbuji
+    * scheme: http://uche.ogbuji.net
+* summary: Jide at Nats 2017
+
+
+# [article]
+
+* updated: 2017-07-07
+* link: http://quicksipreviews.blogspot.com/2017/07/quick-sips-fiyah-literary-magazine-3.html
+* title: Quick Sips - Fiyah Literary Magazine #3: Sundown Towns
+* source: http://quicksipreviews.blogspot.com
+    * title: Quick Sip Reviews
+* author: http://quicksipreviews.blogspot.com/p/about-me.html
+* summary: '“Remote Witness” by Uche Ogbuji¶This poem, like the last, also evokes periods of history and movement, but it’s a bit more explicit in its speculative focus, imagining technology that allow people to go back in time, that allow the main character of the poem to take something of a tour of history, only for things to not be quite so sterile as expected. The idea of a historical research tour is, after all, one that seems like it would be dry, almost boring. The endeavor here has a much different flavor, because the weight of the past hits the main character of the poem with such a force.'
+
+# [article]
+
+* updated: 2017-05-01
+* link: http://cutthebabble.com/igbo-names/
+* title: The Generations of Ogbujis
+* source: http://cutthebabble.com/
+    * title: Plainly Speaking
+* author: #drogbuji
+* summary: Dr. Linus Ogbuji on the generational split in Euro vs #Igbo names in our family, and the meanings of the latter 
 
 # [event]
 
@@ -89,6 +184,16 @@ Queue:
     * scheme: http://uche.ogbuji.net
 * summary: Uche Ogbuji's poem "Road from Calabar to Abuja" nominated for a Pushcart Prize.
 
+
+# [video]
+
+* updated: 2017-08-07
+* link: https://www.ibm.com/developerworks/community/blogs/twodw/entry/efficient_and_maintainable_css_with_less?lang=en
+* title: Efficient and maintainable CSS with LESS
+* source: https://www.ibm.com/developerworks
+    * title: IBM developerWorks
+* when: 2017-04-21
+* summary: Ogbuji is the featured guest in Calvin Powers's This Week On developerWorks webcast.
 
 # [article]
 

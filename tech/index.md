@@ -1,17 +1,20 @@
 .. link: 
 .. description: 
 .. tags: 
-.. date: 2014/07/03 07:52:00
+.. date: 2018/10/12 22:52:00
 .. title: Technology
 .. slug: index
 
-I'm a founder and Chief Technology Officer at [Zepheira](http://zepheira.com/), where I specialize in packaging and processing information to make it effective on the Web. A lot of our recent work has been for libraries and related institutions and we've just announced an exciting initiative to revitalize libraries: [Libhub](http://libhub.org).
+At work, [Library.Link](http://Library.Link), we help libraries publish information from their catalogs on the web.
 
-I've done a lot of pioneering work in data on the Web, including around XML, Semantic technology, web services and collaborative platforms. I've contributed many open source projects, and I write a lot of articles at technical journals such as IBM's, Intel's and O'Reilly's. This makes for a bit of cross-over with my work in [literature](/lit).
+I've done a lot of pioneering work in data on the Web, including a lot of work in open source. I [write articles in technical journals](https://github.com/uogbuji/techwriting).
 
-I was educated as an engineer (Electronics Engineering [in Nigeria](http://www.unn.edu.ng/) and Electrical/Computer Engineering [in the US](http://www.msoe.edu)) but after a short stint in embedded systems design I've been in general-purpose computing all my career.
+My engineering education started [in Nigeria](http://www.unn.edu.ng/) and finished [in the US](http://www.msoe.edu), but I've spent most of my career in software development and technical architecture.
 
-<!-- >## Technology projects include -->
+![Demo on laptop](/img/tech/laptopdemo.jpg)
+
+<!--
+## Technology projects include
 
 <table>
     <tr>
@@ -22,6 +25,9 @@ I was educated as an engineer (Electronics Engineering [in Nigeria](http://www.u
         <td><a href="http://akara.info/"><img src="/img/akara.png" title="Akara" style="height: 80px;"></a></td>
     </tr>
 </table>
+
+-->
+
 
 ---
 

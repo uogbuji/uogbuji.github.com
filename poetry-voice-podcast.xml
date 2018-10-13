@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- http://bit.ly/poetryvoice -->
+<!-- https://bit.ly/poetryvoice -->
+<!-- iTunes RSS feed info
+https://help.apple.com/itc/podcasts_connect/#/itcb54353390
+-->
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
 	<channel>
 		<link>http://poetryvoice.tumblr.com/</link>
 		<language>en-us</language>
-		<copyright>&#xA9;2016</copyright>
+		<copyright>&#xA9;2016-2018</copyright>
 		<webMaster>poetryvoicepod@gmail.com (The Poetry Voice Team)</webMaster>
 		<managingEditor>poetryvoicepod@gmail.com (The Poetry Voice Team)</managingEditor>
 		<image>
@@ -24,16 +27,86 @@
 		<itunes:explicit>no</itunes:explicit>
 		<itunes:image href="http://gonzaga.ogbuji.net/~uche/poetryvoice/cover1.jpg" />
 		<atom:link href="http://gonzaga.ogbuji.net/~uche/poetryvoice/podcast.xml" rel="self" type="application/rss+xml" /> <!-- The URL of this file -->
-		<pubDate>Mon, 10 April 2017 00:00:00 MDT</pubDate> <!-- http://www.timeanddate.com/worldclock/city.html?n=805 - Use 24 hour clock -->
+		<pubDate>Mon, 11 March 2018 00:00:00 MDT</pubDate> <!-- http://www.timeanddate.com/worldclock/city.html?n=805 - Use 24 hour clock -->
 		<title>Poetry Voice, with Kierstin Bridger and Uche Ogbuji</title>
 		<itunes:author>Kierstin Bridger and Uche Ogbuji</itunes:author>
 		<description>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine, keeping it lit. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</description>
 		<itunes:summary>Poetry Voice podcast takes the art of lovely words into the plentiful Colorado sunshine, keeping it lit. Much banter, decanters of laughter, featuring bards, and poetics they've mastered, with fresh interviews; all the news that stays news. From Colorado's Western slope and beyond.</itunes:summary>
 		<itunes:subtitle>From the Western Slope to the world</itunes:subtitle>
 
-		<lastBuildDate>Mon, 10 April 2017 00:00:00 MDT</lastBuildDate>
+		<lastBuildDate>Mon, 11 March 2018 00:00:00 MDT</lastBuildDate>
+
+    <!--
+<content:encoded>…</content:encoded> Episode note containing information about
+your episode. Some HTML allowed: <p>,
+<ol>, <ul>, <a>, <em>, <i>, <b>  -->
+
+<!-- Episode 13
+Apology for the delay in publishing. Uche and Kierstin at Weezy's (Denver) in November. Wayne Miller's poem "Image Psychotherapy." 
+      
+       -->
 
 <!-- Always add the newest ITEM to the top of the list -->
+		<item>
+			<title>Episode 13: In the Moment</title>
+			<description>A long (and long overdue) episode of conversations with Rosemerry Wahtola Trommer, multimedia multi-threat. Rosemerry spoke to her birthday twin Uche then Kierstin in 2017. Uche and Kierstin also talk Wayne Miller, Dylan Thomas meets Drake, Lawrence Durrell's "Nemea" and more.</description>
+			<itunes:summary>A long episode of conversations with Rosemerry Wahtola Trommer, multimedia multi-threat. Rosemerry spoke to her birthday twin Uche then Kierstin in 2017. Uche and Kierstin also talk Wayne Miller, Dylan Thomas meets Drake, Lawrence Durrell's "Nemea" and more.</itunes:summary>
+			<itunes:subtitle>"The new Hip-Hop beats, the weird space music as I like to call it that the kids use these days."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep13.mp3" type="audio/mpeg" length="90464876" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep13.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>1:34:13</itunes:duration>
+			<pubDate>Mon, 11 March 2018 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 12: Shepherd at the Gates</title>
+			<description>Aaron Abeyta, accomplished poet and mayor of Antonito, Colorado speaks to Kierstin at Bridger Global, and later on Uche joins Kierstin in Telluride, at the newly christened "Maybelle" to talk Jack Mueller, Yeats, Marie Howe and such.</description>
+			<itunes:summary>Aaron Abeyta, accomplished poet and mayor of Antonito, Colorado speaks to Kierstin at Bridger Global, and later on Uche joins Kierstin in Telluride, at the newly christened "Maybelle" to talk Jack Mueller, Yeats, Marie Howe and such.</itunes:summary>
+			<itunes:subtitle>"I see the red lights and I see ladies at the corner, in my mind's eye, of course."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep12.mp3" type="audio/mpeg" length="77730713" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep12.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>54:35</itunes:duration>
+			<pubDate>Mon, 2 October 2017 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 11: Angels in the Architecture</title>
+			<description>Kierstin and Uche separately interview Teow Lim Goh over the course of the year, tied up with a look at the summer in the city poem "Incendiary Art" by Patricia Smith.</description>
+			<itunes:summary>Kierstin and Uche separately interview Teow Lim Goh over the course of the year, tied up with a look at the summer in the city poem "Incendiary Art" by Patricia Smith.</itunes:summary>
+			<itunes:subtitle>"We're back to rescue you from No-Poetry-Voice island."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep11.mp3" type="audio/mpeg" length="84263415" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep11.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>1:07:00</itunes:duration>
+			<pubDate>Wed, 6 September 2017 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 10: Mixtape #1</title>
+			<description>Uche stews up choice bits from the first 9 episodes of the podcast in a danceable broth, suitable as a fresh take for previous listeners, and a whirlwind introduction for new listeners.</description>
+			<itunes:summary>Uche stews up choice bits from the first 9 episodes of the podcast in a danceable broth, suitable as a fresh take for previous listeners, and a whirlwind introduction for new listeners.</itunes:summary>
+			<itunes:subtitle>"Come oh! Come oh, abeg my people make we gyrate small small Naija style."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep10.mp3" type="audio/mpeg" length="64451892" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep10.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>59:00</itunes:duration>
+			<pubDate>Sun, 25 June 2017 00:00:00 MDT</pubDate>
+		</item>
+
+		<item>
+			<title>Episode 9: How to Feed a Poet</title>
+			<description>Kierstin and Uche interview Joe Hutchinson, Colorado Poet Laureate at BookBar. Uche and Kierstin later complete the set at Weezy's in downtown Denver.</description>
+			<itunes:summary>Kierstin and Uche interview Joe Hutchinson, Colorado Poet Laureate at BookBar. Uche and Kierstin later complete the set at Weezy's in downtown Denver.</itunes:summary>
+			<itunes:subtitle>"From the Stomping grounds to the stomping on people grounds."</itunes:subtitle>
+			<itunesu:category itunesu:code="107105" />
+			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep9.mp3" type="audio/mpeg" length="102294801" />
+			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep9.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
+			<itunes:duration>1:11:00</itunes:duration>
+			<pubDate>Mon, 1 May 2017 00:00:00 MDT</pubDate>
+		</item>
+
 		<item>
 			<title>Episode 8: Just Deserts</title>
 			<description>Kierstin interviews Joni Wallace In Tucson, Arizona in a set that brings poetry and sound together with much discussion of the genesis and threat of The Bomb. Uche and Kierstin bookend the interviews with the usual hijinks.</description>
@@ -42,7 +115,7 @@
 			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep8.mp3" type="audio/mpeg" length="87096551" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep8.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>1:00</itunes:duration>
+			<itunes:duration>1:00:00</itunes:duration>
 			<pubDate>Mon, 10 April 2017 00:00:00 MDT</pubDate>
 		</item>
 
@@ -54,7 +127,7 @@
 			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep7.mp3" type="audio/mpeg" length="65940263" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep7.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>1:08</itunes:duration>
+			<itunes:duration>1:08:00</itunes:duration>
 			<pubDate>Sun, 12 March 2017 00:00:00 MDT</pubDate>
 		</item>
 
@@ -66,7 +139,7 @@
 			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep6.mp3" type="audio/mpeg" length="82689798" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep6.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>:57</itunes:duration>
+			<itunes:duration>57:00</itunes:duration>
 			<pubDate>Sun, 12 February 2017 00:00:00 MDT</pubDate>
 		</item>
 
@@ -78,7 +151,7 @@
 			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep5.mp3" type="audio/mpeg" length="94974664" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep5.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>1:04</itunes:duration>
+			<itunes:duration>1:04:00</itunes:duration>
 			<pubDate>Sun, 22 January 2017 00:00:00 MDT</pubDate>
 		</item>
 
@@ -90,7 +163,7 @@
 			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep4.mp3" type="audio/mpeg" length="81030918" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep4.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>0:56</itunes:duration>
+			<itunes:duration>0:56:00</itunes:duration>
 			<pubDate>Mon, 2 January 2017 00:00:00 MDT</pubDate>
 		</item>
 
@@ -102,7 +175,7 @@
 			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep3.mp3" type="audio/mpeg" length="82988848" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep3.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>0:56</itunes:duration>
+			<itunes:duration>0:56:00</itunes:duration>
 			<pubDate>Sun, 27 November 2016 00:00:00 MDT</pubDate>
 		</item>
 
@@ -114,7 +187,7 @@
 			<itunesu:category itunesu:code="107105" />
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep2.mp3" type="audio/mpeg" length="65655872" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep2.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>0:45</itunes:duration>
+			<itunes:duration>0:45:00</itunes:duration>
 			<pubDate>Sun, 13 November 2016 00:00:00 MDT</pubDate>
 		</item>
 
@@ -130,7 +203,7 @@ http://deimos.apple.com/rsrc/doc/UsingiTunesUPublicSiteManager/AboutCategoryPage
      -->
 			<enclosure url="http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep1.mp3" type="audio/mpeg" length="58071932" />
 			<guid>http://gonzaga.ogbuji.net/~uche/poetryvoice/episodes/poetryvoice-ep1.mp3</guid> <!-- GUID URL is identical to Enclosure URL -->
-			<itunes:duration>0:60</itunes:duration>
+			<itunes:duration>1:00:00</itunes:duration>
 			<pubDate>Fri, 28 October 2016 00:00:00 MDT</pubDate>
 		</item>
 

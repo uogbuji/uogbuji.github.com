@@ -23,7 +23,7 @@
 
 # [poem]
 
-* updated: 2017-01-26
+* updated: 2018-01-26
 * link:
 * title: ""
 * source:
@@ -38,15 +38,325 @@ http://uogbuji.tumblr.com/post/142086453376/words-unsprung-from-p-38-of-ndewo-co
 
 # [poem]
 
+* updated: 2018-07-08
+* link: https://indd.adobe.com/view/94fe94bf-e7dc-4fd4-8fd8-0b8ee386eeb8
+* title: "Ends in Tears"
+* source: https://dearreadermag.com/
+    * title: 
+* author: uogbuji
+* summary: It starts with a kiss that ends in tears,
+With promise of phantasmagoric bliss
+That seems a honeyed pageant of the years;
+Honey runs out, revealing all amiss.
+
+# [poem]
+
+* updated: 2018-07-02
+* link: http://www.pilgrimagepress.org/current.html
+* title: ""
+* source: http://www.pilgrimagepress.org/
+    * title: Pilgrimage Magazine
+* author: uogbuji
+* summary: The P.A. rasps the special drill signal. Children
+Trade glances and go to assigned corners, huddling
+Tympani hearts, wishing it were the old fire drill.
+
+# [poem]
+
+* updated: 2018-07-01
+* link: https://www.fiyahlitmag.com/product/issue-7-music/
+* title: "Ella Hour"
+* source: https://www.fiyahlitmag.com
+    * title: FIYAH
+* author: uogbuji
+* summary: What Fitzgerald can doo-be-do in the pitch of a fork tuned to bluest true
+Is re-daub flame from red red soil substance upon blood of the earthly bred.
+
+# [poem]
+
+* updated: 2018-07-01
+* link: http://www.riddledwitharrows.com/riddled-with-arrows-issue-2-2-toc/shadow-play/#eyeball
+* title: "Meal of Eyeball"
+* source: http://www.riddledwitharrows.com
+    * title: Riddled with Arrows 
+* author: uogbuji
+* summary: What is it you’re eating, mother?
+“My eye” she said and kept chewing.
+Surely that was a wink, no more
+But when would it open again?
+
+# [poem]
+
+* updated: 2018-04-20
+* link: http://www.brainmillpress.com/mainbrain/voices/national-poetry-month-2018/a-young-girl-pares-fruit-you-gotta-let-it-hit-the-skin-like-a-poor-girl-and-oyinbo-banana-poetry-month-editors-choice-picks-week-2/
+* title: Oyinbo Banana
+* source: http://www.brainmillpress.com
+    * title: Brain Mill Press
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* author: uogbuji
+* summary: Who said they brought Magilla from Congo bush?
+Na lie! Saint Lumumba himself showed me
+His New York City stomping grounds. That Toby
+Couldn't see for Kunta Kinte,…
+
+
+# [poem]
+
+* updated: 2018-04-10
+* link: http://munyori.org/poetry/poems-by-uche-ogbuji/
+* title: "Bey Machemba to the Germans", "Hanger", "Pourallé Lieu", "Carotid" & "Parachuted"
+* source: http://munyori.org
+    * title: Munyori Literary Journal
+* author: uogbuji
+* summary: Who should obey whom in this sovereign land?
+I've listened the course of your haughty say,
+Such arrogance I can barely withstand!
+I see no reason you should have your way.
+
+
+# [poem]
+
+* updated: 2018-03-09
+* link: https://wordpeace.co/issue-2-2-winter-spring-2018/poetry/uche-ogbuji/
+* title: "Thought No One, Left Nowhere"
+* source: https://wordpeace.co
+    * title: WORDPEACE
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* author: uogbuji
+* summary: They throw in Lee Kum Fang to rest
+Where his conical hat was found,
+No markings, nothing to attest
+His tomb from cool surrounds.
+No eyes at carriage windows
+Knew his railworks from the ground.
+
+# [poem]
+
+* updated: 2018-03-02
+* link: https://tahomaliteraryreview.com/collections/frontpage/products/issue-11
+* title: "Becoming" & "Blue River Blue Moon"
+* source: https://tahomaliteraryreview.com/
+    * title: Tahoma Literary Review
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* author: uogbuji
+* summary: In any forest there is the one tree
+The one that insists, calls you by its bark
+One the forest summoned you to see.
+
+# [poem]
+
+* updated: 2018-02-05
+* link: http://anesthesiology.pubs.asahq.org/article.aspx?articleid=2672326
+* title: "Ogbúnàbàlị̀ and Hypnos, 1949"
+* source: http://anesthesiology.pubs.asahq.org/journal.aspx
+    * title: Anesthesiology: Journal of the American Society of Anesthesiologists
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* author: uogbuji
+* seealso: https://www.ncbi.nlm.nih.gov/pubmed/?term=ogbuji
+* summary: Ogbúnàbàlị̀, god of death at still night
+Completed his journey from the deep delta
+Under the city's seven gold-flung hills.
+Here was a complex of zinc-roofed shelter,
+A sign: Ibadan College Hospital.
+
+# [poem]
+
+* updated: 2017-12-31
+* link: https://anthonywatkins.wixsite.com/btsjan2018/international-poetry
+* title: "Pas la Dette" & "Wake"
+* source: https://www.betterthanstarbucks.org/
+    * title: Better Than Starbucks
+* author: uogbuji
+* seealso: http://www.lulu.com/shop/http://www.lulu.com/shop/better-than-starbucks/better-than-starbucks-jan-2018/paperback/product-23518632.html
+* summary: The collection calls come in their sudden bursts
+Laid stochastically over life's swells;
+They murmur threats, they plead with me to pay.
+
+# [poem]
+
+* updated: 2017-12-12
+* link: https://htlmagazine.com/
+* title: The Baby Natural
+* source: https://htlmagazine.com/
+    * title: Hold the Line
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: She puts down her brown grandma's reverb when she nods it.
+Enough minutes for math in the bath
+With the Mixed Chicks
+After the rinse fix
+Under the settle-down clips,
+And it's all adrip until it springs up hip…
+
+# [poem]
+
+* updated: 2017-11-09
+* link: http://www.garostation.com/poems-from-uche-ogbuji/
+* title: "Night Hike" & "Hiker's Reverie"
+* source: http://www.garostation.com
+    * title: Garo Station
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: If your feet are as they should be, bare on sand, that rare sand,
+Infant deposited by stork chinook on parent sandstone
+If you are as you should be, under cold ministry of stars,
+Coyote chorus laughing at you from the nearby unknown
+
+
+# [poem]
+
+* updated: 2017-09-14
+* link: https://www.stringpoet.com/2017/09/12-uche-ogbuji/
+* title: Season of the Senses' Treason
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* source: http://www.stringpoet.com
+    * title: String Poet
+* author: uogbuji
+* summary: It should be when you dream of snow,
+The numbing at your neck at night,
+You wake to a window pouring glow,
+A whalebone spread of frigid light.
+
+
+# [poem]
+
+* updated: 2017-08-25
+* link: 
+* title: Moon Shell
+* source: http://www.gjsentinel.com/
+    * title: Grand Junction Daily Sentinel (Out and About section)
+* author: uogbuji
+* summary: The same day I crossed the Moon Shell River
+To watch the moon make shell of the sun
+I found myself a Sun Dance believer
+For a healing past due to everyone;
+
+
+# [poem]
+
+* updated: 2017-08-21
+* link: http://www.poetsreadingthenews.com/2017/08/totality-uche-ogbuji-poetry/
+* title: Totality
+* source: http://www.poetsreadingthenews.com/
+    * title: Poets Reading the News
+* author: uogbuji
+* summary: The monthly blaze has built up enough charcoal to this day
+Fuel a blackout of the nuclear core along its watchful way,
+
+
+# [poem]
+
+* updated: 2017-08-07
+* link: https://electricliterature.com/fuck-those-dudes-9a7d4b9017ba
+* title: "Track Couture" "Late 20th Century Poet Jam Band" "FTD" & "Le Freak Musique Afrique"
+* source: https://electricliterature.com/okeypanky/home
+    * title: Electric Literature/Okey-Panky
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: Bad enough these broke-bottle streets, Athena
+Nike elephant footsore of a shoe.
+
+
+# [poem]
+
+* updated: 2017-07-19
+* link: https://icomefromtheworld.org/cosmic-case-for-poetry-god-demography/
+* title: "Cosmic Case for Poetry" & "God Demography"
+* source: https://icomefromtheworld.org/
+    * title: I Come From The World
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: This world seems its own articulation
+But all our tokens may be puppet forms,
+Strung projections into hyperspace,
+Quickened strictly by flatland knots
+Yet everywhere of this continuum, franked
+In our twixt-dimension’s mysterious lace.
+
+
+# [poem]
+
+* updated: 2017-07-01
+* link: http://www.fiyahlitmag.com/issues/issue-3-sundown-towns/
+* title: Remote Witness
+* source: http://www.fiyahlitmag.com/
+    * title: FIYAH Literary Magazine, Issue 3: Sundown Towns
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: He'd settled into stasis well before
+The violet knife-edge in silver starlight
+Incised the quarters, held dreamless through long
+Cipher to project the target place and time
+Through mesh of magnetar bombardment effect.
+
+# [poem]
+
+* updated: 2017-06-30
+* link: https://www.shanghailiterary.com/tslr-online/2017/6/8/after-ma-370
+* title: After MA370
+* source: https://www.shanghailiterary.com
+    * title: The Shanghai Literary Review
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: Shipping carpets water below approaching
+Changi, banking over the storied port's spout
+End
+
+# [poem]
+
+* updated: 2017-06-21
+* link: https://www.sirseethegift.com/Words
+* title: "Mysteries of Harvest: Home" & "Post Harvest"
+* source: https://www.sirseethegift.com/
+    * title: Sirsee
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* seealso: http://www.sirsee.bigcartel.com/product/journalvolumeone
+* summary: Bounty by palm,
+Its wine-tap bole,
+Its kernel oil
+For new roast yam;
+
+
+# [poem]
+
+* updated: 2017-05-17
+* link: http://therondeauroundup.blogspot.com/2017/05/new-post-finalist-uche-ogbuji-learning.html
+* title: Hellgate
+* source: http://therondeauroundup.blogspot.com
+    * title: The Rondeau Roundup
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: Passport out, eyeing the side hall soiled with wait–
+They’re lost who know what that passage is for,
+Deported, renditioned, unfortunate poor
+Supplicants and refugees burning in state
+Within their circles.
+
+
+# [poem]
+
 * updated: 2017-04-01
-* link: http://www.rogueagentjournal.com/uogbuji
+* link: http://www.rogueagentjournal.com/nowalls/
 * title: Illegal Me
 * source: http://www.rogueagentjournal.com
     * title: Rogue Agent Journal
 * author: uogbuji
 * category: @choice
     * scheme: http://uche.ogbuji.net
-* seealso: http://www.rogueagentjournal.com/nowalls/
 * summary: Always winging, immigrants know for hard flap;
 Flap made news when nationals cruise for scapegoats:
 
@@ -93,14 +403,12 @@ Gives comfort having been fulfilled.
 
 # [poem]
 
-* updated: 2016-01-24
+* updated: 2017-01-24
 * link: https://issuu.com/trishaventker/docs/elife_winter_issue_2017_-_pdf_best?e=3021716/43480091
 * title: "Julian’s Blood Moon" p. 58
 * source: http://www.elifemagazine.org/
     * title: ELIFE Magazine
 * author: uogbuji
-* category: @choice
-    * scheme: http://uche.ogbuji.net
 * summary: For the boy the first words of whose employ
 Made a song and a sway for the sight of the moon
 
@@ -122,7 +430,7 @@ Made a song and a sway for the sight of the moon
 * link: http://www.rigorous-mag.com/v1i1/uche-ogbuji.html
 * title: "Ḿmádụ́ Si Àlà Pụ̀tá", "Red Rapture", "Light Pollution", "Phenomenon of Time to a Gálapagos Gálapago", "Boldly Go", "Epignomics"
 * source: http://www.rigorous-mag.com
-    * title: Rigorous Magazibe
+    * title: Rigorous Magazine
 * author: uogbuji
 * summary: The one yellow our perspective's peaked arc
 Enfolds is not a yoke to cuff our necks
@@ -255,17 +563,20 @@ World only, not one some old fool made up.
 * summary: Give me of toast and for threnody,
 And a kiss for the morning at half-past three.
 
+
 # [poem]
 
 * updated: 2016-11-10
 * link: https://squareup.com/store/opossum-magazine/item/opossum-fall-1
 * title: "Two-Voiced Flute"
 * author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
 * source: http://opossumlit.com
     * title: Opossum
 * see-also: http://opossumlit.com/two-voiced-flute-a-poem-by-uche-ogbuji/
-* See also: http://opossumlit.com/category/fall-2016-issue/
-* See also: http://opossumlit.com/
+* see-also: http://opossumlit.com/category/fall-2016-issue/
+* see-also: http://opossumlit.com/
 * summary: Garrulous double,
 		Taiwo of tall echo
 		With a full hand's collection
@@ -366,6 +677,8 @@ To full frame of embrace through drawn goodbyes.
 * source: http://impakter.com
     * title: Impakter
 * author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
 * summary: Down the lanterns, repent in retirement–
 Truss-up for children with frayed string.
 
@@ -380,20 +693,6 @@ Truss-up for children with frayed string.
 * summary: Sandwiches and sausages and chips
 Brim checkered hampers laid out on the bench
 With veg, exotic condiments and dips.
-
-<!--
-# [poem]
-
-* updated: 2016-07-21
-* link: http://reallysystem.org/issues/eleven/pinout/
-* title: "Pinout"
-* source: http://reallysystem.org
-    * title: Really System
-* author: uogbuji
-* summary: Neat clip of black leads
-Between white that mocks green,
-Industrial green conductors from afar;
--->
 
 # [poem]
 
@@ -411,7 +710,7 @@ We make quite a pair.
 # [poem]
 
 * updated: 2016-07-08
-* link: http://www.alebrijeslit.org/current-issue/
+* link: https://web.archive.org/web/20160727110917/http://www.alebrijeslit.org/current-issue/
 * title: "Riddle: Crawdad Brack Passage"
 * source: http://www.alebrijeslit.org/
     * title: Alebrijes
@@ -529,28 +828,16 @@ And petrol tanks begrudge every mile.
 # [poem]
 
 * updated: 2016-05-02
-* link: http://www.southfloridapoetryjournal.com/poetry.html
+* link: http://www.southfloridapoetryjournal.com/poems-may-16.html
 * title: "Hothouse Grapes"
 * source: http://www.southfloridapoetryjournal.com/
     * title: South Florida Poetry Journal
 * author: uogbuji
+* quote: 'Uche Ogbuji\'s "Hothouse Grapes" is a modern-day classic.'
 * summary: Might I borrow some grapes, my love
 Those hothouse grapes, no other sort;
 I spied them when he brought them in
 Your icebox door still gives report.
-
-# [poem]
-
-* updated: 2016-05-03
-* link: http://www.topologymagazine.org/poetry/never-enough/
-* title: "Never Enough"
-* source: http://www.topologymagazine.org/
-    * title: Topology Magazine
-* author: uogbuji
-* summary: There’re birthday parties coming up to supply
-And grocery receipts to fatten the file;
-The building startles our wallet with creaks
-And petrol tanks begrudge every mile.
 
 # [poem]
 
@@ -1353,13 +1640,14 @@ Can I project her self-god's promised witness?
 # [poem]
 
 * updated: 2013-10-05
-* link: http://atavicpoetry.com/unscheduled-flight/
+* link: https://web.archive.org/web/20160417002127/http://atavicpoetry.com/unscheduled-flight/
 * title: "Unscheduled Flight"
 * author: uogbuji
 * category: @choice
     * scheme: http://uche.ogbuji.net
 * source: http://atavicpoetry.com
     * title: Atavic Poetry
+* former-link: http://atavicpoetry.com/unscheduled-flight/
 * summary: Where does one go in a black-lash mood
 But to a mountain town teahouse.
 He’d planned to use its walls to break his fist;
@@ -1401,7 +1689,7 @@ Grab a fin then dalé!
 # [poem]
 
 * updated: 2013-06-18
-* link: http://www.jerseydevilpress.com/?page_id=5048﻿
+* link: http://www.jerseydevilpress.com/?page_id=5048
 * title: "Vulcan's Invisible Ink Trap"
 * author: uogbuji
 * source: http://www.jerseydevilpress.com
@@ -2015,7 +2303,7 @@ Yield bruckle skin to miching flea.
 * title: "If All"
 * author: uogbuji
 * source: http://www.thenervousbreakdown.com/uogbuji/2011/04/if-all/
-    * title: If All
+    * title: The Nervous Breakdown
 * summary: If all our vision's shallow
 And all our cares a sieve
 If market gains short all our brains
