@@ -12,7 +12,7 @@ Poet, essayist and editor. The degree is in engineering, but the truest passion 
 
 <div class="row"> 
   <div class="column">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rZIK2FihCeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/rZIK2FihCeE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <a href="http://www.garostation.com/poems-from-uche-ogbuji/"><img src="/img/litgallery/nighthike.png" alt="Night Hike"/></a>
 
