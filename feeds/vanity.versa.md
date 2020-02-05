@@ -45,10 +45,43 @@ Quick links:
 
 -->
 
+# [article]
+
+* updated: 2018-12-20
+* link: https://locusmag.com/2018/12/karen-burnham-reviews-short-fiction-clarkesworld-fiyah-future-tense-abyss-apex-fireside-and-giganotosaurus/
+* title: Karen Burnham Reviews Short Fiction: Clarkesworld, Fiyah, Future Tense, Abyss & Apex, Fireside, and GigaNotoSaurus
+* source: https://www.gjsentinel.com
+    * title: Grand Junction Daily Sentinel
+* author: Karen Burnham
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: Fiyah #7 appeared in the summer and focused on the theme of music. Two stories and one poem harken back to the Jazz era of the 1940s/50s. The poem “Ella Hour” by Uche Ogbuji captures the rhythms of jazz and scat particularly effectively and I recommend it to you, poetry lover or no.
+
+# [event]
+
+* updated: 2018-12-02
+* link: https://www.aspenartmuseum.org/calendar/1423-marking-ritual-poetry-reading
+* title: Marking Ritual: Poetry Reading
+* source: https://www.aspenartmuseum.org
+    * title: Aspen Art Museum
+* author: 
+* summary: To mark the final closing of the exhibition Ritual, join Alya Howe and the Aspen Poets’ Society for an evening of poetry readings. Poets across Colorado have been convened to share their work, and participants will be invited to plant seeds about what we want to grow and cultivate in our lives. Featured poets include Meta Sarmiento, Uche Ogbuji, Art Goodtimes, along with Eleanore Scott, Halle Zander, and Stefano Da Fre.
+
+
+# [event]
+
+* updated: 2018-12-02
+* link: https://www.aspenpublicradio.org/community-calendar/event/412844
+* title: Marking Ritual: Poetry Reading
+* source: https://www.aspenpublicradio.org
+    * title: Aspen Public Radio
+* author: 
+* summary: To mark the final closing of the exhibition Ritual, join the Aspen Poets’ Society and Alya Howe for an evening of poetry readings. Poets across Colorado have been convened to share their work, and participants will be invited to plant seeds about what we want to grow and cultivate in our lives. Performing poets include Meta Sarmiento, Uche Ogbuji, Art Goodtimes, Eleanore Scott, and more.
+
 
 # [citation]
 
-COntinue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&sa=X&ved=0ahUKEwi_3eKr_JncAhUprlQKHReOAGYQ_AUIECgB&biw=1153&bih=906
+Continue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&sa=X&ved=0ahUKEwi_3eKr_JncAhUprlQKHReOAGYQ_AUIECgB&biw=1153&bih=906
 
 * https://books.google.com/books?id=22fOBQAAQBAJ&pg=PA521&dq=uche+ogbuji&hl=en&sa=X&ved=0ahUKEwihrIux_JncAhXnj1QKHXnFC3UQ6AEIKzAB#v=onepage&q=uche%20ogbuji&f=false
 * [Computer Networks & Communications (NetCom): Proceedings of the Fourth International Conference on Networks & Communications by edited by Nabendu Chaki, Natarajan Meghanathan, Dhinaharan Nagamalai](https://books.google.com/books?id=yZtGAAAAQBAJ&pg=PA633&dq=uche+ogbuji&hl=en&sa=X&ved=0ahUKEwjBzfDb2JrcAhWEilQKHbcPC0EQ6AEIMDAC#v=onepage&q=uche%20ogbuji&f=false)
@@ -56,16 +89,15 @@ COntinue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&s
 
 # [article]
 
-* updated: 2018-XX-XX
-* link:
-* title:
-* source:
-    * title:
-* author:
+* updated: 2018-10-14
+* link: https://www.gjsentinel.com/lifestyle/columns/poet-seeks-bonding-over-language-in-local-events/article_24b5d582-cf69-11e8-8c83-10604b9ffe60.html
+* title: Poet seeks bonding over language in local events
+* source: https://www.gjsentinel.com
+    * title: Grand Junction Daily Sentinel
+* author: LaReina Kalenian
 * category: @choice
     * scheme: http://uche.ogbuji.net
-* summary:  
-
+* summary: Boulder poet Uche Ogbuji has a wide base of knowledge and experience to draw on when he writes, and he will be in Grand Junction on Wednesday and Thursday to share both his experience and his techniques with local writers.
 
 # [article]
 

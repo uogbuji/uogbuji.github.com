@@ -38,6 +38,23 @@ http://uogbuji.tumblr.com/post/142086453376/words-unsprung-from-p-38-of-ndewo-co
 
 # [poem]
 
+* updated: 2019-01-01
+* link: https://flocklit.com/this-is-yours-lullabies
+* title: "Lullay"
+* source: https://flocklit.com/
+    * title: Flock literary journal
+    * issue: This is Yours: Twelve Lullabies
+* author: uogbuji
+* seealso: http://www.eatwords.net/892-2/
+* summary: Lullay! Exquisite petal
+Has you for tea on its nectar
+With a song of hush through the speaker leaves
+And a sunset on the projector.
+Those light-up bugs are code
+For word on the open road.
+
+# [poem]
+
 * updated: 2018-07-08
 * link: https://indd.adobe.com/view/94fe94bf-e7dc-4fd4-8fd8-0b8ee386eeb8
 * title: "Ends in Tears"
