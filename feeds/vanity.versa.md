@@ -45,6 +45,42 @@ Quick links:
 
 -->
 
+# [media]
+ 
+* updated: 2020-05-22
+* link: https://www.kdnk.org/post/tight-prose-slack-lines-antiviral-poetry-6
+* title: Tight Prose and Slack Lines - Antiviral Poetry #6
+* source: https://www.kdnk.org
+    * title: KDNK Community Radio
+* author: Alya Howe
+* category: audio
+    * scheme: http://uche.ogbuji.net
+* summary: Performance of "Salute to the First Nations" (at 8:35)
+
+# [media]
+
+* updated: 2020-05-15
+* link: https://www.kdnk.org/post/tight-prose-and-slack-lines-antiviral-poetry-5
+* title: Tight Prose and Slack Lines - Antiviral Poetry #5
+* source: https://www.kdnk.org
+    * title: KDNK Community Radio
+* author: Alya Howe
+* category: audio
+    * scheme: http://uche.ogbuji.net
+* summary: Performance of "And Will Again" (at 12:30)
+
+# [media]
+
+* updated: 2019-07-31
+* link: https://www.kdnk.org/post/mountain-fair-2019-featured-poet-uche-ogbuji
+* title: Mountain Fair 2019 Featured Poet Uche Ogbuji
+* source: https://www.kdnk.org
+    * title: KDNK (poem + interview)
+* author: Raleigh Burleigh
+* category: audio
+    * scheme: http://uche.ogbuji.net
+* summary: Performance of "Salute to the First Nations" + interview
+
 # [article]
 
 * updated: 2018-12-20
@@ -344,6 +380,9 @@ Continue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&s
 * category: @choice
     * scheme: http://uche.ogbuji.net
 * summary: In this interview with editor Dariel Suarez, Uche talks about his experience as a constant traveler, about being a computer engineer and a poet, and about embracing colonial forms and aesthetics.
+
+
+published: 2012-04-28 Scree https://issuu.com/snowflyzone/docs/screev2_issuu01 p. 55
 
 
 # [article]

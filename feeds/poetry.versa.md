@@ -23,7 +23,7 @@
 
 # [poem]
 
-* updated: 2018-01-26
+* updated: 2020-01-26
 * link:
 * title: ""
 * source:
@@ -35,6 +35,75 @@ http://gonzaga.ogbuji.net/~uche/lit/2015/chanson.html
 http://uogbuji.tumblr.com/post/142086453376/words-unsprung-from-p-38-of-ndewo-colorado
 
 -->
+
+# [poem]
+
+* updated: 2020-05-01
+* link: https://www.sfpoetry.com/rhysling.html
+* title: "Ọ́jí Íjè [Kola Journey]"
+* source: https://www.sfpoetry.com/rhysling.html
+    * title: Rhysling Prize anthology
+* author: uogbuji
+* summary: Nominated finalist (p. 46)
+The curved trunk of kola tree #12 stoops over Úgó
+As he peers over Ógèchí's deep rest chamber controls;
+He whispers blessing: "yá gà zíé" before waving the wake gesture—
+Return from deep rest has claimed too many space faring souls.
+
+# [poem]
+
+* updated: 2020-02-29
+* link: https://gumbomedia.com/gumbo-magazine
+* title: Ógè Ọ̀rà [Communal Time] and 
+* source: https://gumbomedia.com/
+    * title: Gumbo Media
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: How can they speak a wave who refuse to speak of water?
+How can they speak the sun who refuse to acknowledge light?
+Any proper father can tell you how many New Yam feasts
+His children have seen, however many children are his right.
+
+# [poem]
+
+* updated: 2019-10-01
+* link: http://www.giarts.org/readers
+* title: "Endo"
+* author: uogbuji
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* source: http://www.giarts.org/readers
+    * title: Grantmakers in the Arts GIA Reader
+* summary: Head upside home fried
+Champagne powder, I lip-smack
+Fatback...
+
+# [poem]
+
+* updated: 2019-07-01
+* link:  https://store.amazingstories.com/product/amazing-stories-summer-2019-volume-76-issue-4-paperback-edition/
+* title: "Spaceman Okéké Visits the Colorado Front Range"
+* source: https://store.amazingstories.com/
+    * title: Amazing Stories
+* author: uogbuji
+* summary: Here is the vantage point to prove that human skin
+Is ruler over all spacesuits;
+Okéké sees, marking where past settlements had been,
+The wattles man first made squatting at tree roots.
+
+# [poem]
+
+* updated: 2019-07-01
+* link: https://www.fiyahlitmag.com/issues/issue-11/
+* title: "Ọ́jí Íjè [Kola Journey]"
+* source: https://www.fiyahlitmag.com/
+    * title: FIYAH
+* author: uogbuji
+* summary: The curved trunk of kola tree #12 stoops over Úgó
+As he peers over Ógèchí's deep rest chamber controls;
+He whispers blessing: "yá gà zíé" before waving the wake gesture—
+Return from deep rest has claimed too many space faring souls.
 
 # [poem]
 
