@@ -16,6 +16,8 @@
     Friends & family links
     
     https://www.change.org/p/barack-obama-california-state-senate-california-governor-president-of-the-united-states-bernie-sanders-remove-under-god-from-the-pledge-of-allegience/c/408678824
+    https://www.waterstones.com/book/seeing-the-world-in-black-and-white/linus-u-j-t-ogbuji//9781592214877
+    https://ecosio.com/en/blog/the-future-of-edi-debunking-the-myths-and-building-a-realistic-picture-of-what-the-next-decade-will-bring-for-b2b-integration/
     
     -->
 
@@ -44,6 +46,41 @@ Quick links:
 * http://www.tatteredcover.com/new-event-calendar#event-id-138026
 
 -->
+
+# [event]
+
+* updated: 2020-07-04
+* link: https://www.kayleenasbo.com/july-4-poetry-salon.html
+* title: The Unfinished American Dream: A Poetic Declaration and Ritual of Interdependence
+* source: https://www.kayleenasbo.com
+    * title: Mythica 
+* author: kayleenasbo
+* see-also: https://www.youtube.com/channel/UCKbr-ozowecOiPYI0RlhBpQ
+* summary: Virtual poetry reading featuring Uche & Nkem
+
+# [media]
+ 
+* updated: 2020-06-26
+* link: https://www.cpr.org/show-segment/poet-uche-ogbujis-easy-words-reflects-on-systemic-racism-and-police-brutality/
+* title: Poet Uche Ogbuji’s ‘Easy Words’ Reflects On Systemic Racism And Police Brutality
+* source: https://www.cpr.org
+    * title: Colorado Matters
+* author: xmcmahon
+* category: audio
+    * scheme: http://uche.ogbuji.net
+* summary: Uche Ogbuji, of Superior, wrote this poem after protests over police brutality and racism began in Denver in May 2020.
+
+# [media]
+ 
+* updated: 2020-06-26
+* link: https://www.cpr.org/show-episode/june-26-2020-portraits-of-protesters-portraits-of-female-healthcare-workers-of-color/
+* title: June 26, 2020: Portraits Of Protesters; Portraits Of Female Healthcare Workers Of Color
+* source: https://www.cpr.org
+    * title: Colorado Matters
+* author: alill
+* category: audio
+    * scheme: http://uche.ogbuji.net
+* summary: Uche interviewed ~40m in
 
 # [media]
  
@@ -342,6 +379,15 @@ Continue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&s
 * see-also: http://www.thenervousbreakdown.com/uogbuji/2010/10/50-observations-on-50-years-of-nigeria-part-2/
 * see-also: http://www.thenervousbreakdown.com/uogbuji/2010/11/50-observations-on-50-years-of-nigeria-part-3/
 
+# [article]
+
+* updated: 2014-12-23
+* link: https://www.ymcanoco.org/blog/blog/2014/12/23/volunteer-of-the-month-uche-ogbuji
+* title: Volunteer of the Month: Uche Ogbuji
+* source: https://www.ymcanoco.org
+    * title: YMCA of Northern Colorado
+* author: uogbuji
+* summary: The headline says Uche Ogbuji has been named our volunteer of the month, and that is technically true. But when you honor Uche for his commitment to Y youth soccer, you must also honor Lori, Uche's wife. The two are a team.
 
 # [article]
 

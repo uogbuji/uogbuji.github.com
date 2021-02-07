@@ -7,19 +7,19 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://uche.ogbuji.net/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/archive.html</loc>
-  <lastmod>2020-06-26T23:33:00Z</lastmod>
+  <lastmod>2021-02-07T18:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/blog/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-02T02:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/categories/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/CoreManual.html</loc>
@@ -43,22 +43,26 @@
  </url>
  <url>
   <loc>http://uche.ogbuji.net/lit/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/lit/rhymefriendly/rhymefriendly/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/nchefu/</loc>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/ndewo/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/poetryvoice/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/tech/</loc>
-  <lastmod>2020-02-05T17:57:00Z</lastmod>
+  <lastmod>2021-02-07T18:26:00Z</lastmod>
  </url>
 </urlset>
