@@ -23,6 +23,7 @@
 
 <!--
 
+
 # [article]
 
 * updated: 2018-XX-XX
@@ -40,12 +41,66 @@ Queue:
     
     https://www.xml.com/pub/a/2005/01/05/tr-xml.html
     https://www.infoq.com/news/2006/12/json-vs-xml-debate
+    https://www.gjsentinel.com/book-notes-aug-29/article_b52e0148-0698-11ec-8069-9f5b86d2f2b6.html
 
 Quick links:
     
 * http://www.tatteredcover.com/new-event-calendar#event-id-138026
 
+* http://itre.cis.upenn.edu/~myl/languagelog/archives/2005_06.html
+
+
+
 -->
+
+
+
+# [event]
+
+* updated: 2021-07-01
+* link: https://60db2438797d0.site123.me/
+* title: Reaching for The Continent: a dance-party with Uche Ogbuji
+* source: http://nutshell-wendy.blogspot.com/2021/07/catching-up-publications-interview.html
+    * title: Ghost Buffalo
+* author: wvidelock
+* summary: Uche will be spinning music from his native Africa, ranging from the 60s to the present year. Come dance with the tumba, djembe and talking drum, while you groove with the griot, jive with the djali, find the urge in the oja, or just nod your noggin.
+* key-date: 2021-09-10
+
+
+# [event]
+
+* updated: 2021-06-19
+* link: https://www.heartandsolco.org/juneteenth
+* title: 
+* source:
+    * title: 
+* summary: Attend Loveland's first Juneteenth event to learn more about it's historical significance and join the celebration! There will be live music, poetry, opportunities to learn about the history of this celebration, community resources and booths to highlight local Black owned businesses.
+* see-also: https://www.heartandsolco.org/artists-speakers
+* key-date: 2021-06-19
+
+
+# [article]
+
+* updated: 2021-04-28
+* link: https://reel-librarians.com/2021/04/28/the-quotable-librarian-poetry-excerpts-from-10-poet-librarians/
+* title: Poetry excerpts from 10 poet-librarians
+* source: https://reel-librarians.com
+    * title: The Quotable Librarian
+* author: 
+* category: @choice
+    * scheme: http://uche.ogbuji.net
+* summary: Using my readings & interview at Sundress to celebrate Christopher Okigbo
+
+
+# [article]
+
+* updated: 2021-03-17
+* link: https://eloctavohistoriador.com/2021/03/17/bruja-akata-descubriendo-la-sociedad-leopardo/
+* title: BRUJA AKATA – DESCUBRIENDO LA SOCIEDAD LEOPARDO
+* source: https://eloctavohistoriador.com
+    * title: El Octavo Historiador blog
+* author: El Octavo Historiador
+* summary: Review of Nnedi's book with extensive reference (& credit) to my own
 
 # [event]
 
@@ -196,6 +251,19 @@ Continue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&s
 * category: @choice
     * scheme: http://uche.ogbuji.net
 * summary: Join Western Slope Poet Laureate and long-time Crested Butte resident David J. Rothman for four sessions in which we consider the poetry…[including of] some diverse contemporary poets such as Mary Crow, Wendy Videlock, Aaron Abeyta, Rosemerry Trommer, Jim Tipton, Art Goodtimes, Uche Ogbuji, Dave Mason, Joe Hutchison and more.
+
+
+# [event]
+
+* updated: 2017-11-08
+* link: https://calendar.colorado.edu/event/belle_turnbull_and_the_legacy_of_colorado_poetry_a_symposium#.YS5uptNKibh
+* title: 
+Belle Turnbull and the Legacy of Colorado Poetry: A Symposium
+* source: https://calendar.colorado.edu/
+    * title: CU Boulder
+* author: 
+* summary: Colorado poets, writers, and historians will discuss the relevance of Belle Turnbull’s work today and how it can help us to understand the making of the contemporary American West. FEATURING: Art Goodtimes, Patty Limerick, Uche Ogbuji, Susan Spear, David J. Rothman, & Jeffrey R. Villines
+
 
 # [article]
 

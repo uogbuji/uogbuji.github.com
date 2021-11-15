@@ -5,7 +5,7 @@
 .. title: Technology
 .. slug: index
 
-At work, [Library.Link](http://Library.Link), we help libraries publish information from their catalogs on the web.
+Main work recently has been [Library.Link](https://Library.Link), helping libraries publish information from their catalogs on the web.
 
 I've done a lot of pioneering work in data on the Web, including a lot of work in open source. I [write articles in technical journals](https://github.com/uogbuji/techwriting).
 

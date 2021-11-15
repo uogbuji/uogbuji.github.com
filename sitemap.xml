@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://uche.ogbuji.net/</loc>
-  <lastmod>2021-02-07T18:26:00Z</lastmod>
+  <lastmod>2021-11-14T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/archive.html</loc>
-  <lastmod>2021-02-07T18:42:00Z</lastmod>
+  <lastmod>2021-11-15T00:06:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/blog/</loc>
@@ -20,6 +20,10 @@
  <url>
   <loc>http://uche.ogbuji.net/categories/</loc>
   <lastmod>2021-02-07T18:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://uche.ogbuji.net/dj/</loc>
+  <lastmod>2021-11-14T23:57:00Z</lastmod>
  </url>
  <url>
   <loc>http://uche.ogbuji.net/etc/tech/4suite/etc/CoreManual.html</loc>

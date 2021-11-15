@@ -38,6 +38,29 @@ http://uogbuji.tumblr.com/post/142086453376/words-unsprung-from-p-38-of-ndewo-co
 
 # [poem]
 
+* updated: 2021-10-05
+* link: https://uncannymagazine.com/article/ahamefula/
+* title: "Áhàméfùla"
+* source: https://uncannymagazine.com
+    * title: Uncanny Magazine
+* author: uogbuji
+* summary: I realize now that our experiment was great water
+Into which I was to dissolve
+
+# [poem]
+
+* updated: 2021-05-24
+* link: https://blackbird.vcu.edu/v20n1/poetry/ogbuji-u/index.shtml
+* title: " Poles" & "Polychrome"
+* source: https://blackbird.vcu.edu
+    * title: Blackbird Journal
+* author: uogbuji
+* summary: I asked the sky for directions.
+While things among things connected to things turned
+Around my eye, one star out of the myriad gave answer.
+
+# [poem]
+
 * updated: 2020-05-01
 * link: https://www.sfpoetry.com/rhysling.html
 * title: "Ọ́jí Íjè [Kola Journey]"
