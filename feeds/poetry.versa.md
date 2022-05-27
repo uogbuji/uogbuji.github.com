@@ -46,6 +46,8 @@ http://uogbuji.tumblr.com/post/142086453376/words-unsprung-from-p-38-of-ndewo-co
 * author: uogbuji
 * summary: I realize now that our experiment was great water
 Into which I was to dissolve
+* review: https://www.goodreads.com/review/show/4338554484?book_show_action=true
+  * summary: POETRY: I liked Áhàméfùla by Uche Ogbuji but besides that nothing really caught my interest
 
 # [poem]
 

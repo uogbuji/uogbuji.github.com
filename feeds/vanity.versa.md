@@ -42,6 +42,7 @@ Queue:
     https://www.xml.com/pub/a/2005/01/05/tr-xml.html
     https://www.infoq.com/news/2006/12/json-vs-xml-debate
     https://www.gjsentinel.com/book-notes-aug-29/article_b52e0148-0698-11ec-8069-9f5b86d2f2b6.html
+    https://www.jhwriter.com/poetry-reading-on-tuesday-may-17th-at-r-gallery-art-bar-in-boulder/
 
 Quick links:
     
@@ -49,10 +50,71 @@ Quick links:
 
 * http://itre.cis.upenn.edu/~myl/languagelog/archives/2005_06.html
 
+Uche Ogbuji: The Zen of Python: Rocky Mountain Remix / https://www.youtube.com/watch?v=jfjh1XsP900 , from 2019-09-08
 
 
 -->
 
+<!--
+Neat! My #HipHop #DJ #livestream set from Saturday has been  one of the several of mine recently that have been getting quite a bit of attention. 
+https://www.reddit.com/r/toppostoftheday/comments/u216sy/comment/i4fpp0w/?utm_source=share&utm_medium=web2x&context=3
+#Reddit
+- sadly never tweeted because audio was clipping too badly at the beginning
+-->
+
+
+Preorders are available for Ńchéfù Road, my #book coming out next month.
+
+Really UK & Ireland only at pre-order stage. Shipping is steep anywhere else, but it will be out soon, for convenient orders worldwide.
+
+Cover design by @igbobinna.
+
+https://blackspringpressgroup.com/products/nchefu-road
+#poetry #igbo
+
+
+
+
+# [media]
+ 
+* updated: 2020-03-06
+* link: https://www.instagram.com/p/B9aCdTplPLX/
+* title: Photo of Uche Ogbuji by Melissa Rich
+* author: mrich
+* category: image
+    * scheme: http://uche.ogbuji.net
+
+
+# [media]
+ 
+* updated: 2020-03-06
+* link: https://www.instagram.com/p/B9aDOqwlgBa/
+* title: Photo of Uche Ogbuji by Melissa Rich
+* author: mrich
+* category: image
+    * scheme: http://uche.ogbuji.net
+
+
+# [media]
+ 
+* updated: 2020-03-06
+* link: https://www.instagram.com/p/B9aDdy_lJwa/
+* title: Photo of Uche Ogbuji by Melissa Rich
+* author: mrich
+* category: image
+    * scheme: http://uche.ogbuji.net
+
+
+
+# [event]
+
+* updated: 2021-11-06
+* link: https://sundressblog.com/2021/11/06/interview-with-akua-lezli-hope-editor-of-nombono-speculative-poetry-by-bipoc-poets-sd/
+* title: Interview with Akua Lezli Hope, editor of NOMBONO: Speculative Poetry by BIPOC Poets
+* source: https://sundressblog.com/
+    * title: Sundress Blog
+* author: scham
+* summary: In “Mmádu Si Àlà Putá,” Ogbuji writes, “It’s time to push away the teat and forage / the void, to answer scarcity with courage—” How can we answer scarcity with courage in our lives?
 
 
 # [event]
