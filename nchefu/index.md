@@ -6,7 +6,7 @@
 .. slug: index
 .. template: slideuser.tmpl
 
-Coming in summer. pre-orders available now. _**Ńchéfù Road**_, my first full-length book of poems, which [won the Christopher Smart Prize (UK)](https://store.eyewearpublishing.com/blogs/news/mel-pryors-judging-report-for-the-smart-prize).
+Coming in summer. Pre-orders available now. _**Ńchéfù Road**_, my first full-length book of poems, which [won the Christopher Smart Prize (UK)](https://store.eyewearpublishing.com/blogs/news/mel-pryors-judging-report-for-the-smart-prize).
 
 * [Preorder from the publisher (UK & Ireland)](https://blackspringpressgroup.com/products/nchefu-road)
 * [Preorder from Amazon (US)](https://www.amazon.com/Nchefu-Road-Uche-Ogbuji/dp/1913606937/)
@@ -15,5 +15,7 @@ Coming in summer. pre-orders available now. _**Ńchéfù Road**_, my first full-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2uy1R0EjhMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Cover design by [Igbobinna](https://www.instagram.com/igbobinna_nsb/)
+
+[Review in Poetry Magazine](https://www.poetryfoundation.org/harriet-books/reviews/158233/nchefu-road)
 
 ![Black Spring bookseller advert clip](/img/BlackSpringBooksellerAdvert-justuogbuji.png){: style="height:312px;width:640px"}

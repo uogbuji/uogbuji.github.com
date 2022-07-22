@@ -74,6 +74,46 @@ https://blackspringpressgroup.com/products/nchefu-road
 
 
 
+https://www.eventbrite.com/e/fourth-monday-poetry-reading-tickets-366129321657
+
+# [media]
+ 
+* updated: 2022-01-18
+* link: https://www.youtube.com/watch?v=ACnsL4q4wts
+* title: MLK Loveland Events annual commemoration to Dr. Martin Luther King Jr.
+* author: MLKLovelandEvents
+* category: video
+    * scheme: http://uche.ogbuji.net
+
+
+# [media]
+ 
+* updated: 2022-01-17
+* link: https://www.reporterherald.com/2022/01/12/loveland-and-fort-collins-plan-mlk-day-observances/
+* title: Loveland and Fort Collins plan MLK Day observances
+* author: jhutchins
+* summary: Speakers include U.S. Rep. Joe Neguse of Colorado 2nd District, Loveland Mayor Jacki Marsh and Thompson School District Superintendent Marc Schaffer, and the program will offer music by singer and composer Julia Kirkwood and poetry by poet and storyteller Uche Ogbuji.
+
+
+# [media]
+ 
+* updated: 2020-03-06
+* link: https://www.instagram.com/p/B9aCdTplPLX/
+* title: Photo of Uche Ogbuji by Melissa Rich
+* author: mrich
+* category: image
+    * scheme: http://uche.ogbuji.net
+
+
+# [media]
+ 
+* updated: 2020-03-06
+* link: https://www.instagram.com/p/B9aCdTplPLX/
+* title: Photo of Uche Ogbuji by Melissa Rich
+* author: mrich
+* category: image
+    * scheme: http://uche.ogbuji.net
+
 
 # [media]
  
@@ -103,7 +143,6 @@ https://blackspringpressgroup.com/products/nchefu-road
 * author: mrich
 * category: image
     * scheme: http://uche.ogbuji.net
-
 
 
 # [event]
