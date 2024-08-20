@@ -15,6 +15,8 @@ Useful list of 16:9 aspect ration HxW numbers:
 https://antifreezedesign.wordpress.com/2011/05/13/permutations-of-1920x1080-for-perfect-scaling-at-1-77/
 -->
 
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/82N4j60wD1Ubi0?hostedIn=slideshare&page=upload" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
 <div class="row"> 
   <div class="column">
 <!-- "Easy Words", uogbuji YouTube channel. Scaled down from width="480" height="270" -->

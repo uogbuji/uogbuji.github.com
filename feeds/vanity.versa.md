@@ -13,6 +13,8 @@
 
 <!--
     
+https://web.archive.org/web/20131015184550/https://www.ibm.com/developerworks/community/blogs/twodw/entry/efficient_and_maintainable_css_with_less?lang=en
+
     Friends & family links
     
     https://www.change.org/p/barack-obama-california-state-senate-california-governor-president-of-the-united-states-bernie-sanders-remove-under-god-from-the-pledge-of-allegience/c/408678824
@@ -50,7 +52,7 @@ Quick links:
 
 * http://itre.cis.upenn.edu/~myl/languagelog/archives/2005_06.html
 
-Uche Ogbuji: The Zen of Python: Rocky Mountain Remix / https://www.youtube.com/watch?v=jfjh1XsP900 , from 2019-09-08
+Uche Ogbuji: The Zen of Python: Rocky Mountain Remix https://www.youtube.com/watch?v=jfjh1XsP900/  , from 2019-09-08
 
 
 -->
@@ -60,7 +62,6 @@ Neat! My #HipHop #DJ #livestream set from Saturday has been  one of the several 
 https://www.reddit.com/r/toppostoftheday/comments/u216sy/comment/i4fpp0w/?utm_source=share&utm_medium=web2x&context=3
 #Reddit
 - sadly never tweeted because audio was clipping too badly at the beginning
--->
 
 
 Preorders are available for Ńchéfù Road, my #book coming out next month.
@@ -72,6 +73,53 @@ Cover design by @igbobinna.
 https://blackspringpressgroup.com/products/nchefu-road
 #poetry #igbo
 
+https://allevents.in/denver/punketry/200023536280304
+
+https://meiert.com/en/blog/notes-on-xml-design/
+
+https://soprissun.com/a-new-year-a-fresh-salon/
+
+-->
+
+# [event]
+
+* updated: 2023-04-19
+* link: https://www.etown.edu/centers/writershouse/?trumbaEmbed=view%3Devent%26eventid%3D787519541
+* title: A Walk Down Nchéfù Road: Evening Reading with Uche Ogbuji
+* source: https://www.etown.edu/centers/writershouse/
+    * title: Elizabethtown College Bowers Writers House
+* author: jwaters
+* summary: 	
+To be an engineer takes precision, patience, determination, and a mind attuned to the specifics of structure, and building models. Amazingly, the same qualities are crucial to -- wait for it... poetry! And tonight's guest embodies all these qualities in both fields, and true double-threat in the arts and sciences? Tonight, poet-engineer (or is it engineer-poet?) reads from his amazing poetry, and joins us for our classic chocolate fondue reception afterwards!
+
+# [article]
+ 
+* updated: 2022-10-12
+* link: https://www.bouldercountyarts.org/civicrm/mailing/view?id=2384
+* title: Meet Uche Ogbuji - BCAA Endowment Fellow
+* author: 
+* category: article
+    * scheme: http://uche.ogbuji.net
+* source: https://www.bouldercountyarts.org
+    * title: Boulder County Arts Alliance
+
+# [article]
+ 
+* updated: 2022-08-28
+* link: https://coloradopoetscenter.org/eWords/issue33/uche-ogbuji.html
+* title: Tracking Down the “Global Nomad” of Nchefu Road, Winner of the 2022 Christopher Smart Prize—An Interview with Uche Ogbuji
+* author: kwinograd
+* category: article
+    * scheme: http://uche.ogbuji.net
+
+# [article]
+ 
+* updated: 2022-08-28
+* link: https://www.gjsentinel.com/entertainment/book-notes-aug-28/article_5e7c46c2-249f-11ed-af2b-57d925a20c7e.html
+* title: Book Notes: Aug. 28
+* author: 
+* category: video
+    * scheme: http://uche.ogbuji.net
 
 
 https://www.eventbrite.com/e/fourth-monday-poetry-reading-tickets-366129321657
@@ -203,6 +251,18 @@ https://www.eventbrite.com/e/fourth-monday-poetry-reading-tickets-366129321657
 * author: El Octavo Historiador
 * summary: Review of Nnedi's book with extensive reference (& credit) to my own
 
+# [media]
+ 
+* updated: 2021-02-25
+* link: https://www.cpr.org/show-segment/how-a-poem-at-the-inauguration-inspired-poet-uche-ogbuji-and-his-daughter-nkem/
+* title: How A Poem At The Inauguration Inspired Poet Uche Ogbuji And His Daughter Nkem
+* source: https://www.cpr.org
+    * title: Colorado Matters
+* author: alill
+* category: audio
+    * scheme: http://uche.ogbuji.net
+* summary: Amanda Gorman sealed her place as a household name when she delivered her poem “The Hill We Climb” just before Joe Biden and Kamala Harris were sworn in as President and Vice President last month. ¶Her performance inspired Colorado poet Uche Ogbuji to write a poem of his own in response. "The Amanda Gorman Effect" explores his relationship with his 10-year-old daughter, Nkem, and the way poetry weaves together their relationship.
+
 # [event]
 
 * updated: 2020-07-04
@@ -279,8 +339,8 @@ https://www.eventbrite.com/e/fourth-monday-poetry-reading-tickets-366129321657
 * updated: 2018-12-20
 * link: https://locusmag.com/2018/12/karen-burnham-reviews-short-fiction-clarkesworld-fiyah-future-tense-abyss-apex-fireside-and-giganotosaurus/
 * title: Karen Burnham Reviews Short Fiction: Clarkesworld, Fiyah, Future Tense, Abyss & Apex, Fireside, and GigaNotoSaurus
-* source: https://www.gjsentinel.com
-    * title: Grand Junction Daily Sentinel
+* source: https://locusmag.com
+    * title: Locus Magazine
 * author: Karen Burnham
 * category: @choice
     * scheme: http://uche.ogbuji.net
@@ -295,7 +355,6 @@ https://www.eventbrite.com/e/fourth-monday-poetry-reading-tickets-366129321657
     * title: Aspen Art Museum
 * author: 
 * summary: To mark the final closing of the exhibition Ritual, join Alya Howe and the Aspen Poets’ Society for an evening of poetry readings. Poets across Colorado have been convened to share their work, and participants will be invited to plant seeds about what we want to grow and cultivate in our lives. Featured poets include Meta Sarmiento, Uche Ogbuji, Art Goodtimes, along with Eleanore Scott, Halle Zander, and Stefano Da Fre.
-
 
 # [event]
 
@@ -340,7 +399,6 @@ Continue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&s
     * scheme: http://uche.ogbuji.net
 * summary: "Regionalism worked in the Eastern region, producing distinguished pace setters for Nigeria, most of whom Nigeria denied the self-set goals of making Nigeria a giant of Africa and a model new world country that would successfully compare with the developed nations. Some of the success stories of Regional Federalism in Nigeria are Prof. Kenneth Dike, first Nigerian V.C of University of Ibadan, Prof. Eni Njoku, first Nigerian V. C of University of Lagos, Prof. Chike Obi, first Nigerian professor of Mathematics, Prof. Austin Esogbue, first black professor at Georgia Institute of Technology, Prof. Linus Ogbuji whose applied mineralogy expertise assisted NASA in bringing back to Orbit, the Astronaut vessel that went into flames in 1986. There are thousands more; there just is not enough space to list them here."
 
-
 # [article]
 
 * updated: 2018-02-26
@@ -352,7 +410,6 @@ Continue from: https://www.google.com/search?q=uche+ogbuji&source=lnms&tbm=bks&s
 * category: @choice
     * scheme: http://uche.ogbuji.net
 * summary: Join Western Slope Poet Laureate and long-time Crested Butte resident David J. Rothman for four sessions in which we consider the poetry…[including of] some diverse contemporary poets such as Mary Crow, Wendy Videlock, Aaron Abeyta, Rosemerry Trommer, Jim Tipton, Art Goodtimes, Uche Ogbuji, Dave Mason, Joe Hutchison and more.
-
 
 # [event]
 
@@ -501,19 +558,20 @@ Belle Turnbull and the Legacy of Colorado Poetry: A Symposium
 # [article]
 
 * updated: 2016-03-07
-* link: http://www.ibmsystemsmag.com/Blogs/IT-Trendz/March-2016/It%E2%80%99s-Hard-to-Imagine-Not-Using-a-DBMS/
+* link: https://web.archive.org/web/20160501082201/http://ibmsystemsmag.com/Blogs/IT-Trendz/March-2016/It%E2%80%99s-Hard-to-Imagine-Not-Using-a-DBMS/
 * title: It’s Hard to Imagine Not Using a DBMS
 * source: http://www.ibmsystemsmag.com
     * title: IBM Systems Magazine
 * author: Joseph Gulla
 * category: @choice
     * scheme: http://uche.ogbuji.net
-* summary: 'Today, it is hard to imagine developing a new application without using a DBMS. Uche Ogbuji, Enterprise Data Architect, Engineer and Entrepreneur writes “Anyone looking for a good flame war can always drop into any software development forum and casually ask what database software should be used for the next project, or even ask whether he or she needs to bother with a relational database. Because databases technologies are such an important part of programmer philosophy, it is hard to find objective discussion for the hapless developer looking for a good, general-purpose database management system (DBMS) to use in a project.”  Ogbuji’s IBM developerWorks article “Choosing a Database Management System” is 15 years old but the ideas still ring true today. '
+* see-also: http://www.ibmsystemsmag.com/Blogs/IT-Trendz/March-2016/It%E2%80%99s-Hard-to-Imagine-Not-Using-a-DBMS/
+* summary: 'Today, it is hard to imagine developing a new application without using a DBMS. Uche Ogbuji, Enterprise Data Architect, Engineer and Entrepreneur writes “Anyone looking for a good flame war can always drop into any software development forum and casually ask what database software should be used for the next project, or even ask whether he or she needs to bother with a relational database. Because databases technologies are such an important part of programmer philosophy, it is hard to find objective discussion for the hapless developer looking for a good, general-purpose database management system (DBMS) to use in a project.”  Ogbuji’s IBM developerWorks article “Choosing a Database Management System” is 15 years old but the ideas still ring true today.'
 
 # [article]
 
 * updated: 2014-09-30
-* link: http://blogs.westword.com/showandtell/2014/09/colorado_book_award_poetrychapbook_winner_uche_ogbuji_on_engineering_poetry_and_engineering_poetry.php
+* link: https://www.westword.com/arts/colorado-book-award-winner-uche-ogbuji-on-engineering-poetry-and-engineering-poetry-6050014
 * title: Colorado Book Award Winner Uche Ogbuji on Engineering, Poetry and Engineering Poetry
 * source: http://blogs.westword.com/
     * title: Westword
